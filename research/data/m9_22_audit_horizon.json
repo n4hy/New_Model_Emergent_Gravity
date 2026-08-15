@@ -1,0 +1,24 @@
+{
+  "task": "m9.22_audit_horizon",
+  "method": "half-fill; N=16 R=5, 5/bin; no solver import",
+  "one_d": {
+    "n": 10,
+    "rho_chm": 0.6464632390777535,
+    "C0": false
+  },
+  "three_d": {
+    "n": 15,
+    "n_flip": 0,
+    "rho_chm": -0.4571669867272628,
+    "R_chm": 0.889380878053219,
+    "R_lin": 0.8920395746807652,
+    "R_flat": 0.9971533776200769,
+    "C1": false,
+    "C2": false,
+    "C3": true,
+    "C4": true
+  },
+  "verdicts": {
+    "C4": "REFUTED"
+  }
+}

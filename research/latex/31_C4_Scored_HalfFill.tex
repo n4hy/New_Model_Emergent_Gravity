@@ -1,0 +1,59 @@
+% C4 scored at R=5 by half-filling. Tie. Tracking collapses.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem*{admission}{Admission}
+
+\title{\textbf{C4 Scored at Radius $5$:\\
+the Parabola and a Linear Weight Tie}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Paper~30 could not score C4: $E<0$ filling flipped on $25$ of
+$30$ hops. This note occupies the lowest $V/2$ eigenstates, so
+$n_{\mathrm{occ}}$ cannot flip.
+
+$N=14$, $R=5$, thirty locked surface hops, $\varepsilon=0.01$,
+$n_{\mathrm{flip}}=0$.
+$R_{\mathrm{CHM}}=0.99951$, $R_{\mathrm{lin}}=0.99945$,
+gap $6\times 10^{-5}$. C4 is scored: \textbf{TIE}.
+$\lvert\rho\rvert\sim 0.03$: the first law does not track.
+
+Auditor $N=16$, $R=5$, fifteen hops: $0.889$ versus $0.892$,
+again a dead heat; flat loses ($0.997$).
+
+The parabola is not selected at $R=5$. Half-filling buys a
+score and loses the $E<0$ tracking of Papers~26--29.
+Not Planck. Not Einstein.
+\end{abstract}
+
+\section{Numbers}
+
+\begin{center}
+\begin{tabular}{lcccc}
+\hline
+ & $n$ & $R_{\mathrm{CHM}}$ & $R_{\mathrm{lin}}$ & C4 \\
+\hline
+$N=14,R=5$ half-fill & $30$ & $0.99951$ & $0.99945$ & TIE \\
+audit $N=16,R=5$ & $15$ & $0.889$ & $0.892$ & TIE \\
+Paper~29 $E<0$, $R=4$ & $294$ & $0.808$ & $0.810$ & TIE \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{admission}
+I changed the filling so C4 could be scored. It is a tie. I did
+not call half-filling the Planck vacuum, and I did not write
+that the parabola won.
+\end{admission}
+
+\end{document}

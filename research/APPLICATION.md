@@ -173,6 +173,8 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
   [`findings/m9_20_horizon_shape_note.md`](findings/m9_20_horizon_shape_note.md).
 - Larger-R instrument halt: `scripts/m9_21_larger_horizon.py`,
   [`findings/m9_21_larger_horizon_note.md`](findings/m9_21_larger_horizon_note.md).
+- C4 scored half-fill: `scripts/m9_22_halffill_horizon.py`,
+  [`findings/m9_22_halffill_horizon_note.md`](findings/m9_22_halffill_horizon_note.md).
 
 ## Which MODELS.md rows the model addresses
 

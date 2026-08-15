@@ -1,0 +1,46 @@
+{
+  "task": "m9.22_halffill_horizon",
+  "observable": "R=5 half-fill; CHM vs linear vs flat; C4 scored",
+  "one_d": {
+    "n": 12,
+    "rho_chm": -0.5909505760255503,
+    "R_chm": 0.8067077641222197,
+    "rho_lin": -0.5528733443335414,
+    "R_lin": 0.8332653029650553,
+    "rho_flat": 0.2921694007739691,
+    "R_flat": 0.9563665830900722,
+    "C0": false,
+    "n_occ0": 100
+  },
+  "three_d": {
+    "n": 30,
+    "rho_chm": -0.03124755196856351,
+    "R_chm": 0.9995116760178301,
+    "rho_lin": -0.03306411677709467,
+    "R_lin": 0.9994532326135879,
+    "rho_flat": 0.09559894742270422,
+    "R_flat": 0.9954199321149194,
+    "N": 14,
+    "R": 5,
+    "n_tried": 30,
+    "n_flip": 0,
+    "n_occ0": 1372,
+    "per_bin": 10
+  },
+  "C0_instrument": false,
+  "C1_rho": false,
+  "C2_Rshape": false,
+  "C3_beats_flat": false,
+  "C4_PRIMARY": "TIE",
+  "C4_gap": 5.844340424221439e-05,
+  "C4_scored": true,
+  "all_gates": false,
+  "verdict": "C4_TIE",
+  "not_claimed": [
+    "Planck",
+    "eta=1/4G",
+    "Einstein",
+    "Bloch",
+    "de Sitter"
+  ]
+}
