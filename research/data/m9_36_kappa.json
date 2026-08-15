@@ -1,0 +1,40 @@
+{
+  "task": "m9.36_kappa",
+  "one": {
+    "rho_Kvac": 0.9737208993163774,
+    "kappa": {
+      "n": 120,
+      "median": 0.9676047748534844,
+      "rel_iqr": 0.08429997855650469,
+      "rho": 0.9989616855294505,
+      "iqr_pass": true,
+      "track_pass": true
+    }
+  },
+  "two": {
+    "rho_Kvac": 0.983107569612183,
+    "kappa": {
+      "n": 69,
+      "median": 0.9840598848720238,
+      "rel_iqr": 0.09860729260777419,
+      "rho": 0.9986117891037221,
+      "iqr_pass": true,
+      "track_pass": true
+    }
+  },
+  "rel_median": 0.016862640758022147,
+  "rho_pred_2_from_k1": 0.9986117891037226,
+  "C_vac": true,
+  "C_track": true,
+  "C_univ_PRIMARY": true,
+  "C_pred": true,
+  "all_gates": true,
+  "verdict": "KAPPA_UNIVERSAL",
+  "not_claimed": [
+    "8pi G",
+    "1/4G",
+    "Einstein equation",
+    "de Sitter",
+    "MODELS.md"
+  ]
+}

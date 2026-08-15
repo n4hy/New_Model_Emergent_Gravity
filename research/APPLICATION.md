@@ -201,6 +201,8 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
   [`findings/m9_34_dipole_note.md`](findings/m9_34_dipole_note.md).
 - Both-inside Gauss: `scripts/m9_35_both_inside.py`,
   [`findings/m9_35_both_inside_note.md`](findings/m9_35_both_inside_note.md).
+- Universal \(\kappa\): `scripts/m9_36_kappa.py`,
+  [`findings/m9_36_kappa_note.md`](findings/m9_36_kappa_note.md).
 
 ## Which MODELS.md rows the model addresses
 
