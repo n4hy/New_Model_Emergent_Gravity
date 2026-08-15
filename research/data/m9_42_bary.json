@@ -1,0 +1,28 @@
+{
+  "task": "m9.42_bary",
+  "M_A": 0.186913362140272,
+  "M_B": 0.45952056282076215,
+  "M_AB": 0.646433924965688,
+  "mass_ratio": 2.458468231264857,
+  "add_rel": 7.199239852504263e-12,
+  "x_A": -0.25,
+  "x_B": 0.25,
+  "x_cm": 0.10542732603990518,
+  "x_force": -0.05529218398953746,
+  "x_null": -0.05277025659521301,
+  "force_err": 0.0025219273943244483,
+  "cm_err": 0.15819758263511818,
+  "C_add": true,
+  "C_uneq": true,
+  "C_force_PRIMARY": true,
+  "C_notcm": true,
+  "C_side": true,
+  "all_gates": true,
+  "verdict": "INVSQ_NULL",
+  "not_claimed": [
+    "derived Poisson",
+    "8pi G",
+    "de Sitter",
+    "MODELS.md"
+  ]
+}

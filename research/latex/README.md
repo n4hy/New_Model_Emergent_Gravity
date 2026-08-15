@@ -45,5 +45,7 @@
 | `48_From_Kappa.tex` | Entanglement mass into inherited Newton; not derived Poisson |
 | `49_Which_Mass.tex` | Real δe sources Newton; far-field mass is ∑δe, not M_hat |
 | `50_Pair_Newton.tex` | Two packets: one ball reads the pair; midpoint cancels |
+| `51_Extended.tex` | Stars plateau; an extended source does not. Not Newtonian Λ |
+| `52_Invsq_Null.tex` | Unequal masses: interior null is M/r², not the CM |
 
 Reconstructed files follow the PDF wording and equations. They are not a byte-for-byte dump of an unpublished compiler run.

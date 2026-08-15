@@ -1,0 +1,23 @@
+{
+  "task": "m9.41_audit_uniform",
+  "rho_P": 0.9977125066862131,
+  "rho_V": 0.9938101603116918,
+  "rho_A": 0.99805012573857,
+  "grow_wide": 7.549220298468409,
+  "grow_comp": 1.0766479949456513,
+  "a_r": [
+    -0.057878891030342126,
+    0.1507070495281093,
+    0.4757650563600305
+  ],
+  "slope": 2.9945790785761863,
+  "C_fl_grow": true,
+  "C_VA_diagnostic": false,
+  "C_compact": true,
+  "C_lin": false,
+  "verdicts": {
+    "C_fl_grow": "CONFIRMED",
+    "C_lin": "REFUTED",
+    "C_compact": "CONFIRMED"
+  }
+}

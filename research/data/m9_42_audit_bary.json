@@ -1,0 +1,19 @@
+{
+  "task": "m9.42_audit_bary",
+  "M_A": 0.17647790340412184,
+  "M_B": 0.3488509586322882,
+  "mass_ratio": 1.9767401578510617,
+  "x_cm": 0.0820310227006999,
+  "x_force": -0.042183257207172496,
+  "x_null": -0.19033329373260544,
+  "force_err": 0.14815003652543293,
+  "cm_err": 0.27236431643330533,
+  "C_force": false,
+  "C_notcm": true,
+  "C_side": true,
+  "verdicts": {
+    "C_force": "REFUTED",
+    "C_notcm": "CONFIRMED",
+    "C_side": "CONFIRMED"
+  }
+}

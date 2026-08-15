@@ -212,6 +212,10 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
   [`findings/m9_39_tail_note.md`](findings/m9_39_tail_note.md).
 - Two-packet Newton: `scripts/m9_40_pair.py`,
   [`findings/m9_40_pair_note.md`](findings/m9_40_pair_note.md).
+- Extended vs star first law: `scripts/m9_41_uniform.py`,
+  [`findings/m9_41_uniform_note.md`](findings/m9_41_uniform_note.md).
+- Unequal-mass \(M/r^2\) null: `scripts/m9_42_bary.py`,
+  [`findings/m9_42_bary_note.md`](findings/m9_42_bary_note.md).
 
 ## Which MODELS.md rows the model addresses
 
