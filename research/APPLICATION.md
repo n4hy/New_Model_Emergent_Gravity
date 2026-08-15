@@ -224,6 +224,8 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
   [`findings/m9_45_gauss_force_note.md`](findings/m9_45_gauss_force_note.md).
 - \(\sigma\)-scan, dust not \(\Lambda\): `scripts/m9_46_sigma.py`,
   [`findings/m9_46_sigma_note.md`](findings/m9_46_sigma_note.md).
+- Vacuum area law: `scripts/m9_47_vacuum.py`,
+  [`findings/m9_47_vacuum_note.md`](findings/m9_47_vacuum_note.md).
 
 ## Which MODELS.md rows the model addresses
 
