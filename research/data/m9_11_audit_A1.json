@@ -1,0 +1,11 @@
+{
+  "task": "m9.11_audit_A1",
+  "method": "N=200, L=12 vs 24; no solver import",
+  "alpha0": 0.3247732051580911,
+  "alpha_uv": 0.314473298096485,
+  "rel": 0.03171415282425279,
+  "C2": true,
+  "verdicts": {
+    "C2": "CONFIRMED"
+  }
+}

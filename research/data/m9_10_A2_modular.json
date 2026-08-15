@@ -1,0 +1,85 @@
+{
+  "task": "m9.10_A2_modular",
+  "model": "1d staggered-mass tight-binding fermion, interval L=32, chain=240",
+  "pre_registered": {
+    "C2_threshold": 2.0,
+    "window": "0 < m L <= 8",
+    "local_ansatz": "tridiagonal (diag=X, nn=kinetic)"
+  },
+  "R0": 0.1600600647670522,
+  "rows": [
+    {
+      "m": 0.0,
+      "mL": 0.0,
+      "R": 0.1600600647670522,
+      "R_over_R0": 1.0,
+      "Roff": 0.16006006476777396,
+      "Roff_over_Roff0": 1.0,
+      "C_min": 1e-12,
+      "C_max": 0.999999999999,
+      "K_herm": 1.4985514683130374e-14
+    },
+    {
+      "m": 0.05,
+      "mL": 1.6,
+      "R": 0.17147610502245755,
+      "R_over_R0": 1.0713234764213047,
+      "Roff": 0.17700022531103587,
+      "Roff_over_Roff0": 1.105836271951032,
+      "C_min": 1e-12,
+      "C_max": 0.999999999999,
+      "K_herm": 1.7366345017067764e-14
+    },
+    {
+      "m": 0.1,
+      "mL": 3.2,
+      "R": 0.1861766024724624,
+      "R_over_R0": 1.1631671069446312,
+      "Roff": 0.20549093175674368,
+      "Roff_over_Roff0": 1.2838363651475708,
+      "C_min": 1e-12,
+      "C_max": 0.999999999999,
+      "K_herm": 1.5752478956512346e-14
+    },
+    {
+      "m": 0.2,
+      "mL": 6.4,
+      "R": 0.21054119276849387,
+      "R_over_R0": 1.3153886515972035,
+      "Roff": 0.2722990230518732,
+      "Roff_over_Roff0": 1.7012302440770792,
+      "C_min": 1e-12,
+      "C_max": 0.999999999999,
+      "K_herm": 1.2831582684772682e-14
+    },
+    {
+      "m": 0.4,
+      "mL": 12.8,
+      "R": 0.23879048393474928,
+      "R_over_R0": 1.4918804655132405,
+      "Roff": 0.40799554760687406,
+      "Roff_over_Roff0": 2.5490152599826934,
+      "C_min": 1e-12,
+      "C_max": 0.999999999999,
+      "K_herm": 1.6587973864027378e-14
+    },
+    {
+      "m": 0.8,
+      "mL": 25.6,
+      "R": 0.2211372294927444,
+      "R_over_R0": 1.3815890291846533,
+      "Roff": 0.5984075882508146,
+      "Roff_over_Roff0": 3.7386439216991767,
+      "C_min": 1e-12,
+      "C_max": 0.999999999999,
+      "K_herm": 1.5380806286876728e-14
+    }
+  ],
+  "C1_massless_baseline": true,
+  "C2_PRIMARY_R_ratio_lt_2": true,
+  "C3_mutation_diagonal_detectable": true,
+  "C4_spectrum_ok": true,
+  "all_gates": true,
+  "verdict": "A2_PASS",
+  "admission": "If C2 fails, Jacobson's local-X ansatz is false for this field: the modular kernel has range \u2265 2 that a spacetime scalar cannot absorb. 1d lattice is a necessary-condition test, not a 4d diamond."
+}

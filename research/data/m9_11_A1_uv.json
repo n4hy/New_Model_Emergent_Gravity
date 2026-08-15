@@ -1,0 +1,44 @@
+{
+  "task": "m9.11_A1_uv",
+  "uv_rows": [
+    {
+      "m": 0.0,
+      "mL_big": 0.0,
+      "S_small": 1.6412380441822245,
+      "S_big": 1.864914983291757,
+      "alpha": 0.3226976108145453,
+      "rel_to_0": 0.0
+    },
+    {
+      "m": 0.005,
+      "mL_big": 0.16,
+      "S_small": 1.6388381327623156,
+      "S_big": 1.85779524143573,
+      "alpha": 0.3158883348505207,
+      "rel_to_0": 0.021101104364661335
+    },
+    {
+      "m": 0.01,
+      "mL_big": 0.32,
+      "S_small": 1.6324085549542042,
+      "S_big": 1.839924514432862,
+      "alpha": 0.2993822456451746,
+      "rel_to_0": 0.0722514341228576
+    }
+  ],
+  "ir_row": {
+    "m": 0.2,
+    "mL_big": 6.4,
+    "S_small": 1.215493519278423,
+    "S_big": 1.2223191862063099,
+    "alpha": 0.009847355827622056,
+    "rel_to_0": 0.9694842617434767
+  },
+  "alpha0": 0.3226976108145453,
+  "C1_alpha0_in_window": true,
+  "C2_PRIMARY_UV_mass_independence": true,
+  "C3_mutation_IR_cuts_off": true,
+  "all_gates": true,
+  "verdict": "A1_PASS",
+  "admission": "1d free-fermion leading log coefficient. Not a 4d area law. \u03b7 finite and IR-independent is tested only as this \u03b1."
+}

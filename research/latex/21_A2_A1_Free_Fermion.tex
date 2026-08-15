@@ -1,0 +1,92 @@
+% A2 then A1. 1d free fermion, pre-registered. Not a 4d diamond.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem*{admission}{Admission}
+\newcommand{\pP}{\textbf{[P]}}
+
+\title{\textbf{A2 then A1 for a Free 1d Fermion:\\
+The Local-$X$ Ansatz is Not Refuted;\\
+the UV Coefficient is IR-Independent}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Jacobson 2016's nonconformal step is a conjecture:
+$\delta\langle K\rangle=c\,\delta\langle T_{00}\rangle+\delta X$ with
+$X$ a spacetime scalar. On a lattice the scalar is diagonal. The
+local ansatz is therefore a \emph{tridiagonal} modular kernel.
+
+A2, pre-registered: on a 1d staggered-mass fermion, vacuum interval
+of $L=32$,
+$R(m)=\lVert K-K_{\mathrm{tri}}\rVert_F/\lVert K\rVert_F$ obeys
+$R(m)/R(0)<2$ for all $0<mL\le 8$. Measured ratios:
+$1.07,1.16,1.32$ (solver) and $1.26,1.69$ (auditor, different
+$N,L$). C2 PASS. The mutation (drop the diagonal) fires: a local
+mass term is visible. \pP{} as a necessary-condition test on this
+field, not as a 4d diamond theorem.
+
+A1, pre-registered: the UV log coefficient
+$\alpha=(S(2L)-S(L))/\log 2$ at $mL\le 0.5$ stays within $20\%$ of
+$\alpha(0)=0.323\approx 1/3$. Measured relative drifts $0.021$ and
+$0.072$. At $mL=6.4$, $\alpha$ collapses (mutation). \pP{} for this
+1d free fermion. Not a 4d area law.
+
+Road A may continue for this field class. It still does not give
+FGHMV in de~Sitter or a value of $\Lambda$.
+\end{abstract}
+
+\section{A2}
+
+$K=\log((1-C)/C)$ from the restricted correlator of the ground state
+of $H_{i,i+1}=-1$, $H_{ii}=m(-1)^i$. Local ansatz $=$ diagonal $+$
+nearest neighbour. Remainder of range $\ge 2$ cannot be a scalar
+$X$.
+
+\begin{center}
+\begin{tabular}{cccc}
+\hline
+$mL$ & $R$ & $R/R(0)$ & in window \\
+\hline
+0 & 0.160 & 1 & --- \\
+1.6 & 0.171 & 1.07 & yes \\
+3.2 & 0.186 & 1.16 & yes \\
+6.4 & 0.211 & 1.32 & yes \\
+12.8 & 0.239 & 1.49 & no \\
+\hline
+\end{tabular}
+\end{center}
+
+C2 threshold was 2, locked before the run. The ratio grows. It does
+not cross 2 inside the window. The conjecture is \emph{not refuted}
+here. It is not proved in 4d.
+
+\section{A1}
+
+$\alpha(0)=0.323$. UV masses $mL\le 0.32$ shift $\alpha$ by at most
+$7\%$. IR mass $mL=6.4$ kills the log ($\alpha=0.010$). Leading UV
+piece is IR-mass independent for this fermion. \pP{}
+
+\section{What this does not do}
+
+It does not prove A2 for a 4d diamond or for the Standard Model.
+It does not derive $\eta=1/4G$. It does not select $\Lambda$. It
+does not produce FGHMV in de~Sitter.
+
+\begin{admission}
+A2 passed a necessary-condition test I could fail. A1 passed on the
+same field. I will not write that Jacobson's conjecture is a theorem
+in four dimensions.
+\end{admission}
+
+\end{document}
