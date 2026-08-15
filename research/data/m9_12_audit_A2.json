@@ -1,0 +1,13 @@
+{
+  "task": "m9.12_audit_A2",
+  "method": "2d Dirac N=28 L=10; no solver import",
+  "R0": 0.11686085406496564,
+  "R_mL3": 0.1573315556430549,
+  "R_mL7": 0.15080594576687434,
+  "ratio_mL3": 1.3463152986678555,
+  "ratio_mL7": 1.290474444787455,
+  "C2": true,
+  "verdicts": {
+    "C2_2d": "CONFIRMED"
+  }
+}

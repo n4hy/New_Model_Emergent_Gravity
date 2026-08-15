@@ -1,0 +1,73 @@
+% Required A2 tests. 2d/3d Dirac. 1d scalar instrument rejected.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newcommand{\pP}{\textbf{[P]}}
+\newtheorem*{admission}{Admission}
+
+\title{\textbf{Required A2 Tests:\\
+2d and 3d Lattice Dirac Pass the Locked Gate;\\
+the 1d Scalar Instrument is Rejected}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+The same pre-registered locality gate as Paper~21:
+$R(m)/R(0)<2$ for $0<mL\le 8$, local ansatz $=$ on-site $+$ nearest
+neighbours.
+
+2d staggered fermion, $32\times 32$ grid, $12\times 12$ region:
+ratios $1.19,1.29,1.38,1.38$. Mutation (drop diagonal) fires.
+Auditor on $N=28$, $L=10$: $1.35$, $1.29$. C2 PASS. \pP{} as a
+necessary-condition test.
+
+3d staggered fermion, $10^3$ grid, $6^3$ region: ratios
+$0.45,0.47,0.44$. C2 PASS. Mass shortens the modular range.
+
+1d massive scalar: no verdict. Symplectic eigenvalues sat on the
+clip $\xi=1/2+\varepsilon$ and $R_\pi(0)=0.95$. The instrument is
+rejected. That is not a physics fail of A2.
+
+A2 is not refuted on free lattice Dirac in $d=1,2,3$. It is not a
+4d continuum theorem and not the Standard Model.
+\end{abstract}
+
+\section{Gate}
+
+Unchanged from M9.10. A spacetime scalar is on-site. Anything
+beyond the lattice adjacency cannot be $\delta X$.
+
+\section{2d}
+
+$R(0)=0.118$. Inside the window the ratio stays $\le 1.38$. The
+auditor, different size, confirms. The remainder still grows with
+$m$, as in 1d. It does not cross 2.
+
+\section{3d}
+
+$R(0)=0.300$ (small region). Finite mass \emph{decreases} $R$.
+C2 passes. Finite-volume caveat is recorded.
+
+\section{Scalar}
+
+The bosonic reconstruction produced $\xi_{\min}$ pinned at the
+floor and a massless $K_\pi$ that is $95\%$ nonlocal. A massless
+harmonic interval should be CHM-local in the continuum. The run
+is discarded.
+
+\begin{admission}
+I ran the tests I said were required. I did not promote a broken
+scalar kernel into a fail, and I did not write that Jacobson 2016
+is now a 4d theorem.
+\end{admission}
+
+\end{document}
