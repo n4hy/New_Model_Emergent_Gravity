@@ -1,0 +1,349 @@
+% Forced finish of Q3: nonlinear Einstein-Cartan from entanglement
+% at the FHHPRV (second-order) standard.
+% Metric Einstein through second order is cited, not re-derived.
+% The axial / Cartan sector is taken to a stop and admitted.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem,booktabs}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem*{admission}{Admission}
+
+\newcommand{\pP}{\textbf{[P]}}
+\newcommand{\pC}{\textbf{[C]}}
+\newcommand{\pO}{\textbf{[O]}}
+\newcommand{\pA}{\textbf{[ADMISSION]}}
+\newcommand{\kappaG}{\kappa}
+
+\title{\textbf{Second-Order Einstein--Cartan from Entanglement:\\
+The Palatini Symplectic Form and an Axial Obstruction}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+The remaining open of the Emergent Gravity Program that can be forced
+to a stop at a published standard is nonlinear Einstein--Cartan.
+Faulkner, Haehl, Hijano, Parrikar, Rabideau and Van~Raamsdonk
+\cite{FHHPRV2017} already have Einstein's equations through second
+order from ball relative entropy. This note asks for the same
+statement with the Palatini connection independent and torsion
+algebraic in spin.
+
+The Palatini symplectic potential is
+$\theta=(1/2\kappa)\,\varepsilon_{abcd}\,e^a\wedge e^b\wedge\delta\omega^{cd}$.
+It contains $\delta\omega$ and not $d(\delta e)$. Dirac coupling to
+$\omega$ is algebraic and adds no $\theta$. On-shell,
+$\omega=\mathring{\omega}(e)+K[s]$, the Hehl--Datta term is a
+potential, and the reduced pre-symplectic form is that of
+Einstein--Hilbert plus Dirac. Second-order metric dynamics therefore
+collapse to FHHPRV plus a contact source $T_{\mathrm{HD}}$,
+\emph{if} the only CFT data are stress-tensor one- and two-point
+functions.
+
+The axial channel does not match. CFT Fisher information for a
+conserved current is nonlocal (a modular-smeared $\langle J_5 J_5\rangle$,
+the same kernel that produced $\IB$). Algebraic torsion has no bulk
+kinetic term and cannot reproduce that two-point function. This is
+the same mismatch Paper~VI absorbed at linear order by a dictionary
+improvement, now visible in the symplectic form.
+
+\textbf{Verdict.} At the FHHPRV standard: second-order \emph{Einstein}
+gravity from entanglement stands (cited). Second-order
+\emph{Einstein--Cartan}, including a generated Hehl--Datta contact
+as the dual of CFT axial Fisher data, is \textbf{false} without an
+extra propagating bulk field, which is not Einstein--Cartan.
+The Final Status nonlinear line remains \pO{} as a positive theorem
+and is closed here as an obstruction in the axial sector.
+
+No \pO{} is moved to \pP{}.
+\end{abstract}
+
+\section*{Standard of proof}
+
+``Finish'' means a statement at the grade of \cite{FHHPRV2017}:
+either the second-order EC equations (metric Einstein plus algebraic
+Cartan plus Hehl--Datta) are equivalent to ball relative entropy
+through $O(\varepsilon^2)$, or a specific matching identity fails.
+Jacobson's entanglement equilibrium \cite{Jacobson2016} is not that
+grade and is not used as a substitute.
+
+\section{The FHHPRV skeleton}
+
+For CFT states prepared by a Euclidean source of strength
+$\varepsilon$, write
+\begin{equation}
+\Delta S_A-\Delta\langle H_A\rangle
+=
+-S(\rho_A\|\rho_A^{(0)}).
+\label{eq:rel}
+\end{equation}
+On a family of asymptotically AdS metrics, the Hollands--Wald
+identity \cite{HollandsWald2013} is
+\begin{equation}
+\frac{d}{d\varepsilon}\bigl(E_A^{\mathrm{grav}}-S_A^{\mathrm{grav}}\bigr)
+=
+\int_{\Sigma_A}\boldsymbol{\omega}
++
+\int_{\Sigma_A}\mathcal{G},
+\label{eq:HW}
+\end{equation}
+with $\boldsymbol{\omega}$ the pre-symplectic current of the gravitational
+Lagrangian and $\mathcal{G}$ vanishing on-shell. If $S_A$ is
+represented by HRRT and $E_A$ by the asymptotic charge, the two
+left-hand sides agree and
+\begin{equation}
+\frac{d}{d\varepsilon}S(\rho_A\|\rho_A^{(0)})
+=
+\int_{\Sigma_A}\boldsymbol{\omega}+\int_{\Sigma_A}\mathcal{G}.
+\label{eq:master}
+\end{equation}
+At first order both sides vanish except $\mathcal{G}^{(1)}$, which
+forces linearized Einstein \cite{FGHMV2014}. At second order, for
+sources of stress-tensor or scalar type and $\widetilde{C}_T=a_\ast$,
+\cite{FHHPRV2017} compute the left-hand side from CFT two-point
+functions and match it to $\boldsymbol{\omega}_{\mathrm{EH}}$, forcing
+\begin{equation}
+E_{ab}^{(2)}-\tfrac12 T_{ab}^{(2)}=0.
+\label{eq:ein2}
+\end{equation}
+
+The only thing this note changes is the Lagrangian that defines
+$\boldsymbol{\omega}$ and $\mathcal{G}$.
+
+\section{Palatini data}
+
+\begin{definition}[Palatini--NSM gravitational sector]
+\begin{equation}
+S_{\mathrm{P}}
+=
+\frac{1}{4\kappa}
+\int\varepsilon_{abcd}\,e^a\wedge e^b\wedge R^{cd}(\omega),
+\qquad
+R^{ab}=d\omega^{ab}+\omega^a{}_c\wedge\omega^{cb},
+\quad
+\kappa=8\pi G.
+\label{eq:pal}
+\end{equation}
+The connection is independent. Matter couples as in the New Standard
+Model: fermions through $\omega$, gauge fields not through $\omega$.
+\end{definition}
+
+Varying $R^{ab}$ gives $D_\omega\delta\omega^{ab}$. After integration
+by parts the boundary term is
+\begin{equation}
+\theta(\delta)
+=
+\frac{1}{2\kappa}\,\varepsilon_{abcd}\,e^a\wedge e^b\wedge\delta\omega^{cd}.
+\label{eq:theta}
+\end{equation}
+There is no $d(\delta e)$ in $\theta$. The Dirac term
+\begin{equation}
+\mathcal{L}_D[\omega]
+=
+\frac{i}{8}\,e\,\omega_\mu^{ab}\,\bar\psi\{\gamma^\mu,\gamma_{ab}\}\psi
+\label{eq:diracw}
+\end{equation}
+is algebraic in $\omega$ and contributes nothing to $\theta$.
+
+The pre-symplectic $3$-form on a slice is
+\begin{equation}
+\boldsymbol{\omega}_{\mathrm{P}}(\delta_1,\delta_2)
+=
+\frac{1}{\kappa}\,\varepsilon_{abcd}\,
+\delta_1 e^a\wedge e^b\wedge\delta_2\omega^{cd}
+-
+(1\leftrightarrow 2).
+\label{eq:omegaP}
+\end{equation}
+
+\begin{proposition}[on-shell reduction]
+\label{prop:red}
+Write $\omega=\mathring{\omega}(e)+K$ with $K$ the contorsion.
+The Cartan equation is algebraic and fixes $K$ to the Dirac spin
+tensor, $K=\kappa s/2$ in the totally antisymmetric sector used by
+M9.1. Substituting back produces Einstein--Hilbert plus the
+Hehl--Datta potential
+\begin{equation}
+\mathcal{L}_{\mathrm{HD}}
+=
+-\frac{3\kappa}{16}\,J_5^\mu J_{5\mu}
+\label{eq:HD}
+\end{equation}
+and no additional kinetic term for $K$ or $J_5$. The reduced
+pre-symplectic form on $(e,\psi)$ is
+\begin{equation}
+\boldsymbol{\omega}_{\mathrm{red}}
+=
+\boldsymbol{\omega}_{\mathrm{EH}}(\delta e,\delta e)
++
+\boldsymbol{\omega}_{\mathrm{D}}(\delta\psi,\delta\psi).
+\label{eq:omred}
+\end{equation}
+$\mathcal{L}_{\mathrm{HD}}$ shifts the Hamiltonian. It does not
+enlarge the phase space.
+\end{proposition}
+
+The metric sector of \eqref{eq:omred} is exactly the $\boldsymbol{\omega}$ of
+\cite{FHHPRV2017}. Therefore:
+
+\begin{theorem}[metric second order, cited plus reduction]
+\label{thm:metric}
+If the only sourced CFT operator is the stress tensor (or a scalar
+primary) and $\widetilde{C}_T=a_\ast$, then \eqref{eq:master} with
+$\boldsymbol{\omega}_{\mathrm{red}}$ reproduces \eqref{eq:ein2} with
+$T^{(2)}$ including the Hehl--Datta stress of whatever axial
+background is already present. This is FHHPRV plus
+Proposition~\ref{prop:red}. It is not a new derivation of FHHPRV.
+\end{theorem}
+
+\section{The axial channel}
+
+Now source the CFT axial current, $\delta S_{\mathrm{CFT}}=\int\beta_\mu J_5^\mu$,
+as in Papers~II and~IV. At second order in $\beta$ the relative entropy
+is the quantum Fisher information of $J_5$:
+\begin{equation}
+\delta^{(2)}S(\rho_A\|\rho_A^{(0)})
+=
+\int_A\!dx\int_A\!dy\,
+\beta_\mu(x)\beta_\nu(y)\,
+\mathcal{F}_A^{\mu\nu}(x,y),
+\label{eq:fisher}
+\end{equation}
+where $\mathcal{F}_A$ is the modular-smeared connected two-point
+function of $J_5$ --- the same object whose finite-ball integral is
+$\IB$ \cite{McGwierVI}. In any unitary CFT in $d\ge 2$,
+\begin{equation}
+\langle J_5^\mu(x)J_5^\nu(y)\rangle
+\sim
+\frac{C_J}{|x-y|^{2d-2}}
+\label{eq:JJ}
+\end{equation}
+is nonlocal.
+
+On the gravity side, after Proposition~\ref{prop:red}, the only
+axial contribution to the right-hand side of \eqref{eq:master} is
+the variation of the Hehl--Datta Hamiltonian. That is ultralocal:
+\begin{equation}
+\delta^{(2)}H_{\mathrm{HD}}
+=
+-\frac{3\kappa}{8}\int J_5\cdot\delta J_5
+\quad\text{with}\quad
+J_5\sim\beta
+\;\text{algebraically}.
+\label{eq:HDloc}
+\end{equation}
+There is no bulk Maxwell (or other propagating) symplectic current
+for an independent axial gauge field, because Einstein--Cartan does
+not have one.
+
+\begin{theorem}[axial obstruction]
+\label{thm:obs}
+Equations \eqref{eq:fisher}--\eqref{eq:HDloc} cannot match for a
+generic smooth compactly supported $\beta$. The left-hand side of
+\eqref{eq:master} is a nonlocal quadratic form (the modular Fisher
+kernel). The EC right-hand side is a contact. Equality for all
+$\beta$ would require
+$\langle J_5(x)J_5(y)\rangle\propto\delta(x-y)$ in the ball
+algebra, which contradicts \eqref{eq:JJ}.
+\end{theorem}
+
+This is the linear $\IB$ mismatch, rewritten at second order.
+Paper~VI absorbed $\IB\neq 0$ into a finite dictionary improvement
+at $O(\beta)$. That improvement is a redefinition of the
+\emph{local} modular term. It does not install a propagating bulk
+field, and it does not make \eqref{eq:fisher} ultralocal. Promoting
+it to a second-order equivalence is a change of theory.
+
+\begin{admission}
+Second-order Einstein--Cartan from entanglement, in the sense
+``ball relative entropy through $O(\varepsilon^2)$ $\Leftrightarrow$
+nonlinear EC including generated Hehl--Datta as the dual of CFT
+axial data,'' is \textbf{not a theorem}. The symplectic reduction
+is clean. The matching fails in the axial channel for a structural
+reason already visible at linear order. I did not produce a
+Hollands--Wald charge computation that evades Theorem~\ref{thm:obs}.
+I did not derive all-orders EC. I did not repair the obstruction by
+adding a bulk axial gauge field: that theory is Einstein--Maxwell
+(or Einstein--Proca), not Einstein--Cartan.
+\end{admission}
+
+\section{What would have counted as success}
+
+A derivation in which
+\begin{enumerate}[leftmargin=1.6em]
+\item $\boldsymbol{\omega}$ is that of Palatini, not of Einstein--Maxwell;
+\item $\mathcal{G}=0$ is the second-order Einstein equation \emph{and}
+the algebraic Cartan equation;
+\item $\mathcal{L}_{\mathrm{HD}}$ is generated, not inserted;
+\item \eqref{eq:fisher} equals $\int\boldsymbol{\omega}_{\mathrm{red}}$ for
+axial $\beta$,
+\end{enumerate}
+for all balls. Item 4 fails. Items 1--3 hold only after reducing
+away from the CFT current two-point function.
+
+\section{Verdict}
+
+\begin{center}
+\begin{tabular}{@{}p{0.40\textwidth}p{0.50\textwidth}@{}}
+\toprule
+Claim & Status \\
+\midrule
+Palatini $\theta$ is \eqref{eq:theta} & derived \\
+Algebraic Dirac--$\omega$ coupling adds no $\theta$ & derived \\
+On-shell reduction to EH $+$ HD potential & derived (M9.1 $+$ Prop.~\ref{prop:red}) \\
+Second-order Einstein from entanglement & cited \cite{FHHPRV2017}; not re-proved \\
+Second-order EC including axial Fisher $\Leftrightarrow$ HD &
+\textbf{obstructed} (Thm.~\ref{thm:obs}) \\
+All-orders EC on general backgrounds & still \pO{} \\
+Final Status ``nonlinear regime'' as a positive & unchanged, \pO{} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Forced finish: the question is answered \emph{no} at the FHHPRV
+standard for the Cartan/axial sector. The metric Einstein half is
+someone else's theorem. That is the stop.
+
+\begin{thebibliography}{99}
+\bibitem{FGHMV2014}
+T.~Faulkner, M.~Guica, T.~Hartman, R.C.~Myers and M.~Van Raamsdonk,
+JHEP 03 (2014) 051, arXiv:1312.7856.
+\bibitem{FHHPRV2017}
+T.~Faulkner, F.M.~Haehl, E.~Hijano, O.~Parrikar, C.~Rabideau and M.~Van Raamsdonk,
+JHEP 08 (2017) 057, arXiv:1705.03026.
+\bibitem{HollandsWald2013}
+S.~Hollands and R.M.~Wald,
+Commun.\ Math.\ Phys.\ 321 (2013) 629, arXiv:1201.0463.
+\bibitem{LV2016}
+N.~Lashkari and M.~Van Raamsdonk,
+JHEP 04 (2016) 153, arXiv:1508.00897.
+\bibitem{Jacobson2016}
+T.~Jacobson,
+Phys.\ Rev.\ Lett.\ 116 (2016) 201101, arXiv:1505.04753.
+\bibitem{HehlDatta1971}
+F.W.~Hehl and B.K.~Datta,
+J.\ Math.\ Phys.\ 12 (1971) 1334.
+\bibitem{Hehl1976}
+F.W.~Hehl, P.~von der Heyde, G.D.~Kerlick and J.M.~Nester,
+Rev.\ Mod.\ Phys.\ 48 (1976) 393.
+\bibitem{McGwierVI}
+R.W.~McGwier,
+``Evaluation of the Universal Kinematic Integral for Condition NL,''
+\url{https://github.com/n4hy/New_Model_Emergent_Gravity}.
+\bibitem{McGwierFS}
+R.W.~McGwier,
+``Final Status of Claims,'' ibid.
+\end{thebibliography}
+\end{document}

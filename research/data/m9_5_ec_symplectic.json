@@ -1,0 +1,8 @@
+{
+  "task": "m9.5_ec_symplectic",
+  "C1_palatini_theta_is_e_e_delta_omega": true,
+  "C2_algebraic_spin_coupling_has_no_theta": true,
+  "C3_Hehl_Datta_is_a_potential": true,
+  "what_this_does_not_prove": "It does not prove that second-order ball relative entropy equals the Einstein-Cartan canonical energy. That matching fails for the axial channel because CFT <J J> is nonlocal.",
+  "verdict": "STRUCTURE_ONLY"
+}
