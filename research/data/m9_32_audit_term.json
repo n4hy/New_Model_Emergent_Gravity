@@ -1,0 +1,14 @@
+{
+  "task": "m9.32_audit_term",
+  "n": 216,
+  "rho_S_A": 0.8852433199362592,
+  "rho_S_P": 0.9455264699865161,
+  "rho_A_P": 0.9880116272096815,
+  "partial_rho_S_A_given_P": -0.9739406625793421,
+  "C_partial_raw": true,
+  "C_partial_scored": false,
+  "verdicts": {
+    "C_partial_independence": "REFUTED",
+    "collinear": "YES"
+  }
+}

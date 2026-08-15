@@ -1,0 +1,52 @@
+{
+  "task": "m9.32_two_term",
+  "n_balls": 512,
+  "n_occ": [
+    864,
+    864
+  ],
+  "matter": {
+    "rho_Kvac": 0.99858803558239,
+    "rho_CHM": 0.9998319738169511,
+    "max_abs_dA": 0.0,
+    "max_abs_dS": 0.11759686275433268
+  },
+  "geometry": {
+    "rho_Kvac": 0.9999999915751392,
+    "rho_CHM": 0.9484110811851209,
+    "rho_area": 0.9176591306707447,
+    "rho_A_vs_P": 0.9962249109114377,
+    "partial_rho_S_A_given_P": -0.9872532974503402,
+    "R_energy": 0.31704324797300165,
+    "R_area": 0.397368493839928,
+    "R_both": 0.05045962833776016,
+    "coef_eta_beta_intercept": [
+      -0.014286099366413223,
+      0.039671094486372474,
+      -6.0002737651478066e-05
+    ]
+  },
+  "stacked": {
+    "R_energy": 0.8913971243650973,
+    "R_both": 0.4532981223325485,
+    "coef_eta_beta_intercept": [
+      -0.13861621250252257,
+      0.34225706394007227,
+      -0.00208102928279269
+    ]
+  },
+  "C_vac_matter": true,
+  "C_vac_geometry": true,
+  "C_matter": true,
+  "C_colin_dependent": true,
+  "C_partial_raw": true,
+  "C_partial_scored": false,
+  "C_joint": true,
+  "verdict": "AREA_IS_ENERGY_PROXY",
+  "not_claimed": [
+    "8pi G",
+    "Einstein equation",
+    "de Sitter",
+    "MODELS.md"
+  ]
+}
