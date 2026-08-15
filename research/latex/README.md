@@ -16,3 +16,4 @@ Reconstructed files follow the PDF wording and equations. They are not a byte-fo
 | `17_deSitter_FGHMV_Obstruction.tex` | Q2 decided at the FGHMV bar. Sign opposite, isometries too few. Not a cosmological Einstein theorem |
 | `18_Jacobson_Not_P_Substitute.tex` | [P] only. 1995 ⇒ Einstein, Λ free, no HD. 2016 conformal half does not apply to the SM. Not a Q2 substitute |
 | `19_deSitter_Is_the_Vacuum.tex` | Spinless Einstein+Λ vacuum is de Sitter. Torsion off the cosmological bar. Not a holographic selection |
+| `20_Derived_Sign_Einstein_Lambda.tex` | SdS: T dS + dM = 0 derived. Local Clausius ⇒ Einstein+Λ. Not FGHMV in dS |

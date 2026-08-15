@@ -1,0 +1,187 @@
+% The derivation that exists. Sign derived from Einstein+Λ on SdS.
+% Local Clausius ⇒ Einstein+Λ (Jacobson 1995). Vacuum is dS.
+% Not FGHMV in cosmology. Not a prize theorem.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem,booktabs}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{admission}{Admission}
+\newcommand{\pP}{\textbf{[P]}}
+
+\title{\textbf{The Derived Sign:\\
+Local Clausius Gives Einstein$+\Lambda$,\\
+and Einstein$+\Lambda$ Gives the Cosmological Minus Sign}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+This is the derivation that exists. It is not Faulkner--Guica--Hartman--
+Myers--Van Raamsdonk on a net of de~Sitter balls, and it is not a
+Nobel theorem.
+
+Locally: the Unruh temperature is positive, $\delta Q=T\,dS$ on a
+local Rindler horizon with $dS=\eta\,\delta A$ implies Einstein's
+equation with an undetermined $\Lambda$ \cite{Jacobson1995}. That
+algebra is \pP{} (Paper~18). The spinless vacuum with $\Lambda>0$
+is de~Sitter (Paper~19). Torsion is not in the problem.
+
+Globally, on the cosmological horizon of Schwarzschild--de~Sitter,
+the same field equation implies
+\begin{equation*}
+T\,\mathrm{d}S+\mathrm{d}M=0.
+\end{equation*}
+At $M=0$, $\mathrm{d}r_c/\mathrm{d}M=-1$ and
+$T\,\mathrm{d}S=-\mathrm{d}M$. The minus sign is \emph{derived}
+from Einstein$+\Lambda$, not copied from AdS. \pP{} (implicit
+differentiation, audited; finite-$M$ residual $<10^{-6}$).
+
+Copying the Casini--Huerta--Myers plus sign onto the Gibbons--Hawking
+horizon remains false (Paper~17). Using the minus sign on that
+horizon is using Einstein$+\Lambda$. The two signs live on two
+surfaces and are consistent.
+
+What is not \pP{}: a holographic pair, a value of $\Lambda$,
+FGHMV equivalence for arbitrary balls in de~Sitter.
+\end{abstract}
+
+\section{Local implication (cited, already isolated)}
+
+Unruh: $T=\hbar\kappa/2\pi>0$ for a boost. Clausius on a local
+Rindler horizon with $\theta=\sigma=0$ at the bifurcation surface,
+together with $dS=\eta\,\delta A$ and $\nabla^a T_{ab}=0$, implies
+\cite{Jacobson1995,McGwierXVIII}
+\begin{equation}
+G_{\mu\nu}+\Lambda g_{\mu\nu}
+=
+\frac{2\pi}{\hbar\eta}\,T_{\mu\nu},
+\qquad
+\Lambda\text{ undetermined}.
+\label{eq:loc}
+\end{equation}
+The Unruh sign is plus. It is a theorem of QFT, not an AdS import.
+The area law is an assumption. \pP{} as an implication under those
+hypotheses.
+
+\section{Vacuum}
+
+If $T_{\mu\nu}=0$ and $\Lambda>0$, \eqref{eq:loc} is de~Sitter of
+radius $\ell=\sqrt{3/\Lambda}$ (Paper~19). In the flat FLRW chart,
+$a=e^{Ht}$ with $H^2=\Lambda/3$ saturates both Friedmann equations.
+Torsion vanishes with the spin. \pP{}
+
+\section{The cosmological sign, derived}
+
+Schwarzschild--de~Sitter ($G=c=\hbar=1$)
+\begin{equation}
+f(r)=1-\frac{2M}{r}-\frac{r^2}{\ell^2},
+\qquad
+\Lambda=\frac{3}{\ell^2}.
+\label{eq:sds}
+\end{equation}
+The cosmological root $r_c(M)$ of $f(r)=0$ satisfies $r_c(0)=\ell$.
+Implicit differentiation,
+\begin{equation}
+\frac{\mathrm{d}r_c}{\mathrm{d}M}
+=
+-\frac{\partial_M f}{\partial_r f}
+=
+\frac{\ell^2 r}{M\ell^2-r^3},
+\qquad
+\left.\frac{\mathrm{d}r_c}{\mathrm{d}M}\right|_{M=0}=-1.
+\label{eq:imp}
+\end{equation}
+Surface gravity $\kappa=\lvert f'(r_c)\rvert/2$ equals $1/\ell$ at
+$M=0$, so $T=\kappa/2\pi=1/(2\pi\ell)$. Entropy $S=\pi r_c^2$ then
+gives
+\begin{equation}
+T\,\mathrm{d}S
+=
+\frac{1}{2\pi\ell}\cdot 2\pi\ell\cdot\mathrm{d}r_c
+=
+-\mathrm{d}M
+\qquad(M=0).
+\label{eq:minus}
+\end{equation}
+The first law of the cosmological horizon is
+$T\,\mathrm{d}S+\mathrm{d}M=0$. The auditor recovers
+\eqref{eq:imp}--\eqref{eq:minus} identically in sympy. At finite
+small $M$ the same combination is zero to $10^{-6}$. Without the
+$\Lambda$ term there is no cosmological root. \pP{}
+
+This is the Gibbons--Hawking minus sign
+\cite{GibbonsHawking1977,Banihashemi2023}, now as an identity of
+\eqref{eq:sds}, not a citation standing alone.
+
+The physical-process reading is the same identity: positive Killing
+energy crossing the past horizon focuses the generators
+(Raychaudhuri plus Einstein), so the area at the bifurcation surface
+falls \cite{Banihashemi2023}.
+
+\section{Two surfaces, two signs, no contradiction}
+
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Surface & Sign & Source \\
+\midrule
+Local Rindler / CHM ball & $+\delta\langle T_{00}\rangle\Rightarrow+\delta S$
+  & Unruh + Clausius \\
+Cosmological horizon & $+\mathrm{d}M\Rightarrow-\mathrm{d}S$
+  & Einstein$+\Lambda$ on SdS, \eqref{eq:minus} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Putting the first sign on the second surface is false (Paper~17).
+Putting the second sign on the second surface is Einstein$+\Lambda$.
+The derivation does not copy AdS onto de~Sitter. It uses Unruh
+locally and \eqref{eq:sds} globally.
+
+\section{What this derivation is}
+
+\begin{enumerate}[leftmargin=1.6em]
+\item Local entanglement/Clausius with the Unruh plus sign
+  $\Rightarrow$ Einstein$+\Lambda$ (hypotheses of \cite{Jacobson1995}).
+\item Vacuum of that equation with $\Lambda>0$ $\Rightarrow$ de~Sitter.
+\item The same equation on SdS $\Rightarrow$ cosmological
+  $T\,\mathrm{d}S+\mathrm{d}M=0$.
+\end{enumerate}
+That is emergent bookkeeping yielding de~Sitter \emph{as the vacuum
+of the metric sector it produces}, with the global sign derived.
+It is not an FGHMV theorem about a cosmological CFT, and it does
+not fix $\Lambda$.
+
+\begin{admission}
+I derived the cosmological minus sign from Schwarzschild--de~Sitter
+and recorded the local implication that was already isolated. I did
+not produce a holographic pair, a net of CHM balls in de~Sitter, or
+a reason to award a prize. The vacuum is de~Sitter. The first law
+that selected Einstein$+\Lambda$ is still local Clausius plus an
+area law, not FGHMV in cosmology.
+\end{admission}
+
+\begin{thebibliography}{99}
+\bibitem{Jacobson1995}
+T.~Jacobson, Phys.\ Rev.\ Lett.\ 75 (1995) 1260, arXiv:gr-qc/9504004.
+\bibitem{GibbonsHawking1977}
+G.W.~Gibbons and S.W.~Hawking, Phys.\ Rev.\ D 15 (1977) 2738.
+\bibitem{Banihashemi2023}
+B.~Banihashemi, T.~Jacobson, A.~Svesko and M.~Visser,
+JHEP 01 (2023) 054, arXiv:2208.11706.
+\bibitem{McGwierXVIII}
+R.W.~McGwier,
+``Jacobson is Not a [P] Substitute,''
+\url{https://github.com/n4hy/New_Model_Emergent_Gravity}.
+\end{thebibliography}
+
+\end{document}

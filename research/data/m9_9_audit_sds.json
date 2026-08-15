@@ -1,0 +1,16 @@
+{
+  "task": "m9.9_audit_sds",
+  "method": "sympy implicit differentiation of f(r_c(M))=0; no solver import",
+  "dr_dM": "ell**2*r/(M*ell**2 - r**3)",
+  "dr_dM_at_0": "-1",
+  "kappa_at_0": "1/ell",
+  "T_dS_over_dM_at_0": "-1",
+  "C1": true,
+  "C2": true,
+  "verdicts": {
+    "C1": "CONFIRMED",
+    "C2": "CONFIRMED",
+    "FGHMV_in_dS": "NOT_CLAIMED",
+    "value_of_Lambda": "NOT_CLAIMED"
+  }
+}

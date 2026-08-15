@@ -1,0 +1,24 @@
+{
+  "task": "m9.9_sds_sign",
+  "what_this_is": "Einstein+\u039b (SdS) \u21d2 cosmological first law T dS + dM = 0. The minus sign is derived, not copied from AdS.",
+  "dr_c_dM_at_0": -1.0,
+  "T_dS_plus_dM_at_0": 0.0,
+  "r_c_of_M": {
+    "0.0001": 0.9998999849959986,
+    "0.0003": 0.9996998648918938,
+    "0.001": 0.9989984959868553
+  },
+  "finite_M_TdS_plus_dM": [
+    -1.0004527011275854e-06,
+    -1.0016581475369435e-06,
+    -1.0053668137999239e-06
+  ],
+  "C1_implicit_dr_dM": true,
+  "C2_TdS_plus_dM_zero": true,
+  "C3_horizon_shrinks": true,
+  "C4_no_Lambda_no_cosmo_root": true,
+  "all_gates": true,
+  "verdict": "MINUS_SIGN_DERIVED_FROM_EINSTEIN_PLUS_LAMBDA",
+  "what_is_P": "On SdS, dr_c/dM|_0 = -1 and T dS + dM = 0. Einstein+\u039b implies the GH minus sign.",
+  "what_is_not_P": "A CFT dual. FGHMV for a net of balls in dS. A derivation of the value of \u039b. A Nobel theorem."
+}
