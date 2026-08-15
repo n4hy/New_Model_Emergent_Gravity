@@ -226,6 +226,8 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
   [`findings/m9_46_sigma_note.md`](findings/m9_46_sigma_note.md).
 - Vacuum area law: `scripts/m9_47_vacuum.py`,
   [`findings/m9_47_vacuum_note.md`](findings/m9_47_vacuum_note.md).
+- Sea subtracted: `scripts/m9_48_subtract.py`,
+  [`findings/m9_48_subtract_note.md`](findings/m9_48_subtract_note.md).
 
 ## Which MODELS.md rows the model addresses
 

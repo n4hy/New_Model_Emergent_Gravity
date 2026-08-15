@@ -52,5 +52,6 @@
 | `55_Gauss_Force.tex` | First-law mass + Gauss, no Poisson: star 1/R², sea a∝R |
 | `56_Dust_Not_Lambda.tex` | σ-scan interpolates; inward a is dust; Λ withdrawn |
 | `57_Vacuum_Area.tex` | Fermi-sea vacuum: E<0, S is area-law; not Λ |
+| `58_Sea_Subtracted.tex` | First law tracks δe, not raw e; sea does not gravitate |
 
 Reconstructed files follow the PDF wording and equations. They are not a byte-for-byte dump of an unpublished compiler run.
