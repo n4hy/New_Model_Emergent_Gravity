@@ -1,0 +1,40 @@
+{
+  "task": "m9.34_two_source",
+  "n_balls": 512,
+  "n_both_inside": 11,
+  "n_occ": 864,
+  "c_eig_min": -2.730464342432957e-15,
+  "c_eig_max": 1.0000000000000047,
+  "sum_de": 0.3634165579207008,
+  "max_abs_dS": 0.23829377383596118,
+  "rho_eps": 0.999522156296087,
+  "rho_Kvac": 0.998176329992181,
+  "rho_CHM": 0.9990318801632777,
+  "rho_flat": 0.9872815426975327,
+  "R_CHM": 0.04399207221110211,
+  "R_lin": 0.06255627740884712,
+  "R_flat": 0.15898161984575618,
+  "both_inside": {
+    "n": 11,
+    "rho_CHM": 0.9942806707571158,
+    "rho_flat": 0.9933177123148887,
+    "R_CHM": 0.10679863182072813,
+    "R_flat": 0.11541196819011439,
+    "std_P_flat": 0.0342943130189918,
+    "std_P_CHM": 0.09776080172477836
+  },
+  "C_vac": true,
+  "C0_signal": true,
+  "C1_linear": true,
+  "C2_PRIMARY_all": true,
+  "C2b_PRIMARY_both_inside": true,
+  "C4_tracks": true,
+  "all_gates": true,
+  "verdict": "PAIR_CHM_BEATS_GAUSS",
+  "not_claimed": [
+    "8pi G",
+    "Einstein equation",
+    "de Sitter",
+    "MODELS.md"
+  ]
+}

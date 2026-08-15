@@ -197,6 +197,8 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
   [`findings/m9_32_two_term_note.md`](findings/m9_32_two_term_note.md).
 - State-area on the cut: `scripts/m9_33_state_area.py`,
   [`findings/m9_33_state_area_note.md`](findings/m9_33_state_area_note.md).
+- Two-source pair: `scripts/m9_34_dipole.py`,
+  [`findings/m9_34_dipole_note.md`](findings/m9_34_dipole_note.md).
 
 ## Which MODELS.md rows the model addresses
 
