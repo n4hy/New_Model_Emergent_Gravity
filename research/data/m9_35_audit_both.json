@@ -1,0 +1,15 @@
+{
+  "task": "m9.35_audit_both",
+  "n": 64,
+  "n_both": 47,
+  "rho_CHM_both": 0.9481177982284463,
+  "rho_flat_both": 0.9985698779613078,
+  "R_CHM_both": 0.31791923610005507,
+  "R_flat_both": 0.05346212517604185,
+  "std_flat": 0.06082126513692844,
+  "std_CHM": 0.687683997375954,
+  "C2b": false,
+  "verdicts": {
+    "C2b": "REFUTED"
+  }
+}

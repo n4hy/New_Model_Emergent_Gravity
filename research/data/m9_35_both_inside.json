@@ -1,0 +1,36 @@
+{
+  "task": "m9.35_both_inside",
+  "n_balls": 216,
+  "n_both_inside": 69,
+  "n_occ": 864,
+  "max_abs_dS": 0.3848947750818539,
+  "rho_eps": 0.9994920690430643,
+  "rho_Kvac": 0.983107569612183,
+  "rho_CHM": 0.9640773103443906,
+  "rho_flat": 0.9963533521870054,
+  "R_CHM": 0.26562179820023224,
+  "R_flat": 0.08532290188288429,
+  "both_inside": {
+    "n": 69,
+    "rho_CHM": 0.9545523502800001,
+    "rho_flat": 0.9986117891037221,
+    "R_CHM": 0.29804330318751926,
+    "R_flat": 0.052673472099931,
+    "std_P_flat": 0.04679203163444021,
+    "std_P_CHM": 0.45823816022859193
+  },
+  "C_vac": true,
+  "C0_signal": true,
+  "C1_linear": true,
+  "C2_all": false,
+  "C2b_PRIMARY": false,
+  "C4_tracks": true,
+  "all_gates": false,
+  "verdict": "BOTH_INSIDE_GAUSS",
+  "not_claimed": [
+    "8pi G",
+    "Einstein equation",
+    "de Sitter",
+    "MODELS.md"
+  ]
+}
