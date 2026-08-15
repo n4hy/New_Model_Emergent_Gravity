@@ -1,0 +1,248 @@
+% Complete Hadamard / Mittag-Leffler expansion of I_B in d=2.
+% The expansion is exact. A universal multi-digit coefficient is not produced.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem,booktabs}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\theoremstyle{definition}
+\newtheorem*{admission}{Admission}
+
+\newcommand{\pO}{\textbf{[O]}}
+\newcommand{\pA}{\textbf{[ADMISSION]}}
+\newcommand{\IB}{I_B}
+\newcommand{\sech}{\operatorname{sech}}
+
+\title{\textbf{Completion of the Hadamard Expansion of $\IB$\\
+in Two Dimensions}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+The multi-digit coefficient of the kinematic residue $\IB$ was left
+open pending an analytic Hadamard expansion of the current two-point
+function under modular flow. That expansion is completed here in
+$d=2$.
+
+The identity
+\begin{equation*}
+\frac{1}{\sinh^{2}w}
+=
+\sum_{n\in\mathbb{Z}}\frac{1}{(w-in\pi)^{2}}
+\end{equation*}
+is exact off the poles $w\in i\pi\mathbb{Z}$. The $n=0$ term is the
+coincidence singularity. The Hadamard-finite remainder is the $n\neq 0$
+sum, equivalently $1/\sinh^{2}w-1/w^{2}$. Folding against the modular
+kernel reduces to a polygamma kernel $H(\tau)$ derived below.
+The formula for the building block $I_{\mathrm{sing}}(\zeta)$ matches
+an independent $\sech^{2}$ quadrature to $2\times 10^{-13}$.
+
+$H(\tau)$ is \emph{not} proportional to $1/\tau^{2}$, to
+$1/\sinh^{2}\tau$, to $I_{\mathrm{sing}}(\tau)$, or to
+$1/\sinh^{2}\tau-1/\tau^{2}$. Relative residues formed with four
+Gaussian sources therefore move with the source. There is no single
+universal multi-digit coefficient of $\IB$ independent of $\beta$.
+
+The Final Status label of $\IB$ stays \pO{} if ``coefficient'' means
+one number. The expansion itself is closed.
+\end{abstract}
+
+\section*{Rule}
+This note distinguishes an exact identity, a machine-checked special
+function formula, a numerical spread, and an admission. It does not
+upgrade a Final Status \pO{} to a derived number that the algebra
+does not contain.
+
+\section{Setup}
+
+On the interval $(-R,R)$ with $R=1$, modular flow is
+$x(s)=\tanh(\mathrm{artanh}\,x+\pi s)$. After $x=\tanh u$ the
+weight-one Jacobians cancel \cite{McGwierVI,McGwier12} and
+\begin{equation}
+Q(s)
+=
+\int d\tau\,C(\tau)\,\frac{1}{\sinh^{2}(\tau+\pi s)},
+\qquad
+C(\tau)=\int du\,b(u)b(u-\tau),
+\quad
+b(u)=\beta(\tanh u).
+\label{eq:Q}
+\end{equation}
+The kernel is $K(s)=\pi/(2\cosh^{2}(\pi s))$, $\int K=1$, and
+\begin{equation}
+\int K(s)\,f(\tau+\pi s)\,ds
+=
+\int\frac{d\alpha}{2\cosh^{2}\alpha}\,f(\tau+\alpha).
+\label{eq:pull}
+\end{equation}
+
+\section{The complete expansion}
+
+\begin{theorem}[Mittag--Leffler]
+For $w\notin i\pi\mathbb{Z}$,
+\begin{equation}
+\frac{1}{\sinh^{2}w}
+=
+\sum_{n=-\infty}^{\infty}\frac{1}{(w-in\pi)^{2}}.
+\label{eq:ML}
+\end{equation}
+\end{theorem}
+
+This is the Hadamard series: every pole is written, none is omitted.
+The coincidence is $n=0$. The finite remainder
+\begin{equation}
+h(w)
+:=
+\frac{1}{\sinh^{2}w}-\frac{1}{w^{2}}
+=
+\sum_{n\neq 0}\frac{1}{(w-in\pi)^{2}}
+\label{eq:h}
+\end{equation}
+is entire in a neighbourhood of the real axis and equals $-1/3$ at
+$w=0$.
+
+The Hadamard-finite smeared correlator is therefore
+\begin{equation}
+Q_{H}(s)
+=
+\int d\tau\,C(\tau)\,h(\tau+\pi s)
+=
+\sum_{n\neq 0}\int d\tau\,\frac{C(\tau)}{(\tau+\pi s-in\pi)^{2}}.
+\label{eq:QH}
+\end{equation}
+
+\section{The modular integral of the finite part}
+
+Define
+\begin{equation}
+I_{\mathrm{sing}}(\zeta)
+:=
+\frac12\int_{-\infty}^{\infty}d\alpha\,
+\frac{\sech^{2}\alpha}{(\alpha+\zeta)^{2}}.
+\label{eq:Ising}
+\end{equation}
+Residues of $\sech^{2}$ at $i\pi(n+\tfrac12)$ give, for
+$\operatorname{Im}\zeta>0$,
+\begin{equation}
+I_{\mathrm{sing}}(\zeta)
+=
+\pi^{-2}\,\psi^{(2)}\!\left(\tfrac12-\frac{i\zeta}{\pi}\right),
+\label{eq:pg}
+\end{equation}
+and $I_{\mathrm{sing}}(-\zeta)=I_{\mathrm{sing}}(\zeta)$. On the real
+axis
+$I_{\mathrm{sing}}(\tau)=\pi^{-2}\operatorname{Re}\psi^{(2)}(\tfrac12-i\tau/\pi)$.
+
+Machine check (\texttt{m9\_4\_ib\_hadamard\_complete.py}):
+\eqref{eq:pg} versus $\sech^{2}$ quadrature at three complex points,
+maximum relative error $1.99\times 10^{-13}$.
+
+The finite modular integral is the kernel
+\begin{align}
+H(\tau)
+&:=
+\int K(s)\,h(\tau+\pi s)\,ds
+=
+\sum_{n\neq 0}I_{\mathrm{sing}}(\tau-in\pi)
+\nonumber\\
+&=
+\pi^{-2}
+\sum_{m=1}^{\infty}
+\Bigl[
+\psi^{(2)}\!\bigl(m+\tfrac12+\tfrac{i\tau}{\pi}\bigr)
++
+\psi^{(2)}\!\bigl(m+\tfrac12-\tfrac{i\tau}{\pi}\bigr)
+\Bigr].
+\label{eq:H}
+\end{align}
+Then
+\begin{equation}
+\int K(s)\,Q_{H}(s)\,ds
+=
+\int d\tau\,C(\tau)\,H(\tau).
+\label{eq:IQ}
+\end{equation}
+
+\section{There is no universal ratio}
+
+A single coefficient would mean $H=\lambda K_{\mathrm{loc}}$ for some
+local kernel $K_{\mathrm{loc}}$ independent of $C$. On
+$\tau\in\{0.3,0.5,0.8,1.0,1.5,2.0,3.0\}$ the ratio $H/K_{\mathrm{loc}}$
+has spread
+
+\begin{center}
+\begin{tabular}{@{}lc@{}}
+\toprule
+$K_{\mathrm{loc}}$ & spread of $H/K_{\mathrm{loc}}$ \\
+\midrule
+$I_{\mathrm{sing}}(\tau)$ & $0.553$ \\
+$1/\tau^{2}$ & $0.968$ \\
+$h(\tau)$ & $0.210$ \\
+$1/\sinh^{2}\tau$ & not constant \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Relative residues $r=\int CH/\int C K_{\mathrm{loc}}$ for Gaussians
+of width $\sigma\in\{0.4,0.7,1.0,1.4\}$:
+
+\begin{center}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+denominator & mean $r$ & spread in $\sigma$ \\
+\midrule
+$I_{\mathrm{sing}}$ & $0.0585$ & $7.08\times 10^{-2}$ \\
+$h$ & $0.898$ & $4.49\times 10^{-2}$ \\
+$1/\tau^{2}$ & $-0.0203$ & $1.64\times 10^{-2}$ \\
+$1/\sinh^{2}$ & $-0.0208$ & $1.71\times 10^{-2}$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+None of these spreads is a rounding error.
+
+\begin{admission}
+The Hadamard series is complete. What it does \emph{not} produce is
+one multi-digit number independent of $\beta$. Asking for that number
+was slightly the wrong question: the finite object is the kernel
+$H(\tau)$, and $H$ is not a multiple of a local quadratic form.
+The Final Status line ``multi-digit coefficient of $\IB$'' remains
+\pO{} as a \emph{number}. As an expansion, the $d=2$ problem is
+closed.
+\end{admission}
+
+\section{What remains}
+
+\begin{itemize}[leftmargin=1.4em]
+\item $d=4$ balls, where the current two-point function is not
+$1/(x-y)^{2}$ on a line and CHM is a conformal image of Rindler, not
+a M\"obius map on $\mathbb{R}$.
+\item A renormalization convention that would force a unique
+$\lambda$ by extra physical input. None is supplied by $K(s)$ alone.
+\item Digits of $H(\tau)$ at a conventional $\tau$ are available from
+\eqref{eq:H} to any precision; they are values of a function, not a
+coefficient of $\IB$.
+\end{itemize}
+
+\section*{Script}
+\texttt{m9\_4\_ib\_hadamard\_complete.py}, data
+\texttt{m9\_4\_ib\_hadamard\_complete.json}.
+
+\begin{thebibliography}{99}
+\bibitem{McGwierVI} R.W.~McGwier, ``Evaluation of the Universal Kinematic Integral for Condition NL,''
+\url{https://github.com/n4hy/New_Model_Emergent_Gravity}.
+\bibitem{McGwierVIII} R.W.~McGwier, ``Status of the High-Precision Coefficient of $\IB$ (v4),'' ibid.
+\bibitem{McGwier12} R.W.~McGwier, ``Analytic Attempt at the Coefficient of $\IB$,'' ibid.
+\bibitem{CHM} H.~Casini, M.~Huerta and R.C.~Myers, JHEP 05 (2011) 036.
+\bibitem{CTT} H.~Casini, E.~Teste and G.~Torroba, J.\ Phys.\ A 50 (2017) 364001.
+\end{thebibliography}
+\end{document}
