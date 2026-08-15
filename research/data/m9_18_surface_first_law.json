@@ -1,0 +1,43 @@
+{
+  "task": "m9.18_surface_first_law",
+  "observable": "surface/horizon dS vs Tr(K dC); CHM vs flat",
+  "one_d_surface": {
+    "n": 12,
+    "rho_chm": -0.5909505760255502,
+    "R_shape_chm": 0.8067077641222197,
+    "rho_flat": 0.2921694007739691,
+    "R_shape_flat": 0.9563665830900722,
+    "mean_abs_dS": 0.0012530570997890123,
+    "fit_ab": [
+      -0.13353337449131938,
+      0.012547404724599717
+    ],
+    "C0": false
+  },
+  "three_d": {
+    "n": 150,
+    "rho_chm": -0.39338151036526076,
+    "R_shape_chm": 0.9193753245017761,
+    "rho_flat": -0.08990196863841396,
+    "R_shape_flat": 0.9959506192753422,
+    "mean_abs_dS": 0.0008767541270553162,
+    "fit_ab": [
+      -0.1960529137703858,
+      -0.9714415354506881
+    ],
+    "N": 10,
+    "R": 3
+  },
+  "C0_instrument": false,
+  "C1_rho": false,
+  "C2_Rshape": false,
+  "C3_PRIMARY_chm_beats_flat": true,
+  "all_gates": false,
+  "verdict": "SURFACE_FIRST_LAW_INSTRUMENT_REJECTED",
+  "not_claimed": [
+    "eta = 1/4G",
+    "Einstein theorem",
+    "foam",
+    "de Sitter"
+  ]
+}

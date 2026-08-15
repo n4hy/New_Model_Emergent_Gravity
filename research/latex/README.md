@@ -23,3 +23,4 @@ Reconstructed files follow the PDF wording and equations. They are not a byte-fo
 | `24_A1_4d_Diamond_Area.tex` | A1 area coefficient UV-stable on the 3+1D waist. Sea energy is not mean-zero curvature |
 | `25_CHM_Shape_Diamond.tex` | Modular hop on the 3+1D waist is the CHM envelope. Not 1/4G |
 | `26_First_Law_Local_Not_CHM.tex` | First law tracks a local kernel; CHM envelope not selected |
+| `27_Horizon_Selects_CHM.tex` | Horizon C3: CHM beats flat on the cut, not in the bulk. Tracking weak |

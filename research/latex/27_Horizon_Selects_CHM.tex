@@ -1,0 +1,77 @@
+% Horizon first law: CHM beats flat on the cut, not in the bulk.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newcommand{\pP}{\textbf{[P]}}
+\newtheorem*{admission}{Admission}
+
+\title{\textbf{Clausius on the Cut:\\
+the CHM Envelope Beats a Flat Kernel on the Horizon,\\
+Not in the Bulk}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Paper~26 scored every hop. A shapeless local kernel won.
+Jacobson puts the first law on the \emph{horizon}. This note
+splits the ball.
+
+Bulk ($r_{\mathrm{mid}}\le R/2$, $N=12$, $R=4$, $84$ hops):
+flat still wins. The envelope is not selected inside.
+
+Surface ($r_{\mathrm{mid}}\ge 0.75R$) on a \emph{new} grid
+$N=10$, $R=3$, $150$ hops, same C3: $R_{\mathrm{CHM}}=0.919
+< R_{\mathrm{flat}}=0.996$. Auditor $N=12$, $R=3$:
+$0.818<0.969$. C3 PASS, CONFIRMED.
+
+Tracking floors fail ($\lvert\rho\rvert=0.39$ and $0.58$,
+below $0.60$). This is not a strong first-law theorem. It is
+the first time the geometric weight wins the effective null,
+and it wins where the horizon is.
+
+Not $\eta=1/4G$. Not Einstein. Not de~Sitter.
+\end{abstract}
+
+\section{Why the split}
+
+A single-hop $\delta S$ is largest at the cut (Paper~26
+adversary). Mixing bulk and surface lets a flat kernel ride
+the area-law surface. Scoring the cut alone is the Clausius
+probe. The bulk run was locked first and lost. The surface
+run uses a different $N$ so the $N=12,R=4$ surface numbers
+are not promoted.
+
+\section{Numbers}
+
+\begin{center}
+\begin{tabular}{lcccc}
+\hline
+ & $n$ & $R_{\mathrm{CHM}}$ & $R_{\mathrm{flat}}$ & C3 \\
+\hline
+bulk $N=12,R=4$ & $84$ & $0.904$ & $0.868$ & flat \\
+surface $N=10,R=3$ & $150$ & $0.919$ & $0.996$ & CHM \\
+surface audit $N=12,R=3$ & $150$ & $0.818$ & $0.969$ & CHM \\
+\hline
+\end{tabular}
+\end{center}
+
+The geometric weight is doing work on the cut. The correlation
+is still weak. Road A now has: local $K$ (A2), area law (A1),
+CHM-\emph{type} shape of $K$ (Paper~25), and a horizon
+Clausius that prefers that shape to a flat kernel (C3 only).
+
+\begin{admission}
+I did not move C3 onto the surface of the same sample that
+suggested it. I did not lower the tracking floors after they
+failed. I did not write that Einstein has been derived.
+\end{admission}
+
+\end{document}

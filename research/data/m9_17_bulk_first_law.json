@@ -1,0 +1,60 @@
+{
+  "task": "m9.17_bulk_first_law",
+  "observable": "bulk-only dS vs Tr(K dC); CHM vs flat, both fit on bulk",
+  "one_d_bulk": {
+    "n": 13,
+    "rho_chm": -0.9511354466512161,
+    "R_shape_chm": 0.30877396607161006,
+    "rho_flat": -0.9495436872770997,
+    "R_shape_flat": 0.31363479710040065,
+    "mean_abs_dS": 0.00045969745008944685,
+    "fit_ab": [
+      -0.043468900194648934,
+      -9.877036262063696
+    ],
+    "C0": false
+  },
+  "three_d": {
+    "n_all_nn": 624,
+    "bulk": {
+      "n": 84,
+      "rho_chm": -0.4282216220838445,
+      "R_shape_chm": 0.903673747754067,
+      "rho_flat": -0.4962983612174948,
+      "R_shape_flat": 0.8681520239294664,
+      "mean_abs_dS": 0.00013174195081468892,
+      "fit_ab": [
+        -0.2588002655946123,
+        -0.11455467023326034
+      ],
+      "rmid_min": 0.5,
+      "rmid_max": 1.8027756377319946
+    },
+    "surface": {
+      "n": 294,
+      "rho_chm": -0.5889399299277229,
+      "R_shape_chm": 0.8081768116796776,
+      "rho_flat": -0.1120242795284627,
+      "R_shape_flat": 0.9937054698431166,
+      "mean_abs_dS": 0.000735239447235377,
+      "fit_ab": [
+        -0.19786251314704165,
+        -0.6251554340077011
+      ],
+      "rmid_min": 3.0413812651491097,
+      "rmid_max": 3.640054944640259
+    }
+  },
+  "C0_instrument": false,
+  "C1_rho": false,
+  "C2_Rshape": false,
+  "C3_PRIMARY_chm_beats_flat": false,
+  "all_gates": false,
+  "verdict": "BULK_FIRST_LAW_INSTRUMENT_REJECTED",
+  "not_claimed": [
+    "eta = 1/4G",
+    "Einstein theorem",
+    "mean-zero foam",
+    "de Sitter"
+  ]
+}

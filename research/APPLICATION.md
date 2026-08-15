@@ -165,6 +165,8 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
   [`findings/m9_15_chm_shape_note.md`](findings/m9_15_chm_shape_note.md).
 - First law, local not CHM-selected: `scripts/m9_16_first_law.py`,
   [`findings/m9_16_first_law_note.md`](findings/m9_16_first_law_note.md).
+- Horizon vs bulk first law: `scripts/m9_18_surface_first_law.py`,
+  [`findings/m9_17_18_horizon_first_law_note.md`](findings/m9_17_18_horizon_first_law_note.md).
 
 ## Which MODELS.md rows the model addresses
 

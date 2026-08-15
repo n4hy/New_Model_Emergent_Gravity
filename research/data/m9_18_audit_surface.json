@@ -1,0 +1,25 @@
+{
+  "task": "m9.18_audit_surface",
+  "method": "surface; 1d N=160 L=20 ends; 3d N=12 R=3 r_mid>=2.25",
+  "one_d": {
+    "n": 10,
+    "rho_chm": 0.6462496313520456,
+    "R_shape_chm": 0.7631260800007723,
+    "rho_flat": 0.9091289029601096,
+    "R_shape_flat": 0.4165148710460983,
+    "C0": false
+  },
+  "three_d": {
+    "n": 150,
+    "rho_chm": -0.5753476639853788,
+    "R_shape_chm": 0.8179089592042427,
+    "rho_flat": -0.24559602991127233,
+    "R_shape_flat": 0.9693722660009524,
+    "C1": false,
+    "C2": false,
+    "C3": true
+  },
+  "verdicts": {
+    "C3_surface": "REFUTED"
+  }
+}
