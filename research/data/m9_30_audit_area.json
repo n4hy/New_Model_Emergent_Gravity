@@ -1,0 +1,17 @@
+{
+  "task": "m9.30_audit_area",
+  "n": 216,
+  "rho_Kvac": 0.9999999543681,
+  "rho_area": 0.8852014957287389,
+  "R_area": 0.4652078158840453,
+  "eta_median": -0.001797125958833351,
+  "eta_rel_iqr": 4.957433332618571,
+  "C_vac": true,
+  "C_area": true,
+  "C_eta": false,
+  "verdicts": {
+    "C_vac": "CONFIRMED",
+    "C_area": "CONFIRMED",
+    "C_eta": "REFUTED"
+  }
+}

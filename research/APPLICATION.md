@@ -189,6 +189,8 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
   [`findings/m9_28_fixedh_state_note.md`](findings/m9_28_fixedh_state_note.md).
 - Shape not sphere (guess, then probe measurement): `scripts/m9_29_shape.py`,
   [`findings/m9_29_shape_note.md`](findings/m9_29_shape_note.md).
+- Area not Clausius: `scripts/m9_30_area.py`,
+  [`findings/m9_30_area_note.md`](findings/m9_30_area_note.md).
 
 ## Which MODELS.md rows the model addresses
 

@@ -1,0 +1,37 @@
+{
+  "task": "m9.30_area",
+  "n_balls": 512,
+  "n_occ": [
+    864,
+    864,
+    864
+  ],
+  "max_abs_dS": 0.007987088797309028,
+  "max_abs_dA": 0.9127034292234839,
+  "rho_eps": 0.9999943880623156,
+  "rho_Kvac": 0.9999999915751392,
+  "rho_area": 0.9179859653931713,
+  "rho_CHM": 0.9484110811851209,
+  "rho_flat": 0.9408969314212482,
+  "R_area": 0.39661286835044424,
+  "R_CHM": 0.31704324797300165,
+  "R_flat": 0.3386930239052449,
+  "eta_median": -0.0016989691900868749,
+  "eta_rel_iqr": 3.1729790148378143,
+  "n_eta": 512,
+  "matter_only_dA": 0.0,
+  "C_vac": true,
+  "C0_signal": true,
+  "C1_linear": true,
+  "C_area": true,
+  "C_eta_PRIMARY": false,
+  "C_pred_area_beats_CHM": false,
+  "all_gates": false,
+  "verdict": "AREA_CORRELATES_NOT_CLAUSIUS",
+  "not_claimed": [
+    "8pi G",
+    "Einstein equation",
+    "de Sitter",
+    "MODELS.md"
+  ]
+}
