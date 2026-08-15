@@ -183,6 +183,8 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
   [`findings/m9_25_linear_functional_note.md`](findings/m9_25_linear_functional_note.md).
 - Point source, flat wins: `scripts/m9_26_point_source.py`,
   [`findings/m9_26_point_source_note.md`](findings/m9_26_point_source_note.md).
+- 1d CHM instrument calibration: `scripts/m9_27_1d_point_chm.py`,
+  [`findings/m9_27_1d_point_chm_note.md`](findings/m9_27_1d_point_chm_note.md).
 
 ## Which MODELS.md rows the model addresses
 

@@ -1,0 +1,31 @@
+{
+  "task": "m9.27_1d_point_chm",
+  "n_intervals": 185,
+  "half_fill": false,
+  "n_occ": [
+    100,
+    100,
+    100
+  ],
+  "de_rms_width": 0.9225318084066229,
+  "max_abs_dS": 0.0003298015380788222,
+  "rho_eps": 0.9999999957305089,
+  "rho_CHM": -0.053700189645562536,
+  "rho_flat": -0.2757585154852923,
+  "R_CHM": 0.9985571038413532,
+  "R_flat": 0.9612269456987501,
+  "C0_signal": true,
+  "C1_linear": true,
+  "C2_PRIMARY_chm_beats_flat": false,
+  "C4_tracks": false,
+  "all_gates": false,
+  "rho_Kvac": -0.02505418510598712,
+  "rho_Kmid": 0.9999985884861756,
+  "rel_err_Kmid": 0.0014407766907655248,
+  "verdict": "1D_INSTRUMENT_OR_FLAT",
+  "not_claimed": [
+    "3d Einstein",
+    "8pi G",
+    "de Sitter"
+  ]
+}

@@ -1,0 +1,63 @@
+% 1d CHM calibration: the Paper 35 instrument fails the theorem case.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem*{admission}{Admission}
+
+\title{\textbf{The Point-Source First Law Fails in 1d,\\
+Where CHM Is a Theorem}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Paper~35 found that a 3d point source makes $\delta S$ track
+enclosed energy, not the CHM weight $R^2-r^2$. That is a 3d
+statement only if the same operators recover CHM on a 1d
+massless interval, where Casini--Huerta--Myers is a theorem
+for $K$.
+
+They do not. $N=200$, $L=16$, $185$ intervals, $\varepsilon$
+on one site. $\delta S$ is linear in $\varepsilon$ (Pearson $1$).
+$\rho(\delta S,P_{\mathrm{CHM}})=-0.054$.
+$\rho(\delta S,P_{\mathrm{flat}})=-0.276$.
+Residuals: CHM $0.999$, flat $0.961$. C2 FAIL. C4 FAIL.
+
+The exact modular identity holds:
+$\rho(\delta S,\mathrm{Tr}(K_{\mathrm{mid}}\Delta C))=1$
+(relative error $0.14\%$). The vacuum first law does not:
+$\rho(\delta S,\mathrm{Tr}(K_{\mathrm{vac}}\Delta C))=-0.025$.
+
+Auditor, $N=160$, $L=12$: C2 REFUTED; $K_{\mathrm{vac}}$
+REFUTED; $K_{\mathrm{mid}}$ CONFIRMED.
+
+Paper~35 is not a 3d no-go. The instrument tests a vacuum
+first-law proxy that already fails the theorem case.
+Not $8\pi G$. Not de~Sitter.
+\end{abstract}
+
+\section{What this is}
+
+CHM still describes the \emph{shape} of $K$ (Paper~25).
+This note asks whether $\delta S$ of a sliding interval,
+after a point Hamiltonian source, equals a local functional
+of $\delta e$. That is the Paper~35 comparison, moved to 1d.
+
+It fails because $\delta S=\mathrm{Tr}(K_{\mathrm{mid}}\Delta C)$,
+not $\mathrm{Tr}(K_{\mathrm{vac}}\Delta C)$. A point potential
+is not a soft state variation at fixed modular Hamiltonian.
+
+\begin{admission}
+I ran the calibration that can kill the 3d reading of
+Paper~35. It killed it. I did not write that CHM is false,
+and I did not write Einstein.
+\end{admission}
+
+\end{document}

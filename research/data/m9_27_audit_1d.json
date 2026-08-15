@@ -1,0 +1,18 @@
+{
+  "task": "m9.27_audit_1d",
+  "n": 149,
+  "rho_CHM": -0.05989571033095231,
+  "rho_flat": -0.27786015152079047,
+  "R_CHM": 0.9982046402837199,
+  "R_flat": 0.9606215364007009,
+  "C2": false,
+  "C4": false,
+  "rho_Kvac": -0.015854925455009345,
+  "rho_Kmid": 0.9999959794436476,
+  "rel_err_Kmid": 0.002730229011547583,
+  "verdicts": {
+    "C2": "REFUTED",
+    "Kvac_tracks_dS": "REFUTED",
+    "Kmid_tracks_dS": "CONFIRMED"
+  }
+}
