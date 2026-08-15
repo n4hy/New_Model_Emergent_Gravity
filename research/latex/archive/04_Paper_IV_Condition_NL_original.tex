@@ -1,0 +1,370 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1.1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+
+\newcommand{\pP}{\textbf{[P]}}
+\newcommand{\pC}{\textbf{[C]}}
+\newcommand{\pO}{\textbf{[O]}}
+\newcommand{\Tr}{\operatorname{Tr}}
+
+\title{\textbf{Condition NL for Finite Balls:\\
+A Spectral Reduction, the Unconditional Metric Sector,\\
+and a Universal Kinematic Residue}}
+\author{Robert W.\ McGwier\\
+\small CTO and Staff Scientist, Cohere Technology Group, Herndon, VA}
+\date{August 7, 2026 --- Version 2}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+The companion note \cite{McGwier2026b} reduced the finite-ball torsionful
+first law to a single condition (Condition NL): vanishing of the cross
+expectation of the nonlocal modular remainder against state perturbations
+dual to linearized Einstein--Cartan solutions. We attack that condition.
+First, we derive from the exact operator identity
+$\delta K=-\delta\log\rho$ a closed-form modular smearing representation,
+$\delta K=-\int ds\,\tfrac{\pi}{2\cosh^2(\pi s)}\,
+\sigma_s(\rho^{-1/2}\delta\rho\,\rho^{-1/2})$, with spectral multiplier
+$\kappa/(2\sinh(\kappa/2))$, and machine-verify it to $10^{-14}$ by four
+independent computations. Second, using this spectral form we prove the
+principal new result: by the conformal selection rule
+$\langle J_5\,T\rangle=0$, the graviton channel of Condition NL vanishes
+identically, so \emph{the metric sector of the torsionful first law holds
+unconditionally for finite balls}---strengthening Theorem 5.2 of
+\cite{McGwier2026b} from conditional to unconditional in that sector.
+Third, we show the sole surviving channel (axial--axial) is proportional
+to the current central charge $C_J$ times a purely kinematic integral,
+universal across all CFTs with a conserved axial current; its value is the
+single number on which the remaining condition depends. If it vanishes,
+Condition NL holds outright; if not, we prove it is absorbable as a finite
+renormalization of the local term---an improvement of the holographic
+dictionary---so the torsionful first law survives in improved form either
+way. The kinematic integral itself is stated explicitly and left as the
+one open computation. Labels: \pP{} proved/derived, \pC{} conjectured with
+support, \pO{} open.
+\end{abstract}
+
+\section{The Problem}
+
+Setting and notation follow \cite{McGwier2026a,McGwier2026b}: holographic
+CFT$_4$, massless minimally coupled Dirac matter, theory deformed by a
+smooth compactly supported spin-current source, which by the Reduction
+Lemma of \cite{McGwier2026b} is a background axial field,
+$\delta S_{\mathrm{def}}=\int\beta_\mu J_5^\mu$. Working at joint order
+$O(\beta\lambda)$ ($\beta$ the source, $\lambda$ the state perturbation),
+the deformed ball modular Hamiltonian splits as
+$K_B^{(\beta)}=K_B+\delta K_B^{\mathrm{loc}}+\delta K_B^{\mathrm{nl}}$,
+and:
+
+\begin{definition}[Condition NL, restated from \cite{McGwier2026b}]
+For all balls $B$ and all state perturbations $|\delta\Psi\rangle$ dual to
+linearized Einstein--Cartan solutions,
+$\langle0|\delta K_B^{\mathrm{nl}}|\delta\Psi\rangle+\mathrm{c.c.}=0$
+at order $O(\beta\lambda)$.
+\end{definition}
+
+Under Condition NL the finite-ball torsionful first law is equivalent to
+linearized EC gravity with torsion boundary data; on null planes the
+condition was proved to hold via the Markov property
+\cite{CasiniTesteTorroba2017}. The finite-ball case is the subject of this
+paper.
+
+\section{The Kernel, Derived and Machine-Verified}
+
+\begin{proposition}[Exact perturbation of the modular Hamiltonian]
+\label{prop:kernel}
+Let $\rho=\rho_0+\delta\rho$ with $\rho_0>0$, and $K=-\log\rho$. Then at
+first order, in the eigenbasis $\rho_0|i\rangle=\lambda_i|i\rangle$,
+\begin{equation}
+\langle i|\delta K|j\rangle
+=-\,\delta\rho_{ij}\,
+\frac{\log\lambda_i-\log\lambda_j}{\lambda_i-\lambda_j}
+=-\int_0^\infty\! db\;
+\big[(\rho_0+b)^{-1}\delta\rho\,(\rho_0+b)^{-1}\big]_{ij}\,,
+\label{eq:DK}
+\end{equation}
+and equivalently, with modular flow
+$\sigma_s(X)=\rho_0^{\,is}X\rho_0^{-is}$ and
+$X=\rho_0^{-1/2}\,\delta\rho\,\rho_0^{-1/2}$,
+\begin{equation}
+\boxed{\;\delta K
+=-\int_{-\infty}^{\infty}\! ds\;
+\frac{\pi}{2\cosh^2(\pi s)}\;\sigma_s\!\big(X\big)\;}
+\qquad\text{with}\qquad
+\int_{-\infty}^{\infty}\!ds\,
+\frac{\pi\,e^{i\kappa s}}{2\cosh^2(\pi s)}
+=\frac{\kappa}{2\sinh(\kappa/2)}\,,
+\label{eq:kernel}
+\end{equation}
+where $\kappa_{ij}=\log(\lambda_i/\lambda_j)$ is the modular frequency.
+\end{proposition}
+
+\begin{proof}
+The first equality in \eqref{eq:DK} is the Daleckii--Krein derivative of
+$-\log$; the second follows from
+$\int_0^\infty db\,[(\lambda_i+b)(\lambda_j+b)]^{-1}
+=(\log\lambda_i-\log\lambda_j)/(\lambda_i-\lambda_j)$. For
+\eqref{eq:kernel}: $\sigma_s(X)_{ij}=X_{ij}e^{is\kappa_{ij}}$ and
+$X_{ij}=\delta\rho_{ij}\lambda_i^{-1/2}\lambda_j^{-1/2}$, so matching to
+\eqref{eq:DK} requires a kernel with Fourier transform
+$\kappa\lambda_i^{1/2}\lambda_j^{1/2}/(\lambda_i-\lambda_j)
+=\kappa/(2\sinh(\kappa/2))$; the stated $\cosh^{-2}$ profile has exactly
+this transform. \pP{}
+\end{proof}
+
+\begin{remark}[Machine verification]
+\label{rem:verification}
+All identities in Proposition~\ref{prop:kernel} were verified numerically
+on random $5\times5$ density matrices by four independent computations of
+$\delta K$: symmetric finite difference of $-\log\rho$; the
+Daleckii--Krein formula; the $b$-integral; and the modular smearing
+\eqref{eq:kernel}. Maximal deviations: $1.7\times10^{-8}$ against finite
+differences (consistent with $O(\epsilon^2)$ step error at
+$\epsilon=10^{-6}$) and $1.3\times10^{-14}$ among the three algebraic
+routes; the Fourier identity in \eqref{eq:kernel} holds to $10^{-16}$ at
+sampled frequencies. The verification suite, run during preparation,
+caught and corrected a factor-$2\pi$ normalization error in an
+intermediate analytic step---which is its purpose. \pP{}
+\end{remark}
+
+\begin{remark}
+Equation \eqref{eq:kernel} is consistent with the $\cosh^{-2}$ kernels of
+perturbative modular theory in the literature
+\cite{SarosiUgajin2018,Lashkari2016,FLPW2016}; it is derived here from
+first principles so that no downstream result depends on a cited
+normalization. For the field-theoretic applications below,
+$\rho_0^{\pm1/2}$ insertions are Euclidean half-modular rotations; the
+manipulations are performed at the level of matrix elements between states
+of finite modular energy, where the smearing converges absolutely
+(exponential decay of $F$ and of matrix elements in $\kappa$); domain
+subtleties for unbounded $X$ are handled as standard in this literature.
+\pP{} with the stated qualification.
+\end{remark}
+
+\section{Spectral Decomposition of the Local/Nonlocal Split}
+
+\begin{definition}[Zero-mode local term]
+\label{def:zeromode}
+Let $P_0$ denote projection onto modular frequency $\kappa=0$. Define
+$\delta K_B^{\mathrm{loc}}\equiv-\,P_0X$ (the $\kappa=0$ component, on
+which the multiplier equals $1$) and
+$\delta K_B^{\mathrm{nl}}\equiv\delta K_B-\delta K_B^{\mathrm{loc}}$, the
+$\kappa\neq0$ part, weighted by $\kappa/(2\sinh(\kappa/2))$.
+\end{definition}
+
+\begin{lemma}[Consistency with the null-plane and wedge limits]
+On null-plane algebras the vacuum is Markov
+\cite{CasiniTesteTorroba2017}; modular Hamiltonians of cuts are exactly
+local, all nonzero-frequency cross components vanish, and
+Definition~\ref{def:zeromode} reproduces the boost-weighted local term of
+\cite{FLPW2016} used in \cite{McGwier2026b}. The definitions agree where
+both exist. \pP{}
+\end{lemma}
+
+Condition NL is thereby a spectral statement: \emph{it holds iff the
+deformation's cross matrix elements with EC-dual perturbations are
+supported at modular frequency zero.}
+
+\section{Main Theorem: The Metric Sector is Unconditional}
+
+At order $O(\beta\lambda)$ the cross expectation is bilinear: one
+insertion of $J_5$ (from $\delta K_B^{(\beta)}$, smeared by
+\eqref{eq:kernel} with the source $\beta$) against one insertion of the
+operator creating $|\delta\Psi\rangle$. States dual to linearized EC
+solutions are created by boundary stress-tensor modes (gravitons),
+axial-current modes (the bulk axial field), and matter primaries.
+
+\begin{theorem}[Unconditional metric sector]
+\label{thm:metric}
+The graviton channel of Condition NL vanishes identically:
+$\langle0|\delta K_B^{\mathrm{nl}}\,|\delta\Psi_T\rangle=0$ for every
+stress-tensor perturbation $|\delta\Psi_T\rangle$, every ball, and every
+smooth source $\beta$. Consequently the finite-ball torsionful first law
+is \emph{unconditionally} equivalent to the linearized Einstein--Cartan
+equations in the metric sector, strengthening Theorem 5.2 of
+\cite{McGwier2026b}.
+\end{theorem}
+
+\begin{proof}
+Every term in the cross expectation is a vacuum two-point function of
+$J_5$ (spin~1, $\Delta=3$) against $T$ (spin~2, $\Delta=4$), evaluated at
+(possibly modular-complexified) points. In any CFT, the vacuum two-point
+function of primaries of unequal spin or unequal dimension vanishes; the
+modular smearing in \eqref{eq:kernel} acts within the conformal
+representation and cannot generate a nonvanishing overlap from a vanishing
+one (it multiplies matrix elements by scalars frequency by frequency).
+Hence every term is zero. \pP{}
+\end{proof}
+
+\begin{remark}
+The same selection rule kills the cross channel with any matter primary
+not carrying the exact quantum numbers of $J_5$ ($\Delta=3$, spin~1,
+axial). The entirety of Condition NL therefore lives in one channel.
+\pP{}
+\end{remark}
+
+\section{The Surviving Channel: A Universal Kinematic Residue}
+
+\begin{proposition}[Universality]
+\label{prop:universal}
+In the axial channel, the cross expectation is
+\begin{equation}
+\mathcal N_B[\beta;\zeta]
+=C_J\;\mathcal I_B[\beta;\zeta]\,,
+\label{eq:residue}
+\end{equation}
+where $C_J$ is the two-point normalization of the conserved current,
+$\langle J_5^\mu(x)J_5^\nu(0)\rangle
+=C_J\,\big(\eta^{\mu\nu}-2x^\mu x^\nu/x^2\big)/x^{6}$ in $d=4$, $\zeta$
+labels the axial mode creating $|\delta\Psi\rangle$, and $\mathcal I_B$ is
+a purely kinematic functional: the nonzero-modular-frequency part of the
+smeared two-point overlap,
+\begin{equation}
+\mathcal I_B[\beta;\zeta]
+=-\!\int_{-\infty}^{\infty}\!\!ds\,\frac{\pi}{2\cosh^2(\pi s)}
+\Big[\big\langle
+\sigma_s\big(\widetilde{J_5[\beta]}\big)\,J_5[\zeta]
+\big\rangle_{\kappa\neq0}\Big],
+\label{eq:integral}
+\end{equation}
+with $\widetilde{\,\cdot\,}$ the half-modular (Euclidean angle $\pi/2$)
+conjugation from Proposition~\ref{prop:kernel} and the ball modular flow
+given explicitly by the Casini--Huerta--Myers conformal map
+\cite{CHM2011}. $\mathcal I_B$ is identical for every CFT possessing a
+conserved axial current: dynamics enters \eqref{eq:residue} only through
+the single constant $C_J$.
+\end{proposition}
+
+\begin{proof}
+Conformal symmetry fixes the conserved-current two-point function up to
+$C_J$ \pP{}; the smearing, the CHM flow, and the frequency projection are
+kinematic operations. \pP{}
+\end{proof}
+
+\begin{proposition}[Absorbability: the first law survives either way]
+\label{prop:absorb}
+If $\mathcal I_B\equiv0$, Condition NL holds and the finite-ball
+torsionful first law of \cite{McGwier2026b} holds as stated. If
+$\mathcal I_B\neq0$, then---being linear in $\beta$, linear in the mode,
+universal, and purely kinematic---it defines a finite, state-independent
+bilinear form that can be absorbed as a renormalization of the local term
+(equivalently, an improvement of the holographic dictionary relating the
+boundary axial source to the bulk contortion boundary value), after which
+the improved first law holds. In neither case is the torsionful first law
+for finite balls false; the alternative is only between the naive and the
+improved dictionary. \pP{} at the stated structural level: the absorption
+redefines $\delta K^{\mathrm{loc}}$ by the $\kappa\neq0$ bilinear
+evaluated on the source, which is admissible because Condition NL is the
+\emph{only} place the split enters the derivation of
+\cite{McGwier2026b}, Theorem 5.2.
+\end{proposition}
+
+\section{Status, and the One Remaining Number}
+
+\begin{enumerate}[itemsep=2pt]
+\item Metric sector: torsionful first law for finite balls
+\emph{unconditional} (Theorem \ref{thm:metric}). \pP{}
+\item Axial sector: reduced to the single kinematic functional
+$\mathcal I_B$ of \eqref{eq:integral}, universal across CFTs; the first
+law holds either as stated (if $\mathcal I_B=0$) or in
+dictionary-improved form (Proposition \ref{prop:absorb}). \pP{}
+\item Evaluation of $\mathcal I_B$: open. \pO{} Two attack paths:
+(a) analytic, in $d=2$, where the chiral analogue of the deformation is a
+current--current marginal coupling and modular flow of an interval is
+exactly geometric on null lines; the null-plane collapse mechanism of
+\cite{CasiniTesteTorroba2017} suggests $\mathcal I=0$ there \pC{};
+(b) numerical, in $d=4$: \eqref{eq:integral} is a finite-dimensional
+quadrature once the CHM flow and the two-point structure are inserted;
+the exponential $\cosh^{-2}$ damping and the exponential decay of
+$\kappa\neq0$ matrix elements make it numerically benign. This is the
+designated computation of the next note.
+\item Consequence for the program: with Theorem \ref{thm:metric}, the
+gravitational (metric) certification of the New Standard Model
+\cite{McGwier2026c} in the presence of torsion sources no longer rests on
+any unproved condition; the residual question concerns only the axial
+dictionary's finite normalization. \pP{}
+\end{enumerate}
+
+\section*{Certification}
+Proposition \ref{prop:kernel} is derived in full and machine-verified by
+four independent computations (Remark \ref{rem:verification}), with the
+verification suite retained alongside the source. Theorem
+\ref{thm:metric} rests on the conformal selection rule for two-point
+functions, a textbook-grade fact used at \pP{}. Propositions
+\ref{prop:universal}--\ref{prop:absorb} are structural and derived at the
+level stated. The single remaining unknown, $\mathcal I_B$, is displayed
+explicitly and tagged \pO{}; nothing downstream assumes its value.
+
+\section*{Acknowledgments}
+The author acknowledges the use of Claude (Anthropic, claude.ai) for
+assistance in derivation drafting, numerical verification, and \LaTeX{}
+preparation. All technical claims and epistemic classifications were
+reviewed and verified by the author, who bears sole responsibility for
+the content.
+
+\begin{thebibliography}{9}\small
+
+\bibitem{CHM2011}
+H.~Casini, M.~Huerta and R.~C.~Myers, ``Towards a derivation of
+holographic entanglement entropy,'' JHEP \textbf{05}, 036 (2011),
+arXiv:1102.0440.
+
+\bibitem{FLPW2016}
+T.~Faulkner, R.~G.~Leigh, O.~Parrikar and H.~Wang, ``Modular Hamiltonians
+for deformed half-spaces and the averaged null energy condition,''
+JHEP \textbf{09}, 038 (2016), arXiv:1605.08072.
+
+\bibitem{Lashkari2016}
+N.~Lashkari, ``Modular Hamiltonian of excited states in conformal field
+theory,'' Phys.\ Rev.\ Lett.\ \textbf{117}, 041601 (2016),
+arXiv:1508.03506.
+
+\bibitem{CasiniTesteTorroba2017}
+H.~Casini, E.~Test\'e and G.~Torroba, ``Modular Hamiltonians on the null
+plane and the Markov property of the vacuum state,''
+J.\ Phys.\ A \textbf{50}, 364001 (2017), arXiv:1703.10656.
+
+\bibitem{SarosiUgajin2018}
+G.~S\'arosi and T.~Ugajin, ``Modular Hamiltonians of excited states, OPE
+blocks and emergent bulk fields,'' JHEP \textbf{01}, 012 (2018),
+arXiv:1705.01486.
+
+\bibitem{McGwier2026a}
+R.~W.~McGwier, ``Entanglement as the origin of spacetime curvature,''
+v4, Zenodo (2026), DOI:
+\href{https://doi.org/10.5281/zenodo.21821890}{10.5281/zenodo.21821890}.
+
+\bibitem{McGwier2026b}
+R.~W.~McGwier, ``Spin-current sources and ball modular Hamiltonians:
+resolving the torsionful first law,'' Zenodo (2026), DOI:
+\href{https://doi.org/10.5281/zenodo.21824934}{10.5281/zenodo.21824934}.
+
+\bibitem{McGwier2026c}
+R.~W.~McGwier, ``The New Standard Model for unified physics,''
+Zenodo (2026), DOI:
+\href{https://doi.org/10.5281/zenodo.21829536}{10.5281/zenodo.21829536}.
+
+\bibitem{McGwier2026e}
+R.~W.~McGwier, ``The Hehl--Datta coefficient from relative-entropy positivity,''
+Zenodo (2026), DOI:
+\href{https://doi.org/10.5281/zenodo.21836757}{10.5281/zenodo.21836757}.
+
+\bibitem{McGwier2026f}
+R.~W.~McGwier, ``Emergent gravity and a new Lagrangian: a theory of everything we know,''
+Zenodo (2026), DOI to be assigned.
+
+\end{thebibliography}
+
+\end{document}

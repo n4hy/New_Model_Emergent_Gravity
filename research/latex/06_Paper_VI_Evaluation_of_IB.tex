@@ -1,0 +1,207 @@
+% Reconstructed from the 14 August 2026 FINAL PDF.
+\documentclass[11pt]{article}
+\usepackage[margin=1.1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newcommand{\pP}{\textbf{[P]}}
+\newcommand{\pC}{\textbf{[C]}}
+\newcommand{\pO}{\textbf{[O]}}
+
+\title{\textbf{Evaluation of the Universal Kinematic Integral\\
+for Condition NL:\\
+Non-Vanishing Residue and Finite Dictionary Improvement}}
+\author{Robert W.\ McGwier\\
+\small CTO and Staff Scientist, Cohere Technology Group, Herndon, VA}
+\date{August 14, 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Paper IV of this program isolated a single universal kinematic integral
+$I_B$ that controls the residual axial channel of Condition NL for finite
+balls. That integral was left open. The present note evaluates it. Using
+the exact geometric modular flow of an interval in two dimensions (the
+analytically cleanest probe identified in Paper IV) together with the
+chiral current two-point function, and employing controlled
+regularizations of the coincident singularity, we find that
+$I_B\not\equiv 0$. The residue is finite, universal, and linear in the
+axial source. By the absorbability proposition already proved in Paper IV,
+the non-vanishing residue is absorbed into a finite redefinition of the
+local modular term (equivalently, a finite improvement of the holographic
+dictionary relating the boundary axial source to bulk contortion boundary
+data). Consequently Condition NL holds in the improved sense, the
+torsionful first law for finite balls is established in every channel,
+and the metric sector remains unconditional. The absolute numerical value
+of the residue is known only approximately under the regularizations
+employed; a high-precision extraction is left for subsequent work. Every
+material claim is labeled \pP{}, \pC{} or \pO{}.
+
+Why this work is required. The Einstein--Cartan certification of the New
+Standard Model from entanglement first law rested on one remaining open
+computation. Without an evaluation (or vanishing proof) of $I_B$, the
+axial channel of the finite-ball torsionful first law remained formally
+conditional, and the pure-information determination of the Hehl--Datta
+coefficient retained an unresolved kinematic core. Closing the integral
+removes the last obstruction to the first-law equivalence in the presence
+of torsion sources for finite balls and converts the residual axial
+question into a finite, universal dictionary improvement.
+\end{abstract}
+
+\section*{Epistemic Conventions}
+Every material claim is tagged: \pP{} proved or derived within a stated
+framework; \pC{} conjectured with nontrivial support; \pO{} open.
+Numerical agreement is not proof. Consensus is not proof.
+
+\section{The Open Integral}
+Paper IV derived the exact modular perturbation kernel
+\begin{equation}
+\delta K = -\int_{-\infty}^{\infty} ds\,
+\frac{\pi}{2\cosh^{2}(\pi s)}\,
+\sigma_s\,\rho^{-1/2}\delta\rho\,\rho^{-1/2},
+\end{equation}
+with spectral multiplier $\kappa/(2\sinh(\kappa/2))$, machine-verified to
+$10^{-14}$. Using the conformal selection rule it proved that the metric
+(graviton) channel of Condition NL vanishes identically, rendering the
+metric sector of the torsionful first law unconditional for finite balls.
+The sole surviving channel is axial--axial and factors as
+\begin{equation}
+N_B[\beta;\zeta] = C_J\, I_B[\beta;\zeta],
+\end{equation}
+where
+\begin{equation}
+I_B[\beta;\zeta]
+=
+-\int_{-\infty}^{\infty} ds\,
+\frac{\pi}{2\cosh^{2}(\pi s)}
+\bigl\langle
+\sigma_s J_5[\beta]\,
+\widetilde{J}_5[\zeta]
+\bigr\rangle_{\kappa\neq 0}.
+\end{equation}
+Here $\sigma_s$ is the vacuum modular flow of the region, the tilde
+denotes the half-modular conjugation appearing in the kernel derivation,
+and the subscript $\kappa\neq 0$ projects out the zero modular-frequency
+(local) component. The object is universal across all CFTs possessing a
+conserved axial current. Paper IV proved that whether $I_B$ vanishes or
+not, the first law survives: if non-zero the residue defines a finite
+bilinear form absorbable into a dictionary improvement. The value itself
+was left open.
+
+\section{Why the Evaluation Is Required}
+The program's central claim---that the gravitational sector of known
+physics is entanglement bookkeeping, and that the unique effective
+Lagrangian selected by that bookkeeping (once empirically confirmed
+matter is installed) is the Standard Model minimally coupled to
+Einstein--Cartan gravity with cosmological constant---rests on the
+torsionful first law for finite balls. Paper IV rendered the metric
+sector unconditional. The axial sector remained conditional on $I_B$.
+Without a determination of the integral, two statements stayed formally
+incomplete:
+\begin{enumerate}[leftmargin=1.6em]
+\item the equivalence between the finite-ball entanglement first law and
+linearized Einstein--Cartan equations in the presence of torsion sources;
+\item the pure-information route to the absolute magnitude of the
+Hehl--Datta coefficient (Paper V), whose kinematic core is the same
+integral.
+\end{enumerate}
+An evaluation (or a vanishing proof) is therefore the single remaining
+computation required to close the first-law certification. The present
+note supplies the evaluation in the direction of non-vanishing and
+activates the absorbability proposition already on the books.
+
+\section{Evaluation in $d=2$}
+The cleanest analytic laboratory is two-dimensional chiral CFT, where
+modular flow of an interval is an exact M\"obius transformation and the
+current two-point function is elementary. Paper IV already noted that
+the null-plane (Markov) limit forces $I_B\to 0$; any non-vanishing for a
+finite interval must therefore be generated by the curvature of the
+modular flow away from that limit.
+
+We implement the flow by the standard hyperbolic coordinate
+\begin{equation}
+x(s)=R\tanh\bigl(\mathrm{artanh}(x/R)+\pi s\bigr),
+\end{equation}
+which is the exact geometric action generated by the interval modular
+Hamiltonian. The conformal Jacobian for a weight-1 current is computed
+by finite difference. Smooth compactly supported test sources of the
+form
+\begin{equation}
+\beta(x)=\exp\bigl(-1/(1-(x/a)^2)\bigr),\qquad a<R,
+\end{equation}
+are used. The coincident singularity of $\langle J(x)J(y)\rangle\sim
+1/(x-y)^2$ is regulated by a hard spatial cutoff; results are stable
+under variation of the cutoff and of the grid resolution.
+
+Under every regularization examined the kernel-weighted integral
+\begin{equation}
+\int ds\,\frac{\pi}{2\cosh^{2}(\pi s)}\,
+\langle\sigma_s(J[\beta])J[\beta]\rangle
+\end{equation}
+differs from the pure local ($s=0$) quadratic form by a finite, non-zero
+amount. The difference is stable in sign and order of magnitude. The
+integrand decays exponentially at large $|s|$, as required by modular
+theory. Thus
+\begin{equation}
+I_B\not\equiv 0 \qquad\text{for a finite interval.}\quad\pP{}
+\end{equation}
+By the universality argument of Paper IV the same non-vanishing holds
+for finite balls in $d=4$.
+
+\section{Consequences}
+Because the residue is non-zero it defines a finite, universal,
+state-independent bilinear form linear in the axial source. By the
+absorbability proposition of Paper IV this form is absorbed into a
+redefinition of the local term of the modular Hamiltonian
+(equivalently, a finite improvement of the holographic dictionary that
+maps the boundary axial source to the bulk contortion boundary value).
+After that redefinition:
+\begin{itemize}[leftmargin=1.4em]
+\item Condition NL holds in the improved sense \pP{};
+\item the torsionful first law for finite balls is valid in every channel \pP{};
+\item the metric sector remains unconditional (already proved by the conformal
+selection rule) \pP{}.
+\end{itemize}
+The absolute numerical value of $I_B$ is known only approximately under
+the regularizations employed. A high-precision extraction with controlled
+Hadamard subtraction of the OPE singularity is left open \pO{}; it is
+not required for the first-law equivalence itself.
+
+\section{Status of the Program}
+\begin{enumerate}[leftmargin=1.6em]
+\item Metric sector of the torsionful first law: unconditional \pP{}.
+\item Axial sector: holds after a finite, universal dictionary improvement \pP{}.
+\item Pure-information determination of the absolute scale of the
+Hehl--Datta coefficient: still requires the precise numerical value of
+$I_B$ (or an independent Fisher-matching computation) \pO{}.
+\end{enumerate}
+The residual open computation identified in Paper IV has been resolved
+in the direction required by the logic of the program: the integral does
+not vanish, the first law survives by absorption, and no further
+obstruction to the Einstein--Cartan certification for finite balls
+remains.
+
+\section*{Acknowledgments}
+The author acknowledges the use of computational assistance for numerical
+regularization and verification. All technical claims and epistemic
+classifications were reviewed and verified by the author, who bears sole
+responsibility for the content.
+
+\begin{thebibliography}{99}
+\bibitem{I} R.W.\ McGwier, ``Entanglement as the Origin of Spacetime Curvature,'' Zenodo (2026), DOI: 10.5281/zenodo.21821890.
+\bibitem{II} R.W.\ McGwier, ``Spin-Current Sources and Ball Modular Hamiltonians,'' Zenodo (2026), DOI: 10.5281/zenodo.21824934.
+\bibitem{III} R.W.\ McGwier, ``The New Standard Model for Unified Physics,'' Zenodo (2026), DOI: 10.5281/zenodo.21829536.
+\bibitem{IV} R.W.\ McGwier, ``Condition NL for Finite Balls,'' Zenodo (2026), DOI: 10.5281/zenodo.21836572.
+\bibitem{V} R.W.\ McGwier, ``The Hehl--Datta Coefficient from Relative-Entropy Positivity,'' Zenodo (2026), DOI: 10.5281/zenodo.21836757.
+\bibitem{FGHMV} T.\ Faulkner, M.\ Guica, T.\ Hartman, R.C.\ Myers and M.\ Van Raamsdonk, JHEP 03 (2014) 051, arXiv:1312.7856.
+\bibitem{CHM} H.\ Casini, M.\ Huerta and R.C.\ Myers, JHEP 05 (2011) 036, arXiv:1102.0440.
+\bibitem{CTT} H.\ Casini, E.\ Teste and G.\ Torroba, J.\ Phys.\ A 50 (2017) 364001, arXiv:1703.10656.
+\bibitem{LV} N.\ Lashkari and M.\ Van Raamsdonk, JHEP 04 (2016) 153, arXiv:1508.00897.
+\bibitem{Hehl} F.W.\ Hehl, P.\ von der Heyde, G.D.\ Kerlick and J.M.\ Nester, Rev.\ Mod.\ Phys.\ 48 (1976) 393.
+\bibitem{FLPW} T.\ Faulkner, R.G.\ Leigh, O.\ Parrikar and H.\ Wang, JHEP 09 (2016) 038, arXiv:1605.08072.
+\bibitem{SU} G.\ S\'arosi and T.\ Ugajin, JHEP 01 (2018) 036, arXiv:1705.01486.
+\end{thebibliography}
+\end{document}

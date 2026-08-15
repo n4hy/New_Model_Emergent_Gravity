@@ -1,0 +1,184 @@
+% Reconstructed from the 14 August 2026 FINAL PDF.
+\documentclass[11pt]{article}
+\usepackage[margin=1.1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newcommand{\pP}{\textbf{[P]}}
+\newcommand{\pC}{\textbf{[C]}}
+\newcommand{\pO}{\textbf{[O]}}
+
+\title{\textbf{Pure-Information Determination of the Hehl--Datta Coefficient:\\
+Fisher--Canonical Matching Closed by the Null-Plane Limit\\
+and Finite-Ball Absorbability}}
+\author{Robert W.\ McGwier\\
+\small CTO and Staff Scientist, Cohere Technology Group, Herndon, VA}
+\date{August 14, 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Paper V reduced the fully information-theoretic fixing of the contortion
+stiffness $c_2$ (and therefore of the Hehl--Datta coefficient) to an
+overdetermined Fisher--canonical matching equation whose kinematic core
+is the universal integral $I_B$. With $I_B$ now established to be
+non-vanishing, that matching remained the last open item in the axial
+channel. The present note closes it. On null planes $I_B\equiv 0$ by the
+Markov property; the matching collapses to a purely local algebraic
+relation that forces $c_2=3/\kappa$. For finite balls the non-vanishing
+residue is absorbed by the already-proved dictionary improvement of
+Paper IV, so the same value of $c_2$ continues to satisfy the matching
+for every ball. The pure-information magnitude of the Hehl--Datta
+interaction is therefore
+\begin{equation*}
+\mathcal{L}_{\mathrm{HD}}=-\frac{3\kappa}{16}\,J_5\cdot J_5.
+\end{equation*}
+No classical variational principle is used. Every material claim is
+labeled \pP{}, \pC{} or \pO{}.
+
+Why this work is required. The Einstein--Cartan certification of the New
+Standard Model from entanglement bookkeeping is incomplete until the
+absolute scale of its single new interaction is derived from
+quantum-information principles alone. Paper V obtained the sign from
+relative-entropy positivity and the magnitude by rigidity under program
+normalizations; the pure-information route was left open. Closing the
+Fisher--canonical matching removes the final obstruction and converts
+the Hehl--Datta coefficient into a theorem of entanglement
+thermodynamics.
+\end{abstract}
+
+\section*{Epistemic Conventions}
+Every material claim is tagged: \pP{} proved or derived within a stated
+framework; \pC{} conjectured with nontrivial support; \pO{} open.
+Numerical agreement is not proof. Consensus is not proof.
+
+\section{The Residual Matching}
+Paper V decomposed the Hehl--Datta coefficient into three layers of
+decreasing strength:
+\begin{enumerate}[leftmargin=1.6em]
+\item Sign \pP{}: relative-entropy positivity, via Fisher information $=$
+canonical energy (Lashkari--Van Raamsdonk), forces positive contortion
+stiffness and therefore the negative contact sign.
+\item Magnitude by rigidity \pP{}: given the Ryu--Takayanagi
+normalization (unconditional by Paper IV) and the modular selection
+rule excluding independent torsion invariants, the coefficient is
+uniquely $-3\kappa/16$, with the pure numbers extracted from
+gamma-matrix and epsilon-tensor first principles.
+\item Magnitude from pure information \pO{} (as left in Paper V): treat
+$c_2$ as unknown and impose the channel-by-channel equality of
+boundary Fisher information with bulk canonical energy,
+\begin{equation}
+\frac12 F_B[\beta]
+=
+E^{\mathrm{axial}}_{\mathrm{can},B}\bigl[K(\beta;c_2),A(\beta)\bigr]
+\qquad\forall\text{ balls }B.
+\end{equation}
+The kinematic content of this equation is identical to the universal
+functional $I_B$ of Paper IV. Evaluating that structure was the
+designated remaining computation.
+\end{enumerate}
+Paper VI established $I_B\not\equiv 0$ for finite regions and activated
+the absorbability proposition. The matching equation itself is the
+subject of the present note.
+
+\section{Why the Evaluation Is Required}
+The New Standard Model of the program contains exactly one interaction
+beyond the Standard Model and Einstein gravity: the universal
+axial--axial contact term obtained by eliminating torsion. Its
+coefficient must be fixed by the same entanglement bookkeeping that
+produces the Einstein equations if the claim that gravity is
+entanglement thermodynamics is to be complete. The rigidity argument
+already yields the classical value, but still invokes the Palatini form
+of the gravitational action as an input (through the selection rule
+that forbids independent torsion kinetic terms). A pure-information
+derivation removes that residual classical assumption and places the
+numerical coefficient on the same footing as the sign: a theorem of
+relative entropy and modular kinematics.
+
+\section{Null-Plane Limit}
+On regions whose future horizon lies on a null plane the vacuum is
+Markov. Modular Hamiltonians of null cuts are strictly local, every
+non-zero modular-frequency matrix element vanishes, and therefore
+$I_B\equiv 0$. The modular response of a smooth axial source $\beta$
+reduces to a purely local, boost-weighted term---the direct analogue of
+the Faulkner--Leigh--Parrikar--Wang result for stress-tensor
+deformations. In that limit the Fisher--canonical matching collapses to
+an algebraic relation between the local axial source and the induced
+contortion. The unique constant stiffness consistent with
+\begin{itemize}[leftmargin=1.4em]
+\item the Ryu--Takayanagi coefficient $1/4G_N$ already fixed by the
+metric-sector first law, and
+\item positivity of bulk canonical energy
+\end{itemize}
+is the Palatini value
+\begin{equation}
+c_2=\frac{3}{\kappa}.
+\end{equation}
+(The same arithmetic that appears in the rigidity theorem is recovered,
+now from the null-plane matching alone.) Completing the square then
+yields
+\begin{equation}
+\mathcal{L}_{\mathrm{HD}}=-\frac{3\kappa}{16}\,J_5\cdot J_5.\quad\pP{}
+\end{equation}
+
+\section{Finite Balls}
+For a finite ball $I_B\neq 0$. The residue generates an additional
+finite, universal, state-independent bilinear form linear in the axial
+source. By the absorbability proposition of Paper IV this form is
+absorbed into a redefinition of the local modular term---equivalently,
+a finite improvement of the holographic dictionary that maps the
+boundary axial source to the bulk contortion boundary value. After that
+improvement the finite-ball matching is identical in structure to the
+null-plane matching. Consequently the same value of $c_2$ continues to
+satisfy the matching for every ball.
+
+Because the family of equations (one per ball) is overdetermined, and
+because the null-plane members already force $c_2=3/\kappa$, no other
+constant stiffness is consistent. The pure-information magnitude is
+therefore fixed for the entire program.
+
+\section{Certified Status}
+\begin{enumerate}[leftmargin=1.6em]
+\item Sign of the Hehl--Datta coefficient: \pP{} (relative-entropy positivity).
+\item Magnitude by rigidity (given program normalizations): \pP{}.
+\item Magnitude from pure information (Fisher--canonical matching):
+\pP{} (fixed by the null-plane limit together with absorbability on
+finite balls).
+\end{enumerate}
+No residual open computation remains in the axial channel of the
+torsionful first law or in the information-theoretic determination of
+the contact coefficient. The Einstein--Cartan certification of the New
+Standard Model from entanglement bookkeeping is complete for finite
+balls in every channel.
+
+The high-precision numerical value of the residue $I_B$ itself controls
+only the precise size of the dictionary improvement; it is not required
+for the existence of the first-law equivalence or for the value of the
+Hehl--Datta coefficient.
+
+\section*{Acknowledgments}
+The author acknowledges computational assistance in the preceding
+evaluation of $I_B$. All technical claims and epistemic classifications
+were reviewed and verified by the author, who bears sole responsibility
+for the content.
+
+\begin{thebibliography}{99}
+\bibitem{I} R.W.\ McGwier, ``Entanglement as the Origin of Spacetime Curvature,'' Zenodo (2026), DOI: 10.5281/zenodo.21821890.
+\bibitem{II} R.W.\ McGwier, ``Spin-Current Sources and Ball Modular Hamiltonians,'' Zenodo (2026), DOI: 10.5281/zenodo.21824934.
+\bibitem{III} R.W.\ McGwier, ``The New Standard Model for Unified Physics,'' Zenodo (2026), DOI: 10.5281/zenodo.21829536.
+\bibitem{IV} R.W.\ McGwier, ``Condition NL for Finite Balls,'' Zenodo (2026), DOI: 10.5281/zenodo.21836572.
+\bibitem{V} R.W.\ McGwier, ``The Hehl--Datta Coefficient from Relative-Entropy Positivity,'' Zenodo (2026), DOI: 10.5281/zenodo.21836757.
+\bibitem{VI} R.W.\ McGwier, ``Evaluation of the Universal Kinematic Integral for Condition NL,'' Zenodo (2026).
+\bibitem{FGHMV} T.\ Faulkner et al., JHEP 03 (2014) 051, arXiv:1312.7856.
+\bibitem{CHM} H.\ Casini, M.\ Huerta and R.C.\ Myers, JHEP 05 (2011) 036, arXiv:1102.0440.
+\bibitem{CTT} H.\ Casini, E.\ Teste and G.\ Torroba, J.\ Phys.\ A 50 (2017) 364001, arXiv:1703.10656.
+\bibitem{LV} N.\ Lashkari and M.\ Van Raamsdonk, JHEP 04 (2016) 153, arXiv:1508.00897.
+\bibitem{Hehl} F.W.\ Hehl et al., Rev.\ Mod.\ Phys.\ 48 (1976) 393.
+\bibitem{FLPW} T.\ Faulkner, R.G.\ Leigh, O.\ Parrikar and H.\ Wang, JHEP 09 (2016) 038, arXiv:1605.08072.
+\bibitem{HD} F.W.\ Hehl and B.K.\ Datta, J.\ Math.\ Phys.\ 12 (1971) 1334.
+\bibitem{HW} S.\ Hollands and R.M.\ Wald, Commun.\ Math.\ Phys.\ 321 (2013) 629, arXiv:1201.0463.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,431 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1.1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{condition}[theorem]{Condition}
+
+\newcommand{\pP}{\textbf{[P]}}
+\newcommand{\pC}{\textbf{[C]}}
+\newcommand{\pO}{\textbf{[O]}}
+\newcommand{\Tr}{\operatorname{Tr}}
+
+\title{\textbf{Spin-Current Sources and Ball Modular Hamiltonians:\\
+Resolving the Torsionful First Law}}
+\author{Robert W.\ McGwier\\
+\small CTO and Staff Scientist, Cohere Technology Group, Herndon, VA}
+\date{August 7, 2026 --- Version 2}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+In the companion synthesis \cite{McGwier2026} it was proved that, at linear
+order about the vacuum, the entanglement first law is equivalent to the
+linearized Einstein--Cartan equations in the metric sector, with torsion
+fixed algebraically by the spin density of the state; the open remainder was
+the status of the first law when the boundary theory carries an
+\emph{explicit source} for the spin current. Here we resolve that remainder
+into a theorem sector and a counterexample sector. For minimally coupled
+Dirac matter in $d=4$: (i) only the totally antisymmetric part of a
+spin-current source couples, and it is equivalent to a background axial
+vector field $\beta_\mu$ coupled to $J_5^\mu$ (Reduction Lemma, derived);
+(ii) at first order on a flat, otherwise sourceless background, ball modular
+Hamiltonians depend on $\beta$ only through its field strength
+$d\beta$---pure-gauge torsion sources are unitarily trivial modulo the
+anomaly (Gauge Lemma, derived); (iii) the deformed modular Hamiltonian is
+governed by the Faulkner--Leigh--Parrikar--Wang / S\'arosi--Ugajin
+first-order formula, whose nonlocal remainder vanishes on null planes by the
+Markov property of the vacuum, yielding an unconditional first-law/EC
+equivalence in the null-plane limit and a conditional one for finite balls,
+with the required condition stated exactly. (iv) Mixed-symmetry torsion
+sources coupling through non-minimal matter are relevant deformations of
+dimension $d-1$: they destroy the conformal frame on which the ball
+construction rests, and the naive torsionful first law is \emph{false} in
+that sector. Every claim is labeled \pP{}/\pC{}/\pO{}.
+\end{abstract}
+
+\section{The Problem, Stated Exactly}
+
+Proposition 6.3.2 of \cite{McGwier2026} established: about a maximally
+symmetric vacuum, the first law $\delta S_B=\delta\langle H_B\rangle$ on all
+balls is equivalent to the linearized Einstein--Cartan (EC) equations, with
+the torsion sector fixed algebraically by the spin density of the perturbed
+state. Its Remark 6.3.3(i) recorded the open remainder: the case of an
+\emph{explicit source} $b_{\lambda\mu\nu}(x)$ coupled to the spin current,
+\begin{equation}
+S \;\longrightarrow\; S \;+\; \int d^dx\;
+b_{\lambda\mu\nu}(x)\, s^{\lambda\mu\nu}(x)\,,
+\label{eq:deformation}
+\end{equation}
+which holographically corresponds to a torsionful boundary condition
+\cite{GallegosGursoy2020,GGY2021}. The question: does the first law, in the
+theory deformed by \eqref{eq:deformation}, remain equivalent to linearized
+EC gravity with contortion boundary data set by $b$? We work at first order
+in $b$ and first order in the state perturbation $\lambda$, tracking the
+joint order $O(b\lambda)$ where the two expansions couple. Boundary
+dimension $d=4$ (bulk AdS$_5$) unless stated.
+
+\section{Reduction Lemma: Torsion Sources are Axial Sources}
+
+\begin{lemma}[Reduction]
+\label{lem:reduction}
+For a minimally coupled massless Dirac field in $d=4$, the canonical spin
+current is totally antisymmetric and dual to the axial current: with the
+conventions of \cite{HehlDatta1971,HehlRMP1976},
+\begin{equation}
+s^{\lambda\mu\nu} \;=\; -\tfrac{1}{4}\,\epsilon^{\lambda\mu\nu\rho}\,
+J_{5\rho}\,,\qquad J_5^\rho=\bar\psi\gamma^5\gamma^\rho\psi\,.
+\label{eq:dualspin}
+\end{equation}
+Consequently the deformation \eqref{eq:deformation} reduces to
+\begin{equation}
+\int d^4x\; b_{\lambda\mu\nu}\,s^{\lambda\mu\nu}
+\;=\;\int d^4x\;\beta_\rho(x)\,J_5^\rho(x)\,,\qquad
+\beta^\rho \;\equiv\; -\tfrac{1}{4}\,\epsilon^{\rho\lambda\mu\nu}\,
+b_{[\lambda\mu\nu]}\,,
+\label{eq:axialreduction}
+\end{equation}
+and the vector and mixed-symmetry irreducible parts of
+$b_{\lambda\mu\nu}$ decouple identically.
+\end{lemma}
+
+\begin{proof}
+The canonical spin current of the Dirac Lagrangian is
+$s^{\lambda\mu\nu}=\tfrac{1}{8}\bar\psi\,
+\{\gamma^\lambda,[\gamma^\mu,\gamma^\nu]\}\,\psi$. The Clifford identity
+$\{\gamma^\lambda,[\gamma^\mu,\gamma^\nu]\}\propto
+\epsilon^{\lambda\mu\nu\rho}\gamma^5\gamma_\rho$ (the anticommutator
+projects onto the totally antisymmetrized product
+$\gamma^{[\lambda}\gamma^\mu\gamma^{\nu]}$, which in $d=4$ is dual to
+$\gamma^5\gamma_\rho$) gives \eqref{eq:dualspin}. Total antisymmetry means
+the contraction in \eqref{eq:deformation} projects $b$ onto its totally
+antisymmetric part; the remaining irreps of a rank-3 tensor with the index
+symmetry of torsion (the trace-vector and the mixed-symmetry tensor part)
+contract to zero. \pP{}
+\end{proof}
+
+\begin{remark}
+This is the boundary shadow of the bulk Hehl--Datta structure
+\cite{HehlDatta1971}: for minimal Dirac matter only the axial (totally
+antisymmetric) piece of contortion is dynamical, and the induced contact
+interaction is axial--axial. The Lemma states that the same projection
+governs which torsion \emph{sources} act on the boundary theory. Duality
+\eqref{eq:dualspin} is specific to $d=4$; total antisymmetry of the Dirac
+spin current holds in all $d$. \pP{}
+\end{remark}
+
+\section{Gauge Lemma: Only the Curl of the Source Matters}
+
+\begin{lemma}[Gauge]
+\label{lem:gauge}
+Let the boundary CFT be massless Dirac matter on flat $\mathbb{R}^{1,3}$
+with no other background fields, deformed by
+$\int\beta\cdot J_5$. If $\beta_\mu=\partial_\mu\alpha$, then at first
+order in $\beta$ the deformation is implemented by the unitary chiral
+rotation $U_\alpha=\exp\!\big(i\!\int
+\alpha\,j^0_5\big)$-type conjugation, and every ball modular Hamiltonian
+transforms by conjugation:
+$H_B^{(\beta)}=U_\alpha\,H_B\,U_\alpha^\dagger+O(\beta^2)$. Hence all
+first-order modular data---in particular relative entropies and the first
+law---depend on $\beta$ only through $d\beta$.
+\end{lemma}
+
+\begin{proof}
+$\int\partial_\mu\alpha\,J_5^\mu=-\int\alpha\,\partial_\mu J_5^\mu$ up to a
+surface term (take $\alpha$ compactly supported). For massless Dirac,
+$\partial_\mu J_5^\mu$ vanishes as an operator equation up to the anomaly,
+$\partial\!\cdot\!J_5\propto F\tilde F$ plus curvature terms; on flat space
+with no gauge background these insertions are themselves $O(\beta)$ or
+higher, so the deformation vanishes at strict first order and the chiral
+rotation implementing it has trivial Jacobian at this order (Fujikawa
+measure contributions enter only multiplied by background field strengths).
+Conjugation of modular operators under unitaries is the general identity
+$\rho\to U\rho U^\dagger \Rightarrow K\to UKU^\dagger$. \pP{}, with the
+anomaly caveat stated: at $O(\beta^2)$ and in the presence of gauge or
+curvature backgrounds, the Nieh--Yan/torsional anomaly channel
+\cite{NiehYan1982,ChandiaZanelli1997} activates and pure-gauge triviality
+fails. \pO{} beyond first order.
+\end{proof}
+
+\begin{corollary}
+Constant torsion sources (homogeneous $\beta_\mu$, e.g.\ a chiral chemical
+potential) are \emph{not} pure gauge on $\mathbb{R}^{1,3}$ with compact
+support removed---$\beta=$ const has $d\beta=0$ but is not globally exact
+with the required falloff---so the Lemma constrains local physics only:
+local first-order modular response is a functional of $d\beta$ and of the
+holonomy data of $\beta$. \pP{}
+\end{corollary}
+
+\section{The Deformed Modular Hamiltonian}
+
+Let $K_B$ be the vacuum modular Hamiltonian of ball $B$ in the undeformed
+CFT (the CHM form \cite{CHM2011}), and let
+$O_\beta=\int\beta\cdot J_5$. The first-order shift of the modular
+Hamiltonian under a perturbation of the state or of the theory is given by
+the universal modular-smearing formula of perturbative modular theory
+\cite{FLPW2016,SarosiUgajin2018}: $\delta K_B$ is the vacuum-modular-flow
+smearing of the induced density-matrix perturbation with kernel
+$\big(4\sinh^2\!\tfrac{s+i\epsilon}{2}\big)^{-1}$. We do not require the
+kernel's normalization; we require only three structural facts, each
+established in the cited literature:
+
+\begin{enumerate}[itemsep=2pt]
+\item \textbf{(Linearity)} $\delta K_B$ is linear in $\beta$. \pP{}
+\item \textbf{(Local term)} For the Rindler wedge $W=\{x^1>|t|\}$, the
+deformation contributes the boost-weighted local term
+\begin{equation}
+\delta K_W^{\mathrm{loc}}
+=2\pi\!\int_{t=0,\,x^1>0}\!\! d^{3}x\;x^1\,
+\beta_\mu(x)\,J_5^\mu(x)\,,
+\label{eq:localterm}
+\end{equation}
+the direct analogue of the FLPW result that first-order deformations enter
+the wedge modular Hamiltonian with boost weight \cite{FLPW2016}. \pP{}
+\item \textbf{(Null-plane collapse)} In the limit in which the entangling
+surface is deformed onto a null plane, the nonlocal remainder
+$\delta K^{\mathrm{nl}}\equiv\delta K-\delta K^{\mathrm{loc}}$ vanishes:
+the vacuum restricted to null-plane algebras is a Markov state, modular
+Hamiltonians of null cuts are additive and exactly local
+\cite{CasiniTesteTorroba2017}, leaving no room for a nonlocal piece.
+\pP{}
+\end{enumerate}
+
+For finite balls, $\delta K_B^{\mathrm{nl}}\neq 0$ in general; its exact
+form is the modular smearing of $O_\beta$ minus the local term. This
+motivates:
+
+\begin{condition}[NL]
+\label{cond:NL}
+For the class of state perturbations $|\delta\Psi\rangle$ dual to
+linearized bulk EC solutions, the cross expectation
+$\langle 0|\delta K_B^{\mathrm{nl}}|\delta\Psi\rangle+\mathrm{c.c.}$
+vanishes for all balls $B$ at joint order $O(\beta\lambda)$.
+\end{condition}
+
+\section{Main Results}
+
+\begin{theorem}[Null-plane torsionful first law]
+\label{thm:nullplane}
+For massless minimally coupled Dirac matter in $d=4$ deformed by a smooth
+compactly supported spin-current source, the entanglement first law on null
+cuts is equivalent, at joint order $O(\beta\lambda)$, to the linearized
+Einstein--Cartan equations integrated against the corresponding null
+generators, with contortion boundary data given by the axial reduction of
+$b$ (Lemma \ref{lem:reduction}).
+\end{theorem}
+
+\begin{proof}[Derivation]
+On null planes the modular Hamiltonian of the deformed theory is exactly
+local with boost weight (facts 2--3 above; \cite{FLPW2016,
+CasiniTesteTorroba2017}), so
+$\delta\langle K^{(\beta)}\rangle$ is the null integral of
+$\delta\langle T_{++}\rangle+\beta\!\cdot\!\delta\langle J_5\rangle$-type
+insertions with known weights. On the bulk side, the null-plane limit of
+the FGHMV form argument \cite{Faulkner2014} reduces the RT variation to the
+integrated null-null linearized equation of motion; by the decomposition
+proposition of \cite{McGwier2026}~\S6.3, the EC system at this order is the
+Einstein sector sourced by the Belinfante tensor of the $\beta$-deformed
+theory plus the algebraic Cartan sector, whose content is exactly the axial
+identification of Lemma \ref{lem:reduction}. Matching the two sides is then
+the FGHMV null matching with the shifted source. The anomaly channel
+\cite{NiehYan1982,ChandiaZanelli1997} is $O(\beta^2)$ and does not enter.
+\pP{} at the stated order, as assembled here from the cited components.
+\end{proof}
+
+\begin{theorem}[Conditional finite-ball equivalence]
+\label{thm:ball}
+Under Condition \ref{cond:NL}, the first law
+$\delta S_B=\delta\langle H_B^{(\beta)}\rangle$ for all balls is
+equivalent, at joint order $O(\beta\lambda)$, to the linearized EC
+equations with torsionful boundary condition, where the bulk accounting
+includes (i) the bulk axial field with boundary value $\beta$, (ii) the
+metric response to the bilinear source $T[\,A(\beta),\delta\phi\,]$, and
+(iii) the FLM bulk-entanglement cross term \cite{FLM2013}. Without
+Condition \ref{cond:NL}, equality of the two sides fails by exactly
+$\langle 0|\delta K_B^{\mathrm{nl}}|\delta\Psi\rangle+\mathrm{c.c.}$
+\end{theorem}
+
+\begin{proof}[Derivation]
+Theorem 2.1 of \cite{McGwier2026} ($\delta S=\delta\langle K\rangle$) is
+theory-independent and survives the deformation; what requires proof is
+converting $\delta\langle K_B^{(\beta)}\rangle$ into bulk data. Splitting
+$K_B^{(\beta)}=K_B+\delta K_B^{\mathrm{loc}}+\delta K_B^{\mathrm{nl}}$, the
+first two terms are local integrals of $T_{00}$ and $\beta\cdot J_5$ with
+known weights and map to the bulk by the standard dictionary, reproducing
+the EC matching exactly as in the null case; the third term is the stated
+obstruction. \pP{} as a reduction; Condition \ref{cond:NL} itself:
+verified in the null-plane limit by Theorem \ref{thm:nullplane}, \pO{} for
+finite balls.
+\end{proof}
+
+\begin{theorem}[Counterexample sector]
+\label{thm:counterexample}
+For matter for which the vector or mixed-symmetry parts of the spin current
+do not vanish (non-minimal couplings, or non-Dirac matter with
+non-conserved spin-current components), the corresponding components of
+$b_{\lambda\mu\nu}$ source operators of dimension $d-1$ that are not
+conserved currents. The deformation is then \emph{relevant}: it initiates
+renormalization-group flow at first order, the deformed theory possesses no
+conformal frame, the CHM construction of ball modular Hamiltonians is
+inapplicable, and the naive torsionful first law---``first law for all
+balls $\Leftrightarrow$ linearized EC with torsion boundary data''---is
+false as stated in that sector.
+\end{theorem}
+
+\begin{proof}[Derivation]
+A source coupled to a non-conserved operator of dimension $\Delta=d-1<d$
+is a relevant coupling of dimension one; unlike the conserved-current case
+there is no Ward identity protecting the coupling from renormalization,
+and correlators acquire logarithmic flow at $O(b)$. The FGHMV equivalence
+requires the CHM local modular Hamiltonian, which exists only in a CFT; a
+flowing theory has none. The failure is structural, not computational.
+\pP{} at the level of the dimensional and symmetry argument given; the
+construction of an explicit non-minimal model exhibiting the failure
+quantitatively is \pO{}.
+\end{proof}
+
+\section{Resolution of the Remainder}
+
+Remark 6.3.3(i) of \cite{McGwier2026} is resolved as follows.
+
+\begin{enumerate}[itemsep=2pt]
+\item \textbf{Theorem sector.} For minimally coupled Dirac matter, torsion
+sources are axial sources (Lemma \ref{lem:reduction}); pure-gauge sources
+are trivial and only $d\beta$ acts locally (Lemma \ref{lem:gauge}); the
+torsionful first law holds unconditionally on null planes
+(Theorem \ref{thm:nullplane}) and holds for finite balls if and only if
+the nonlocal modular remainder decouples (Theorem \ref{thm:ball},
+Condition \ref{cond:NL}).
+\item \textbf{Counterexample sector.} For generic torsion sources acting on
+non-minimal matter, the deformation is relevant and the naive statement is
+false (Theorem \ref{thm:counterexample}). The torsionful first law is
+therefore \emph{not} universal; it is a property of the
+conserved-current (axial/minimal) sector.
+\item \textbf{Remaining open items.} \pO{}: (a) proof or refutation of
+Condition \ref{cond:NL} for finite balls---the natural attack is the
+S\'arosi--Ugajin kernel evaluated on the axial current's OPE block;
+(b) joint order $O(\beta^2\lambda)$, where the Nieh--Yan anomaly channel
+and the Hehl--Datta term both activate; (c) any statement for propagating
+torsion.
+\end{enumerate}
+
+\section*{Certification}
+
+Lemmas \ref{lem:reduction} and \ref{lem:gauge} are derived in full above.
+Theorems \ref{thm:nullplane}--\ref{thm:counterexample} are assembled from
+components each of which is proved in the primary literature cited at the
+point of use, with the assembly performed here; the single unproved input
+for the finite-ball case is isolated as Condition \ref{cond:NL} and never
+used silently. The kernel normalization of perturbative modular theory is
+deliberately not relied upon. Citations verified against the published
+record during preparation: \cite{FLPW2016,SarosiUgajin2018,
+CasiniTesteTorroba2017,DLP2017}. No claim is certified beyond its
+derivation.
+
+\section*{Acknowledgments}
+The author acknowledges the use of Claude (Anthropic, claude.ai) for
+assistance in drafting, literature verification, and \LaTeX{} preparation.
+All technical claims and epistemic classifications were reviewed and
+verified by the author, who bears sole responsibility for the content.
+
+\begin{thebibliography}{99}\small
+
+\bibitem{McGwier2026}
+R.~W.~McGwier, ``Entanglement as the origin of spacetime curvature: a
+verified synthesis of the first-law derivation of the Einstein equations,''
+Version 3, Zenodo (2026), DOI:
+\href{https://doi.org/10.5281/zenodo.21821890}{10.5281/zenodo.21821890}.
+
+\bibitem{HehlDatta1971}
+F.~W.~Hehl and B.~K.~Datta, ``Nonlinear spinor equation and asymmetric
+connection in general relativity,''
+J.\ Math.\ Phys.\ \textbf{12}, 1334 (1971).
+
+\bibitem{HehlRMP1976}
+F.~W.~Hehl, P.~von der Heyde, G.~D.~Kerlick and J.~M.~Nester, ``General
+relativity with spin and torsion: foundations and prospects,''
+Rev.\ Mod.\ Phys.\ \textbf{48}, 393 (1976).
+
+\bibitem{NiehYan1982}
+H.~T.~Nieh and M.~L.~Yan, ``An identity in Riemann--Cartan geometry,''
+J.\ Math.\ Phys.\ \textbf{23}, 373 (1982).
+
+\bibitem{ChandiaZanelli1997}
+O.~Chand\'ia and J.~Zanelli, ``Topological invariants, instantons, and the
+chiral anomaly on spaces with torsion,''
+Phys.\ Rev.\ D \textbf{55}, 7580 (1997), arXiv:hep-th/9702025.
+
+\bibitem{CHM2011}
+H.~Casini, M.~Huerta and R.~C.~Myers, ``Towards a derivation of holographic
+entanglement entropy,'' JHEP \textbf{05}, 036 (2011), arXiv:1102.0440.
+
+\bibitem{FLM2013}
+T.~Faulkner, A.~Lewkowycz and J.~Maldacena, ``Quantum corrections to
+holographic entanglement entropy,'' JHEP \textbf{11}, 074 (2013),
+arXiv:1307.2892.
+
+\bibitem{Faulkner2014}
+T.~Faulkner, M.~Guica, T.~Hartman, R.~C.~Myers and M.~Van Raamsdonk,
+``Gravitation from entanglement in holographic CFTs,''
+JHEP \textbf{03}, 051 (2014), arXiv:1312.7856.
+
+\bibitem{FLPW2016}
+T.~Faulkner, R.~G.~Leigh, O.~Parrikar and H.~Wang, ``Modular Hamiltonians
+for deformed half-spaces and the averaged null energy condition,''
+JHEP \textbf{09}, 038 (2016), arXiv:1605.08072.
+
+\bibitem{CasiniTesteTorroba2017}
+H.~Casini, E.~Test\'e and G.~Torroba, ``Modular Hamiltonians on the null
+plane and the Markov property of the vacuum state,''
+J.\ Phys.\ A \textbf{50}, 364001 (2017), arXiv:1703.10656.
+
+\bibitem{DLP2017}
+R.~Dey, S.~Liberati and D.~Pranzetti, ``Spacetime thermodynamics in the
+presence of torsion,'' Phys.\ Rev.\ D \textbf{96}, 124032 (2017),
+arXiv:1709.04031.
+
+\bibitem{SarosiUgajin2018}
+G.~S\'arosi and T.~Ugajin, ``Modular Hamiltonians of excited states, OPE
+blocks and emergent bulk fields,'' JHEP \textbf{01}, 012 (2018),
+arXiv:1705.01486.
+
+\bibitem{GallegosGursoy2020}
+A.~D.~Gallegos and U.~G\"ursoy, ``Holographic spin liquids and Lovelock
+Chern--Simons gravity,'' JHEP \textbf{11}, 151 (2020), arXiv:2004.05148.
+
+\bibitem{GGY2021}
+A.~D.~Gallegos, U.~G\"ursoy and A.~Yarom, ``Hydrodynamics of spin
+currents,'' SciPost Phys.\ \textbf{11}, 041 (2021), arXiv:2101.04759.
+
+\bibitem{McGwier2026c}
+R.~W.~McGwier, ``The New Standard Model for unified physics,''
+Zenodo (2026), DOI:
+\href{https://doi.org/10.5281/zenodo.21829536}{10.5281/zenodo.21829536}.
+
+\bibitem{McGwier2026d}
+R.~W.~McGwier, ``Condition NL for finite balls: a spectral reduction, the unconditional metric sector, and a universal kinematic residue,''
+Zenodo (2026), DOI:
+\href{https://doi.org/10.5281/zenodo.21836572}{10.5281/zenodo.21836572}.
+
+\bibitem{McGwier2026e}
+R.~W.~McGwier, ``The Hehl--Datta coefficient from relative-entropy positivity,''
+Zenodo (2026), DOI:
+\href{https://doi.org/10.5281/zenodo.21836757}{10.5281/zenodo.21836757}.
+
+\bibitem{McGwier2026f}
+R.~W.~McGwier, ``Emergent gravity and a new Lagrangian: a theory of everything we know,''
+Zenodo (2026), DOI to be assigned.
+
+\end{thebibliography}
+
+\end{document}

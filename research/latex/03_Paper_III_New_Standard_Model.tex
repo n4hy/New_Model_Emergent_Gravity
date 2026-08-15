@@ -1,0 +1,433 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1.1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+
+\newcommand{\pP}{\textbf{[P]}}
+\newcommand{\pC}{\textbf{[C]}}
+\newcommand{\pO}{\textbf{[O]}}
+\newcommand{\Tr}{\operatorname{Tr}}
+
+\title{\textbf{The New Standard Model for Unified Physics}\\[4pt]
+\large The Entanglement-Certified Effective Lagrangian of Matter,
+Gauge Fields, and Riemann--Cartan Gravity}
+\author{Robert W.\ McGwier\\
+\small CTO and Staff Scientist, Cohere Technology Group, Herndon, VA}
+\date{August 7, 2026 --- Version 2}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+We assemble, term by term, the complete effective Lagrangian of known
+physics coupled to gravity with torsion: the $SU(3)\times SU(2)\times U(1)$
+Standard Model minimally coupled, through vielbein and independent spin
+connection, to Einstein--Cartan--Sciama--Kibble gravity with cosmological
+constant. We call this the \emph{New Standard Model} (NSM) and state
+precisely the sense in which it unifies: not by embedding the gauge group
+in a larger symmetry, but by certification---its gravitational sector is,
+at linear order, the unique response permitted by the entanglement first
+law \cite{McGwier2026a}; its torsion coupling is the unique structure
+surviving the modular selection rule \cite{McGwier2026b}; its superposition
+principle for geometry is a theorem rather than a postulate; and the
+elimination of torsion yields a single parameter-free prediction, a
+universal gravitational-strength axial--axial contact interaction among
+all fermion species. We derive the full Lagrangian, prove its certified
+properties, list its falsifiable consequences, and---under the standing
+verification discipline---itemize with equal care everything the model
+does \emph{not} explain. Every material claim is labeled \pP{}
+(proved/derived), \pC{} (conjectured with support), or \pO{} (open).
+\end{abstract}
+
+\section{What ``New Standard Model'' Means Here}
+
+The Standard Model (SM) of particle physics
+\cite{Glashow1961,Weinberg1967,Salam1968} plus general relativity (GR)
+constitutes the empirically confirmed description of nature. Their
+juxtaposition is usually presented as provisional bookkeeping awaiting a
+final unified theory. This paper takes a different, sharper position,
+inherited from its two predecessors \cite{McGwier2026a,McGwier2026b}:
+
+\begin{definition}[The New Standard Model]
+The NSM is the effective field theory defined by the action
+\eqref{eq:NSM} below---the full SM coupled to Einstein--Cartan gravity in
+first-order variables---\emph{together with} the certification that its
+gravitational dynamics at linear order is equivalent to the entanglement
+first law of the underlying quantum state, and the selection rule that its
+torsion structure is the unique one consistent with that law.
+\end{definition}
+
+``Unified'' is therefore used in a precise and limited sense: gravity,
+inertia, torsion, and the superposition principle for geometry are not
+independent postulates adjoined to quantum matter; within the certified
+regime they are consequences of the entanglement structure of the matter
+state \cite{Jacobson1995,Faulkner2014,McGwier2026a}. What is \emph{not}
+claimed---gauge unification, mass origins, a final theory---is itemized in
+Section~7 with the same care as the claims. The framework's own logic
+forbids finality: the Lagrangian below is emergent bookkeeping for a more
+fundamental description, and the position defended throughout this program
+is that every such description admits a deeper layer.
+
+\section{Field Content and Variables}
+
+Gravitational variables: coframe $e^a=e^a{}_\mu dx^\mu$ and independent
+Lorentz connection $\omega^{ab}{}_\mu$, with torsion
+$T^a=de^a+\omega^a{}_b\wedge e^b$ and curvature
+$R^{ab}=d\omega^{ab}+\omega^a{}_c\wedge\omega^{cb}$.
+
+Matter content: the confirmed SM fields---gauge potentials
+$G^A_\mu, W^I_\mu, B_\mu$ of $SU(3)_c\times SU(2)_L\times U(1)_Y$; three
+generations of chiral fermions $\{Q_L,u_R,d_R,L_L,e_R\}$ in the standard
+representations; the Higgs doublet $H$ with its measured quartic potential
+and 125\,GeV excitation \cite{ATLAS2012,CMS2012}; and neutrino mass terms
+required by oscillation data \cite{SuperK1998}, implemented either by
+right-handed singlets $\nu_R$ (Dirac) or by the dimension-five Weinberg
+operator (Majorana)---the choice is empirically open. \pP{} for the
+content; Dirac-vs-Majorana \pO{}.
+
+Fermions couple to gravity through the vielbein and the full connection:
+\begin{equation}
+D_\mu\psi=\Big(\partial_\mu+\tfrac{1}{4}\omega_{ab\mu}\gamma^{ab}
++ig_s G_\mu+ig W_\mu+ig' Y B_\mu\Big)\psi\,.
+\end{equation}
+Gauge field strengths are built with the exterior derivative alone,
+$F=dA+A\wedge A$: minimal substitution of the torsionful connection into
+$F$ would violate gauge invariance, so gauge fields do not couple to
+torsion \cite{HehlRMP1976,Shapiro2002}. Scalars carry no spin and likewise
+do not source torsion. \pP{} Hence \emph{only fermions talk to torsion}, a
+structural fact with consequences below.
+
+\section{The Lagrangian}
+
+\begin{equation}
+\boxed{\;
+S_{\mathrm{NSM}}
+=\frac{1}{4\kappa}\!\int\!\epsilon_{abcd}\Big(e^a\wedge e^b\wedge R^{cd}
+-\frac{\Lambda}{6}\,e^a\wedge e^b\wedge e^c\wedge e^d\Big)
+\;+\;\int d^4x\;e\,\mathcal{L}_{\mathrm{SM}}[e,\omega,\psi,A,H]\;}
+\label{eq:NSM}
+\end{equation}
+with $\kappa=8\pi G$, $e=\det e^a{}_\mu$, and
+\begin{align}
+\mathcal{L}_{\mathrm{SM}}
+=\;&-\tfrac{1}{4}G^A_{\mu\nu}G^{A\mu\nu}
+   -\tfrac{1}{4}W^I_{\mu\nu}W^{I\mu\nu}
+   -\tfrac{1}{4}B_{\mu\nu}B^{\mu\nu}
+\;+\;\sum_f \tfrac{i}{2}\,\bar\psi_f\gamma^a e^\mu{}_a
+      \overleftrightarrow{D}_\mu\psi_f
+\nonumber\\[2pt]
+&+\,|D_\mu H|^2 - V(H)
+\;-\;\Big(\bar Q_L Y_u \tilde H u_R + \bar Q_L Y_d H d_R
+      + \bar L_L Y_e H e_R + \mathrm{h.c.}\Big)
+\;+\;\mathcal{L}_\nu\,,
+\label{eq:LSM}
+\end{align}
+where $\mathcal{L}_\nu$ is the Dirac or Weinberg neutrino term. The purely
+gravitational sector of \eqref{eq:NSM} reproduces
+$\tfrac{1}{2\kappa}\!\int\!\sqrt{-g}\,(R-2\Lambda)$ when torsion vanishes.
+\pP{}
+
+\subsection{Field equations}
+
+Independent variation \cite{Kibble1961,Sciama1964,HehlRMP1976}:
+\begin{align}
+\delta e:&\quad
+\tfrac{1}{2}\epsilon_{abcd}\,e^b\wedge\!\Big(R^{cd}
+-\tfrac{\Lambda}{3}e^c\wedge e^d\Big)=\kappa\,\tau_a\,,
+\label{eq:einsteinsector}\\
+\delta\omega:&\quad
+\epsilon_{abcd}\,e^a\wedge T^b=\kappa\,\mathcal{S}_{cd}\,,
+\qquad
+\mathcal{S}\ \text{sourced by fermions only.}
+\label{eq:cartansector}
+\end{align}
+The Cartan equation \eqref{eq:cartansector} is algebraic; torsion is
+locked pointwise to the total fermionic spin density and vanishes in
+vacuum. \pP{}
+
+\subsection{Exact elimination of torsion: the one new interaction}
+
+Each SM fermion's canonical spin current is totally antisymmetric and dual
+to its axial current, $s_f^{\lambda\mu\nu}=
+-\tfrac14\epsilon^{\lambda\mu\nu\rho}J_{5\rho}^{(f)}$
+\cite{HehlDatta1971,McGwier2026b}. Solving \eqref{eq:cartansector} and
+substituting back yields ordinary Riemannian gravity plus a single
+contact term \cite{HehlDatta1971}:
+\begin{equation}
+\boxed{\;
+\mathcal{L}_{\mathrm{HD}}
+=-\frac{3\kappa}{16}\,
+\mathcal{J}_5^{\mu}\,\mathcal{J}_{5\mu}\,,
+\qquad
+\mathcal{J}_5^\mu\equiv\sum_{f\,\in\,\mathrm{all\ fermions}}
+\bar\psi_f\gamma^5\gamma^\mu\psi_f\;}
+\label{eq:HD}
+\end{equation}
+---a \emph{universal, flavor-blind, gravitational-strength axial--axial
+interaction of the total axial current with itself}, including
+cross-species terms (quark--lepton, quark--neutrino) with no free
+parameter: the coefficient is fixed by $G$. This is the only interaction
+in the NSM beyond the SM and Einstein gravity, and it is an output, not an
+input. \pP{}
+
+\section{The Certifications: What Makes This ``New''}
+
+\begin{theorem}[Gravity sector certified by entanglement]
+At linear order about the vacuum, the metric dynamics of \eqref{eq:NSM} is
+equivalent to the first law of entanglement
+$\delta S_B=\delta\langle H_B\rangle$ imposed on all ball-shaped regions:
+curvature is the unique consistent response to perturbations of vacuum
+entanglement, with inertia and the Newtonian limit contained in the same
+statement. \pP{} within the holographic regime
+\cite{Faulkner2014,Lashkari2014,McGwier2026a}; thermodynamic derivations
+extend the statement to the full nonlinear torsionful equations under
+Clausius assumptions \cite{Jacobson1995,DLP2017,JacobsonMohd2015}.
+\end{theorem}
+
+\begin{theorem}[Torsion structure certified by modular selection]
+The torsion coupling of \eqref{eq:NSM} is minimal and axial. This is not a
+simplicity choice: spin-current sources with mixed-symmetry structure,
+coupling through non-minimal matter, are relevant deformations that
+destroy the conformal/modular structure on which the first law rests; the
+entanglement-consistent sector is exactly the conserved-current (axial,
+minimal) sector realized in \eqref{eq:NSM}--\eqref{eq:HD}. \pP{} at the
+level of the dimensional and symmetry argument of \cite{McGwier2026b}.
+\end{theorem}
+
+\begin{theorem}[Superposition built in]
+The NSM requires no quantization of the metric as an independent field and
+no collapse mechanism: weak-field superposition of gravitational fields is
+a corollary of the linearity of the first law, and superpositions of
+macroscopically distinct geometries are superpositions of area-operator
+eigenstates in the sense of holographic error correction. \pP{} within
+AdS/CFT \cite{Harlow2017,McGwier2026a}; beyond it \pO{}.
+\end{theorem}
+
+\begin{remark}[Status of the matter sector]
+No analogous certification exists for the gauge and Yukawa structure: the
+SM content of \eqref{eq:LSM} enters as empirical input. Whether gauge
+dynamics, chirality, and three-generation structure admit an
+entanglement-theoretic derivation is the deepest open question this
+program can pose. \pO{}
+\end{remark}
+
+\section{Falsifiable Consequences}
+
+\begin{enumerate}[itemsep=2pt]
+\item \textbf{Universal axial contact term.} Eq.~\eqref{eq:HD} predicts
+axial--axial four-fermion interactions of strength $\sim G$, i.e.\
+suppressed by $M_{\mathrm{Pl}}^{-2}$: absolutely fixed, absolutely tiny,
+and far below collider contact-interaction sensitivity---but nonzero, and
+cross-species. Laboratory and astrophysical bounds on background torsion
+and torsion-induced Lorentz-violating couplings exist and are consistent
+\cite{KRT2008,Shapiro2002}. \pP{} for the prediction; detection prospects
+at accessible energies: none. \pP{}
+\item \textbf{High-density bounce.} At spin densities where
+$\kappa\,\mathcal{J}_5^2$ rivals the energy density, \eqref{eq:HD} is
+repulsive and can replace the initial singularity with a bounce
+\cite{Trautman1973,Poplawski2010}. \pC{}
+\item \textbf{Gravitationally mediated entanglement.} The NSM requires
+that gravity carry quantum coherence; the Bose et al./Marletto--Vedral
+witness experiments \cite{Bose2017,MarlettoVedral2017} are a
+discriminator against collapse alternatives. A confirmed null result at
+sufficient sensitivity falsifies the framework's gravitational sector.
+\pP{} for the logical structure; \pC{} pending data.
+\item \textbf{Infrared deviations.} If the de Sitter extension of the
+entanglement derivation follows Verlinde's emergent-gravity route, the
+NSM's gravitational law acquires infrared modifications at the Milgrom
+scale without particle dark matter \cite{Verlinde2017,Milgrom1983}. \pC{};
+this is the sector where the program meets galactic-dynamics data.
+\end{enumerate}
+
+\section{Relation to the Predecessor Documents}
+
+Paper I \cite{McGwier2026a} certified curvature from entanglement and
+derived the Einstein--Cartan extension; Paper II \cite{McGwier2026b}
+resolved the torsionful first law into its theorem and counterexample
+sectors, producing the selection rule used in Theorem 4.2. The present
+paper is the assembly: the unique Lagrangian those results select when the
+empirical matter content is installed. The three documents form one
+program: \emph{certify, select, assemble}.
+
+\section{What This Model Does Not Do}
+
+Stated with the same rigor as the claims. The NSM does \emph{not}:
+(i) unify the gauge couplings or predict their values;
+(ii) explain fermion masses, mixings, generations, or the hierarchy
+problem; (iii) resolve strong CP; (iv) supply a dark-matter particle---it
+offers instead the conjectural emergent-gravity alternative of item 5.4;
+(v) determine the cosmological constant, though the framework classifies
+the usual fine-tuning argument as an artifact of Wilsonian assumptions
+\pC{}; (vi) provide its own ultraviolet completion---by construction: the
+NSM is asserted to be \emph{emergent} bookkeeping for a more fundamental
+description whose full form is \pO{}, with the certified regime anchored
+in holography. Finality is not claimed and, on this program's own
+epistemology, should not be claimable. All \pO{}/\pC{} as marked.
+
+\section{Certified Summary}
+
+The New Standard Model is the action \eqref{eq:NSM}: confirmed matter,
+minimally coupled to first-order gravity with cosmological constant, its
+torsion eliminable in favor of the parameter-free universal axial
+interaction \eqref{eq:HD}. Its gravitational dynamics is entanglement
+bookkeeping \pP{}; its torsion structure is modular-selected \pP{}; its
+geometry superposes as a theorem \pP{}; its matter content is empirical
+input \pP{}; its unexplained structures are enumerated, not obscured. It
+is offered not as a final theory but as the current certified layer---the
+next turtle, load-bearing and inspected.
+
+\section*{Acknowledgments}
+The author acknowledges the use of Claude (Anthropic, claude.ai) for
+assistance in drafting, literature verification, and \LaTeX{} preparation.
+All technical claims and epistemic classifications were reviewed and
+verified by the author, who bears sole responsibility for the content.
+
+\begin{thebibliography}{99}\small
+
+\bibitem{Glashow1961}
+S.~L.~Glashow, ``Partial symmetries of weak interactions,''
+Nucl.\ Phys.\ \textbf{22}, 579 (1961).
+
+\bibitem{Kibble1961}
+T.~W.~B.~Kibble, ``Lorentz invariance and the gravitational field,''
+J.\ Math.\ Phys.\ \textbf{2}, 212 (1961).
+
+\bibitem{Sciama1964}
+D.~W.~Sciama, ``The physical structure of general relativity,''
+Rev.\ Mod.\ Phys.\ \textbf{36}, 463 (1964).
+
+\bibitem{Weinberg1967}
+S.~Weinberg, ``A model of leptons,''
+Phys.\ Rev.\ Lett.\ \textbf{19}, 1264 (1967).
+
+\bibitem{Salam1968}
+A.~Salam, ``Weak and electromagnetic interactions,'' in
+\emph{Elementary Particle Theory}, ed.\ N.~Svartholm
+(Almqvist \& Wiksell, Stockholm, 1968), p.~367.
+
+\bibitem{HehlDatta1971}
+F.~W.~Hehl and B.~K.~Datta, ``Nonlinear spinor equation and asymmetric
+connection in general relativity,''
+J.\ Math.\ Phys.\ \textbf{12}, 1334 (1971).
+
+\bibitem{Trautman1973}
+A.~Trautman, ``Spin and torsion may avert gravitational singularities,''
+Nature Phys.\ Sci.\ \textbf{242}, 7 (1973).
+
+\bibitem{HehlRMP1976}
+F.~W.~Hehl, P.~von der Heyde, G.~D.~Kerlick and J.~M.~Nester, ``General
+relativity with spin and torsion,''
+Rev.\ Mod.\ Phys.\ \textbf{48}, 393 (1976).
+
+\bibitem{Milgrom1983}
+M.~Milgrom, ``A modification of the Newtonian dynamics,''
+Astrophys.\ J.\ \textbf{270}, 365 (1983).
+
+\bibitem{Jacobson1995}
+T.~Jacobson, ``Thermodynamics of spacetime: the Einstein equation of
+state,'' Phys.\ Rev.\ Lett.\ \textbf{75}, 1260 (1995).
+
+\bibitem{SuperK1998}
+Super-Kamiokande Collaboration (Y.~Fukuda et al.), ``Evidence for
+oscillation of atmospheric neutrinos,''
+Phys.\ Rev.\ Lett.\ \textbf{81}, 1562 (1998).
+
+\bibitem{Shapiro2002}
+I.~L.~Shapiro, ``Physical aspects of the space-time torsion,''
+Phys.\ Rept.\ \textbf{357}, 113 (2002), arXiv:hep-th/0103093.
+
+\bibitem{KRT2008}
+V.~A.~Kosteleck\'y, N.~Russell and J.~D.~Tasson, ``Constraints on torsion
+from bounds on Lorentz violation,''
+Phys.\ Rev.\ Lett.\ \textbf{100}, 111102 (2008), arXiv:0712.4393.
+
+\bibitem{Poplawski2010}
+N.~J.~Pop\l awski, ``Cosmology with torsion,''
+Phys.\ Lett.\ B \textbf{694}, 181 (2010), arXiv:1007.0587.
+
+\bibitem{ATLAS2012}
+ATLAS Collaboration, ``Observation of a new particle in the search for
+the Standard Model Higgs boson,''
+Phys.\ Lett.\ B \textbf{716}, 1 (2012), arXiv:1207.7214.
+
+\bibitem{CMS2012}
+CMS Collaboration, ``Observation of a new boson at a mass of 125 GeV,''
+Phys.\ Lett.\ B \textbf{716}, 30 (2012), arXiv:1207.7235.
+
+\bibitem{FLM2013}
+T.~Faulkner, A.~Lewkowycz and J.~Maldacena, ``Quantum corrections to
+holographic entanglement entropy,'' JHEP \textbf{11}, 074 (2013).
+
+\bibitem{Lashkari2014}
+N.~Lashkari, M.~B.~McDermott and M.~Van Raamsdonk, ``Gravitational
+dynamics from entanglement `thermodynamics','' JHEP \textbf{04}, 195
+(2014), arXiv:1308.3716.
+
+\bibitem{Faulkner2014}
+T.~Faulkner, M.~Guica, T.~Hartman, R.~C.~Myers and M.~Van Raamsdonk,
+``Gravitation from entanglement in holographic CFTs,''
+JHEP \textbf{03}, 051 (2014), arXiv:1312.7856.
+
+\bibitem{JacobsonMohd2015}
+T.~Jacobson and A.~Mohd, ``Black hole entropy and Lorentz-diffeomorphism
+Noether charge,'' Phys.\ Rev.\ D \textbf{92}, 124010 (2015).
+
+\bibitem{Bose2017}
+S.~Bose et al., ``Spin entanglement witness for quantum gravity,''
+Phys.\ Rev.\ Lett.\ \textbf{119}, 240401 (2017).
+
+\bibitem{MarlettoVedral2017}
+C.~Marletto and V.~Vedral, ``Gravitationally induced entanglement between
+two massive particles is sufficient evidence of quantum effects in
+gravity,'' Phys.\ Rev.\ Lett.\ \textbf{119}, 240402 (2017).
+
+\bibitem{Harlow2017}
+D.~Harlow, ``The Ryu--Takayanagi formula from quantum error correction,''
+Commun.\ Math.\ Phys.\ \textbf{354}, 865 (2017).
+
+\bibitem{Verlinde2017}
+E.~Verlinde, ``Emergent gravity and the dark universe,''
+SciPost Phys.\ \textbf{2}, 016 (2017), arXiv:1611.02269.
+
+\bibitem{DLP2017}
+R.~Dey, S.~Liberati and D.~Pranzetti, ``Spacetime thermodynamics in the
+presence of torsion,'' Phys.\ Rev.\ D \textbf{96}, 124032 (2017).
+
+\bibitem{McGwier2026a}
+R.~W.~McGwier, ``Entanglement as the origin of spacetime curvature: a
+verified synthesis of the first-law derivation of the Einstein
+equations,'' Version 3, Zenodo (2026), DOI:
+\href{https://doi.org/10.5281/zenodo.21821890}{10.5281/zenodo.21821890}.
+
+\bibitem{McGwier2026b}
+R.~W.~McGwier, ``Spin-current sources and ball modular Hamiltonians:
+resolving the torsionful first law,''
+Zenodo (2026), DOI:
+\href{https://doi.org/10.5281/zenodo.21824934}{10.5281/zenodo.21824934}.
+
+\bibitem{McGwier2026d}
+R.~W.~McGwier, ``Condition NL for finite balls: a spectral reduction, the unconditional metric sector, and a universal kinematic residue,''
+Zenodo (2026), DOI:
+\href{https://doi.org/10.5281/zenodo.21836572}{10.5281/zenodo.21836572}.
+
+\bibitem{McGwier2026e}
+R.~W.~McGwier, ``The Hehl--Datta coefficient from relative-entropy positivity,''
+Zenodo (2026), DOI:
+\href{https://doi.org/10.5281/zenodo.21836757}{10.5281/zenodo.21836757}.
+
+\bibitem{McGwier2026f}
+R.~W.~McGwier, ``Emergent gravity and a new Lagrangian: a theory of everything we know,''
+Zenodo (2026), DOI to be assigned.
+
+\end{thebibliography}
+
+\end{document}

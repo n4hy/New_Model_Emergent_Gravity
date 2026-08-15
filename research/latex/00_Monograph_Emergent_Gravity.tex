@@ -1,0 +1,696 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1.1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{objection}{Objection}[section]
+
+\newcommand{\pP}{\textbf{[P]}}
+\newcommand{\pC}{\textbf{[C]}}
+\newcommand{\pO}{\textbf{[O]}}
+\newcommand{\Tr}{\operatorname{Tr}}
+
+\title{\textbf{Emergent Gravity and a New Lagrangian:\\
+A Theory of Everything We Know}}
+\author{Robert W.\ McGwier\\
+\small CTO and Staff Scientist, Cohere Technology Group, Herndon, VA}
+\date{August 7, 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+We consolidate a research program \cite{McGwier2026a,McGwier2026b,
+McGwier2026c} into a single document with a single thesis: the
+gravitational sector of known physics is entanglement bookkeeping, and the
+unique effective Lagrangian this bookkeeping selects, once the empirically
+confirmed matter content is installed, is the Standard Model minimally
+coupled to Einstein--Cartan gravity with cosmological constant. Part~I
+establishes the mechanism: in holographic conformal field theories the
+first law of entanglement, imposed on all ball-shaped regions, is
+equivalent to the linearized Einstein equations; the superposition
+principle for geometry follows as a theorem; and the extension to
+Riemann--Cartan geometry is derived, with torsion produced by the same
+bookkeeping wherever the state carries spin density. Part~II assembles the
+Lagrangian and its certifications, including the single parameter-free
+prediction beyond known physics: a universal gravitational-strength
+axial--axial contact interaction among all fermions. The title is exact
+and limited: this is a theory of everything \emph{we know}---curvature,
+inertia, torsion, and geometric superposition derived; gauge structure,
+masses, and generations installed as empirical input; finality expressly
+disclaimed. Appendices~A and~B establish the domain of validity (AdS
+versus de Sitter) and the theorem-grade status of Wick rotation.
+Appendix~C answers, in numbered form, the objections a skeptical referee
+should raise. Every material claim is labeled \pP{} (proved/derived),
+\pC{} (conjectured with support), or \pO{} (open).
+\end{abstract}
+
+\section*{Epistemic Conventions}
+Every material claim is tagged: \pP{} proved or derived within a stated
+framework, with the derivation published in the primary literature cited
+at the point of use or presented in full here; \pC{} conjectured,
+supported by nontrivial consistency checks but lacking proof; \pO{} open.
+No claim is asserted without a tag or citation. Numerical agreement is not
+proof. Consensus is not proof.
+
+\part*{Part I: Gravity from Entanglement}
+
+\section{The Mechanism}
+
+\subsection{Kinematics}
+
+\begin{definition}
+For a spatial region $A$ and global state $|\Psi\rangle$, the reduced
+state is $\rho_A=\Tr_{\bar A}|\Psi\rangle\langle\Psi|$, the modular
+Hamiltonian $H_A=-\log\rho_A$ (up to normalization), and the entanglement
+entropy $S_A=-\Tr\rho_A\log\rho_A$.
+\end{definition}
+
+Two exact results anchor everything. For the Rindler wedge in any Wightman
+QFT, the vacuum modular Hamiltonian is $2\pi$ times the boost generator
+(Bisognano--Wichmann \cite{BisognanoWichmann1976}). For a ball $B$ of
+radius $R$ in a CFT vacuum (Casini--Huerta--Myers \cite{CHM2011}),
+\begin{equation}
+H_B=2\pi\!\int_B d^{d-1}x\;\frac{R^2-|\vec x-\vec x_0|^2}{2R}\,
+T_{00}(x)\,.
+\label{eq:CHM}
+\end{equation}
+
+\begin{theorem}[First law of entanglement]
+\label{thm:firstlaw}
+For any family $\rho_A(\lambda)$ with $\rho_A(0)=\rho_A^{\mathrm{vac}}$,
+\begin{equation}
+\delta S_A=\delta\langle H_A\rangle=\Tr\!\big(\delta\rho_A H_A\big)
+\quad\text{at first order.}
+\label{eq:firstlaw}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+$\delta S_A=-\Tr(\delta\rho_A\log\rho_A^{\mathrm{vac}})-\Tr\,\delta\rho_A$;
+the second term vanishes by trace preservation, the first is
+$\delta\langle H_A\rangle$. \pP{}
+\end{proof}
+
+The right-hand side of \eqref{eq:firstlaw}---the \emph{modular energy}
+$E_{\mathrm{mod}}[\delta\rho]=\Tr(\delta\rho_A H_A)$---is the linear
+functional on which the entire program runs (Appendix~C, Objection~C.3).
+The exact identity behind it is
+$S(\rho_A\|\rho_A^{\mathrm{vac}})=\Delta\langle H_A\rangle-\Delta S_A
+\ge0$ \cite{Casini2008,BlancoCasini2013}: entropy's nonlinearity is
+quarantined in the relative entropy, which is second order and positive.
+
+\subsection{Dynamics: the equivalence theorem}
+
+\begin{theorem}[Faulkner--Guica--Hartman--Myers--Van Raamsdonk
+\cite{Faulkner2014}; see also \cite{Lashkari2014}]
+\label{thm:fghmv}
+Let a holographic CFT$_d$ state
+$|\Psi\rangle=|0\rangle+\lambda|\delta\Psi\rangle$ be dual to
+$g=g_{\mathrm{AdS}}+\lambda h$, with $\delta S_B$ computed gravitationally
+by Ryu--Takayanagi \cite{RyuTakayanagi2006,HRT2007} and
+$\delta\langle H_B\rangle$ by \eqref{eq:CHM}. Then
+$\delta S_B=\delta\langle H_B\rangle$ for all balls of all radii, centers,
+and frames \emph{if and only if} $h_{\mu\nu}$ satisfies the Einstein
+equations linearized about AdS, sourced by
+$\delta\langle T_{\mu\nu}\rangle$. \pP{}
+\end{theorem}
+
+\begin{remark}[The mechanism, stated exactly]
+\label{rem:mechanism}
+An excitation---a quasiparticle---curves spacetime through the
+perturbation it induces in the \emph{vacuum} entanglement across every
+partition, quantified by \eqref{eq:firstlaw}; consistency of these
+$\delta S_B$ across all partitions forces an emergent metric obeying
+linearized Einstein dynamics. Intrinsic entanglement between excitations
+is a microstate correlation, not a source: two excitations in a Bell state
+versus a product state with identical stress profiles produce the
+identical linearized metric. \pP{} (Appendix~C, Objections C.1--C.2.)
+\end{remark}
+
+Beyond linear order: relative-entropy identities reproduce the nonlinear
+Einstein equations through second order \cite{Faulkner2017,FLM2013};
+Jacobson's entanglement equilibrium \cite{Jacobson2016} proposes the full
+nonlinear equations for general backgrounds \pC{}; connectivity from
+entanglement \cite{VanRaamsdonk2010,MaldacenaSusskind2013} and tensor
+networks \cite{Swingle2012} supply the structural picture \pP{}/\pC{} as
+itemized in \cite{McGwier2026a}.
+
+\section{Superposition as a Theorem}
+\label{sec:superposition}
+
+\begin{proposition}[Linear order]
+Both sides of \eqref{eq:firstlaw} are linear in $\delta\rho$, so the map
+$\delta\rho\mapsto h$ of Theorem~\ref{thm:fghmv} is linear:
+superposed source perturbations map to superposed metric perturbations,
+coherences included. Weak-field superposition of gravity is a corollary,
+not a postulate; naive semiclassical sourcing by
+$\langle T_{\mu\nu}\rangle$ of a macroscopic superposition is excluded
+within the framework and experimentally \cite{PageGeilker1981}. \pP{}
+\end{proposition}
+
+\begin{proposition}[Macroscopic superpositions]
+In holographic quantum error correction the Ryu--Takayanagi area is an
+operator in the center of the region algebra
+\cite{ADH2015,Harlow2017,HaPPY2015}:
+$S(\rho_A)=\Tr(\rho\,\widehat{\mathrm{Area}}/4G_N)+S_{\mathrm{alg}}$.
+Superpositions of macroscopically distinct geometries are superpositions
+of area eigenstates with Born-rule statistics; the center supplies the
+approximate superselection by which classical geometry decoheres. \pP{}
+within AdS/CFT; beyond \pO{}. No collapse mechanism is required
+\cite{Penrose1996}; gravitationally mediated entanglement experiments
+\cite{Bose2017,MarlettoVedral2017} discriminate empirically. \pC{}
+pending data.
+\end{proposition}
+
+\section{GR plus Torsion, Derived}
+\label{sec:torsion}
+
+In first-order variables ($e^a$, $\omega^{ab}$; torsion
+$T^a=de^a+\omega^a{}_b\wedge e^b$), the Palatini action
+\begin{equation}
+S=\frac{1}{4\kappa}\int\epsilon_{abcd}\,e^a\wedge e^b\wedge R^{cd}
++S_m[e,\omega,\psi]\,,\qquad\kappa=8\pi G\,,
+\label{eq:ECaction}
+\end{equation}
+yields under independent variation
+\cite{Kibble1961,Sciama1964,HehlRMP1976,Trautman2006}
+\begin{equation}
+\tfrac12\epsilon_{abcd}e^b\wedge R^{cd}=\kappa\tau_a\,,\qquad
+T^\lambda{}_{\mu\nu}+\delta^\lambda_\mu T^\sigma{}_{\nu\sigma}
+-\delta^\lambda_\nu T^\sigma{}_{\mu\sigma}=\kappa s^\lambda{}_{\mu\nu}\,.
+\label{eq:ECeqs}
+\end{equation}
+The Cartan equation is algebraic: torsion is locked pointwise to spin
+density, does not propagate, and vanishes in vacuum. Eliminating it yields
+Riemannian GR with Belinfante source plus the Hehl--Datta contact term
+\cite{HehlDatta1971}; for Dirac matter,
+$\mathcal L_{\mathrm{HD}}=-\tfrac{3\kappa}{16}
+(\bar\psi\gamma^5\gamma^\mu\psi)(\bar\psi\gamma^5\gamma_\mu\psi)$. \pP{}
+The thermodynamic derivation extends to this setting
+\cite{DLP2017,DDS2018}, with entropy $=\mathrm{Area}/4G$ robust in
+first-order variables \cite{JacobsonMohd2015}. \pP{} within assumptions.
+
+\begin{proposition}[Torsionful first law, linear order]
+\label{prop:ECfirstlaw}
+Linearizing about a maximally symmetric vacuum: background torsion
+vanishes (Lorentz invariance + algebraicity); the system decomposes into a
+metric sector obeying linearized Einstein equations with Belinfante source
+and an algebraic torsion sector fixed by
+$\delta\langle s^\lambda{}_{\mu\nu}\rangle$; Hehl--Datta is quadratic and
+drops. Since the CHM Hamiltonian \eqref{eq:CHM} is built from the
+Belinfante tensor, Theorem~\ref{thm:fghmv} extends verbatim: the first
+law is equivalent to linearized Einstein--Cartan gravity, with torsion
+produced by the same bookkeeping wherever the state carries spin. \pP{}
+\end{proposition}
+
+The companion note \cite{McGwier2026b} resolves the case of explicit
+spin-current sources: for minimal Dirac matter only the axial (totally
+antisymmetric) source couples, pure-gauge sources act only through their
+curl, the torsionful first law holds unconditionally on null planes (via
+the Markov property \cite{CasiniTesteTorroba2017} and the FLPW deformation
+theory \cite{FLPW2016,SarosiUgajin2018}) and conditionally for finite
+balls; mixed-symmetry sources through non-minimal matter are relevant
+deformations that destroy the construction. \pP{}/\pO{} as itemized there.
+This \emph{modular selection rule} is what Part~II uses.
+
+\part*{Part II: The Lagrangian}
+
+\section{The New Standard Model}
+\label{sec:nsm}
+
+\begin{definition}
+The New Standard Model (NSM) is the action \eqref{eq:NSM}---the full
+$SU(3)_c\times SU(2)_L\times U(1)_Y$ Standard Model
+\cite{Glashow1961,Weinberg1967,Salam1968}, three generations, Higgs sector
+\cite{ATLAS2012,CMS2012}, neutrino masses \cite{SuperK1998} (Dirac or
+Weinberg-operator, empirically open \pO{}), minimally coupled through
+vielbein and independent spin connection to Einstein--Cartan gravity with
+cosmological constant---\emph{together with} the certifications of
+Section~\ref{sec:certifications}.
+\end{definition}
+
+\begin{equation}
+\boxed{\;
+S_{\mathrm{NSM}}
+=\frac{1}{4\kappa}\!\int\!\epsilon_{abcd}\Big(e^a\wedge e^b\wedge R^{cd}
+-\frac{\Lambda}{6}\,e^a\wedge e^b\wedge e^c\wedge e^d\Big)
++\int d^4x\;e\,\mathcal{L}_{\mathrm{SM}}[e,\omega,\psi,A,H]\;}
+\label{eq:NSM}
+\end{equation}
+with $\mathcal L_{\mathrm{SM}}$ the standard gauge, fermion, Higgs, and
+Yukawa terms, fermions covariantized with the full connection
+$D_\mu=\partial_\mu+\tfrac14\omega_{ab\mu}\gamma^{ab}+i g\!\cdot\!A_\mu$.
+Gauge field strengths use the exterior derivative alone (gauge invariance
+forbids torsion coupling \cite{HehlRMP1976,Shapiro2002}); scalars carry no
+spin. \emph{Only fermions talk to torsion.} \pP{}
+
+Eliminating the algebraic torsion yields the single interaction beyond the
+SM and Einstein gravity:
+\begin{equation}
+\boxed{\;
+\mathcal L_{\mathrm{HD}}=-\frac{3\kappa}{16}\,
+\mathcal J_5^\mu\mathcal J_{5\mu}\,,\qquad
+\mathcal J_5^\mu=\!\!\sum_{f\in\mathrm{all\ fermions}}\!\!
+\bar\psi_f\gamma^5\gamma^\mu\psi_f\;}
+\label{eq:HD}
+\end{equation}
+---universal, flavor-blind, cross-species, gravitational strength, with
+\emph{no free parameter}: the coefficient is fixed by $G$. An output, not
+an input. \pP{}
+
+\section{The Certifications}
+\label{sec:certifications}
+
+\begin{theorem}[Gravity certified]
+At linear order the metric dynamics of \eqref{eq:NSM} is equivalent to the
+entanglement first law on all balls (Theorem~\ref{thm:fghmv},
+Proposition~\ref{prop:ECfirstlaw}): curvature and inertia are the unique
+consistent response to perturbations of vacuum entanglement. \pP{} within
+the holographic regime; nonlinear torsionful equations under Clausius
+assumptions \cite{Jacobson1995,DLP2017}. 
+\end{theorem}
+
+\begin{theorem}[Torsion structure certified]
+The minimal axial torsion coupling of \eqref{eq:NSM} is the unique
+structure surviving the modular selection rule of \cite{McGwier2026b}:
+mixed-symmetry couplings through non-minimal matter are relevant
+deformations destroying the modular framework. \pP{} at the level of the
+dimensional and symmetry argument.
+\end{theorem}
+
+\begin{theorem}[Superposition certified]
+Section~\ref{sec:superposition} applies verbatim: the NSM requires no
+metric quantization as an independent postulate and no collapse
+mechanism. \pP{} within AdS/CFT; \pO{} beyond.
+\end{theorem}
+
+\begin{remark}
+No analogous certification exists for the gauge and Yukawa structure:
+the matter content is empirical input, and whether gauge dynamics,
+chirality, and three generations admit an entanglement-theoretic
+derivation is the deepest question this program can pose. \pO{}
+\end{remark}
+
+\section{Falsifiable Consequences; Declared Limits}
+
+Consequences: (1) the parameter-free contact term \eqref{eq:HD},
+consistent with torsion bounds \cite{KRT2008,Shapiro2002}, undetectable at
+collider energies \pP{}; (2) torsion-induced bounce replacing the initial
+singularity \cite{Trautman1973,Poplawski2010} \pC{}; (3) gravitationally
+mediated entanglement as a live falsifier of the gravitational sector
+\cite{Bose2017,MarlettoVedral2017} \pC{}; (4) infrared deviations at the
+Milgrom scale if the de Sitter extension follows the emergent route
+\cite{Verlinde2017,Milgrom1983} \pC{}.
+
+Declared limits: the NSM does not unify gauge couplings, explain masses or
+generations, resolve strong CP, supply a dark-matter particle, determine
+$\Lambda$, or provide its own UV completion---the last by construction,
+since the Lagrangian is asserted to be emergent bookkeeping for a deeper
+description \pO{}. \emph{A theory of everything we know is not a theory of
+everything}; on this program's epistemology, finality is not claimable.
+
+\appendix
+
+\section{Domain of Validity: AdS versus de Sitter}
+\label{app:adsds}
+
+\subsection{Why the proofs live in AdS}
+The \pP{}-grade chain requires three ingredients AdS supplies and de
+Sitter does not: a timelike boundary carrying a complete unitary CFT with
+the Maldacena dictionary \cite{Maldacena1998} (de Sitter's candidate
+dS/CFT \cite{Strominger2001} is Euclidean, generically non-unitary, and
+\pO{}); a global timelike Killing structure guaranteeing the
+Bisognano--Wichmann machinery (de Sitter has only observer-dependent
+static patches with Gibbons--Hawking horizon entropy
+\cite{GibbonsHawking1977}, microscopic description \pO{}); and
+theorem-grade entanglement technology
+\cite{RyuTakayanagi2006,FLM2013,EngelhardtWall2015}, unavailable at that
+grade in de Sitter \pO{}. Rule: certify in AdS, extrapolate with labels.
+
+\subsection{Why the mechanism governs our space}
+\begin{proposition}[Flat-space inputs]
+The quantum-informational inputs---CHM \eqref{eq:CHM}, the first law,
+relative-entropy positivity and monotonicity, the null-plane Markov
+property \cite{CasiniTesteTorroba2017}---are theorems of QFT on Minkowski
+space, independent of holography. The vacuum of the Standard-Model fields
+in our universe carries the structure the mechanism runs on. \pP{}
+\end{proposition}
+\begin{proposition}[Locality]
+The thermodynamic route \cite{Jacobson1995,DLP2017} uses only local
+Rindler horizons, available through every point of every spacetime, and
+yields the field equations pointwise; AdS/CFT upgrades the local inputs to
+theorems. \pP{} structure; general-background transfer
+\cite{Jacobson2016} \pC{}.
+\end{proposition}
+\begin{proposition}[Infrared decoupling of $\Lambda$]
+With $\Lambda\simeq1.1\times10^{-52}\,\mathrm{m}^{-2}$, the local
+relevance measure $\Lambda L^2$ is $\sim10^{-52}$ (laboratory),
+$\sim10^{-30}$ (1 AU), $\sim10^{-11}$ (10 kpc), $\mathcal O(1)$ only at
+the Hubble radius. Below the Hubble scale the AdS/dS/flat distinction is
+invisible to local experiment; the certified regime is
+$\Lambda L^2\ll1$. \pP{}
+\end{proposition}
+\begin{proposition}[Where the difference bites]
+The sign of $\Lambda$ is structural only near the horizon scale, where de
+Sitter has an observer horizon with entropy \cite{GibbonsHawking1977} and
+possibly a volume-law entanglement contribution \cite{Verlinde2017}. Any
+modification appears at accelerations $\sim cH_0$; Milgrom's
+$a_0\simeq1.2\times10^{-10}\,\mathrm{m\,s^{-2}}\approx cH_0/6$
+\cite{Milgrom1983} sits exactly there. Coincidence \pP{}; explanation
+\pC{}; microtheory \pO{}. The proof's edge coincides with observation's
+anomalies.
+\end{proposition}
+
+\section{The Status of Wick Rotation}
+\label{app:wick}
+
+Euclidean continuation enters at three load-bearing points, each covered
+by a theorem. \textbf{Reconstruction:} Osterwalder--Schrader
+\cite{OS1973} uniquely reconstructs a unitary, causal, positive-energy
+Lorentzian QFT from reflection-positive Euclidean data; the boundary
+theories used here satisfy the hypotheses. \pP{}
+\textbf{Instantiation:} Bisognano--Wichmann
+\cite{BisognanoWichmann1976} \emph{is} the rotation, proved once at the
+foundational level: wedge modular flow is the boost, with
+\eqref{eq:CHM} its conformal image; Tomita--Takesaki theory
+\cite{Haag1996} performs no rotation at all; the Unruh temperature
+\cite{Unruh1976} is the KMS countersignature. \pP{}
+\textbf{The fragile uses are absent from \pP{} claims:} (i) the replica
+limit $n\to1$ \cite{LM2013} is never performed at linear order---the first
+law is an operator identity and Theorem~\ref{thm:fghmv} uses RT as an
+independently established input; (ii) the Euclidean gravitational path
+integral, unbounded below \cite{GHP1978}, is never performed---gravity is
+emergent and every gravitational statement is boundary entanglement;
+(iii) de Sitter Euclidean vacua are genuinely subtle and lie entirely
+inside the \pO{} region of Appendix~\ref{app:adsds}---the two frontiers
+coincide, a consistency check on the labeling. \pP{} Fermion
+$\gamma^5$ conventions touch one certified claim (the anomaly caveat in
+\cite{McGwier2026b}) and are fixed convention-independently by the index
+theorem \cite{Fujikawa1979}. \pP{}
+
+\section{Anticipated Objections, Answered}
+\label{app:objections}
+
+Each objection below was raised, in some form, during the development of
+this program. Answers cite the theorem that settles the point or the tag
+that concedes it.
+
+\begin{objection}[``This is Verlinde's entropic gravity, and/or it runs
+on `relative entropy.'\,'']
+Neither. The entropy in Theorems~\ref{thm:firstlaw}--\ref{thm:fghmv} is
+\emph{entanglement entropy across a partition}---relationally
+\emph{defined} (no partition, no entropy) but not ``relational entropy''
+as a term of art, and not Verlinde's coarse-grained screen entropy
+\cite{Verlinde2011}, which requires $N\gg1$ bits at finite temperature and
+is undefined for a single excitation. Relative entropy enters in one exact
+role: as the positive second-order remainder
+$S(\rho\|\rho_{\mathrm{vac}})=\Delta\langle H\rangle-\Delta S$
+\cite{Casini2008,BlancoCasini2013}, whose positivity delivers energy
+conditions and second-order dynamics \cite{Faulkner2017}. Verlinde's 2016
+volume-law proposal \cite{Verlinde2017} is a \pC{} extension confined to
+Appendix~\ref{app:adsds}'s frontier, never load-bearing for a \pP{}. \pP{}
+\end{objection}
+
+\begin{objection}[``So entangled particles gravitate toward each other
+because they're entangled?'']
+No, and the theorem's content forbids it. Curvature at linear order is
+fixed entirely by $\delta\langle T_{\mu\nu}\rangle$
+(Remark~\ref{rem:mechanism}): a Bell pair and a product pair with
+identical stress profiles produce identical metrics. The gravitating
+object is the excitation's perturbation of \emph{vacuum} entanglement,
+ball by ball; pair entanglement is a microstate correlation invisible to
+single-region reduced states. Whether ER=EPR
+\cite{MaldacenaSusskind2013} endows pairs with a Planckian geometric dual
+is \pC{} and carries no classical curvature signature in any case. \pP{}
+\end{objection}
+
+\begin{objection}[``A thermodynamic origin for gravity forfeits quantum
+superposition. What is even linear here?'']
+The linear functional is the \emph{modular energy}
+$E_{\mathrm{mod}}[\delta\rho]=\Tr(\delta\rho_A H_A)$, and the first law
+says $\delta S_A$ \emph{equals} it: entropy's nonlinearity is entirely
+quarantined in the positive second-order relative entropy. Both sides of
+the equivalence in Theorem~\ref{thm:fghmv} are therefore linear in
+$\delta\rho$, making weak-field superposition a corollary
+(Section~\ref{sec:superposition}); macroscopic superpositions of distinct
+geometries are area-operator superpositions \cite{Harlow2017}. The naive
+semiclassical alternative is excluded experimentally
+\cite{PageGeilker1981}; the collapse alternative \cite{Penrose1996} is
+empirically discriminable \cite{Bose2017,MarlettoVedral2017}. \pP{}
+within stated frameworks.
+\end{objection}
+
+\begin{objection}[``Torsion is ad hoc, dead since the 1970s, and
+unobservable.'']
+Torsion is not added; it is what the first-order formalism \emph{already
+contains} the moment fermions exist: spinors couple to the connection, the
+connection's variation is the Cartan equation \eqref{eq:ECeqs}, and
+refusing torsion is the ad hoc step. It is algebraic (no new propagating
+fields), experimentally bounded and consistent \cite{KRT2008,Shapiro2002},
+selected uniquely by the modular argument \cite{McGwier2026b}, and its one
+consequence \eqref{eq:HD} is parameter-free. ``Unobservable at colliders''
+is conceded \pP{} and is exactly what a gravitational-strength contact
+term must be; the high-density regime \cite{Trautman1973,Poplawski2010}
+is where it earns its keep. \pC{} there.
+\end{objection}
+
+\begin{objection}[``Why is everything proved in anti-de Sitter when the
+universe is de Sitter?'']
+Because in AdS the claim is a theorem and in de Sitter it is a hope, and
+the discipline of this document is never to blur that line. The full
+argument is Appendix~\ref{app:adsds}: AdS supplies the boundary, the
+dictionary, and the theorem-grade technology; the mechanism so certified
+is \emph{local}, built from flat-space theorems our fields satisfy; the
+measured $\Lambda$ decouples below the Hubble scale
+($\Lambda L^2\ll1$); and the one regime where the certification runs
+out is the one regime where observation shows anomalies. AdS is the wind
+tunnel, not the sky. \pP{}/\pC{}/\pO{} as tagged there.
+\end{objection}
+
+\begin{objection}[``Euclidean methods smuggle in unjustified analytic
+continuation.'']
+Appendix~\ref{app:wick}: the rotation used is licensed by
+Osterwalder--Schrader, instantiated by Bisognano--Wichmann,
+countersigned by the Unruh/KMS thermality, and the three genuinely fragile
+continuations---replica limits, the Euclidean gravitational path integral,
+de Sitter vacua---are respectively never used at linear order,
+structurally bypassed by emergence, and coincident with the declared
+\pO{} frontier. \pP{}
+\end{objection}
+
+\begin{objection}[``You have a Lagrangian for QFT plus torsionful
+gravity---so you claim a fundamental theory.'']
+Two levels, kept separate. At the effective level, yes:
+\eqref{eq:NSM}--\eqref{eq:HD} is the complete EFT of known physics,
+quantizable below $M_{\mathrm{Pl}}$, and \emph{certified} in its
+gravitational and torsion structure. At the fundamental level, no, by
+construction: in this framework the Lagrangian is emergent bookkeeping;
+the microscopic description is the boundary theory of a holographic pair,
+and no first-principles selection of that pair exists \pO{}. The sharpest
+open prize is whether the Hehl--Datta coefficient itself can be derived
+from relative-entropy positivity at joint second order, which would make
+the entire EFT an entanglement theorem. \pO{}
+\end{objection}
+
+\begin{objection}[``The title claims a theory of everything.'']
+Read it in full: a theory of everything \emph{we know}. Derived:
+curvature, inertia, torsion, geometric superposition, and one new
+interaction with no free parameter. Installed as empirical input: gauge
+group, representations, Yukawas, generations, $\Lambda$. Declared open:
+their origin, the UV completion, de Sitter. The program's own
+epistemology---emergence without a final layer---forbids the stronger
+reading, and Section~7 enumerates the exclusions with the same rigor as
+the claims. A referee who finds the title too strong is invited to find a
+single sentence in the body that is. \pP{} (as a statement about the
+document).
+\end{objection}
+
+\section*{Certified Summary}
+Gravity is entanglement bookkeeping \pP{}; its torsionful extension is
+derived and modular-selected \pP{}; geometry superposes as a theorem
+\pP{}; the unique resulting effective Lagrangian of known physics is
+\eqref{eq:NSM} with the single parameter-free consequence \eqref{eq:HD}
+\pP{}; the domain of validity and the analytic-continuation machinery are
+theorem-anchored with their frontiers labeled \pP{}/\pO{}; and everything
+not derived is named. This is the current certified layer---the next
+turtle, load-bearing and inspected.
+
+\section*{Acknowledgments}
+The author acknowledges the use of Claude (Anthropic, claude.ai) for
+assistance in drafting, literature verification, and \LaTeX{} preparation.
+All technical claims and epistemic classifications were reviewed and
+verified by the author, who bears sole responsibility for the content.
+
+\begin{thebibliography}{99}\small
+
+\bibitem{Glashow1961}
+S.~L.~Glashow, Nucl.\ Phys.\ \textbf{22}, 579 (1961).
+\bibitem{Kibble1961}
+T.~W.~B.~Kibble, J.\ Math.\ Phys.\ \textbf{2}, 212 (1961).
+\bibitem{Sciama1964}
+D.~W.~Sciama, Rev.\ Mod.\ Phys.\ \textbf{36}, 463 (1964).
+\bibitem{Weinberg1967}
+S.~Weinberg, Phys.\ Rev.\ Lett.\ \textbf{19}, 1264 (1967).
+\bibitem{Salam1968}
+A.~Salam, in \emph{Elementary Particle Theory}, ed.\ N.~Svartholm
+(Almqvist \& Wiksell, 1968), p.~367.
+\bibitem{HehlDatta1971}
+F.~W.~Hehl and B.~K.~Datta, J.\ Math.\ Phys.\ \textbf{12}, 1334 (1971).
+\bibitem{OS1973}
+K.~Osterwalder and R.~Schrader, Commun.\ Math.\ Phys.\ \textbf{31}, 83
+(1973); II, \textbf{42}, 281 (1975).
+\bibitem{Trautman1973}
+A.~Trautman, Nature Phys.\ Sci.\ \textbf{242}, 7 (1973).
+\bibitem{Hawking1975}
+S.~W.~Hawking, Commun.\ Math.\ Phys.\ \textbf{43}, 199 (1975).
+\bibitem{BisognanoWichmann1976}
+J.~J.~Bisognano and E.~H.~Wichmann, J.\ Math.\ Phys.\ \textbf{17}, 303
+(1976).
+\bibitem{HehlRMP1976}
+F.~W.~Hehl, P.~von der Heyde, G.~D.~Kerlick and J.~M.~Nester,
+Rev.\ Mod.\ Phys.\ \textbf{48}, 393 (1976).
+\bibitem{Unruh1976}
+W.~G.~Unruh, Phys.\ Rev.\ D \textbf{14}, 870 (1976).
+\bibitem{GibbonsHawking1977}
+G.~W.~Gibbons and S.~W.~Hawking, Phys.\ Rev.\ D \textbf{15}, 2738 (1977).
+\bibitem{GHP1978}
+G.~W.~Gibbons, S.~W.~Hawking and M.~J.~Perry, Nucl.\ Phys.\ B
+\textbf{138}, 141 (1978).
+\bibitem{Fujikawa1979}
+K.~Fujikawa, Phys.\ Rev.\ Lett.\ \textbf{42}, 1195 (1979).
+\bibitem{PageGeilker1981}
+D.~N.~Page and C.~D.~Geilker, Phys.\ Rev.\ Lett.\ \textbf{47}, 979
+(1981).
+\bibitem{Milgrom1983}
+M.~Milgrom, Astrophys.\ J.\ \textbf{270}, 365 (1983).
+\bibitem{Jacobson1995}
+T.~Jacobson, Phys.\ Rev.\ Lett.\ \textbf{75}, 1260 (1995).
+\bibitem{Haag1996}
+R.~Haag, \emph{Local Quantum Physics}, 2nd ed.\ (Springer, 1996).
+\bibitem{Penrose1996}
+R.~Penrose, Gen.\ Rel.\ Grav.\ \textbf{28}, 581 (1996).
+\bibitem{Maldacena1998}
+J.~M.~Maldacena, Adv.\ Theor.\ Math.\ Phys.\ \textbf{2}, 231 (1998).
+\bibitem{SuperK1998}
+Super-Kamiokande Collaboration, Phys.\ Rev.\ Lett.\ \textbf{81}, 1562
+(1998).
+\bibitem{Strominger2001}
+A.~Strominger, JHEP \textbf{10}, 034 (2001).
+\bibitem{Shapiro2002}
+I.~L.~Shapiro, Phys.\ Rept.\ \textbf{357}, 113 (2002).
+\bibitem{Trautman2006}
+A.~Trautman, in \emph{Encyclopedia of Mathematical Physics} (Elsevier,
+2006), arXiv:gr-qc/0606062.
+\bibitem{RyuTakayanagi2006}
+S.~Ryu and T.~Takayanagi, Phys.\ Rev.\ Lett.\ \textbf{96}, 181602 (2006).
+\bibitem{HRT2007}
+V.~E.~Hubeny, M.~Rangamani and T.~Takayanagi, JHEP \textbf{07}, 062
+(2007).
+\bibitem{Casini2008}
+H.~Casini, Class.\ Quantum Grav.\ \textbf{25}, 205021 (2008).
+\bibitem{KRT2008}
+V.~A.~Kosteleck\'y, N.~Russell and J.~D.~Tasson, Phys.\ Rev.\ Lett.\
+\textbf{100}, 111102 (2008).
+\bibitem{VanRaamsdonk2010}
+M.~Van Raamsdonk, Gen.\ Rel.\ Grav.\ \textbf{42}, 2323 (2010).
+\bibitem{Poplawski2010}
+N.~J.~Pop\l awski, Phys.\ Lett.\ B \textbf{694}, 181 (2010).
+\bibitem{Verlinde2011}
+E.~Verlinde, JHEP \textbf{04}, 029 (2011).
+\bibitem{CHM2011}
+H.~Casini, M.~Huerta and R.~C.~Myers, JHEP \textbf{05}, 036 (2011).
+\bibitem{ATLAS2012}
+ATLAS Collaboration, Phys.\ Lett.\ B \textbf{716}, 1 (2012).
+\bibitem{CMS2012}
+CMS Collaboration, Phys.\ Lett.\ B \textbf{716}, 30 (2012).
+\bibitem{Swingle2012}
+B.~Swingle, Phys.\ Rev.\ D \textbf{86}, 065007 (2012).
+\bibitem{MaldacenaSusskind2013}
+J.~Maldacena and L.~Susskind, Fortsch.\ Phys.\ \textbf{61}, 781 (2013).
+\bibitem{BlancoCasini2013}
+D.~D.~Blanco, H.~Casini, L.-Y.~Hung and R.~C.~Myers, JHEP \textbf{08},
+060 (2013).
+\bibitem{LM2013}
+A.~Lewkowycz and J.~Maldacena, JHEP \textbf{08}, 090 (2013).
+\bibitem{FLM2013}
+T.~Faulkner, A.~Lewkowycz and J.~Maldacena, JHEP \textbf{11}, 074 (2013).
+\bibitem{Lashkari2014}
+N.~Lashkari, M.~B.~McDermott and M.~Van Raamsdonk, JHEP \textbf{04}, 195
+(2014).
+\bibitem{Faulkner2014}
+T.~Faulkner, M.~Guica, T.~Hartman, R.~C.~Myers and M.~Van Raamsdonk,
+JHEP \textbf{03}, 051 (2014).
+\bibitem{ADH2015}
+A.~Almheiri, X.~Dong and D.~Harlow, JHEP \textbf{04}, 163 (2015).
+\bibitem{HaPPY2015}
+F.~Pastawski, B.~Yoshida, D.~Harlow and J.~Preskill, JHEP \textbf{06},
+149 (2015).
+\bibitem{EngelhardtWall2015}
+N.~Engelhardt and A.~C.~Wall, JHEP \textbf{01}, 073 (2015).
+\bibitem{JacobsonMohd2015}
+T.~Jacobson and A.~Mohd, Phys.\ Rev.\ D \textbf{92}, 124010 (2015).
+\bibitem{Jacobson2016}
+T.~Jacobson, Phys.\ Rev.\ Lett.\ \textbf{116}, 201101 (2016).
+\bibitem{FLPW2016}
+T.~Faulkner, R.~G.~Leigh, O.~Parrikar and H.~Wang, JHEP \textbf{09}, 038
+(2016).
+\bibitem{Harlow2017}
+D.~Harlow, Commun.\ Math.\ Phys.\ \textbf{354}, 865 (2017).
+\bibitem{Bose2017}
+S.~Bose et al., Phys.\ Rev.\ Lett.\ \textbf{119}, 240401 (2017).
+\bibitem{MarlettoVedral2017}
+C.~Marletto and V.~Vedral, Phys.\ Rev.\ Lett.\ \textbf{119}, 240402
+(2017).
+\bibitem{Verlinde2017}
+E.~Verlinde, SciPost Phys.\ \textbf{2}, 016 (2017).
+\bibitem{DLP2017}
+R.~Dey, S.~Liberati and D.~Pranzetti, Phys.\ Rev.\ D \textbf{96}, 124032
+(2017).
+\bibitem{CasiniTesteTorroba2017}
+H.~Casini, E.~Test\'e and G.~Torroba, J.\ Phys.\ A \textbf{50}, 364001
+(2017).
+\bibitem{Faulkner2017}
+T.~Faulkner, F.~M.~Haehl, E.~Hijano, O.~Parrikar, C.~Rabideau and
+M.~Van Raamsdonk, JHEP \textbf{08}, 057 (2017).
+\bibitem{SarosiUgajin2018}
+G.~S\'arosi and T.~Ugajin, JHEP \textbf{01}, 012 (2018).
+\bibitem{DDS2018}
+T.~De Lorenzo, E.~De Paoli and S.~Speziale, Phys.\ Rev.\ D \textbf{98},
+064053 (2018).
+\bibitem{McGwier2026a}
+R.~W.~McGwier, ``Entanglement as the origin of spacetime curvature,''
+v4, Zenodo (2026), DOI:
+\href{https://doi.org/10.5281/zenodo.21821890}{10.5281/zenodo.21821890}.
+\bibitem{McGwier2026b}
+R.~W.~McGwier, ``Spin-current sources and ball modular Hamiltonians,''
+Zenodo (2026), DOI:
+\href{https://doi.org/10.5281/zenodo.21824934}{10.5281/zenodo.21824934}.
+\bibitem{McGwier2026c}
+R.~W.~McGwier, ``The New Standard Model for unified physics,''
+Zenodo (2026), DOI:
+\href{https://doi.org/10.5281/zenodo.21829536}{10.5281/zenodo.21829536}.
+
+\bibitem{McGwier2026d}
+R.~W.~McGwier, ``Condition NL for finite balls: a spectral reduction, the unconditional metric sector, and a universal kinematic residue,''
+Zenodo (2026), DOI:
+\href{https://doi.org/10.5281/zenodo.21836572}{10.5281/zenodo.21836572}.
+
+\bibitem{McGwier2026e}
+R.~W.~McGwier, ``The Hehl--Datta coefficient from relative-entropy positivity,''
+Zenodo (2026), DOI:
+\href{https://doi.org/10.5281/zenodo.21836757}{10.5281/zenodo.21836757}.
+
+\end{thebibliography}
+
+\end{document}

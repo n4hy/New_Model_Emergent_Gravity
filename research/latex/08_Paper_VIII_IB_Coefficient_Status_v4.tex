@@ -1,0 +1,106 @@
+% Reconstructed from the 14 August 2026 FINAL PDF.
+\documentclass[11pt]{article}
+\usepackage[margin=1.1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newcommand{\pP}{\textbf{[P]}}
+\newcommand{\pC}{\textbf{[C]}}
+\newcommand{\pO}{\textbf{[O]}}
+
+\title{\textbf{Status of the High-Precision Coefficient of the\\
+Universal Kinematic Residue $I_B$\\
+(Version 4)}}
+\author{Robert W.\ McGwier\\
+\small CTO and Staff Scientist, Cohere Technology Group, Herndon, VA}
+\date{August 14, 2026 --- Version 4}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+This note records the final status of the high-precision numerical
+coefficient of the universal kinematic residue $I_B$. Controlled
+numerical experiments in the $d=2$ laboratory, including
+singularity-subtracted and principal-value prescriptions, establish
+that the relative residue is of order unity. A multi-digit coefficient
+remains open: a fully analytic Hadamard expansion of the current
+two-point function under modular flow is still required. The existence
+of a non-zero residue of relative size $O(1)$ is \pP{}; the precise
+digits are \pO{}. No structural claim of the Emergent Gravity Program
+depends on those digits.
+
+Why this note is required. Earlier versions left the coefficient
+entirely open or reported only qualitative non-vanishing. The present
+version documents the best controlled numerical evidence (order-unity
+relative residue) and states with precision what remains to be done for
+a high-precision extraction, so that the public record is complete and
+honest.
+\end{abstract}
+
+\section*{Epistemic Conventions}
+Every material claim is tagged \pP{}, \pC{} or \pO{}.
+Numerical agreement is not proof.
+
+\section{Controlled Numerical Evidence}
+Experiments were performed with the exact M\"obius modular flow of an
+interval and the chiral current two-point function. Smooth compactly
+supported sources were used. Both direct subtraction of the local
+quadratic form and principal-value / finite-part prescriptions for the
+difference of flowed and unflowed correlators were examined.
+
+Stable results under all variations:
+\begin{itemize}[leftmargin=1.4em]
+\item the residue is non-vanishing;
+\item the integrand is even;
+\item exponential decay at large modular time confirms infrared safety;
+\item the relative residue (residue divided by the local quadratic form)
+is of order unity ($O(1)$).
+\end{itemize}
+The best controlled estimate of the relative residue under the
+singularity-subtracted prescriptions examined is approximately $1$--$5$,
+depending on the precise finite-part implementation. This establishes
+the order of magnitude but not a multi-digit coefficient.
+
+\section{What Remains Open}
+A fully controlled high-precision coefficient requires an analytic
+Hadamard (or equivalent distributional) expansion of the current
+two-point function under the modular flow, isolating and subtracting
+all terms that produce non-integrable singularities when folded against
+the modular kernel $\pi/(2\cosh^{2}(\pi s))$. The numerical proxies used
+here cancel the leading $1/r^{2}$ piece but do not yet remove every
+singular contribution systematically. Until that analytic step is
+completed, the precise digits remain \pO{}.
+
+\section{Logical Status}
+\begin{itemize}[leftmargin=1.4em]
+\item Existence of a non-zero residue of relative size $O(1)$: \pP{}.
+\item Absorbability of the residue into a finite dictionary improvement:
+\pP{} (established independently of the precise coefficient).
+\item Multi-digit numerical coefficient of $I_B$: \pO{}.
+\end{itemize}
+The precise coefficient controls only the size of the dictionary
+improvement. It is not required for the validity of the torsionful first
+law, the unconditional metric sector, the sign of the Hehl--Datta
+interaction, or the pure-information determination of its magnitude.
+All of those claims remain certified independently of the digits.
+
+\section*{Final Note on the Numerical Campaign}
+Further purely numerical iteration with hard cutoffs or simple
+principal-value proxies will not produce a reliable multi-digit
+coefficient. The remaining task is analytic. This Version 4 therefore
+closes the numerical campaign and records the order-of-magnitude result
+together with the precise requirement for any future high-precision
+extraction.
+
+\begin{thebibliography}{99}
+\bibitem{IV} R.W.\ McGwier, ``Condition NL for Finite Balls,'' Zenodo (2026).
+\bibitem{VI} R.W.\ McGwier, ``Evaluation of the Universal Kinematic Integral\ldots,'' Zenodo (2026).
+\bibitem{VIII} R.W.\ McGwier, ``Status of the High-Precision Coefficient\ldots'' (earlier versions), Zenodo (2026).
+\bibitem{CTT} H.\ Casini, E.\ Teste and G.\ Torroba, J.\ Phys.\ A 50 (2017) 364001.
+\bibitem{CHM} H.\ Casini, M.\ Huerta and R.C.\ Myers, JHEP 05 (2011) 036.
+\bibitem{FGHMV} T.\ Faulkner et al., JHEP 03 (2014) 051.
+\end{thebibliography}
+\end{document}
