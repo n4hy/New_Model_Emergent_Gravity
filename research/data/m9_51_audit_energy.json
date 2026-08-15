@@ -1,0 +1,19 @@
+{
+  "task": "m9.51_audit_energy",
+  "star_slopes": [
+    -1.9489031068368539,
+    -1.9489031068368299
+  ],
+  "sea_slopes": [
+    0.979846277841575,
+    0.9798462778415333
+  ],
+  "C_star": true,
+  "C_sea": true,
+  "C_hold": true,
+  "verdicts": {
+    "C_star": "CONFIRMED",
+    "C_sea": "CONFIRMED",
+    "C_hold": "CONFIRMED"
+  }
+}

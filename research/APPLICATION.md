@@ -232,6 +232,8 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
   [`findings/m9_49_complement_note.md`](findings/m9_49_complement_note.md).
 - \(\kappa\) vs \(\alpha\): `scripts/m9_50_alpha.py`,
   [`findings/m9_50_alpha_note.md`](findings/m9_50_alpha_note.md).
+- Energy-only Gauss: `scripts/m9_51_energy_gauss.py`,
+  [`findings/m9_51_energy_gauss_note.md`](findings/m9_51_energy_gauss_note.md).
 
 ## Which MODELS.md rows the model addresses
 

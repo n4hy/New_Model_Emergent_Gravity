@@ -55,5 +55,6 @@
 | `58_Sea_Subtracted.tex` | First law tracks δe, not raw e; sea does not gravitate |
 | `59_Complement.tex` | Complement δS is not the cosmological first-law minus |
 | `60_Kappa_Runs.tex` | κ runs with α; it is 2h(α)/(α ΔE), not a coupling |
+| `61_Energy_Gauss.tex` | Gauss from ∑δe; star/sea slopes do not run with α |
 
 Reconstructed files follow the PDF wording and equations. They are not a byte-for-byte dump of an unpublished compiler run.
