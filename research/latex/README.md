@@ -36,3 +36,4 @@ Reconstructed files follow the PDF wording and equations. They are not a byte-fo
 | `37_FixedH_First_Law.tex` | Fixed-H first law: 1d enclosed energy, 3d balls CHM |
 | `38_Shape_Not_Sphere.tex` | Guess: not a sphere. Cubes prefer a cube-native weight |
 | `39_Area_Not_Clausius.tex` | Hop area tracks δS; η is not constant. Not gravity |
+| `40_Inherited_Newton.tex` | M9.2: attractive 1/r² passes; isolated Φ fails |

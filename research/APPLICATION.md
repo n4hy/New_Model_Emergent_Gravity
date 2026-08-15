@@ -146,8 +146,8 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
 - \(I_B\) / EC campaign scripts (documented negatives, not official gravity
   cells): `m9_2_ib_hadamard.py`, `m9_3_ib_analytic.py`,
   `m9_4_ib_hadamard_complete.py`, `m9_5_ec_symplectic.py`.
-- Newton-limit task is pre-registered and **not run**:
-  [`tasks/m9_2_task_details.md`](tasks/m9_2_task_details.md).
+- Newton-limit task run: C1 PASS, C2 FAIL. `scripts/m9_2_newton_limit.py`,
+  [`findings/m9_2_newton_note.md`](findings/m9_2_newton_note.md).
 - Metric-phenomena domain note (written; does not move `MODELS.md`):
   [`findings/m9_metric_phenomena_note.md`](findings/m9_metric_phenomena_note.md).
 - Axial UV deformation (Q4b only): `scripts/m9_4_uv_axial.py`,
