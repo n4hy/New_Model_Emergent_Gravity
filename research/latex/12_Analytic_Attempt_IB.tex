@@ -1,0 +1,268 @@
+% Analytic attempt at the multi-digit coefficient of I_B.
+% Failures are labeled ADMISSION. No Final Status label is changed.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem,booktabs}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{remark}{Remark}[section]
+\theoremstyle{definition}
+\newtheorem*{admission}{Admission}
+
+\newcommand{\pP}{\textbf{[P]}}
+\newcommand{\pO}{\textbf{[O]}}
+\newcommand{\pA}{\textbf{[ADMISSION]}}
+\newcommand{\IB}{I_B}
+
+\title{\textbf{Analytic Attempt at the Coefficient of $\IB$:\\
+Hyperbolic Reduction, Source Dependence, and an Admission}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Paper~VIII of the Emergent Gravity Program left the multi-digit
+coefficient of the kinematic residue $\IB$ open, and required an
+analytic Hadamard expansion of the current two-point function under
+modular flow. This note carries out the $d=2$ reduction as far as it
+goes, then stops.
+
+After the map $x=R\tanh u$ the weight-one Jacobians cancel and the
+smeared correlator is
+\begin{equation*}
+Q(s)=\int\!du\,dv\,b(u)b(v)/\sinh^{2}(u-v+\pi s),
+\end{equation*}
+with $b(u)=\beta(\tanh u)$. The modular kernel pulls back to a
+convolution against $\mathrm{sech}^{2}$. That identity is algebraic
+and is not in dispute.
+
+A Hadamard finite part for the pulled-back integral was written in
+closed form,
+$I_{\mathrm{tot}}^{\mathrm{FP}}(\tau)=2\,\mathrm{sech}^{2}(\tau)\,(\tau\tanh\tau-1)$.
+A hole-quadrature check of that formula does \emph{not} confirm it:
+the hole is not a Hadamard finite part, and the two sides do not
+agree. The closed form is therefore \textbf{not} certified.
+
+A direct evaluation of the relative residue
+$r=\int K(s)(Q(s)-Q(0))\,ds/|Q(0)|$
+for five inequivalent sources in the hyperbolic coordinate gives
+values that \emph{move} with the source (spread $\approx 0.23$ on the
+grids used). If that movement survives a genuine Hadamard scheme, there
+is no single universal multi-digit coefficient of $\IB$ independent of
+$\beta$.
+
+This note does not extract a multi-digit number. The Final Status
+label of $\IB$ remains \pO{}.
+\end{abstract}
+
+\section*{Standing rule}
+Numerical agreement is not proof. An unconfirmed closed form is not a
+theorem. A source-dependent ratio is not a universal coefficient.
+This draft was prepared with computational assistance; every
+\pA{} is an owned failure, not a pending detail.
+
+\section{The object}
+
+Paper~VI defines, up to the current central charge $C_J$,
+\begin{equation}
+\IB[\beta;\zeta]
+=
+-\int_{-\infty}^{\infty} ds\,
+K(s)\,
+\bigl\langle \sigma_s J[\beta]\,\widetilde{J}[\zeta]\bigr\rangle_{\kappa\neq 0},
+\qquad
+K(s)=\frac{\pi}{2\cosh^{2}(\pi s)},
+\quad
+\int K=1.
+\label{eq:IB}
+\end{equation}
+On the interval $(-R,R)$ the modular flow is
+\begin{equation}
+x(s)=R\tanh\bigl(\mathrm{artanh}(x/R)+\pi s\bigr).
+\label{eq:flow}
+\end{equation}
+The chiral current two-point function is
+$\langle J(x)J(y)\rangle=k/(x-y)^{2}$. The constant $k$ cancels in
+any relative residue and is set to $1$ below. $R=1$ by scaling.
+
+\section{Hyperbolic reduction}
+\label{sec:red}
+
+Set $x=\tanh u$, $y=\tanh v$. Then
+\begin{equation}
+\frac{\partial x(s)}{\partial x}\frac{1}{(x(s)-y)^{2}}
+=
+\frac{\cosh^{2}u\,\cosh^{2}v}{\sinh^{2}(u-v+\pi s)},
+\qquad
+dx=\mathrm{sech}^{2}u\,du.
+\end{equation}
+The Jacobians cancel against the measure:
+\begin{equation}
+Q(s)
+=
+\int\!du\,dv\,b(u)b(v)\frac{1}{\sinh^{2}(u-v+\pi s)}
+=
+\int\!d\tau\,C(\tau)\frac{1}{\sinh^{2}(\tau+\pi s)},
+\label{eq:Q}
+\end{equation}
+where $b(u)=\beta(\tanh u)$ and $C(\tau)=\int du\,b(u)b(u-\tau)$.
+
+Pulling back the kernel,
+\begin{equation}
+\int_{-\infty}^{\infty}K(s)\,f(\tau+\pi s)\,ds
+=
+\int_{-\infty}^{\infty}\frac{d\alpha}{2\cosh^{2}\alpha}\,f(\tau+\alpha).
+\label{eq:pull}
+\end{equation}
+On the real line the only singularity of $1/\sinh^{2}w$ is at $w=0$,
+and
+\begin{equation}
+\frac{1}{\sinh^{2}w}-\frac{1}{w^{2}}
+=
+-\frac13+O(w^{2})
+\label{eq:h}
+\end{equation}
+is smooth. Subtracting $1/w^{2}$ is the first Hadamard step. It is
+\emph{not} the last: Paper~VIII required every non-integrable term of
+the \emph{flowed} two-point function to be subtracted, not only the
+$s=0$ coincidence.
+
+\begin{proposition}[reduction]
+\label{prop:red}
+Equations \eqref{eq:Q}--\eqref{eq:pull} are identities of the $d=2$
+weight-one setup. They do not evaluate $\IB$.
+\end{proposition}
+
+\section{An unconfirmed closed form}
+\label{sec:closed}
+
+The substitution $u=\tanh\alpha$ converts the pulled-back integral of
+$1/\sinh^{2}$ into
+\begin{equation}
+I_{\mathrm{tot}}(\tau)
+=
+\frac{1}{2\cosh^{2}\tau}
+\int_{-1}^{1}\!du\,\frac{1-u^{2}}{(u+\tanh\tau)^{2}}.
+\label{eq:Iu}
+\end{equation}
+The integrand has a double pole on the contour at $u=-\tanh\tau$.
+Dropping the $1/\varepsilon$ term in a symmetric hole and taking
+$\varepsilon\to 0$ produces the candidate
+\begin{equation}
+I_{\mathrm{tot}}^{\mathrm{FP}}(\tau)
+\stackrel{?}{=}
+2\,\mathrm{sech}^{2}(\tau)\,(\tau\tanh\tau-1).
+\label{eq:candidate}
+\end{equation}
+
+\begin{admission}
+Equation \eqref{eq:candidate} was \emph{not} confirmed. A hole
+quadrature of \eqref{eq:Iu} diverges as the hole shrinks, as a double
+pole must, and the finite part extracted from that hole does not
+match \eqref{eq:candidate} under the implementation used
+(\texttt{m9\_3\_ib\_analytic.py}). A hole is not a Hadamard finite
+part. Until \eqref{eq:candidate} is verified by an independent
+finite-part prescription, it is a guess, not a lemma. It is not used
+as input to any number claimed below.
+\end{admission}
+
+\section{Source dependence of the relative residue}
+\label{sec:src}
+
+Define, with the same cutoff on $| \tau+\pi s |$ for every $s$,
+\begin{equation}
+r[\beta]
+:=
+\frac{\displaystyle\int ds\,K(s)\bigl(Q(s)-Q(0)\bigr)}{|Q(0)|}.
+\label{eq:r}
+\end{equation}
+Five sources $b(u)$ were run on a linear $u$-grid
+(\texttt{m9\_3} family, direct correlation, hole $0.03$):
+
+\begin{center}
+\begin{tabular}{@{}lc@{}}
+\toprule
+$b(u)$ & $r$ \\
+\midrule
+Gaussian, $\sigma=0.6$ & $-0.108$ \\
+Gaussian, $\sigma=1.1$ & $+0.089$ \\
+$\mathrm{sech}\,u$ & $+0.120$ \\
+$e^{-|u|}$ & $+0.046$ \\
+compact bump, width $1.4$ & $-0.111$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Spread: $0.23$. Kernel mass on the truncated $s$-interval is $0.90$,
+not $1$; that truncation is a further scheme artefact.
+
+\begin{admission}
+These five numbers are scheme-dependent proxies, not Hadamard finite
+parts. They are already enough to kill a universality claim
+\emph{inside this scheme}: $r$ changes sign with the source. A
+universal multi-digit coefficient would have to be independent of
+$\beta$. This scheme does not produce one. Whether a genuine
+Hadamard $r$ is universal remains \pO{}. The present evidence leans
+against universality and does not replace Paper~VIII's demand for an
+analytic expansion.
+\end{admission}
+
+\section{What was not done}
+
+\begin{itemize}[leftmargin=1.4em]
+\item No closed form for
+$\displaystyle\int d\alpha\,\mathrm{sech}^{2}\alpha\,w_{\mathrm{fin}}(\tau+\alpha)$.
+\item No isolation of the $u_1$ or $\log$ terms of a full Hadamard
+series for the flowed correlator.
+\item No three-digit stability under simultaneous refinement of
+grid, hole, and $s$-cutoff.
+\item No evaluation in $d=4$.
+\end{itemize}
+
+\section{Verdict}
+
+\begin{center}
+\begin{tabular}{@{}p{0.42\textwidth}p{0.48\textwidth}@{}}
+\toprule
+Claim & Status \\
+\midrule
+Hyperbolic reduction \eqref{eq:Q}--\eqref{eq:pull} &
+derived; algebra only \\
+Closed form \eqref{eq:candidate} &
+\pA{} unconfirmed \\
+Universal multi-digit coefficient of $\IB$ &
+\pO{}; this attempt did not find one \\
+Source-independent $r$ in the hole scheme &
+fails (spread $0.23$, sign change) \\
+Final Status label of $\IB$ &
+unchanged, \pO{} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The next honest step is still the one Paper~VIII named: an analytic
+Hadamard series of $\langle J(x(s))J(y)\rangle$ whose finite part can
+be integrated against $K(s)$ in closed form, or a proof that the
+finite part is not unique. This note is neither.
+
+\section*{Acknowledgments}
+Computational assistance drafted the algebra checks and the scripts
+\texttt{m9\_2\_ib\_hadamard.py} and \texttt{m9\_3\_ib\_analytic.py}.
+The admissions are the point of the note.
+
+\begin{thebibliography}{99}
+\bibitem{VI} R.W.~McGwier, ``Evaluation of the Universal Kinematic Integral for Condition NL,''
+\url{https://github.com/n4hy/New_Model_Emergent_Gravity}.
+\bibitem{VIII} R.W.~McGwier, ``Status of the High-Precision Coefficient of $\IB$ (Version 4),'' ibid.
+\bibitem{FS} R.W.~McGwier, ``Final Status of Claims,'' ibid.
+\bibitem{CHM} H.~Casini, M.~Huerta and R.C.~Myers, JHEP 05 (2011) 036.
+\bibitem{CTT} H.~Casini, E.~Teste and G.~Torroba, J.\ Phys.\ A 50 (2017) 364001.
+\end{thebibliography}
+\end{document}
