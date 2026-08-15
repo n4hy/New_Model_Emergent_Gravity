@@ -1,0 +1,63 @@
+{
+  "task": "m9.23_bloch",
+  "covering": "ALL NN dimers in the ball; two radii",
+  "one_d": {
+    "n": 31,
+    "rho_bloch": 0.09134576704911951,
+    "R_bloch": 0.995819236027407,
+    "rho_chm": -0.9424572519369512,
+    "R_chm": 0.3343266789705094,
+    "R_flat": 1.0,
+    "mean_abs_rx": 0.636760907133145,
+    "std_rx": 0.004175715636590762,
+    "mean_rz": -3.581364595565021e-17,
+    "C0": false
+  },
+  "ball_N16_R5": {
+    "n": 1302,
+    "rho_bloch": 0.03374251665148234,
+    "R_bloch": 0.9994305591535735,
+    "rho_chm": -0.986844221762912,
+    "R_chm": 0.16167399906340302,
+    "R_flat": 1.0,
+    "mean_abs_rx": 0.3341900653789567,
+    "std_rx": 0.0032242674333533934,
+    "R_bloch_mag": 0.9994305591535735,
+    "rho_bloch_mag": 0.03374251665148234,
+    "mean_rz": -3.49609400995633e-18,
+    "N": 16,
+    "R": 5,
+    "n_ball": 515
+  },
+  "ball_N12_R4": {
+    "n": 624,
+    "rho_bloch": -0.03301971581645924,
+    "R_bloch": 0.9994547005079322,
+    "rho_chm": -0.9876780891907392,
+    "R_chm": 0.15649917614010028,
+    "R_flat": 1.0,
+    "mean_abs_rx": 0.3339653611920084,
+    "std_rx": 0.0057130111283370975,
+    "R_bloch_mag": 0.9994547005079322,
+    "rho_bloch_mag": -0.03301971581645924,
+    "mean_rz": -3.1136062389327308e-18,
+    "N": 12,
+    "R": 4,
+    "n_ball": 257
+  },
+  "C0_instrument": false,
+  "C1_bloch_not_noise": false,
+  "C2_PRIMARY_bloch_beats_chm": false,
+  "C3_bloch_beats_flat": true,
+  "C4_second_covering": false,
+  "all_gates": false,
+  "verdict": "BLOCH_INSTRUMENT_REJECTED",
+  "not_claimed": [
+    "curvature axis",
+    "Bloch habitat",
+    "Planck",
+    "eta=1/4G",
+    "Einstein",
+    "de Sitter"
+  ]
+}

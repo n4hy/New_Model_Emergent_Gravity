@@ -1,0 +1,24 @@
+{
+  "task": "m9.23_audit_bloch",
+  "method": "ALL NN; 1d N=180 L=24; 3d N=14 R=5; no import",
+  "one_d": {
+    "n": 23,
+    "rho_bloch": 0.10590254657531882,
+    "R_bloch": 0.9943765135143039,
+    "R_chm": 0.17711390714578437,
+    "C0": false,
+    "C2": false
+  },
+  "three_d": {
+    "n": 1302,
+    "n_ball": 515,
+    "rho_bloch": 0.031402045951694255,
+    "R_bloch": 0.9995068341487455,
+    "R_chm": 0.16315947525291324,
+    "C1": false,
+    "C2": false
+  },
+  "verdicts": {
+    "C2": "REFUTED"
+  }
+}

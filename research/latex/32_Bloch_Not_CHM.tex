@@ -1,0 +1,61 @@
+% Bloch dimer vs CHM on a complete ball covering.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem*{admission}{Admission}
+
+\title{\textbf{The Modular Hop Is CHM, Not Bloch:\\
+a Complete Covering of the Ball}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+A guess: virtual modes live on a Bloch $3$-sphere, so the
+modular hop should track a Bloch vector, not the CHM weight.
+The testable piece is scored on \emph{every} nearest-neighbour
+dimer in the ball.
+
+For the $2\times 2$ correlator of a dimer,
+$r_x=2C_{ij}$, $r_z=C_{ii}-C_{jj}$.
+$N=16$, $R=5$: $1302$ dimers. $N=12$, $R=4$: $624$ dimers.
+Auditor $N=14$, $R=5$: $1302$ dimers.
+
+$R(K,r_x)\approx 1.00$, $\lvert\rho\rvert\approx 0.03$.
+$R(K,w_{\mathrm{CHM}})\approx 0.16$, $\rho\approx -0.987$.
+$r_x$ is spatially flat. $\langle r_z\rangle=0$.
+
+C2 FAIL. Auditor REFUTED. The Bloch rewrite does not describe
+$K$. CHM does. This covering is dense enough to end that
+argument. Curvature as a Bloch axis was not claimed and is
+still a guess.
+\end{abstract}
+
+\section{Numbers}
+
+\begin{center}
+\begin{tabular}{lcccc}
+\hline
+ & dimers & $R_{\mathrm{Bloch}}$ & $R_{\mathrm{CHM}}$ & $\rho_{\mathrm{Bloch}}$ \\
+\hline
+$N=16,R=5$ & $1302$ & $0.999$ & $0.162$ & $0.034$ \\
+$N=12,R=4$ & $624$ & $0.999$ & $0.156$ & $-0.033$ \\
+audit $N=14,R=5$ & $1302$ & $1.000$ & $0.163$ & $0.031$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{admission}
+I ran the Bloch test I had named and I covered the ball. Bloch
+lost. I did not identify $r_z$ with curvature, and I did not
+write that the guess was a habitat.
+\end{admission}
+
+\end{document}
