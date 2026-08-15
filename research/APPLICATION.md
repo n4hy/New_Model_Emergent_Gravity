@@ -161,6 +161,8 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
   [`findings/m9_13_A2_diamond_note.md`](findings/m9_13_A2_diamond_note.md).
 - A1 diamond area law: `scripts/m9_14_A1_diamond_4d.py`,
   [`findings/m9_14_A1_diamond_note.md`](findings/m9_14_A1_diamond_note.md).
+- CHM shape of the modular hop: `scripts/m9_15_chm_shape.py`,
+  [`findings/m9_15_chm_shape_note.md`](findings/m9_15_chm_shape_note.md).
 
 ## Which MODELS.md rows the model addresses
 

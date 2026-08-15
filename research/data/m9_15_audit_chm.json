@@ -1,0 +1,20 @@
+{
+  "task": "m9.15_audit_chm",
+  "method": "NN kernel; 1d N=200 L=24; 3d N=14 R=4; no solver import",
+  "one_d": {
+    "rho": -0.9843599414842188,
+    "R_shape": 0.17616896889402897,
+    "C0": true
+  },
+  "three_d": {
+    "rho": -0.9869211093108544,
+    "R_shape": 0.1612039825706316,
+    "rho_perm": 0.054111965634992557,
+    "C1": true,
+    "C2": true,
+    "C3": true
+  },
+  "verdicts": {
+    "shape": "CONFIRMED"
+  }
+}

@@ -1,0 +1,105 @@
+% CHM shape of the modular hop on the 3+1D diamond waist.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newcommand{\pP}{\textbf{[P]}}
+\newtheorem*{admission}{Admission}
+
+\title{\textbf{The Modular Hopping Kernel on a $3{+}1$D Diamond Waist\\
+Is the Casini--Huerta--Myers Envelope}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+A2 (Papers~21--23) said the modular Hamiltonian is local. Jacobson
+needs the local kernel to be the geometric modular Hamiltonian
+\cite{BW1975,CHM2011}
+\[
+K=2\pi\int w\,T_{00},\qquad w=R^2-r^2.
+\]
+$T_{00}$ contains the hop. The test is therefore on nearest-neighbour
+$K_{ij}$, not on the diagonal.
+
+1d massless interval (the CHM theorem, used as an instrument gate):
+$\rho(K_{i,i+1},w_{nn})=-0.942$.
+$3{+}1$D ball $R=5$, $m=0$: $\rho=-0.987$, residual $R_{\mathrm{shape}}=0.162$.
+At $mR=0.5$: $\rho=-0.989$.
+A permutation of $w$ collapses to $\rho=-0.076$.
+Auditor, different sizes: $1$d $\rho=-0.984$; $3$d $\rho=-0.987$.
+C2 PASS. \pP{} as a necessary-condition test on this field.
+
+A first diagonal instrument failed the 1d theorem and was discarded.
+This is not $\eta=1/4G$, not foam, and not de~Sitter.
+\end{abstract}
+
+\section{Gate}
+
+Locked on the hopping kernel. $C0$: 1d $\rho<-0.70$. $C1$: ball
+$\rho<-0.60$. $C2$: $R_{\mathrm{shape}}<0.50$. $C3$: permuted $w$
+has $|\rho|<0.30$. $C4$: $C1$ at $mR=0.5$. The sign is required:
+hops are $-1$, so $K_{ij}$ tracks $-w$.
+
+\section{Numbers}
+
+\begin{center}
+\begin{tabular}{lccc}
+\hline
+ & $\rho(K_{\mathrm{nn}},w_{\mathrm{nn}})$ & $R_{\mathrm{shape}}$ & perm $\rho$ \\
+\hline
+1d $L=32$ & $-0.942$ & $0.334$ & --- \\
+1d audit $L=24$ & $-0.984$ & $0.176$ & --- \\
+ball $R=5$, $m=0$ & $-0.987$ & $0.162$ & $-0.076$ \\
+ball $R=5$, $mR=0.5$ & $-0.989$ & $0.150$ & $-0.077$ \\
+ball audit $R=4$ & $-0.987$ & $0.161$ & $+0.054$ \\
+\hline
+\end{tabular}
+\end{center}
+
+The hopping kernel tracks a CHM-\emph{type} envelope on this
+lattice: bulk-peaked, radial, negative for hop $-1$. An
+independent adversary confirmed C1/C2 on $N=13,15$. Catch: a
+linear $R-r$ weight can beat the quadratic on a small ball
+($R=3$). The parabola wins at $R=4,5$. The quadratic is not
+uniquely selected.
+
+Together with the area law of Paper~24 this is the lattice input
+Jacobson 1995 uses to get Einstein plus a free $\Lambda$. The
+vacuum of that equation has $G_{\mu\nu}+\Lambda g_{\mu\nu}=0$.
+That is the zero-Einstein-tensor step. It is not a selection of
+$\Lambda=0$ or of de~Sitter, and $G$ is not measured.
+
+If one \emph{identifies} $S=\alpha A_{\mathrm{cut}}$ with
+$A/(4G)$ then $G=a^2/(4\alpha)\approx 1.02\,a^2$ using
+$\alpha=0.245$. That is a cutoff identification, not a derivation.
+
+\begin{admission}
+I took the step A2 still owed: the local kernel has the CHM
+shape. I threw out a diagonal instrument that failed its own
+1d theorem. I did not write that $G$ was measured, and I did
+not write that the foam is done.
+\end{admission}
+
+\begin{thebibliography}{9}
+\bibitem{BW1975}
+J.J.~Bisognano and E.H.~Wichmann,
+J.\ Math.\ Phys.\ 16 (1975) 985.
+
+\bibitem{CHM2011}
+H.~Casini, M.~Huerta and R.C.~Myers,
+JHEP 05 (2011) 036,
+arXiv:1102.0440.
+
+\bibitem{Jacobson1995}
+T.~Jacobson,
+Phys.\ Rev.\ Lett.\ 75 (1995) 1260.
+\end{thebibliography}
+
+\end{document}

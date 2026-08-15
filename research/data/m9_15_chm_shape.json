@@ -1,0 +1,45 @@
+{
+  "task": "m9.15_chm_shape",
+  "observable": "NN K_ij vs CHM envelope (w_i+w_j)/2",
+  "one_d_calibration": {
+    "N": 240,
+    "L": 32,
+    "n_nn": 31,
+    "rho_chm": -0.9424572519369512,
+    "R_shape": 0.33432667897050944,
+    "rho_r2": 0.9424572519369512,
+    "C0": true
+  },
+  "ball_m0": {
+    "m": 0.0,
+    "mR": 0.0,
+    "n_ball": 515,
+    "n_nn": 1302,
+    "rho_chm": -0.9868442221765531,
+    "R_shape": 0.1616739965385704,
+    "rho_perm": -0.07639754603056101
+  },
+  "ball_uv": {
+    "m": 0.1,
+    "mR": 0.5,
+    "n_ball": 515,
+    "n_nn": 1302,
+    "rho_chm": -0.9887143194992767,
+    "R_shape": 0.14981319840749438,
+    "rho_perm": -0.07703907576334394
+  },
+  "C0_instrument": true,
+  "C1_rho": true,
+  "C2_PRIMARY_Rshape": true,
+  "C3_mutation": true,
+  "C4_uv_stable": true,
+  "all_gates": true,
+  "verdict": "CHM_SHAPE_PASS",
+  "not_claimed": [
+    "eta = 1/4G",
+    "mean-zero foam",
+    "de Sitter",
+    "FGHMV",
+    "a continuum theorem"
+  ]
+}
