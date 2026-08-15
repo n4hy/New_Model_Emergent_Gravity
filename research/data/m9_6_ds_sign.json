@@ -1,0 +1,22 @@
+{
+  "task": "m9.6_ds_sign",
+  "what_this_is": "FGHMV-standard de Sitter gates. Obstruction, not a dual.",
+  "S_GH": 3.141592653589793,
+  "S_from_Lambda": 3.141592653589793,
+  "dS_dLambda_dS": -1.0471975511965976,
+  "dS_dLambda_AdS_mutation": 1.0471975511965976,
+  "dim_so_1_4": 10,
+  "dim_so_2_4": 15,
+  "dim_so_2_3": 10,
+  "CHM_T00_sign": 1,
+  "C1_GH_entropy_decreases_with_Lambda": true,
+  "C2_isometry_too_small_for_CHM": true,
+  "C3_CHM_plus_sign": true,
+  "C4_sign_opposite_to_FGHMV": true,
+  "C5_mutation_AdS_flips": true,
+  "all_gates": true,
+  "verdict": "FGHMV_STANDARD_DS_CLOSURE_OBSTRUCTED",
+  "what_is_P": "Copying the AdS first-law sign to the cosmological horizon is false. S_GH = 3\u03c0/(G\u039b), dS/d\u039b < 0. so(1,4) is too small to supply CHM special conformal maps.",
+  "what_is_not_P": "A holographic dS dual. Linearized Einstein+\u039b from a CFT. Jacobson equilibrium. Hehl-Datta on a cosmological horizon.",
+  "admission": "FGHMV-standard closure of Q2 is obstructed. Other routes (Jacobson) remain unpromoted. No dual was invented."
+}

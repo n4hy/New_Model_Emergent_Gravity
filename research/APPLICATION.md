@@ -96,8 +96,10 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
   is obstructed (`m9_5_ec_symplectic.py` `STRUCTURE_ONLY`): CFT Fisher for a
   conserved current is nonlocal and algebraic torsion has no bulk kinetic
   term. Paper 14. No `[O]` moved to `[P]`.
-- de Sitter / cosmology: open (Paper IX). No CHM / dictionary / dual, and
-  the first-law sign is not supplied.
+- de Sitter / cosmology: FGHMV-standard copy is obstructed (Paper 17 /
+  M9.6): \(S_{\mathrm{GH}}=3\pi/(G\Lambda)\), \(\partial S/\partial\Lambda<0\),
+  opposite to CHM; \(\mathfrak{so}(1,4)\) too small for a CHM net of
+  balls. Einstein+\(\Lambda\) from a cosmological CFT is not claimed.
 - Nonlinear Einstein-Cartan as a positive holographic theorem: remains
   `[O]`. Closed only as the axial obstruction above.
 - UV completion (Q4a): selection-uniqueness is answered in the
@@ -150,6 +152,8 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
 - Q4a pair selection (uniqueness negative, existence open):
   `scripts/m9_5_q4a_pair.py`,
   [`findings/m9_5_q4a_pair_note.md`](findings/m9_5_q4a_pair_note.md).
+- de Sitter FGHMV obstruction: `scripts/m9_6_ds_sign.py`,
+  [`findings/m9_6_ds_closure_note.md`](findings/m9_6_ds_closure_note.md).
 
 ## Which MODELS.md rows the model addresses
 

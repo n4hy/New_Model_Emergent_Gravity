@@ -1,0 +1,258 @@
+% Forced decision of Q2 at the FGHMV standard.
+% Positive Einstein+Λ from a dS dual is NOT claimed.
+% The [P] is the obstruction: sign + isometry algebra.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem,booktabs}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem*{admission}{Admission}
+
+\newcommand{\pP}{\textbf{[P]}}
+\newcommand{\pC}{\textbf{[C]}}
+\newcommand{\pO}{\textbf{[O]}}
+
+\title{\textbf{de~Sitter at the FGHMV Standard:\\
+The First-Law Sign is Opposite, and the Isometries are Too Few}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Paper~IX left cosmological extrapolation \pO{}. Paper~11 recorded a
+minus sign in the static-patch first law and did not attempt a
+derivation. This note \emph{decides} Q2 at the only standard the
+program has used for a \pP{} gravitational theorem: Faulkner--Guica--
+Hartman--Myers--Van Raamsdonk.
+
+That standard cannot be met in de~Sitter by copying the AdS
+argument. Two identities are enough.
+
+The Gibbons--Hawking entropy of four-dimensional de~Sitter is
+$S=\pi\ell^2/G=3\pi/(G\Lambda)$. Then $\partial S/\partial\Lambda<0$:
+more vacuum energy, smaller horizon, less entropy
+\cite{GibbonsHawking1977}. The cosmological-horizon first law has a
+minus sign: adding Killing energy \emph{decreases} horizon entropy
+\cite{Banihashemi2023}. The Casini--Huerta--Myers integrand is
+$+T_{00}$. Copying the AdS bookkeeping line to the cosmological
+horizon uses the wrong sign. \pP{}
+
+Independently, $\dim\mathfrak{so}(1,4)=10$ while the conformal
+algebra that supplies CHM special conformal maps in four dimensions
+is $\mathfrak{so}(2,4)$, of dimension $15$. de~Sitter isometries do
+not contain the CHM family of arbitrary balls. \pP{}
+
+No dual is constructed. Jacobson is not used as a substitute.
+Linearized Einstein$+\Lambda$ from a cosmological CFT remains
+unproved and is not labeled \pP{}. What \emph{is} \pP{} is that
+FGHMV-standard closure of Q2 is obstructed.
+
+The AdS results stand.
+\end{abstract}
+
+\section*{Standard of proof}
+
+``Close de~Sitter'' at this program's grade means the four-point
+checklist of Paper~IX: a family of regions with controlled modular
+Hamiltonians; a first-law identity; equivalence to linearized
+Einstein--Cartan; Hehl--Datta from relative-entropy positivity.
+
+Jacobson's entanglement equilibrium \cite{Jacobson2016} is not that
+grade (Paper~14). Strominger's dS/CFT \cite{Strominger2001} is
+Euclidean and generically non-unitary, and is not a Maldacena pair.
+This note does not promote either.
+
+A negative decision at the stated standard is a decision.
+
+\section{The AdS first-law sign}
+
+Casini--Huerta--Myers for a ball of radius $R$ in a CFT vacuum is
+\cite{CHM2011}
+\begin{equation}
+H_B
+=
+2\pi\int_{\lvert x\rvert<R}\!d^{d-1}x\,
+\frac{R^2-\lvert x\rvert^2}{2R}\,T_{00}(x).
+\label{eq:chm}
+\end{equation}
+The kernel of $T_{00}$ is positive inside the ball. Faulkner et
+al.\ convert $\delta S_B=\delta\langle H_B\rangle$ into linearized
+Einstein equations about AdS with the standard energy sign
+\cite{FGHMV2014}: a positive $\delta\langle T_{00}\rangle$
+increases ball entanglement entropy. Relative-entropy positivity
+locks that direction.
+
+\section{The de~Sitter identities}
+
+Four-dimensional de~Sitter of radius $\ell$ has
+$\Lambda=3/\ell^2$ and a cosmological horizon of area
+$A=4\pi\ell^2$. The Gibbons--Hawking entropy is
+\cite{GibbonsHawking1977}
+\begin{equation}
+S_{\mathrm{GH}}
+=
+\frac{A}{4G}
+=
+\frac{\pi\ell^2}{G}
+=
+\frac{3\pi}{G\Lambda}.
+\label{eq:gh}
+\end{equation}
+Differentiating at fixed $G$,
+\begin{equation}
+\frac{\partial S_{\mathrm{GH}}}{\partial\Lambda}
+=
+-\frac{3\pi}{G\Lambda^2}
+<0.
+\label{eq:dsign}
+\end{equation}
+Increasing the vacuum energy decreases the horizon entropy.
+Banihashemi, Jacobson, Svesko and Visser isolate the same minus
+sign in the static-patch first law: adding Killing energy reduces
+cosmological-horizon entropy \cite{Banihashemi2023}.
+
+\begin{theorem}[sign obstruction]
+\label{thm:sign}
+The FGHMV first law and the Gibbons--Hawking static-patch first law
+have opposite signs for the response of entropy to Killing energy /
+vacuum energy. A line-by-line copy of the AdS bookkeeping onto the
+cosmological horizon is therefore false. \pP{}
+\end{theorem}
+
+A mutation confirms the derivative is not tautological. For AdS,
+$\Lambda=-3/\ell^2$ and the same area law $S=\pi\ell^2/G$ give
+$\partial S/\partial\Lambda>0$ along that branch. The de~Sitter
+sign is the one that conflicts with \eqref{eq:chm}.
+
+\section{The isometry obstruction}
+
+The isometry algebra of $\mathrm{dS}_4$ is $\mathfrak{so}(1,4)$,
+of dimension $10$. The conformal algebra of four-dimensional
+Minkowski space, which supplies the special conformal
+transformations used to map an arbitrary ball to a Rindler wedge
+in the CHM construction, is $\mathfrak{so}(2,4)$, of dimension
+$15$.
+
+\begin{theorem}[too few isometries]
+\label{thm:iso}
+$\dim\mathfrak{so}(1,4)=10<15=\dim\mathfrak{so}(2,4)$. The
+de~Sitter isometry group does not contain the CHM family of
+arbitrary-radius balls. The only regions with an exact Killing
+modular flow for a de~Sitter-invariant state are static patches
+(and their complements), not a FGHMV net of balls. \pP{}
+(Lie-algebra dimension; the static-patch clause is the standard
+Killing-horizon statement, cited as such).
+\end{theorem}
+
+de~Sitter is conformally flat, so a \emph{CFT living on a fixed}
+$\mathrm{dS}_4$ background can still use $\mathfrak{so}(2,4)$.
+That is entanglement of matter \emph{on} de~Sitter, not a
+derivation of the Einstein equation with $\Lambda$ as dynamics.
+Q2 is the latter. Conformal flatness does not supply a holographic
+pair, a timelike boundary dictionary, or a Ryu--Takayanagi theorem
+at the FGHMV grade.
+
+\section{What the small-ball limit does prove}
+
+For a ball of proper radius $R\ll\ell$ in a fixed de~Sitter
+geometry, $g=\eta+O(R^2/\ell^2)$ and $H_B$ is the Minkowski CHM
+plus $O(R^2/\ell^2)$. The first law in that limit is the Minkowski
+/ AdS one. It does \emph{not} derive
+$G_{\mu\nu}+\Lambda g_{\mu\nu}=\kappa T_{\mu\nu}$ as an identity
+from a family of finite balls. The cosmological constant is
+invisible until $R\sim\ell$, which is exactly the regime in which
+Theorem~\ref{thm:sign} applies.
+
+The monograph's estimate $\Lambda L^2\ll 1$ below the Hubble scale
+\cite{McGwierMonograph} is unchanged and is not a dS derivation.
+
+\section{Machine check}
+
+Solver \texttt{m9\_6\_ds\_sign.py}; auditor
+\texttt{m9\_6\_audit\_ds.py} (sympy $S(\Lambda)$, combinatorial
+$\mathfrak{so}(n)$, no solver import). Gates C1--C5 PASS. The
+auditor recovers $S=3\pi/(G\Lambda)$ and
+$\partial S/\partial\Lambda=-3\pi/(G\Lambda^2)$ identically, and
+counts $\dim\mathfrak{so}(5)=10$, $\dim\mathfrak{so}(6)=15$.
+
+\section{Verdict}
+
+\begin{center}
+\begin{tabular}{@{}p{0.48\textwidth}p{0.44\textwidth}@{}}
+\toprule
+Claim & Status \\
+\midrule
+$S_{\mathrm{GH}}=3\pi/(G\Lambda)$, $\partial S/\partial\Lambda<0$
+  & \pP{}, audited \\
+FGHMV / CHM sign is $+\delta\langle T_{00}\rangle$
+  & \pP{} (cited formula) \\
+Copy of AdS first law onto the cosmological horizon
+  & \textbf{false}, Thm.~\ref{thm:sign} \\
+$\dim\mathfrak{so}(1,4)<\dim\mathfrak{so}(2,4)$
+  & \pP{}, audited \\
+CHM net of balls from dS isometries
+  & \textbf{false}, Thm.~\ref{thm:iso} \\
+FGHMV-standard closure of Q2
+  & \textbf{obstructed} \\
+Einstein$+\Lambda$ from a cosmological CFT
+  & still not derived; not \pP{} \\
+Jacobson route
+  & still \pC{}; not used \\
+AdS results of the series
+  & unchanged, \pP{} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{admission}
+I did not derive Einstein--Cartan in de~Sitter. I proved that the
+standard this program uses for a gravitational \pP{} cannot be
+copied onto the cosmological horizon: the first-law sign is
+opposite and the isometries are too few. That is the \pP{}. A dual
+was not invented. Hehl--Datta was not recovered on a horizon.
+\end{admission}
+
+The phrase that is true: \emph{FGHMV-standard de~Sitter closure is
+obstructed.}
+The phrase that is false: \emph{we have cosmological Einstein from
+entanglement.}
+
+\begin{thebibliography}{99}
+\bibitem{GibbonsHawking1977}
+G.W.~Gibbons and S.W.~Hawking,
+Phys.\ Rev.\ D 15 (1977) 2738.
+\bibitem{Strominger2001}
+A.~Strominger,
+JHEP 10 (2001) 034, arXiv:hep-th/0106113.
+\bibitem{CHM2011}
+H.~Casini, M.~Huerta and R.C.~Myers,
+JHEP 05 (2011) 036, arXiv:1102.0440.
+\bibitem{FGHMV2014}
+T.~Faulkner, M.~Guica, T.~Hartman, R.C.~Myers and M.~Van Raamsdonk,
+JHEP 03 (2014) 051, arXiv:1312.7856.
+\bibitem{Jacobson2016}
+T.~Jacobson,
+Phys.\ Rev.\ Lett.\ 116 (2016) 201101, arXiv:1505.04753.
+\bibitem{Banihashemi2023}
+B.~Banihashemi, T.~Jacobson, A.~Svesko and M.~Visser,
+JHEP 01 (2023) 054, arXiv:2208.11706.
+\bibitem{McGwierMonograph}
+R.W.~McGwier,
+``Emergent Gravity and a New Lagrangian,''
+\url{https://github.com/n4hy/New_Model_Emergent_Gravity}.
+\bibitem{McGwierIX}
+R.W.~McGwier,
+``Domain of Validity of the Emergent Gravity Program,'' ibid.
+\end{thebibliography}
+
+\end{document}

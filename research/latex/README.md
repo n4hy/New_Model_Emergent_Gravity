@@ -13,3 +13,4 @@
 
 Reconstructed files follow the PDF wording and equations. They are not a byte-for-byte dump of an unpublished compiler run.
 | `16_Q4a_Holographic_Pair.tex` | Q4a in the monograph's sense. Selection-uniqueness negative. SM is not a holographic CFT. Existence of some pair still open |
+| `17_deSitter_FGHMV_Obstruction.tex` | Q2 decided at the FGHMV bar. Sign opposite, isometries too few. Not a cosmological Einstein theorem |

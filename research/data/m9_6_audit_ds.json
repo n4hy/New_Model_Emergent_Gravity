@@ -1,0 +1,19 @@
+{
+  "task": "m9.6_audit_ds",
+  "method": "sympy S(\u039b); combinatorial so(n); no solver import",
+  "S_of_Lambda": "3*pi/(G*Lambda)",
+  "dS_dLambda": "-3*pi/(G*Lambda**2)",
+  "so5_dim": 10,
+  "so6_dim": 15,
+  "C1": true,
+  "C2": true,
+  "C4": true,
+  "verdicts": {
+    "C1": "CONFIRMED",
+    "C2": "CONFIRMED",
+    "C4": "CONFIRMED",
+    "dS_dual": "NOT_CLAIMED",
+    "Einstein_plus_Lambda_from_CFT": "NOT_CLAIMED"
+  },
+  "admission": "The GH identity and the Lie-algebra dimensions are confirmed. No de Sitter dual was produced."
+}
