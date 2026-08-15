@@ -228,6 +228,8 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
   [`findings/m9_47_vacuum_note.md`](findings/m9_47_vacuum_note.md).
 - Sea subtracted: `scripts/m9_48_subtract.py`,
   [`findings/m9_48_subtract_note.md`](findings/m9_48_subtract_note.md).
+- Complement not a horizon: `scripts/m9_49_complement.py`,
+  [`findings/m9_49_complement_note.md`](findings/m9_49_complement_note.md).
 
 ## Which MODELS.md rows the model addresses
 
