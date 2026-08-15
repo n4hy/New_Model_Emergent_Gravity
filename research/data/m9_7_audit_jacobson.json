@@ -1,0 +1,32 @@
+{
+  "task": "m9.7_audit_jacobson",
+  "method": "sympy polarization of S_kk=0 on the celestial sphere; no solver import",
+  "null_lemma": {
+    "kernel_dim": 1,
+    "kernel_S00_minus_1": [
+      "-1",
+      "1",
+      "1",
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    "pass": true,
+    "form": "S_00=-\u03bb, S_ij=\u03bb \u03b4_ij, S_0i=0  (S=\u03bb \u03b7, mostly-minus)"
+  },
+  "SM_b3": {
+    "b3": "-7",
+    "pass": true
+  },
+  "C1": true,
+  "C5": true,
+  "verdicts": {
+    "C1": "CONFIRMED",
+    "C5": "CONFIRMED",
+    "Jacobson_as_Q2_substitute": "NOT_P",
+    "MVEH": "NOT_CLAIMED",
+    "2016_nonconformal": "NOT_CLAIMED"
+  },
+  "admission": "The 1995 null lemma is an identity. The SM is not a CFT. Jacobson 2016's conformal half therefore does not apply to NSM matter."
+}

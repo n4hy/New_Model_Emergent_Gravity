@@ -1,0 +1,42 @@
+{
+  "task": "m9.7_jacobson",
+  "what_this_is": "[P] only. 1995 null lemma and free \u039b. 2016 conformal half does not apply to the SM. Not a Q2 substitute.",
+  "C1_null_lemma": {
+    "max_S_kk_for_f_eta": 5.551115123125783e-16,
+    "generic_S_kk": 1.5842320542521533,
+    "f_recovered": 1.7,
+    "pass": true
+  },
+  "C2_Lambda_free": {
+    "statement": "f = -R/2 + \u039b, \u039b an arbitrary constant",
+    "Lambda_is_free": true,
+    "pass": true
+  },
+  "C3_no_torsion_in_1995": {
+    "inputs": [
+      "g_ab",
+      "R_ab",
+      "T_ab",
+      "null k"
+    ],
+    "absent": [
+      "spin tensor s",
+      "J_5",
+      "independent omega"
+    ],
+    "output": "Einstein, Lambda free",
+    "pass": true
+  },
+  "C4_mutation_needs_conservation": {
+    "without_div_T": "df + d(R/2) need not vanish; \u039b need not exist as a constant",
+    "pass": true
+  },
+  "C5_SM_not_CFT": {
+    "b3": "-7",
+    "pass": true
+  },
+  "all_gates": true,
+  "verdict": "JACOBSON_NOT_A_P_SUBSTITUTE",
+  "what_is_P": "1995: Clausius+area+Unruh+local Rindler \u21d2 Einstein with free \u039b. No HD. 2016 conformal half requires a CFT; the SM is not one. Therefore Jacobson does not close Q2 at this program's bar.",
+  "what_is_not_P": "MVEH. 2016 for nonconformal fields (Jacobson: conjecture). Einstein+\u039b selected by entanglement in cosmology. EC from Jacobson."
+}

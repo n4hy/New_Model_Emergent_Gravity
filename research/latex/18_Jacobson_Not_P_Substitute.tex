@@ -1,0 +1,214 @@
+% [P] only. Jacobson as a substitute for FGHMV-standard Q2.
+% 1995 implication under its hypotheses is [P] (cited + algebra).
+% 2016 nonconformal is Jacobson's own conjecture: not [P].
+% SM is not a CFT: the 2016 conformal half does not apply.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem,booktabs}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem*{admission}{Admission}
+
+\newcommand{\pP}{\textbf{[P]}}
+
+\title{\textbf{Jacobson is Not a \pP{} Substitute:\\
+What 1995 Proves, and What 2016 Does Not}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+This note contains only \pP{} statements.
+
+Jacobson 1995, under the hypotheses he states---entropy proportional
+to area, $\delta Q=T\,dS$, Unruh temperature, heat as boost-energy
+flux, local Rindler horizons instantaneously stationary, and
+$\nabla^a T_{ab}=0$---implies the Einstein equation with an
+\emph{undetermined} cosmological constant and with no torsion
+\cite{Jacobson1995}. The null-quadratic lemma in that argument is
+an identity and is re-derived here. \pP{}
+
+Jacobson 2016 states that for conformal fields the maximal vacuum
+entanglement hypothesis is equivalent to Einstein at first order,
+and that for nonconformal fields the same conclusion holds
+\emph{modulo a conjecture} about $\delta\langle K\rangle$
+\cite{Jacobson2016}. The installed Standard Model is not a CFT
+($b_3=-7$). The conformal half therefore does not apply to NSM
+matter. The nonconformal half is not \pP{}, by Jacobson's own
+words. \pP{}
+
+Paper~IX's closure bar for cosmology is FGHMV-grade Einstein--Cartan
+including Hehl--Datta. Jacobson 1995 produces Einstein with free
+$\Lambda$ and no spin. Jacobson 2016 does not become \pP{} for the
+SM. Therefore Jacobson is not a \pP{} substitute for Q2.
+\end{abstract}
+
+\section*{What is allowed on this page}
+
+A statement is written only if it is a logical implication, an
+identity, a citation of a sentence in Jacobson, or a number
+already computed from the Standard Model representation table.
+No \textbf{[C]}. No dual. No promotion of MVEH.
+
+\section{The 1995 implication}
+
+Jacobson assumes $dS=\eta\,\delta\mathcal{A}$,
+$T=\hbar\kappa/2\pi$, $\delta Q=\int T_{ab}\chi^a\,d\Sigma^b$ on a
+local Rindler horizon with $\theta=\sigma=0$ at the bifurcation
+surface, and $\nabla^a T_{ab}=0$. Raychaudhuri then gives
+$\theta=-\lambda R_{ab}k^ak^b$ near the surface, and
+$\delta Q=T\,dS$ forces
+\begin{equation}
+T_{ab}k^ak^b
+=
+\frac{\hbar\eta}{2\pi}\,R_{ab}k^ak^b
+\qquad\text{for every null }k.
+\label{eq:null}
+\end{equation}
+The algebraic content of \eqref{eq:null} is the following lemma.
+
+\begin{lemma}[null quadratic form]
+\label{lem:null}
+Let $S_{ab}$ be symmetric on Lorentzian $\mathbb{R}^{1,3}$. If
+$S_{ab}k^ak^b=0$ for every null $k$, then $S_{ab}=f\,\eta_{ab}$.
+\pP{}
+\end{lemma}
+
+\emph{Proof.} Mostly minus, $k=(1,n)$ with $n\cdot n=1$. Then
+$S_{00}+2S_{0i}n^i+S_{ij}n^in^j=0$ for every unit $n$. The odd
+part forces $S_{0i}=0$. Polarization on
+$\{e_i,(e_i+e_j)/\sqrt{2}\}$ is a six-by-seven linear system
+whose kernel is one-dimensional and is spanned by
+$S_{00}=-\lambda$, $S_{ij}=\lambda\delta_{ij}$. That is
+$S=\lambda\eta$. The auditor solves that system; the kernel is
+exactly $(-1,1,1,1,0,0,0)$ when $S_{00}$ is normalized to $-1$.
+
+\begin{theorem}[Jacobson 1995, algebra isolated]
+\label{thm:1995}
+Lemma~\ref{lem:null} and $\nabla^a T_{ab}=0$ together with the
+contracted Bianchi identity convert \eqref{eq:null} into
+\begin{equation}
+R_{ab}-\tfrac12 R\,g_{ab}+\Lambda g_{ab}
+=
+\frac{2\pi}{\hbar\eta}\,T_{ab},
+\qquad
+G=\frac{1}{4\hbar\eta},
+\label{eq:ein}
+\end{equation}
+with $\Lambda$ an arbitrary constant. \pP{}
+\end{theorem}
+
+Jacobson writes that $\Lambda$ ``remains as enigmatic as ever''
+\cite{Jacobson1995}. The constant is not fixed by $\delta Q=T\,dS$.
+If $\nabla^a T_{ab}=0$ is dropped, $f$ in $T_{ab}=\alpha(R_{ab}+fg_{ab})$
+need not be $-R/2+\Lambda$. That mutation is why conservation is
+load-bearing.
+
+\begin{theorem}[no Einstein--Cartan, no Hehl--Datta]
+\label{thm:nohd}
+The 1995 input list is $(g,R_{ab},T_{ab},k)$. It does not contain
+an independent connection, a spin tensor, or $J_5$. The output
+\eqref{eq:ein} is Einstein, not Einstein--Cartan, and it does not
+contain $\mathcal{L}_{\mathrm{HD}}=-(3\kappa/16)J_5\cdot J_5$. \pP{}
+\end{theorem}
+
+\section{The 2016 split, in Jacobson's words}
+
+Jacobson 2016, abstract and \S IV: for first-order conformal
+fields the Einstein equation holds if and only if the maximal
+vacuum entanglement hypothesis holds; ``for nonconformal fields,
+the same conclusion follows modulo a conjecture about the
+variation of entanglement entropy.'' He then writes, verbatim,
+that he will ``conjecture---and we shall assume'' that
+\begin{equation}
+\delta\langle K\rangle
+=
+\frac{\Omega_{d-2}\ell^d}{d^2-1}\,\delta\langle T_{00}\rangle+\delta X
+\label{eq:conj}
+\end{equation}
+when the field is not conformal. He also states that finiteness
+and universality of the UV area density $\eta$ ``remains an
+assumption.''
+
+Those sentences are the paper. They are not upgraded here.
+
+The conformal half uses $K=H_\zeta=\int T^{ab}\zeta_b\,d\Sigma_a$,
+the Casini--Huerta--Myers operator of a CFT. The installed
+Standard Model has one-loop $b_3=-7\neq 0$ (Dynkin count,
+auditor CONFIRMED). It is not a CFT. The conformal half of 2016
+does not apply to NSM matter. \pP{}
+
+\section{Why this is not a \pP{} substitute for Q2}
+
+Paper~IX closes cosmology only if one has (i)~a family of de~Sitter
+regions with controlled modular Hamiltonians, (ii)~a first-law
+identity, (iii)~equivalence to linearized Einstein--Cartan including
+the Cartan equation, (iv)~Hehl--Datta from relative-entropy
+positivity.
+
+\begin{theorem}[not a substitute]
+\label{thm:nosub}
+Jacobson 1995 gives (Einstein, $\Lambda$ free) from Clausius and
+an area law, and gives none of (iii), (iv). Jacobson 2016 is not
+\pP{} for the Standard Model. Therefore neither paper meets the
+Paper~IX bar. Jacobson is not a \pP{} substitute for Q2. \pP{}
+\end{theorem}
+
+Local Rindler horizons exist at every point of de~Sitter. That
+geometric fact is why 1995 can be \emph{stated} in dS. It does
+not turn \eqref{eq:ein} into a derivation of $\Lambda$, of
+Einstein--Cartan, or of a holographic pair.
+
+\section{Machine check}
+
+Solver \texttt{m9\_7\_jacobson.py}; auditor
+\texttt{m9\_7\_audit\_jacobson.py}. Lemma~\ref{lem:null} is the
+kernel computation. $b_3=-7$ is the species sum. Both PASS.
+
+\section{Verdict}
+
+\begin{center}
+\begin{tabular}{@{}p{0.52\textwidth}p{0.40\textwidth}@{}}
+\toprule
+Claim & Status \\
+\midrule
+Lemma~\ref{lem:null} & \pP{}, audited \\
+1995 $\Rightarrow$ Einstein, $\Lambda$ free, $G=1/(4\hbar\eta)$
+  & \pP{} (Jacobson; algebra isolated) \\
+1995 produces HD or EC & \textbf{false}, Thm.~\ref{thm:nohd} \\
+2016 conformal half applies to the SM & \textbf{false} ($b_3\neq 0$) \\
+2016 nonconformal half & not \pP{} (Jacobson's conjecture) \\
+$\eta$ finite and universal & assumption (Jacobson) \\
+Jacobson is a \pP{} substitute for Q2 & \textbf{false},
+  Thm.~\ref{thm:nosub} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{admission}
+I did not derive Einstein--Cartan in de~Sitter from Jacobson. I
+did not promote MVEH. I recorded the 1995 implication under its
+hypotheses and Jacobson's own restriction of 2016. That is all
+that is \pP{}.
+\end{admission}
+
+\begin{thebibliography}{99}
+\bibitem{Jacobson1995}
+T.~Jacobson,
+Phys.\ Rev.\ Lett.\ 75 (1995) 1260, arXiv:gr-qc/9504004.
+\bibitem{Jacobson2016}
+T.~Jacobson,
+Phys.\ Rev.\ Lett.\ 116 (2016) 201101, arXiv:1505.04753.
+\end{thebibliography}
+
+\end{document}
