@@ -1,0 +1,24 @@
+{
+  "task": "m9.20_audit_horizon",
+  "method": "1d N=160 L=20; 3d N=14 R=3 surface; stable n_occ",
+  "one_d": {
+    "n": 10,
+    "rho_chm": 0.6462496313520458,
+    "C0": false
+  },
+  "three_d": {
+    "n": 8,
+    "n_flip": 142,
+    "rho_chm": -0.28209898825508095,
+    "R_chm": 0.9593853036322058,
+    "R_lin": 0.9589469698186813,
+    "R_flat": 0.9824178203649443,
+    "C1": false,
+    "C2": false,
+    "C3": true,
+    "C4": false
+  },
+  "verdicts": {
+    "C4": "REFUTED"
+  }
+}

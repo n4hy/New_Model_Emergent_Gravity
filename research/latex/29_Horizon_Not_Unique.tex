@@ -1,0 +1,65 @@
+% Horizon first law: radial weight yes; CHM parabola not unique.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem*{admission}{Admission}
+
+\title{\textbf{On the Cut, a Radial Weight Beats a Flat Kernel;\\
+the CHM Parabola Is Not Selected}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Paper~27 found that on the horizon, $K_{\mathrm{CHM}}$ beats a
+flat hop kernel. Paper~25 found that for the modular kernel
+itself, a linear $R-r$ weight can beat the CHM parabola on a
+small ball. This note asks the first-law form of that question,
+on a new grid, discarding any hop that flips $n_{\mathrm{occ}}$.
+
+$N=12$, $R=4$, $294$ surface hops, zero occupancy flips.
+$R_{\mathrm{CHM}}=0.808<R_{\mathrm{flat}}=0.994$ (C3 PASS).
+$R_{\mathrm{CHM}}=0.8082$ versus $R_{\mathrm{lin}}=0.8099$
+(C4 is a tie). Tracking floors fail
+($\lvert\rho\rvert=0.589<0.60$).
+
+An auditor on $N=14$, $R=3$ kept only $8$ hops after $142$
+occupancy flips and is not a C4 confirmation.
+
+The cut prefers a radially decreasing weight to a shapeless
+local kernel. It does not prefer $R^2-r^2$ to $R-r$.
+Not $\eta=1/4G$. Not Einstein. Not the Bloch guess.
+\end{abstract}
+
+\section{Numbers}
+
+\begin{center}
+\begin{tabular}{lcccc}
+\hline
+ & $n$ & $R_{\mathrm{CHM}}$ & $R_{\mathrm{lin}}$ & $R_{\mathrm{flat}}$ \\
+\hline
+$N=12,R=4$ & $294$ & $0.808$ & $0.810$ & $0.994$ \\
+audit $N=14,R=3$ & $8$ & $0.959$ & $0.959$ & $0.982$ \\
+\hline
+\end{tabular}
+\end{center}
+
+C3 is the Paper~27 fact, now at a second radius with a stable
+Fermi sea. C4 is the new question and it does not select the
+quadratic.
+
+\begin{admission}
+I asked whether the parabola was doing Clausius work beyond any
+decreasing radial weight. On this grid it is not. I did not
+call a $0.002$ residual gap a theorem, and I did not write
+Einstein.
+\end{admission}
+
+\end{document}

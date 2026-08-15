@@ -1,0 +1,44 @@
+{
+  "task": "m9.20_horizon_shape",
+  "observable": "surface dS vs Tr(K dC); CHM vs linear vs flat; stable n_occ",
+  "one_d": {
+    "n": 12,
+    "rho_chm": -0.5909505760255503,
+    "R_chm": 0.8067077641222197,
+    "rho_lin": -0.5528733443335414,
+    "R_lin": 0.8332653029650553,
+    "rho_flat": 0.2921694007739691,
+    "R_flat": 0.9563665830900722,
+    "n_tried": 12,
+    "n_occ0": 100,
+    "C0": false
+  },
+  "three_d": {
+    "n": 294,
+    "rho_chm": -0.5889399299277226,
+    "R_chm": 0.8081768116796777,
+    "rho_lin": -0.5866065036509102,
+    "R_lin": 0.8098720947621636,
+    "rho_flat": -0.1120242795284627,
+    "R_flat": 0.9937054698431166,
+    "N": 12,
+    "R": 4,
+    "n_tried": 294,
+    "n_flip": 0,
+    "n_occ0": 864
+  },
+  "C0_instrument": false,
+  "C1_rho": false,
+  "C2_Rshape": false,
+  "C3_beats_flat": true,
+  "C4_PRIMARY_beats_linear": true,
+  "all_gates": false,
+  "verdict": "HORIZON_SHAPE_INSTRUMENT_REJECTED",
+  "not_claimed": [
+    "eta = 1/4G",
+    "Einstein",
+    "foam",
+    "Bloch",
+    "de Sitter"
+  ]
+}
