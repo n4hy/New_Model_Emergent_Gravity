@@ -1,0 +1,44 @@
+{
+  "task": "m9.21_larger_horizon",
+  "observable": "R=5 surface subsample; CHM vs linear vs flat",
+  "one_d": {
+    "n": 12,
+    "rho_chm": -0.5921061559762245,
+    "R_chm": 0.8058599754641367,
+    "rho_lin": -0.5539991736186274,
+    "R_lin": 0.8325172164165003,
+    "rho_flat": 0.29118944875935904,
+    "R_flat": 0.9566654090805314,
+    "C0": false,
+    "n_occ0": 100
+  },
+  "three_d": {
+    "n": 5,
+    "rho_chm": 0.22902591557772842,
+    "R_chm": 0.9734203254472259,
+    "rho_lin": 0.23359665956769352,
+    "R_lin": 0.9723335850616368,
+    "rho_flat": 0.10843017438476638,
+    "R_flat": 0.9941040676322018,
+    "N": 14,
+    "R": 5,
+    "n_tried": 30,
+    "n_flip": 25,
+    "n_occ0": 1370,
+    "per_bin": 10
+  },
+  "C0_instrument": false,
+  "C1_rho": false,
+  "C2_Rshape": false,
+  "C3_beats_flat": true,
+  "C4_PRIMARY_beats_linear": false,
+  "all_gates": false,
+  "verdict": "LARGER_HORIZON_INSTRUMENT_REJECTED",
+  "not_claimed": [
+    "Planck",
+    "eta=1/4G",
+    "Einstein",
+    "Bloch",
+    "de Sitter"
+  ]
+}

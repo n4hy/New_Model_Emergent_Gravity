@@ -26,3 +26,4 @@ Reconstructed files follow the PDF wording and equations. They are not a byte-fo
 | `27_Horizon_Selects_CHM.tex` | Horizon C3: CHM beats flat on the cut, not in the bulk. Tracking weak |
 | `28_S3_Curvature_Axis.tex` | S3 Wick identities. The virtual-mode picture is a guess |
 | `29_Horizon_Not_Unique.tex` | Horizon: radial weight beats flat; CHM parabola not selected over linear |
+| `30_Larger_Horizon_Instrument.tex` | R=5 hop first law dies on occupancy flips. Not a Planck result |
