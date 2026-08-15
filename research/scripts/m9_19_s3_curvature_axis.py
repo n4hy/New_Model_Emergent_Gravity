@@ -125,8 +125,8 @@ def main() -> int:
         "all_gates": ok,
         "verdict": "S3_WICK_IDENTITIES_PASS" if ok else "S3_WICK_IDENTITIES_FAIL",
         "author_identification": (
-            "X_4 = curvature is ontology, not a gate. "
-            "Virtual particles on this S^3 is ontology, not a gate."
+            "X_4 = curvature is a guess, not a gate. "
+            "Virtual particles on this S^3 is a guess, not a habitat."
         ),
         "not_claimed": [
             "virtual particles derived",
