@@ -1,0 +1,130 @@
+% A2 on a 4d-continuum diamond waist. Two spacings. Not a -> 0 proof.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newcommand{\pP}{\textbf{[P]}}
+\newtheorem*{admission}{Admission}
+
+\title{\textbf{A2 on a $3{+}1$D Diamond Waist:\\
+Two Lattice Spacings Do Not Refute Locality;\\
+Bisognano--Wichmann Already Localizes the Continuum Wedge}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+The same pre-registered locality gate as Papers~21--22:
+$R(m)/R(0)<2$ for $0<mL\le 8$. The field is a free staggered
+fermion in three-space: the equal-time slice of a $3{+}1$D theory.
+The region is the geodesic ball at the waist of a Minkowski causal
+diamond, diameter $L=2R$. Local ansatz $=$ on-site $+$ six spatial
+nearest neighbours.
+
+Coarse $N=12$, $R=3$ ($123$ sites): ratios $1.36$, $1.33$.
+Fine $N=16$, $R=5$ ($515$ sites): ratios $1.13$, $1.19$.
+Auditor, different code, $N=14$, $R=4$: $1.19$, $1.22$.
+C2 PASS on every spacing. \pP{} as a necessary-condition test.
+
+This is not $a\to 0$, not the Standard Model, and not a selection
+of de~Sitter. The continuum wedge theorem is already
+Bisognano--Wichmann; the CFT-ball theorem is already
+Casini--Huerta--Myers. Both are cited, not re-derived.
+\end{abstract}
+
+\section{Why $3{+}1$D, not a $4$-space lattice}
+
+Papers~21--22 tested $d=1,2,3$ spatial lattices. The missing object
+named there was a \emph{$4$d continuum diamond}, not a
+four-dimensional spatial grid. The virtual modes of a $3{+}1$D
+field live on the Minkowski diamond. Their equal-time restriction
+is a ball in three-space. A $4$-spatial lattice would be a
+different theory.
+
+\section{Gate}
+
+Unchanged. $K=\log((1-C_A)/C_A)$ from the occupied projector of
+\[
+H_{ii}=m(-1)^{x+y+z},\qquad H_{\langle ij\rangle}=-1.
+\]
+Anything beyond the lattice adjacency cannot be a spacetime scalar
+$X$ in Jacobson's split. Two spacings at matched $mL\in\{3,6\}$
+are the continuum \emph{check}, locked before the run.
+
+\section{Numbers}
+
+\begin{center}
+\begin{tabular}{lcccc}
+\hline
+spacing & $n_{\mathrm{ball}}$ & $R(0)$ & $R/R(0)$ at $mL=3$ & at $mL=6$ \\
+\hline
+$N=12$, $R=3$ & $123$ & $0.132$ & $1.36$ & $1.33$ \\
+$N=14$, $R=4$ (audit) & --- & $0.150$ & $1.19$ & $1.22$ \\
+$N=16$, $R=5$ & $515$ & $0.158$ & $1.13$ & $1.19$ \\
+\hline
+\end{tabular}
+\end{center}
+
+The ratio stays under $2$. It is smaller on the finer grid
+(\emph{computed}, two points). That is the direction a continuum
+limit would need. It is not the limit.
+
+An independent adversary, different grids $N=13,15$, denser $mL$
+scan, no shared code: worst ratio $1.29$ (at $mL=4$). Cube-shaped
+waist also stayed under $2$. Catch, not a fail: $R(m)$ is not
+monotone. It peaks near $mL\sim 4$--$5$ and then falls. Mass does
+not monotonically localize $K$ on this stencil.
+
+\section{What the continuum already says}
+
+Bisognano--Wichmann \cite{BW1975}: the modular Hamiltonian of a
+Rindler wedge in Minkowski, including $3{+}1$D, is
+\[
+K=2\pi\int_{x^1>0}x^1\,T_{00}\,d^3x.
+\]
+Casini--Huerta--Myers \cite{CHM2011}: for a ball in a CFT,
+\[
+K=2\pi\int_{|x|<R}\frac{R^2-r^2}{2R}\,T_{00}\,d^3x.
+\]
+Both are local. The lattice test is the massive deformation, which
+those theorems do not cover.
+
+\section{What this does not do}
+
+It does not take $a\to 0$. It does not install the Standard Model.
+It does not fix $\eta=1/4G$. It does not copy FGHMV onto de~Sitter
+(Paper~17). It does not promote Jacobson 2016 to \pP{} (Paper~18).
+Einstein$+\Lambda>0$ is already de~Sitter as a metric vacuum
+(Paper~19); entanglement still does not select the sign of $\Lambda$.
+
+\begin{admission}
+I pushed A2 onto the $3{+}1$D diamond waist I had named as the
+next object. I did not write that a two-spacing lattice is the
+continuum, and I did not write that entanglement gravity is
+de~Sitter.
+\end{admission}
+
+\begin{thebibliography}{9}
+\bibitem{BW1975}
+J.J.~Bisognano and E.H.~Wichmann,
+J.\ Math.\ Phys.\ 16 (1975) 985.
+
+\bibitem{CHM2011}
+H.~Casini, M.~Huerta and R.C.~Myers,
+JHEP 05 (2011) 036,
+arXiv:1102.0440.
+
+\bibitem{Jacobson2016}
+T.~Jacobson,
+Phys.\ Rev.\ Lett.\ 116 (2016) 201101,
+arXiv:1505.04753.
+\end{thebibliography}
+
+\end{document}

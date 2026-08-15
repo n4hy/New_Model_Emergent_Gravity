@@ -1,0 +1,17 @@
+{
+  "task": "m9.13_audit_A2",
+  "method": "3+1D ball waist N=14 R=4; no solver import",
+  "n_grid": 14,
+  "R_ball": 4,
+  "L_diam": 8,
+  "R0": 0.14976821568057205,
+  "R_mL3": 0.1788682033877774,
+  "R_mL6": 0.18200083789637114,
+  "ratio_mL3": 1.1943001562445683,
+  "ratio_mL6": 1.2152167071586493,
+  "C1": true,
+  "C2": true,
+  "verdicts": {
+    "C2_diamond": "CONFIRMED"
+  }
+}

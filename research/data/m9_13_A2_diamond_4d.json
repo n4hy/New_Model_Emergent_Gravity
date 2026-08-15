@@ -1,0 +1,115 @@
+{
+  "task": "m9.13_A2_diamond_4d",
+  "model": "3+1D staggered fermion; diamond waist = geodesic ball; two spacings at matched m L",
+  "pre_registered": {
+    "C2_threshold": 2.0,
+    "window": "0 < m L <= 8",
+    "L": "ball diameter 2 R",
+    "resolutions": [
+      "N=12 R=3",
+      "N=16 R=5"
+    ],
+    "matched_mL": [
+      3.0,
+      6.0
+    ]
+  },
+  "resolutions": [
+    {
+      "N": 12,
+      "R_ball": 3,
+      "L_diam": 6,
+      "n_ball": 123,
+      "R0": 0.1315635287944686,
+      "rows": [
+        {
+          "m": 0.0,
+          "mL": 0.0,
+          "R": 0.1315635287944686,
+          "R_over_R0": 1.0,
+          "C_min": 1.0855019268950803e-05,
+          "C_max": 0.999989144980731,
+          "K_herm": 0.0,
+          "n_ball": 123
+        },
+        {
+          "m": 0.5,
+          "mL": 3.0,
+          "R": 0.17841007622457175,
+          "R_over_R0": 1.3560754858079844,
+          "C_min": 2.1180969362376694e-06,
+          "C_max": 0.9999849547157322,
+          "K_herm": 0.0,
+          "n_ball": 123
+        },
+        {
+          "m": 1.0,
+          "mL": 6.0,
+          "R": 0.17562340407757204,
+          "R_over_R0": 1.3348942954542877,
+          "C_min": 6.638821470597741e-07,
+          "C_max": 0.9999913771576531,
+          "K_herm": 0.0,
+          "n_ball": 123
+        }
+      ],
+      "C1": true,
+      "C2_PRIMARY": true,
+      "C4": true,
+      "name": "coarse"
+    },
+    {
+      "N": 16,
+      "R_ball": 5,
+      "L_diam": 10,
+      "n_ball": 515,
+      "R0": 0.15767528709030926,
+      "rows": [
+        {
+          "m": 0.0,
+          "mL": 0.0,
+          "R": 0.15767528709030926,
+          "R_over_R0": 1.0,
+          "C_min": 8.854636328082204e-11,
+          "C_max": 0.9999999999114535,
+          "K_herm": 0.0,
+          "n_ball": 515
+        },
+        {
+          "m": 0.3,
+          "mL": 3.0,
+          "R": 0.17847703728867428,
+          "R_over_R0": 1.1319277775372036,
+          "C_min": 6.052316502484514e-11,
+          "C_max": 0.9999999998978452,
+          "K_herm": 0.0,
+          "n_ball": 515
+        },
+        {
+          "m": 0.6,
+          "mL": 6.0,
+          "R": 0.18736562963434308,
+          "R_over_R0": 1.1883005453291393,
+          "C_min": 2.5648003532817878e-11,
+          "C_max": 0.9999999999367812,
+          "K_herm": 0.0,
+          "n_ball": 515
+        }
+      ],
+      "C1": true,
+      "C2_PRIMARY": true,
+      "C4": true,
+      "name": "fine"
+    }
+  ],
+  "C_CONT": true,
+  "all_gates": true,
+  "verdict": "A2_DIAMOND_4D_PASS",
+  "not_claimed": [
+    "continuum a -> 0 proof",
+    "Standard Model",
+    "eta = 1/4G",
+    "FGHMV in de Sitter",
+    "value of Lambda"
+  ]
+}
