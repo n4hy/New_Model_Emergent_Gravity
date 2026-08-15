@@ -1,0 +1,14 @@
+{
+  "task": "m9.19_audit_s3",
+  "method": "complex arithmetic + numpy trapezoid; no solver import",
+  "R_wick_numeric": {
+    "re": -0.6666666666666666,
+    "im": -0.0
+  },
+  "haar_mean_cos_chi": 0.0,
+  "C2": true,
+  "C4": true,
+  "verdicts": {
+    "wick": "CONFIRMED"
+  }
+}

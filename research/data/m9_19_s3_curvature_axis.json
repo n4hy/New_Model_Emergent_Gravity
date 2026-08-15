@@ -1,0 +1,27 @@
+{
+  "task": "m9.19_s3_curvature_axis",
+  "R_sphere": "6/rho**2",
+  "R_wick": "-6/ell**2",
+  "haar_mean_cos_chi": "0",
+  "sin_equator": "1",
+  "isometry_dims": {
+    "so4_S3": 6,
+    "so31_dS3_or_Lorentz": 6,
+    "so14_dS4": 10,
+    "so24_conf_or_AdS5": 15
+  },
+  "C1_sphere_Ricci": true,
+  "C2_wick_flips_sign": true,
+  "C3_equator_S2": true,
+  "C4_haar_mean_zero": true,
+  "all_gates": true,
+  "verdict": "S3_WICK_IDENTITIES_PASS",
+  "author_identification": "X_4 = curvature is ontology, not a gate. Virtual particles on this S^3 is ontology, not a gate.",
+  "not_claimed": [
+    "virtual particles derived",
+    "FGHMV in dS",
+    "selection of Lambda",
+    "so(1,4) contains CHM net",
+    "mean-zero foam as a theorem of NSM"
+  ]
+}

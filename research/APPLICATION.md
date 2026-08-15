@@ -167,6 +167,8 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
   [`findings/m9_16_first_law_note.md`](findings/m9_16_first_law_note.md).
 - Horizon vs bulk first law: `scripts/m9_18_surface_first_law.py`,
   [`findings/m9_17_18_horizon_first_law_note.md`](findings/m9_17_18_horizon_first_law_note.md).
+- \(S^3\) curvature axis: `scripts/m9_19_s3_curvature_axis.py`,
+  [`findings/m9_19_s3_curvature_note.md`](findings/m9_19_s3_curvature_note.md).
 
 ## Which MODELS.md rows the model addresses
 
