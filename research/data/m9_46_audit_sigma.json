@@ -1,0 +1,14 @@
+{
+  "task": "m9.46_audit_sigma",
+  "slopes": [
+    -1.8373846420458115,
+    0.6011106305920536
+  ],
+  "sea_slope": 1.2370138959139294,
+  "C_in": true,
+  "C_mono": true,
+  "verdicts": {
+    "C_in": "CONFIRMED",
+    "C_mono": "CONFIRMED"
+  }
+}

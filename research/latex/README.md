@@ -50,5 +50,6 @@
 | `53_Diamond_Kappa.tex` | κ survives 3+1D staggered mass; not a cube artifact |
 | `54_Newton_Lambda.tex` | Uniform entanglement energy; inherited a ∝ r, not 1/r² |
 | `55_Gauss_Force.tex` | First-law mass + Gauss, no Poisson: star 1/R², sea a∝R |
+| `56_Dust_Not_Lambda.tex` | σ-scan interpolates; inward a is dust; Λ withdrawn |
 
 Reconstructed files follow the PDF wording and equations. They are not a byte-for-byte dump of an unpublished compiler run.
