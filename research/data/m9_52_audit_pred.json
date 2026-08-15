@@ -1,0 +1,32 @@
+{
+  "task": "m9.52_audit_pred",
+  "n_balls": 64,
+  "rows": [
+    {
+      "alpha": 0.01,
+      "rho": {
+        "P_flat": 0.9980390158869376,
+        "P_CHM": 0.9548007395227338,
+        "T_K": 0.9682713939021677
+      },
+      "winner": "P_flat"
+    },
+    {
+      "alpha": 0.06,
+      "rho": {
+        "P_flat": 0.9984696138132089,
+        "P_CHM": 0.934324310083955,
+        "T_K": 0.950889617494478
+      },
+      "winner": "P_flat"
+    }
+  ],
+  "winners": [
+    "P_flat",
+    "P_flat"
+  ],
+  "C_flip": false,
+  "verdicts": {
+    "C_flip": "REFUTED"
+  }
+}

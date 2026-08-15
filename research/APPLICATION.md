@@ -234,6 +234,8 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
   [`findings/m9_50_alpha_note.md`](findings/m9_50_alpha_note.md).
 - Energy-only Gauss: `scripts/m9_51_energy_gauss.py`,
   [`findings/m9_51_energy_gauss_note.md`](findings/m9_51_energy_gauss_note.md).
+- Predictor scan: `scripts/m9_52_predictor.py`,
+  [`findings/m9_52_predictor_note.md`](findings/m9_52_predictor_note.md).
 
 ## Which MODELS.md rows the model addresses
 

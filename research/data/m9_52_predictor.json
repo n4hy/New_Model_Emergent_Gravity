@@ -1,0 +1,68 @@
+{
+  "task": "m9.52_predictor",
+  "n_balls": 216,
+  "rows": [
+    {
+      "alpha": 0.005,
+      "n_well": 120,
+      "rho_all": {
+        "P_flat": 0.9907828493679249,
+        "P_CHM": 0.962876044185446,
+        "T_K": 0.9839598483819633
+      },
+      "winner_all": "P_flat",
+      "rho_well": {
+        "P_flat": 0.9984090892435904,
+        "P_CHM": 0.9681414543221825,
+        "T_K": 0.9810499250899409
+      },
+      "winner_well": "P_flat"
+    },
+    {
+      "alpha": 0.02,
+      "n_well": 120,
+      "rho_all": {
+        "P_flat": 0.9960327683213643,
+        "P_CHM": 0.9479325008028208,
+        "T_K": 0.9737208993163771
+      },
+      "winner_all": "P_flat",
+      "rho_well": {
+        "P_flat": 0.9989616855294502,
+        "P_CHM": 0.956303050704049,
+        "T_K": 0.9720791050627873
+      },
+      "winner_well": "P_flat"
+    },
+    {
+      "alpha": 0.08,
+      "n_well": 120,
+      "rho_all": {
+        "P_flat": 0.9986815691592232,
+        "P_CHM": 0.9302377941252578,
+        "T_K": 0.9605942332307408
+      },
+      "winner_all": "P_flat",
+      "rho_well": {
+        "P_flat": 0.9974302898609637,
+        "P_CHM": 0.943516733631931,
+        "T_K": 0.9622378243261082
+      },
+      "winner_well": "P_flat"
+    }
+  ],
+  "winners_all": [
+    "P_flat",
+    "P_flat",
+    "P_flat"
+  ],
+  "C_track": true,
+  "C_flip_PRIMARY": false,
+  "verdict": "WINNER_STABLE",
+  "not_claimed": [
+    "8pi G",
+    "Einstein",
+    "de Sitter",
+    "MODELS.md"
+  ]
+}
