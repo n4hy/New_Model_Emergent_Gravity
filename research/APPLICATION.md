@@ -216,6 +216,8 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
   [`findings/m9_41_uniform_note.md`](findings/m9_41_uniform_note.md).
 - Unequal-mass \(M/r^2\) null: `scripts/m9_42_bary.py`,
   [`findings/m9_42_bary_note.md`](findings/m9_42_bary_note.md).
+- Diamond \(\kappa\): `scripts/m9_43_diamond_kappa.py`,
+  [`findings/m9_43_diamond_kappa_note.md`](findings/m9_43_diamond_kappa_note.md).
 
 ## Which MODELS.md rows the model addresses
 

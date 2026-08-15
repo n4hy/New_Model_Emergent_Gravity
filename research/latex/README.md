@@ -47,5 +47,6 @@
 | `50_Pair_Newton.tex` | Two packets: one ball reads the pair; midpoint cancels |
 | `51_Extended.tex` | Stars plateau; an extended source does not. Not Newtonian Λ |
 | `52_Invsq_Null.tex` | Unequal masses: interior null is M/r², not the CM |
+| `53_Diamond_Kappa.tex` | κ survives 3+1D staggered mass; not a cube artifact |
 
 Reconstructed files follow the PDF wording and equations. They are not a byte-for-byte dump of an unpublished compiler run.
