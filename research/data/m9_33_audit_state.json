@@ -1,0 +1,15 @@
+{
+  "task": "m9.33_audit_state",
+  "n": 216,
+  "rho_S_bond": -0.8260820664124391,
+  "rho_bond_P": -0.818047674863587,
+  "eta_median": -0.7865453997800157,
+  "eta_rel_iqr": 1.2086986719154194,
+  "max_abs_dA": 0.040275169394384136,
+  "C_indepP": true,
+  "C_eta": false,
+  "verdicts": {
+    "C_indepP": "CONFIRMED",
+    "C_eta": "REFUTED"
+  }
+}

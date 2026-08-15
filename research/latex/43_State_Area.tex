@@ -1,0 +1,46 @@
+% Cut-correlator area at fixed H: responds, but is an energy proxy.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem*{admission}{Admission}
+
+\title{\textbf{A State-Dependent Cut Area Moves at Fixed $H$.\\
+It Is Still an Energy Proxy.}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Hop-area cannot be Jacobson's $\delta A$ at fixed hops
+(Paper~42). This note uses the correlator on the cut:
+$A_{\mathrm{bond}}=\sum_{\partial B}\lvert C_{ij}\rvert$.
+
+Occupation transfer, $H$ fixed, $512$ balls.
+$\delta A_{\mathrm{bond}}$ is nonzero.
+It is not $S$ (purity tracks $S$ at $0.99998$; the bond
+area does not). It tracks $P_{\mathrm{CHM}}$ at
+$\rho=-0.925$. C$_{\mathrm{indep}P}$ FAIL.
+$\eta=\delta S/\delta A_{\mathrm{bond}}$ has rel~IQR $0.87$.
+C$_\eta$ FAIL.
+
+Auditor, $N=10$: independence QUALIFIED ($\rho=-0.818$),
+$\eta$ REFUTED.
+
+The last obvious geometric object at fixed $H$ is the
+energy first law on the cut. Not $8\pi G$. Not Einstein.
+\end{abstract}
+
+\begin{admission}
+I looked for a geometric $\delta A$ that matter can source
+without moving the hops. I found a cut observable. I did
+not call an energy proxy a graviton.
+\end{admission}
+
+\end{document}

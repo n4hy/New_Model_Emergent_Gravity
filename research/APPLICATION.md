@@ -195,6 +195,8 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
   [`findings/m9_31_proper_area_note.md`](findings/m9_31_proper_area_note.md).
 - Area is energy proxy: `scripts/m9_32_two_term.py`,
   [`findings/m9_32_two_term_note.md`](findings/m9_32_two_term_note.md).
+- State-area on the cut: `scripts/m9_33_state_area.py`,
+  [`findings/m9_33_state_area_note.md`](findings/m9_33_state_area_note.md).
 
 ## Which MODELS.md rows the model addresses
 

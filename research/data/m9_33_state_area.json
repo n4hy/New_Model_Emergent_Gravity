@@ -1,0 +1,37 @@
+{
+  "task": "m9.33_state_area",
+  "n_balls": 512,
+  "n_occ": 864,
+  "max_abs_dS": 0.11759686275433268,
+  "max_abs_dA_bond": 0.026067340038583353,
+  "max_abs_dA_pur": 0.09592408905091787,
+  "rho_eps": 0.9994662283591559,
+  "rho_Kvac": 0.99858803558239,
+  "rho_CHM": 0.9998319738169511,
+  "rho_S_bond": -0.9235261964844349,
+  "rho_bond_P": -0.9246280180292488,
+  "rho_pur_S": 0.9999751585077505,
+  "R_bond": 0.3835353496185107,
+  "R_CHM": 0.018330961057721078,
+  "eta_bond": {
+    "n": 512,
+    "median": -0.6059094115581979,
+    "rel_iqr": 0.8744873503487584,
+    "pass": false
+  },
+  "C_vac": true,
+  "C0_signal": true,
+  "C1_linear": true,
+  "C_indepP": false,
+  "C_indepS": true,
+  "C_track": true,
+  "C_eta_PRIMARY": false,
+  "pur_is_S": true,
+  "verdict": "BOND_IS_ENERGY_PROXY",
+  "not_claimed": [
+    "8pi G",
+    "Einstein equation",
+    "de Sitter",
+    "MODELS.md"
+  ]
+}

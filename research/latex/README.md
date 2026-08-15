@@ -39,3 +39,4 @@ Reconstructed files follow the PDF wording and equations. They are not a byte-fo
 | `40_Inherited_Newton.tex` | M9.2: attractive 1/r² passes; isolated Φ fails |
 | `41_Proper_Area.tex` | Dual-face area is the same Clausius fail as Paper 39 |
 | `42_Area_Is_Energy.tex` | Hop-area is collinear with CHM energy, not a 2nd term |
+| `43_State_Area.tex` | Cut-correlator area moves at fixed H; still an energy proxy |
