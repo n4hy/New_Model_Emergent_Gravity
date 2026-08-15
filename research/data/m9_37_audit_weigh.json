@@ -1,0 +1,25 @@
+{
+  "task": "m9.37_audit_weigh",
+  "kappa": 0.9708765124052665,
+  "M_true_global": 0.2647421667454889,
+  "M_enc": 0.255294658558103,
+  "M_hat": 0.26002393457954387,
+  "mass_rel": 0.018524774659022025,
+  "x_true": [
+    4,
+    5,
+    5
+  ],
+  "x_hat": [
+    4,
+    4,
+    4
+  ],
+  "chebyshev": 1,
+  "C_mass": true,
+  "C_loc": false,
+  "verdicts": {
+    "C_mass": "CONFIRMED",
+    "C_loc": "REFUTED"
+  }
+}

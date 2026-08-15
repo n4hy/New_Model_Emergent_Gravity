@@ -1,0 +1,52 @@
+{
+  "task": "m9.37_weigh",
+  "n_balls": 216,
+  "n_well": 120,
+  "n_even": 60,
+  "n_odd": 60,
+  "kappa": 0.9676047748534844,
+  "M_true_global": 0.18697724214480238,
+  "M_enc": 0.134532680621681,
+  "M_hat": 0.13453268295384732,
+  "mass_rel": 1.7335314517197276e-08,
+  "enc_vs_global": 0.280486335778267,
+  "x_true": [
+    6,
+    6,
+    6
+  ],
+  "x_hat": [
+    6,
+    6,
+    6
+  ],
+  "chebyshev": 0,
+  "n_high": 57,
+  "rho_Kvac": 0.9737208993163774,
+  "rho_pred": 0.9989616855294502,
+  "inherited_probes": [
+    {
+      "d": 3,
+      "a": -0.020112299342439667,
+      "attractive": true
+    },
+    {
+      "d": 4,
+      "a": -0.011637755614237513,
+      "attractive": true
+    }
+  ],
+  "C_vac": true,
+  "C_mass_PRIMARY": true,
+  "C_loc": true,
+  "C_pred": true,
+  "all_gates": true,
+  "verdict": "WEIGHED_AND_LOCATED",
+  "not_claimed": [
+    "8pi G",
+    "1/4G",
+    "Einstein equation",
+    "de Sitter",
+    "MODELS.md"
+  ]
+}
