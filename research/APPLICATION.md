@@ -191,6 +191,8 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
   [`findings/m9_29_shape_note.md`](findings/m9_29_shape_note.md).
 - Area not Clausius: `scripts/m9_30_area.py`,
   [`findings/m9_30_area_note.md`](findings/m9_30_area_note.md).
+- Proper area still not Clausius: `scripts/m9_31_proper_area.py`,
+  [`findings/m9_31_proper_area_note.md`](findings/m9_31_proper_area_note.md).
 
 ## Which MODELS.md rows the model addresses
 

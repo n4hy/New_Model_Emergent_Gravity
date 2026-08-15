@@ -1,0 +1,68 @@
+{
+  "task": "m9.31_proper_area",
+  "n_balls": 512,
+  "n_occ": [
+    864,
+    864,
+    864
+  ],
+  "max_abs_dS": 0.007987088797309028,
+  "rho_eps": 0.9999943880623156,
+  "rho_Kvac": 0.9999999915751392,
+  "rho_CHM": 0.9484110811851209,
+  "R_CHM": 0.31704324797300165,
+  "length_control": {
+    "rho": 0.9179859653931713,
+    "R": 0.39661286835044424,
+    "R_CHM": 0.31704324797300165,
+    "eta": {
+      "n": 512,
+      "median": -0.0016989691900868749,
+      "rel_iqr": 3.1729790148378143,
+      "pass": false
+    },
+    "C_area": true,
+    "C_eta": false,
+    "C_pred": false
+  },
+  "face_PRIMARY": {
+    "rho": 0.9176591306707447,
+    "R": 0.397368493839928,
+    "R_CHM": 0.31704324797300165,
+    "eta": {
+      "n": 512,
+      "median": -0.0008518135692755321,
+      "rel_iqr": 3.173639121086503,
+      "pass": false
+    },
+    "C_area": true,
+    "C_eta": false,
+    "C_pred": false
+  },
+  "weak_field_diag": {
+    "rho": 0.918638304578697,
+    "R": 0.3950995638579939,
+    "R_CHM": 0.31704324797300165,
+    "eta": {
+      "n": 512,
+      "median": -0.001689662720091175,
+      "rel_iqr": 3.1716575427436946,
+      "pass": false
+    },
+    "C_area": true,
+    "C_eta": false,
+    "C_pred": false
+  },
+  "C_vac": true,
+  "C0_signal": true,
+  "C1_linear": true,
+  "control_len_fails_eta": true,
+  "all_gates": false,
+  "verdict": "FACE_CORRELATES_NOT_CLAUSIUS",
+  "not_claimed": [
+    "8pi G",
+    "Einstein equation",
+    "de Sitter",
+    "MODELS.md"
+  ]
+}
