@@ -1,0 +1,54 @@
+% Linear functional of local energy. Not unique CHM. Not Einstein.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem*{admission}{Admission}
+
+\title{\textbf{$\delta S$ of Balls Is a Linear Functional\\
+of Local Energy. The Kernel Is Not Uniquely CHM.}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+The claim ``entanglement gives linearized gravity'' needs a
+linear map from a source to $\delta S$ of balls. This note
+builds that map for a free lattice fermion.
+
+One Gaussian potential, $512$ balls of radius $2$ on $N=12$.
+$\delta S(\varepsilon)$ versus $\delta S(2\varepsilon)$ has
+Pearson $1-7\times 10^{-9}$. $\delta S$ versus the CHM-weighted
+energy $\sum (R^2-r^2)\,\delta e$ has $\rho=-0.986$.
+
+A linear $R-r$ weight is slightly better ($R=0.165$ vs $0.168$).
+An auditor on $N=10$ still tracks CHM ($\rho=-0.975$) but
+\emph{flat} beats CHM. A smooth source does not separate the
+kernels.
+
+So: a linear functional, yes. Einstein's kernel, no.
+Not $8\pi G$. Not FGHMV in AdS. Not de~Sitter.
+\end{abstract}
+
+\section{What this is}
+
+The first-law half of Faulkner--Guica--Hartman--Myers--Van
+Raamsdonk, as a lattice measurement, not a bulk Einstein
+equation. $n_{\mathrm{occ}}$ was stable. The locked
+$\max|\delta S|/\langle S\rangle$ floor failed because $S$ is
+the area and $\delta S$ is first order; linearity (C1) is the
+real signal check and it passed.
+
+\begin{admission}
+I ran the test that can speak to a linear functional. I did
+not promote a $0.02$ residual gap into uniqueness, and I did
+not write $G_{\mu\nu}=8\pi GT_{\mu\nu}$.
+\end{admission}
+
+\end{document}

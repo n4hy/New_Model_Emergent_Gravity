@@ -30,3 +30,4 @@ Reconstructed files follow the PDF wording and equations. They are not a byte-fo
 | `31_C4_Scored_HalfFill.tex` | C4 scored at R=5 by half-fill: TIE. Tracking collapses |
 | `32_Bloch_Not_CHM.tex` | Complete ball covering: modular hop is CHM, not Bloch |
 | `33_Region_Shape.tex` | Fixed H, vary region: shape changes S beyond area |
+| `34_Linear_Functional.tex` | Ball dS is a linear functional of local energy; kernel not unique CHM |

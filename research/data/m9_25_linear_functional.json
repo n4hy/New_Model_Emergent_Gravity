@@ -1,0 +1,33 @@
+{
+  "task": "m9.25_linear_functional",
+  "n_balls": 512,
+  "half_fill": false,
+  "n_occ": [
+    864,
+    864,
+    864
+  ],
+  "max_abs_dS": 0.000498855896193362,
+  "mean_S0": 13.59336204767956,
+  "rho_dS_eps": 0.9999999932338139,
+  "rho_CHM": -0.9857659731166768,
+  "R_CHM": 0.1681233066690365,
+  "R_lin": 0.16475122949378698,
+  "R_flat": 0.18625127603568906,
+  "rho_flat": -0.9825021435982099,
+  "rho_linear_w": -0.9863351521568544,
+  "C0_signal": false,
+  "C1_linear": true,
+  "C2_PRIMARY_chm_beats_flat": true,
+  "C3_chm_beats_linear": false,
+  "C4_tracks": true,
+  "all_gates": false,
+  "verdict": "NOT_CHM_LINEAR_FUNCTIONAL",
+  "not_claimed": [
+    "Einstein equation",
+    "8pi G",
+    "FGHMV in AdS",
+    "de Sitter",
+    "Standard Model"
+  ]
+}

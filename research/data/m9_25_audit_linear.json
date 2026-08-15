@@ -1,0 +1,12 @@
+{
+  "task": "m9.25_audit_linear",
+  "n_balls": 216,
+  "rho_CHM": -0.97473121046166,
+  "R_CHM": 0.22338099147408935,
+  "R_flat": 0.19725830727353924,
+  "C2": false,
+  "C4": true,
+  "verdicts": {
+    "C2": "REFUTED"
+  }
+}
