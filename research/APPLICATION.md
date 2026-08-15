@@ -100,6 +100,9 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
   M9.6): \(S_{\mathrm{GH}}=3\pi/(G\Lambda)\), \(\partial S/\partial\Lambda<0\),
   opposite to CHM; \(\mathfrak{so}(1,4)\) too small for a CHM net of
   balls. Einstein+\(\Lambda\) from a cosmological CFT is not claimed.
+  Jacobson is not a `[P]` substitute (Paper 18): 1995 gives Einstein
+  with free \(\Lambda\) and no HD; 2016 conformal half does not apply
+  to the SM.
 - Nonlinear Einstein-Cartan as a positive holographic theorem: remains
   `[O]`. Closed only as the axial obstruction above.
 - UV completion (Q4a): selection-uniqueness is answered in the
