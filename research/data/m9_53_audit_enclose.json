@@ -1,0 +1,52 @@
+{
+  "task": "m9.53_audit_enclose",
+  "n_balls": 64,
+  "src": [
+    4,
+    5,
+    5
+  ],
+  "sigma": 0.9,
+  "rows": [
+    {
+      "alpha": 0.01,
+      "S_global": 0.11200306870969469,
+      "M_global": 0.08824738891516447,
+      "rho": 0.9980390158869373,
+      "rms": 0.08741273605521943,
+      "n_well": 63,
+      "med_abs_fS_minus_1": 0.27399218125279623,
+      "med_abs_fE_minus_1": 0.20032863031466175,
+      "centered_fS": 0.9934106871160485,
+      "centered_fE": 0.9997630312649327,
+      "centered_offset2": 0.0
+    },
+    {
+      "alpha": 0.06,
+      "S_global": 0.45393504500120896,
+      "M_global": 0.5294843334909867,
+      "rho": 0.9984696138132088,
+      "rms": 0.03630346676912611,
+      "n_well": 63,
+      "med_abs_fS_minus_1": 0.21507428593340105,
+      "med_abs_fE_minus_1": 0.20032863031466153,
+      "centered_fS": 0.9961427310732008,
+      "centered_fE": 0.9997630312649329,
+      "centered_offset2": 0.0
+    }
+  ],
+  "C_rho_PRIMARY": true,
+  "C_rms": true,
+  "C_enc": false,
+  "verdicts": {
+    "C_rho": "CONFIRMED",
+    "C_rms": "CONFIRMED",
+    "C_enc": "REFUTED"
+  },
+  "not_claimed": [
+    "Clausius",
+    "8pi G",
+    "de Sitter",
+    "MODELS.md"
+  ]
+}

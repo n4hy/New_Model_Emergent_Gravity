@@ -57,5 +57,6 @@
 | `60_Kappa_Runs.tex` | κ runs with α; it is 2h(α)/(α ΔE), not a coupling |
 | `61_Energy_Gauss.tex` | Gauss from ∑δe; star/sea slopes do not run with α |
 | `62_Predictor.tex` | Finite δS tracks P_flat at every α; CHM does not flip it |
+| `63_Enclosure.tex` | Finite δS is enclosure of 2h(α); f=1 only on the enclosing ball |
 
 Reconstructed files follow the PDF wording and equations. They are not a byte-for-byte dump of an unpublished compiler run.

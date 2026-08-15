@@ -1,0 +1,53 @@
+{
+  "task": "m9.53_enclose",
+  "n_balls": 216,
+  "rows": [
+    {
+      "alpha": 0.005,
+      "S_global": 0.0629581318943335,
+      "M_global": 0.046744310536201275,
+      "rho": 0.990782849367925,
+      "rms": 0.09796521202446869,
+      "n_well": 120,
+      "med_abs_fS_minus_1": 0.3908494464862466,
+      "med_abs_fE_minus_1": 0.28048633577826665,
+      "centered_fS": 0.9957350300897533,
+      "centered_fE": 0.9989590471679808
+    },
+    {
+      "alpha": 0.02,
+      "S_global": 0.196078226559464,
+      "M_global": 0.1869772421448051,
+      "rho": 0.9960327683213643,
+      "rms": 0.06225232858370666,
+      "n_well": 120,
+      "med_abs_fS_minus_1": 0.3361095278955222,
+      "med_abs_fE_minus_1": 0.28048633577826665,
+      "centered_fS": 0.9976515390590474,
+      "centered_fE": 0.9989590471679808
+    },
+    {
+      "alpha": 0.08,
+      "S_global": 0.5575387435371748,
+      "M_global": 0.7479089685792204,
+      "rho": 0.9986815691592235,
+      "rms": 0.027679902517136527,
+      "n_well": 120,
+      "med_abs_fS_minus_1": 0.28488455848992866,
+      "med_abs_fE_minus_1": 0.28048633577826665,
+      "centered_fS": 0.9984949999207446,
+      "centered_fE": 0.9989590471679808
+    }
+  ],
+  "C_rho_PRIMARY": true,
+  "C_rms": true,
+  "C_enc": false,
+  "all_gates": false,
+  "verdict": "ENCLOSURE_FAIL",
+  "not_claimed": [
+    "Clausius",
+    "8pi G",
+    "de Sitter",
+    "MODELS.md"
+  ]
+}

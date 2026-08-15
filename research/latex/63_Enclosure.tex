@@ -1,0 +1,50 @@
+% Finite dS / S_global tracks P_flat / M_global. f=1 only on the enclosing ball.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem*{admission}{Admission}
+
+\title{\textbf{Finite $\delta S$ is Enclosure of Mixing Entropy.\\
+Only on the Ball that Encloses.}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Paper~60: one enclosing ball has $\delta S=2h(\alpha)$.
+Paper~62: $216$ balls, $\delta S$ tracks $P_{\mathrm{flat}}$.
+This note asks whether they are the same fraction,
+\[
+f_S=\delta S/S_{\mathrm{global}}\ \stackrel{?}{=}\
+f_E=P_{\mathrm{flat}}/M_{\mathrm{global}}.
+\]
+$N=12$, $R=3$, $\alpha=0.005,0.02,0.08$.
+$\rho(f_S,f_E)=0.991,0.996,0.999$.
+RMS $0.098,0.062,0.028$.
+On the centered ball both recover $1$ to $<0.5\%$.
+On the $120$ source-inside balls, median
+$\lvert f_S-1\rvert=0.39,0.34,0.28$: those balls leak.
+Auditor $N=10$: $\rho=0.998$ at both $\alpha$;
+centered $f_S=0.993,0.996$. Correlation confirmed.
+Absolute $f=1$ on every source-inside ball is refuted.
+
+Finite $\delta S$ is Shannon of the transfer times how
+much of the packet sits in the ball. Gravity remains
+$\sum\delta e$ plus inherited Gauss. Not Clausius.
+\end{abstract}
+
+\begin{admission}
+I pre-registered $f=1$ on every ball that contains the
+source site. That gate failed. I did not move it. The
+centered ball recovers $1$. The result is the
+correlation, not a first-law constant.
+\end{admission}
+
+\end{document}
