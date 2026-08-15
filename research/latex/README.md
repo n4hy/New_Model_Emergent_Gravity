@@ -15,3 +15,4 @@ Reconstructed files follow the PDF wording and equations. They are not a byte-fo
 | `16_Q4a_Holographic_Pair.tex` | Q4a in the monograph's sense. Selection-uniqueness negative. SM is not a holographic CFT. Existence of some pair still open |
 | `17_deSitter_FGHMV_Obstruction.tex` | Q2 decided at the FGHMV bar. Sign opposite, isometries too few. Not a cosmological Einstein theorem |
 | `18_Jacobson_Not_P_Substitute.tex` | [P] only. 1995 ⇒ Einstein, Λ free, no HD. 2016 conformal half does not apply to the SM. Not a Q2 substitute |
+| `19_deSitter_Is_the_Vacuum.tex` | Spinless Einstein+Λ vacuum is de Sitter. Torsion off the cosmological bar. Not a holographic selection |

@@ -1,0 +1,16 @@
+{
+  "task": "m9.8_ds_vacuum",
+  "what_this_is": "Spinless vacuum of Einstein+\u039b with \u039b>0 is de Sitter. Not entanglement selection. Not a prize claim.",
+  "Lambda": 3.0,
+  "H": 1.0,
+  "max_abs_Gtt_plus_Lambda_gtt": 0.0,
+  "max_abs_spatial": 0.0,
+  "C1_Friedmann_vacuum": true,
+  "C2_Einstein_plus_Lambda_zero": true,
+  "C3_mutation_Minkowski_not_dS": true,
+  "C4_no_torsion_input": true,
+  "all_gates": true,
+  "verdict": "DS_IS_THE_SPINLESS_VACUUM",
+  "what_is_P": "G_\u03bc\u03bd+\u039b g_\u03bc\u03bd=0 and \u039b>0 \u21d2 de Sitter (maximally symmetric). Torsion vanishes with the spin. Cosmology is metric.",
+  "what_is_not_P": "Entanglement first law selects \u039b or dS. FGHMV in cosmology. A Nobel-grade derivation of our universe."
+}
