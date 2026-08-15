@@ -58,5 +58,6 @@
 | `61_Energy_Gauss.tex` | Gauss from ∑δe; star/sea slopes do not run with α |
 | `62_Predictor.tex` | Finite δS tracks P_flat at every α; CHM does not flip it |
 | `63_Enclosure.tex` | Finite δS is enclosure of 2h(α); f=1 only on the enclosing ball |
+| `64_Sea_Enclosure.tex` | Sea-transfer δS is extensive; slabs break A/V; not a packet artifact |
 
 Reconstructed files follow the PDF wording and equations. They are not a byte-for-byte dump of an unpublished compiler run.
