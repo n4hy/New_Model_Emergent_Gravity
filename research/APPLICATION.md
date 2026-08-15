@@ -210,6 +210,8 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
   [`findings/m9_38_from_kappa_note.md`](findings/m9_38_from_kappa_note.md).
 - Which mass gravitates: `scripts/m9_39_tail.py`,
   [`findings/m9_39_tail_note.md`](findings/m9_39_tail_note.md).
+- Two-packet Newton: `scripts/m9_40_pair.py`,
+  [`findings/m9_40_pair_note.md`](findings/m9_40_pair_note.md).
 
 ## Which MODELS.md rows the model addresses
 
