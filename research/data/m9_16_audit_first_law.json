@@ -1,0 +1,22 @@
+{
+  "task": "m9.16_audit_first_law",
+  "method": "dS vs Tr(K_CHM dC); 1d N=160 L=20; 3d N=10 R=3 all NN",
+  "one_d": {
+    "rho": 0.7752445890139893,
+    "R_shape": 0.6316611648696876,
+    "C0": false
+  },
+  "three_d": {
+    "n": 282,
+    "rho": 0.7968217068687549,
+    "R_shape": 0.6042145045120682,
+    "rho_flat": 0.8652215816161765,
+    "R_shape_flat": 0.5013896834854126,
+    "C1": true,
+    "C2": true,
+    "C3": false
+  },
+  "verdicts": {
+    "first_law": "REFUTED"
+  }
+}

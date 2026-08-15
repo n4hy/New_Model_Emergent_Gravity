@@ -22,3 +22,4 @@ Reconstructed files follow the PDF wording and equations. They are not a byte-fo
 | `23_A2_4d_Continuum_Diamond.tex` | A2 on a 3+1D diamond waist, two spacings. Not a continuum proof and not a dS selection |
 | `24_A1_4d_Diamond_Area.tex` | A1 area coefficient UV-stable on the 3+1D waist. Sea energy is not mean-zero curvature |
 | `25_CHM_Shape_Diamond.tex` | Modular hop on the 3+1D waist is the CHM envelope. Not 1/4G |
+| `26_First_Law_Local_Not_CHM.tex` | First law tracks a local kernel; CHM envelope not selected |

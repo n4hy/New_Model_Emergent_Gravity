@@ -163,6 +163,8 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
   [`findings/m9_14_A1_diamond_note.md`](findings/m9_14_A1_diamond_note.md).
 - CHM shape of the modular hop: `scripts/m9_15_chm_shape.py`,
   [`findings/m9_15_chm_shape_note.md`](findings/m9_15_chm_shape_note.md).
+- First law, local not CHM-selected: `scripts/m9_16_first_law.py`,
+  [`findings/m9_16_first_law_note.md`](findings/m9_16_first_law_note.md).
 
 ## Which MODELS.md rows the model addresses
 

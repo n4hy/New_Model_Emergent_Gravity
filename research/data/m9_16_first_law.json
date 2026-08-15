@@ -1,0 +1,59 @@
+{
+  "task": "m9.16_first_law",
+  "observable": "dS vs Tr(K_CHM dC); K_CHM fitted NN envelope, not K_exact",
+  "one_d": {
+    "n": 23,
+    "fit_ab": [
+      -0.10869950302693426,
+      -1.45609848042366
+    ],
+    "rho": 0.9179277015844887,
+    "R_shape": 0.3967476964820575,
+    "rho_flat": 0.9814550428035836,
+    "R_shape_flat": 0.19169245930765233,
+    "C0": true,
+    "C3_1d": false
+  },
+  "three_d": {
+    "n_pairs": 282,
+    "fit_ab": [
+      -0.2283736055486914,
+      -0.8970950069181846
+    ],
+    "rho": 0.8497753876409896,
+    "R_shape": 0.5271449426482296,
+    "rho_flat": 0.9118081700690469,
+    "R_shape_flat": 0.410616440239959,
+    "linearity": [
+      {
+        "bin": 2,
+        "dS": -0.0003739277187690959,
+        "pred": -0.0010678336453565868
+      },
+      {
+        "bin": 1,
+        "dS": -0.0002026566795265694,
+        "pred": -0.00023723042313362826
+      },
+      {
+        "bin": 0,
+        "dS": -0.00011507992922332733,
+        "pred": -8.656786724286903e-05
+      }
+    ]
+  },
+  "C0_instrument": true,
+  "C1_rho": true,
+  "C2_PRIMARY_Rshape": true,
+  "C3_permutation": false,
+  "C4_linearity_sign": true,
+  "all_gates": false,
+  "verdict": "FIRST_LAW_FAIL",
+  "not_claimed": [
+    "eta = 1/4G",
+    "Einstein theorem",
+    "mean-zero foam",
+    "de Sitter",
+    "unique CHM quadratic"
+  ]
+}

@@ -1,0 +1,84 @@
+% First law tracks a local kernel; CHM envelope is not selected.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newcommand{\pP}{\textbf{[P]}}
+\newtheorem*{admission}{Admission}
+
+\title{\textbf{The Entanglement First Law Tracks a Local Kernel;\\
+the Casini--Huerta--Myers Envelope Is Not Selected}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Paper~25 found that the modular \emph{hop} tracks the CHM envelope.
+Jacobson needs that envelope to do Clausius work:
+$\delta S=\delta\langle K_{\mathrm{CHM}}\rangle$.
+
+Two instruments were discarded before the gate was locked.
+Bond-local $\chi=\Delta S/\Delta t$ versus $w$ fails the 1d theorem
+($\rho\approx 0.28$): $\Delta C$ is nonlocal. A permutation of $w$
+is not a mutation: the intercept of $K_{ij}=aw_{ij}+b$ dominates.
+
+The effective test: fit $K_{\mathrm{CHM}}$ on vacuum nearest
+neighbours, perturb every hop, and compare $\delta S$ to
+$\mathrm{Tr}(K_{\mathrm{CHM}}\Delta C)$. Null: a \emph{flat} local
+kernel, every hop equal to $\langle K_{\mathrm{NN}}\rangle$.
+$\mathrm{Tr}(K_{\mathrm{exact}}\Delta C)$ is an identity and is
+not a gate.
+
+1d $L=24$: $\rho=0.918$ (instrument PASS). Auditor $L=20$:
+$\rho=0.775$ (below the $0.80$ lock; QUALIFIED).
+3d, all $282$ hops, $N=12$, $R=3$: $\rho=0.850$,
+$R_{\mathrm{shape}}=0.527$. C1/C2 PASS.
+C3 FAIL: the flat kernel is better ($\rho=0.912$,
+$R_{\mathrm{shape}}=0.411$). Auditor $N=10$: same order
+($0.797$ vs flat $0.865$). C3 CONFIRMED.
+
+The first law tracks a local kernel. The CHM envelope is not
+selected by Clausius. \pP{} as that negative. Not a refutation of
+Paper~25, and not Einstein.
+\end{abstract}
+
+\section{Why these gates}
+
+A2 and Paper~25 are about the shape of $K$. The next path step is
+whether that shape is what generates $\delta S$. A test that a
+shapeless local $K$ can win is the only mutation that can see the
+difference. It won.
+
+\section{Numbers}
+
+\begin{center}
+\begin{tabular}{lcccc}
+\hline
+ & $\rho_{\mathrm{CHM}}$ & $R_{\mathrm{CHM}}$ & $\rho_{\mathrm{flat}}$ & $R_{\mathrm{flat}}$ \\
+\hline
+1d interval & $0.918$ & $0.397$ & $0.981$ & $0.192$ \\
+3d ball, $282$ hops & $0.850$ & $0.527$ & $0.912$ & $0.411$ \\
+\hline
+\end{tabular}
+\end{center}
+
+Locality is the first-law input. The radial weight is extra
+structure this probe does not use. Combined with Papers~23--24,
+what actually feeds a Jacobson-style argument here is
+\emph{local} $K$ plus an area law, not a uniquely geometric
+envelope. $\Lambda$ stays free. $G$ is not measured.
+
+\begin{admission}
+I designed the test so the CHM envelope had to beat a flat local
+kernel. It lost. I did not keep a permutation mutation after it
+proved vacuous, and I did not write that entanglement gravity is
+Einstein.
+\end{admission}
+
+\end{document}
