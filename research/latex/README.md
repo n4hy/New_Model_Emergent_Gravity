@@ -10,14 +10,12 @@
 | `13_Hadamard_Completion_IB.tex` | Complete Mittag-Leffler / Hadamard expansion. $H(\\tau)$ via polygamma. Not proportional to a local kernel. No universal multi-digit coefficient |
 | `14_Nonlinear_EC_Second_Order.tex` | Forced finish of Q3. Palatini symplectic reduction. Axial Fisher versus algebraic torsion is an obstruction. Not a positive second-order EC theorem |
 | `15_UV_Deformation_Axial.tex` | Q4 split. Selected UV (Q4a) not invented. Unique quadratic axial deformation (Q4b) tree-level matched to 3/16. Not a selected completion |
-
-Reconstructed files follow the PDF wording and equations. They are not a byte-for-byte dump of an unpublished compiler run.
 | `16_Q4a_Holographic_Pair.tex` | Q4a in the monograph's sense. Selection-uniqueness negative. SM is not a holographic CFT. Existence of some pair still open |
 | `17_deSitter_FGHMV_Obstruction.tex` | Q2 decided at the FGHMV bar. Sign opposite, isometries too few. Not a cosmological Einstein theorem |
 | `18_Jacobson_Not_P_Substitute.tex` | [P] only. 1995 ⇒ Einstein, Λ free, no HD. 2016 conformal half does not apply to the SM. Not a Q2 substitute |
-| `19_deSitter_Is_the_Vacuum.tex` | Spinless Einstein+Λ vacuum is de Sitter. Torsion off the cosmological bar. Not a holographic selection |
-| `20_Derived_Sign_Einstein_Lambda.tex` | SdS: T dS + dM = 0 derived. Local Clausius ⇒ Einstein+Λ. Not FGHMV in dS |
-| `21_A2_A1_Free_Fermion.tex` | A2 not refuted on 1d fermion. A1 UV α IR-independent. Not 4d |
+| `19_deSitter_Is_the_Vacuum.tex` | Spinless Einstein+Λ vacuum is de Sitter. Torsion off the cosmological bar. Not a holographic selection and not a prize theorem |
+| `20_Derived_Sign_Einstein_Lambda.tex` | SdS: T dS + dM = 0 derived. Local Clausius ⇒ Einstein+Λ. Two signs, two surfaces. Not FGHMV in dS |
+| `21_A2_A1_Free_Fermion.tex` | A2 not refuted on 1d fermion (R ratio < 2). A1 UV α IR-independent. Not 4d |
 | `22_A2_Dirac_2d3d.tex` | Required A2: 2d/3d lattice Dirac pass locked gate. 1d scalar instrument rejected |
 | `23_A2_4d_Continuum_Diamond.tex` | A2 on a 3+1D diamond waist, two spacings. Not a continuum proof and not a dS selection |
 | `24_A1_4d_Diamond_Area.tex` | A1 area coefficient UV-stable on the 3+1D waist. Sea energy is not mean-zero curvature |
@@ -30,8 +28,8 @@ Reconstructed files follow the PDF wording and equations. They are not a byte-fo
 | `31_C4_Scored_HalfFill.tex` | C4 scored at R=5 by half-fill: TIE. Tracking collapses |
 | `32_Bloch_Not_CHM.tex` | Complete ball covering: modular hop is CHM, not Bloch |
 | `33_Region_Shape.tex` | Fixed H, vary region: shape changes S beyond area |
-| `34_Linear_Functional.tex` | Ball dS is a linear functional of local energy; kernel not unique CHM |
-| `35_Point_Source_Flat.tex` | Point source: dS tracks enclosed energy, not CHM |
+| `34_Linear_Functional.tex` | Ball δS is a linear functional of local energy; kernel not unique CHM |
+| `35_Point_Source_Flat.tex` | Point source: δS tracks enclosed energy, not CHM |
 | `36_1d_Instrument.tex` | 1d CHM calibration: Paper 35 instrument fails the theorem case |
 | `37_FixedH_First_Law.tex` | Fixed-H first law: 1d enclosed energy, 3d balls CHM |
 | `38_Shape_Not_Sphere.tex` | Guess: not a sphere. Cubes prefer a cube-native weight |
@@ -44,3 +42,6 @@ Reconstructed files follow the PDF wording and equations. They are not a byte-fo
 | `45_Both_Inside_Gauss.tex` | R=3 both-inside: enclosed energy beats CHM |
 | `46_Kappa.tex` | Universal Gauss first-law constant κ≈0.97 |
 | `47_Weigh.tex` | κ weighs enclosed mass and locates the source |
+| `48_From_Kappa.tex` | Entanglement mass into inherited Newton; not derived Poisson |
+
+Reconstructed files follow the PDF wording and equations. They are not a byte-for-byte dump of an unpublished compiler run.

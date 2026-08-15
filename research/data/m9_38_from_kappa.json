@@ -1,0 +1,50 @@
+{
+  "task": "m9.38_from_kappa",
+  "kappa": 0.9676047748538805,
+  "M_enc": 0.13453268062168033,
+  "M_hat": 0.13453268295374085,
+  "mass_rel": 1.733452803520663e-08,
+  "x_true": [
+    6,
+    6,
+    6
+  ],
+  "x_hat": [
+    6,
+    6,
+    6
+  ],
+  "chebyshev": 0,
+  "rho_Kvac": 0.9737208993163774,
+  "newton": {
+    "a_r": [
+      -1.5392090657724018,
+      -1.120849119981296,
+      -0.8567382391749359
+    ],
+    "c1_ii": [
+      0.029703807863174614,
+      0.020599709922687115,
+      0.018920572000516334
+    ],
+    "slope": -2.037131038377578,
+    "attractive": true,
+    "c1_ii_pass": true,
+    "c1_iii_pass": true,
+    "pass": true
+  },
+  "C_vac": true,
+  "C_mass": true,
+  "C_loc": true,
+  "C_newt_PRIMARY": true,
+  "all_gates": true,
+  "verdict": "KAPPA_TO_NEWTON",
+  "not_claimed": [
+    "derived Poisson",
+    "8pi G from kappa",
+    "1/4G",
+    "FGHMV",
+    "de Sitter",
+    "MODELS.md"
+  ]
+}
