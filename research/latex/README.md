@@ -48,5 +48,6 @@
 | `51_Extended.tex` | Stars plateau; an extended source does not. Not Newtonian Λ |
 | `52_Invsq_Null.tex` | Unequal masses: interior null is M/r², not the CM |
 | `53_Diamond_Kappa.tex` | κ survives 3+1D staggered mass; not a cube artifact |
+| `54_Newton_Lambda.tex` | Uniform entanglement energy; inherited a ∝ r, not 1/r² |
 
 Reconstructed files follow the PDF wording and equations. They are not a byte-for-byte dump of an unpublished compiler run.
