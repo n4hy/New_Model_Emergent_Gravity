@@ -1,0 +1,45 @@
+% Point source: kernels separate; flat/enclosed energy wins.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem*{admission}{Admission}
+
+\title{\textbf{A Point Source Separates the Kernels:\\
+$\delta S$ Tracks Enclosed Energy, Not CHM}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Paper~34 found a linear functional but could not name the
+kernel: a Gaussian source makes CHM, linear, and flat almost
+the same. This note puts $\varepsilon$ on a \emph{single site}.
+Then $P_{\mathrm{flat}}$ is whether the source sits in the
+ball, and $P_{\mathrm{CHM}}$ is the CHM weight at that site.
+
+$512$ balls, $N=12$. $\delta S$ is linear in $\varepsilon$
+(Pearson $1$). $\rho(\delta S,P_{\mathrm{flat}})=-0.829$.
+$\rho(\delta S,P_{\mathrm{CHM}})=-0.465$. Residuals:
+flat $0.559$, CHM $0.885$. C2 FAIL.
+
+Auditor, $N=10$, source off-center: C2 REFUTED
+($0.639$ vs $0.895$).
+
+The linear bookkeeping is enclosed energy, not the boost
+weight Einstein's first law needs. Not $8\pi G$. Not de~Sitter.
+\end{abstract}
+
+\begin{admission}
+I sharpened the source so the kernels could lose. CHM lost.
+I did not write that entanglement gravity is Einstein, and I
+did not write that a Gauss-law scalar is a graviton.
+\end{admission}
+
+\end{document}

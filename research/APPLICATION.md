@@ -181,6 +181,8 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
   [`findings/m9_24_region_deform_note.md`](findings/m9_24_region_deform_note.md).
 - Linear functional: `scripts/m9_25_linear_functional.py`,
   [`findings/m9_25_linear_functional_note.md`](findings/m9_25_linear_functional_note.md).
+- Point source, flat wins: `scripts/m9_26_point_source.py`,
+  [`findings/m9_26_point_source_note.md`](findings/m9_26_point_source_note.md).
 
 ## Which MODELS.md rows the model addresses
 

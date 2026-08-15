@@ -1,0 +1,12 @@
+{
+  "task": "m9.26_audit_point",
+  "n_balls": 216,
+  "rho_CHM": -0.44612577538750364,
+  "R_CHM": 0.8949702746655325,
+  "R_flat": 0.6389395997106231,
+  "C2": false,
+  "C4": false,
+  "verdicts": {
+    "C2": "REFUTED"
+  }
+}
