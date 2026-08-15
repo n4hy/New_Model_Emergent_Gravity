@@ -1,0 +1,102 @@
+% A1 on a 3+1D diamond waist. Area coefficient UV-stable. Not foam.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newcommand{\pP}{\textbf{[P]}}
+\newtheorem*{admission}{Admission}
+
+\title{\textbf{A1 on a $3{+}1$D Diamond Waist:\\
+the Area Coefficient is UV-Stable;\\
+the Unsubtracted Sea is Not Mean-Zero Curvature}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+The same A1 logic as Paper~21, now an area law on the diamond waist
+of Papers~22--23. Peschel entropy
+$S=-\mathrm{Tr}[C_A\log C_A+(1-C_A)\log(1-C_A)]$,
+lattice area $A_{\mathrm{cut}}=$ bonds leaving the ball,
+$S=\alpha A_{\mathrm{cut}}+\beta$.
+
+$N=16$, $R=2,3,4,5$: $\alpha(0)=0.245$. UV masses with
+$mR_{\max}\le 0.5$ shift $\alpha$ by at most $4.3\%$.
+Area-law RMSE $0.27$ versus volume-law $2.96$.
+Auditor, $N=14$, $R=2,3,4$: $\alpha(0)=0.245$, relative drift
+$2.1\%$. C2 PASS. \pP{} as a necessary-condition test on this field.
+
+The unsubtracted sea density is $\varepsilon=-0.970$ per site.
+That is not mean-zero curvature. It is not quantum foam. It is
+not $\eta=1/4G$.
+\end{abstract}
+
+\section{Gate}
+
+Locked before the run. $C1$: $\alpha(0)>0$. $C2$: relative UV
+drift $<20\%$ for $mR_{\max}\le 0.5$. $C3$: area fit beats volume
+fit at $m=0$. $C4$: at least three radii.
+
+\section{Numbers}
+
+\begin{center}
+\begin{tabular}{cccc}
+\hline
+$mR_{\max}$ & $\alpha$ & rel to $m=0$ & window \\
+\hline
+$0$ & $0.245$ & $0$ & --- \\
+$0.10$ & $0.244$ & $0.24\%$ & UV \\
+$0.25$ & $0.241$ & $1.4\%$ & UV \\
+$0.50$ & $0.234$ & $4.3\%$ & UV \\
+$2.0$ & $0.190$ & $23\%$ & IR, not a gate \\
+\hline
+\end{tabular}
+\end{center}
+
+The coefficient moves when the mass is no longer UV. Inside the
+locked window it does not. That is A1 for this area law.
+
+An independent adversary on $N=13$ (odd, $37$ exact zero modes)
+found $\alpha(0)=0.245$ and a worst UV drift of $5.9\%$. C2
+stands. Catch: C3 is observable-dependent. Cut bonds beat volume.
+Boundary-site count and $4\pi R^2$ need not. Absolute $\alpha$
+depends on the area proxy. The locked proxy was cut bonds.
+
+\section{Foam and mean curvature}
+
+The destination I want is a quantum foam whose \emph{mean}
+curvature vanishes. That is not a result of this note.
+
+If the mean is an infrared statement, it is $\Lambda=0$ and the
+vacuum is Minkowski. That is not de~Sitter (Paper~19 needs
+$\Lambda>0$). If the mean is only of ultraviolet fluctuations
+about a smooth background, it does not select $\Lambda$.
+
+The free lattice sea has $\varepsilon\simeq -1$ in lattice units.
+Identifying that $\langle T_{00}\rangle$ with Einstein's source is
+the cosmological-constant problem, not a foam theorem. Setting
+$\langle{:T:}\rangle=0$ by normal ordering inserts a zero mean
+by definition. I will not call that a derivation.
+
+\section{What this does not do}
+
+It does not produce $\eta=1/4G$. It does not make Jacobson 2016 a
+four-dimensional theorem. It does not copy FGHMV onto de~Sitter.
+It does not finish the foam. A2 (Paper~23) plus this A1 are
+necessary-condition tests on a free $3{+}1$D fermion. They are
+not victory.
+
+\begin{admission}
+I ran the A1 that the $3{+}1$D path required. I recorded that the
+sea is not mean-zero curvature. I did not write that the foam is
+done, and I did not write that entanglement gravity is de~Sitter.
+\end{admission}
+
+\end{document}

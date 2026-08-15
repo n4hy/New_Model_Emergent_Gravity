@@ -159,6 +159,8 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
   [`findings/m9_6_ds_closure_note.md`](findings/m9_6_ds_closure_note.md).
 - A2 diamond waist (\(3+1\)D, two spacings): `scripts/m9_13_A2_diamond_4d.py`,
   [`findings/m9_13_A2_diamond_note.md`](findings/m9_13_A2_diamond_note.md).
+- A1 diamond area law: `scripts/m9_14_A1_diamond_4d.py`,
+  [`findings/m9_14_A1_diamond_note.md`](findings/m9_14_A1_diamond_note.md).
 
 ## Which MODELS.md rows the model addresses
 
