@@ -1,0 +1,35 @@
+{
+  "task": "m9.28_3d_state",
+  "H_fixed": true,
+  "construction": "occupation_transfer",
+  "n_balls": 512,
+  "n_occ": 864,
+  "packet_norms": [
+    4.3351013921032235,
+    4.335101392103222
+  ],
+  "c_eig_min": -4.191091917959966e-15,
+  "c_eig_max": 1.000000000000006,
+  "max_abs_dS": 0.11759686275433268,
+  "rho_eps": 0.9994662283591559,
+  "rho_CHM": 0.9998319738169511,
+  "rho_flat": 0.994817626558836,
+  "rho_linear_w": 0.9995820807597172,
+  "R_CHM": 0.018330961057721078,
+  "R_lin": 0.02890785056129374,
+  "R_flat": 0.10167541437262255,
+  "rho_Kvac": 0.99858803558239,
+  "C_vac": true,
+  "C0_signal": true,
+  "C1_linear": true,
+  "C2_PRIMARY_chm_beats_flat": true,
+  "C3_chm_beats_linear": true,
+  "C4_tracks": true,
+  "all_gates": true,
+  "verdict": "3D_FIXEDH_CHM_WINS",
+  "not_claimed": [
+    "Einstein equation",
+    "8pi G",
+    "de Sitter"
+  ]
+}

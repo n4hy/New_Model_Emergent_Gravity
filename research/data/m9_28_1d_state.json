@@ -1,0 +1,34 @@
+{
+  "task": "m9.28_1d_state",
+  "H_fixed": true,
+  "construction": "occupation_transfer",
+  "sigma": 2.0,
+  "n_occ": 100,
+  "packet_norms": [
+    1.8827841862607277,
+    1.8827841862607286
+  ],
+  "c_eig_min": -9.53133776154661e-16,
+  "c_eig_max": 1.0000000000000036,
+  "de_rms_width": 1.5000442359444426,
+  "n_intervals": 185,
+  "max_abs_dS": 0.19607348834912086,
+  "rho_eps": 0.9998461789569634,
+  "rho_CHM": 0.9639267093151882,
+  "rho_flat": 0.9981906095376264,
+  "R_CHM": 0.2661678024645225,
+  "R_flat": 0.06012908639669973,
+  "rho_Kvac": 0.9573101771625434,
+  "C_vac": true,
+  "C0_signal": true,
+  "C1_linear": true,
+  "C2_PRIMARY_chm_beats_flat": false,
+  "C4_tracks": true,
+  "all_gates": false,
+  "verdict": "1D_FIXEDH_FLAT",
+  "not_claimed": [
+    "3d Einstein",
+    "8pi G",
+    "de Sitter"
+  ]
+}

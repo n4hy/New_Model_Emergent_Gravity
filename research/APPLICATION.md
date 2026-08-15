@@ -185,6 +185,8 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
   [`findings/m9_26_point_source_note.md`](findings/m9_26_point_source_note.md).
 - 1d CHM instrument calibration: `scripts/m9_27_1d_point_chm.py`,
   [`findings/m9_27_1d_point_chm_note.md`](findings/m9_27_1d_point_chm_note.md).
+- Fixed-\(H\) first law: `scripts/m9_28_1d_state.py`,
+  [`findings/m9_28_fixedh_state_note.md`](findings/m9_28_fixedh_state_note.md).
 
 ## Which MODELS.md rows the model addresses
 

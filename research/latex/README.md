@@ -33,3 +33,4 @@ Reconstructed files follow the PDF wording and equations. They are not a byte-fo
 | `34_Linear_Functional.tex` | Ball dS is a linear functional of local energy; kernel not unique CHM |
 | `35_Point_Source_Flat.tex` | Point source: dS tracks enclosed energy, not CHM |
 | `36_1d_Instrument.tex` | 1d CHM calibration: Paper 35 instrument fails the theorem case |
+| `37_FixedH_First_Law.tex` | Fixed-H first law: 1d enclosed energy, 3d balls CHM |

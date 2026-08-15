@@ -1,0 +1,15 @@
+{
+  "task": "m9.28_audit_3d",
+  "n": 216,
+  "rho_CHM": 0.9994217499405018,
+  "rho_flat": 0.9924246263039188,
+  "R_CHM": 0.03400243735183825,
+  "R_flat": 0.12285504102611065,
+  "rho_Kvac": 0.9968784039372562,
+  "C_vac": true,
+  "C2": true,
+  "verdicts": {
+    "C_vac": "CONFIRMED",
+    "C2": "CONFIRMED"
+  }
+}
