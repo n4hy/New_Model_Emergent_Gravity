@@ -1,0 +1,37 @@
+{
+  "task": "m9.29_audit_shape",
+  "ball": {
+    "n": 216,
+    "rho_Kvac": 0.9968784039372562,
+    "rho_export": 0.9994217499405018,
+    "rho_native": 0.9994217499405018,
+    "rho_flat": 0.9924246263039188,
+    "R_export": 0.03400243735183825,
+    "R_native": 0.03400243735183825,
+    "R_flat": 0.12285504102611065,
+    "C_vac": true,
+    "C2e": true,
+    "C2n": true,
+    "C2x": false
+  },
+  "cube": {
+    "n": 512,
+    "rho_Kvac": 0.9976041561336931,
+    "rho_export": 0.9961663009927835,
+    "rho_native": 0.998728772072537,
+    "rho_flat": 0.997028948140579,
+    "R_export": 0.08747971631387073,
+    "R_native": 0.0504067439385116,
+    "R_flat": 0.07702776492727033,
+    "C_vac": true,
+    "C2e": false,
+    "C2n": true,
+    "C2x": true
+  },
+  "verdicts": {
+    "ball_control": "CONFIRMED",
+    "cube_C2e": "REFUTED",
+    "cube_C2n": "CONFIRMED",
+    "cube_C2x": "CONFIRMED"
+  }
+}
