@@ -1,0 +1,51 @@
+{
+  "task": "m9.2_ib_hadamard_attempt",
+  "status": "FAILED_MULTI_DIGIT",
+  "admission": "Hard-cutoff subtraction of 1/(x-y)^2 produces a relative residue of order unity that MOVES when the cutoff or grid changes. This is the same class of proxy Paper VIII already discarded. No multi-digit coefficient is extracted.",
+  "schemes": [
+    {
+      "n_x": 201,
+      "n_s": 61,
+      "s_max": 2.0,
+      "eps": 0.04,
+      "kernel_integral": 0.9999943844210627,
+      "Q_loc": 2.590091451562933,
+      "residue": -1.6978938869570108,
+      "relative_residue": -0.655534338732501,
+      "Q_min": 6.841923725659316e-07,
+      "Q_max": 2.590091451562933
+    },
+    {
+      "n_x": 241,
+      "n_s": 81,
+      "s_max": 2.5,
+      "eps": 0.03,
+      "kernel_integral": 0.9999997539135737,
+      "Q_loc": 3.2081151327083997,
+      "residue": -1.9940287881433283,
+      "relative_residue": -0.6215577389393446,
+      "Q_min": 2.9566338887825813e-08,
+      "Q_max": 3.2081151327083997
+    },
+    {
+      "n_x": 281,
+      "n_s": 81,
+      "s_max": 2.5,
+      "eps": 0.02,
+      "kernel_integral": 0.9999997539135737,
+      "Q_loc": 5.055273483267577,
+      "residue": -3.260599683660096,
+      "relative_residue": -0.6449897704747998,
+      "Q_min": 2.956633887140618e-08,
+      "Q_max": 5.055273483267577
+    }
+  ],
+  "relative_residues": [
+    -0.655534338732501,
+    -0.6215577389393446,
+    -0.6449897704747998
+  ],
+  "spread": 0.03397659979315637,
+  "order_unity": true,
+  "what_would_count_as_success": "an analytic Hadamard expansion of the flowed current two-point function whose finite part is independent of the cutoff to at least three stable digits"
+}

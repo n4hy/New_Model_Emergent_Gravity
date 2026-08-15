@@ -1,0 +1,577 @@
+% Open Questions of the Emergent Gravity Program
+% Drafted as a research note on the four remaining opens of the
+% 14 August 2026 Final Status table. AI-assisted. Failures are labeled
+% ADMISSION. Numerical agreement is not proof. Consensus is not proof.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem,booktabs,array,tabularx}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem*{admission}{Admission}
+
+\newcommand{\pP}{\textbf{[P]}}
+\newcommand{\pC}{\textbf{[C]}}
+\newcommand{\pO}{\textbf{[O]}}
+\newcommand{\pA}{\textbf{[ADMISSION]}}
+\newcommand{\IB}{I_B}
+\newcommand{\LHD}{\mathcal{L}_{\mathrm{HD}}}
+
+\title{\textbf{Open Questions of the Emergent Gravity Program:\\
+Attempts, Partial Results, and Admissions}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+The Emergent Gravity Program's Final Status table of 14 August 2026
+closes the linearized Einstein--Cartan certification inside holographic
+AdS and leaves four items open: the multi-digit coefficient of the
+kinematic residue $\IB$, the de~Sitter / cosmological domain, nonlinear
+Einstein--Cartan from entanglement, and UV completion of the effective
+Lagrangian. This note attempts each item in turn.
+
+One computation is performed: a $d=2$ hard-cutoff subtraction of the
+coincident $1/(x-y)^2$ piece of the flowed chiral-current two-point
+function against the modular kernel
+$\pi/(2\cosh^2(\pi s))$. Three grids give a relative residue
+$r\in\{-0.656,-0.622,-0.645\}$, spread $0.034$. That is consistent
+with the order-unity claim already on the books. It is \emph{not} a
+multi-digit coefficient. Paper~VIII already stated that further
+numerical proxies of this class will not produce one. This note
+confirms that statement by failing in the same way.
+
+The other three items are not computed. A literature audit shows:
+(i)~no Casini--Huerta--Myers modular Hamiltonian of equal rigor exists
+for generic de~Sitter regions; (ii)~the Faulkner--Haehl--Hijano--Parrikar--Rabideau--Van~Raamsdonk
+second-order derivation \cite{FHHPRV2017} yields Einstein's equations,
+not Einstein--Cartan, and Jacobson's entanglement-equilibrium proposal
+\cite{Jacobson2016} remains a conjecture for the full nonlinear theory;
+(iii)~UV completion is open by construction of the effective Lagrangian.
+Each failure is recorded as an \pA{}, not papered over.
+
+This note does not move any Final Status label from \pO{} to \pP{}.
+\end{abstract}
+
+\section*{How to read this note}
+
+Every material sentence is one of: a restatement of a labeled claim
+already in the 14 August series; a computation whose script and number
+are cited; a citation to a published paper with a location; or an
+\pA{}. No sentence in \S\S\ref{sec:ib}--\ref{sec:uv} upgrades an
+\pO{} to a \pP{}.
+
+This draft was prepared with an AI research agent under the program's
+standing rule that model output is a hypothesis until verified by a
+derivation, a script, or the author. The $I_B$ numbers below come from
+a script. The de~Sitter, nonlinear, and UV sections are literature
+audits, not derivations. The author owns any claim he endorses.
+
+\section{The four opens, quoted}
+
+The Final Status table \cite{McGwierFS} records, verbatim in substance:
+
+\begin{center}
+\begin{tabular}{@{}p{0.55\textwidth}c@{}}
+\toprule
+Item & Label \\
+\midrule
+Multi-digit coefficient of $\IB$ & \pO{} \\
+de~Sitter / cosmological domain & \pO{} \\
+Nonlinear regime (no derivation at FGHMV standard) & \pO{} \\
+UV completion (open by construction) & \pO{} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Paper~VIII \cite{McGwierVIII} adds the operational criterion for the
+first item: a fully analytic Hadamard (or equivalent distributional)
+expansion of the current two-point function under modular flow, folded
+against
+\begin{equation}
+K(s)=\frac{\pi}{2\cosh^2(\pi s)},
+\qquad
+\int_{-\infty}^{\infty}K(s)\,ds=1.
+\label{eq:kernel}
+\end{equation}
+Paper~IX \cite{McGwierIX} adds the operational criterion for the second:
+a family of de~Sitter regions whose modular Hamiltonians are under
+analytic control, a first-law identity, equivalence to linearized
+Einstein--Cartan including the algebraic torsion equation, and recovery
+of the Hehl--Datta term from relative-entropy positivity. The third and
+fourth items have no such criterion in the series beyond ``a derivation
+at FGHMV standard'' and ``not claimed.''
+
+\section{What is not reopened}
+
+For the avoidance of doubt, this note does \emph{not} re-litigate:
+
+\begin{itemize}[leftmargin=1.4em]
+\item FGHMV: ball first law $\Leftrightarrow$ linearized Einstein about
+AdS \cite{FGHMV2014}. \pP{} as external literature.
+\item The modular perturbation kernel of Paper~IV and its
+machine-check. \pP{} in the series; not recomputed here.
+\item Unconditional metric sector of Condition~NL (conformal selection
+rule). \pP{} in the series.
+\item $\IB\not\equiv 0$ for finite regions, relative size $O(1)$,
+absorbable. \pP{} in Papers~VI and~VIII.
+\item Hehl--Datta sign from relative-entropy positivity; magnitude
+$-3\kappa/16$ by rigidity and by the null-plane $+$ absorbability
+argument of Paper~VII. \pP{} in the series.
+\item The algebraic Einstein--Cartan elimination
+$\LHD=-3\kappa/16\,J_5\cdot J_5$ as a theorem of Palatini $+$ Dirac,
+independently extracted in-platform at residual $<10^{-15}$
+(OpenWave M9.1). That extraction does not select Einstein--Cartan
+from entanglement; it only recovers the 1971 identity.
+\end{itemize}
+
+\section{Attempt I: the multi-digit coefficient of $\IB$}
+\label{sec:ib}
+
+\subsection{Definition}
+
+Paper~VI writes the surviving axial channel as
+$N_B[\beta;\zeta]=C_J\,\IB[\beta;\zeta]$ with
+\begin{equation}
+\IB[\beta;\zeta]
+=
+-\int_{-\infty}^{\infty} ds\,
+K(s)\,
+\bigl\langle
+\sigma_s J_5[\beta]\,
+\widetilde{J}_5[\zeta]
+\bigr\rangle_{\kappa\neq 0}.
+\label{eq:IB}
+\end{equation}
+In $d=2$ chiral CFT the interval modular flow is the M\"obius action
+\cite{McGwierVI}
+\begin{equation}
+x(s)=R\tanh\bigl(\mathrm{artanh}(x/R)+\pi s\bigr),
+\label{eq:flow}
+\end{equation}
+the current two-point function is
+\begin{equation}
+\langle J(x)J(y)\rangle = \frac{k}{(x-y)^2}
+\label{eq:JJ}
+\end{equation}
+for a normalization $k$ that cancels in any relative residue, and the
+weight-one Jacobian is $J(s,x)=\partial x(s)/\partial x$.
+
+The local quadratic form is the $s=0$ value of the smeared correlator.
+The relative residue reported below is
+\begin{equation}
+r
+:=
+\frac{\displaystyle\int ds\,K(s)\bigl(Q(s)-Q(0)\bigr)}{|Q(0)|},
+\qquad
+Q(s)
+=
+\int\!dx\,dy\,\beta(x)\beta(y)\,
+\frac{J(s,x)}{\bigl(x(s)-y\bigr)^2}.
+\label{eq:r}
+\end{equation}
+A compactly supported bump
+$\beta(x)=\exp\bigl(-1/(1-(x/a)^2)\bigr)$ for $|x|<a<R$ is used.
+
+\subsection{What a Hadamard extraction would be}
+
+Write the flowed two-point function as a distribution on
+$x,y\in(-R,R)$. A Hadamard expansion isolates
+\begin{equation}
+\langle\sigma_s J(x)\,J(y)\rangle
+=
+\frac{u_2(s;x,y)}{(x-y)^2}
++
+\frac{u_1(s;x,y)}{x-y}
++
+v(s;x,y)\log|x-y|
++
+w_{\mathrm{fin}}(s;x,y),
+\label{eq:hadamard}
+\end{equation}
+with $u_2,u_1,v,w_{\mathrm{fin}}$ smooth, then subtracts
+$u_2,u_1,v$ by a finite-part prescription that commutes with the
+$s$-integral against $K(s)$. The number of record would be the
+integral of $K(s)w_{\mathrm{fin}}$ (smeared), independent of the
+cutoff to the quoted digits.
+
+\subsection{What was actually computed}
+
+A hard spatial cutoff $\varepsilon$ on $|x(s)-y|$ was imposed and
+$r$ was evaluated on three grids
+(\texttt{m9\_2\_ib\_hadamard.py}):
+
+\begin{center}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+$(N_x,N_s,s_{\max},\varepsilon)$ & $r$ \\
+\midrule
+$(201,61,2.0,0.04)$ & $-0.6555$ \\
+$(241,81,2.5,0.03)$ & $-0.6216$ \\
+$(281,81,2.5,0.02)$ & $-0.6450$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Spread: $0.034$. Kernel integral on these grids is $1$ to
+$O(10^{-3})$ (truncation in $s$). The three values lie in the
+order-unity window already reported by Paper~VIII (``approximately
+$1$--$5$ depending on the finite-part implementation''). The sign
+here is an artefact of reporting $r$ as
+$\int K(Q-Q_0)/|Q_0|$ with this Jacobian convention; the structural
+statement is $|r|=O(1)$, not a signed high-precision coefficient.
+
+\subsection{Why this is not a Hadamard extraction}
+
+\begin{admission}
+The $u_1$ and $\log$ terms of \eqref{eq:hadamard} were not isolated.
+The $s$-dependence of $u_2$ was not subtracted. The cutoff
+$\varepsilon$ remains visible at the third digit. No three-digit
+agreement exists across the three grids. Paper~VIII already closed
+the numerical campaign for this reason. Repeating a discarded proxy
+does not reopen it. The multi-digit coefficient of $\IB$ remains
+\pO{}.
+\end{admission}
+
+A mutation that replaced $K(s)$ by a flat measure on $[-s_{\max},s_{\max}]$
+would change $r$ by an $O(1)$ factor; that check was not needed to
+establish failure, because the scheme spread already exceeds any
+honest claim of ``digits.''
+
+\subsection{What would close Q1}
+
+An analytic computation of $w_{\mathrm{fin}}$ for the M\"obius flow
+of $\langle J(x)J(y)\rangle$, or a numerical scheme whose finite part
+is stable to $\ge 3$ digits under simultaneous refinement of
+$(N_x,N_s,\varepsilon)$ and under at least two inequivalent
+subtractions (Hadamard vs.\ differential regularization). Until one
+of those exists, no label change is licensed.
+
+\section{Attempt II: the de~Sitter domain}
+\label{sec:ds}
+
+\subsection{What AdS supplies and de~Sitter does not}
+
+Paper~IX lists four ingredients used by every \pP{} step of the
+series \cite{McGwierIX}:
+
+\begin{enumerate}[leftmargin=1.6em]
+\item the Casini--Huerta--Myers modular Hamiltonian for balls, which
+is a conformal image of the Rindler boost \cite{CHM2011};
+\item a global conformal structure on the boundary;
+\item a clean asymptotic boundary with a holographic dictionary
+\cite{Maldacena1998};
+\item a Ryu--Takayanagi surface whose modular flow is a bulk Killing
+horizon \cite{RT2006,HRT2007}.
+\end{enumerate}
+
+de~Sitter has a cosmological horizon and a Gibbons--Hawking entropy
+\cite{GH1977}. It does not have (1)--(4) in the same form. Static-patch
+modular Hamiltonians exist as operator statements about the static
+observer algebra; they are not given by a CHM-type local integral of
+$T_{00}$ on an arbitrary ball. There is no generally accepted
+microscopic dual that would supply an FGHMV equivalence
+\cite{Strominger2001}. The classical static-patch first law carries a
+characteristic minus sign: adding Killing energy \emph{decreases}
+horizon entropy \cite{Banihashemi2022}. That sign is already a
+structural obstruction to copying the AdS bookkeeping line by line.
+
+\subsection{What was attempted}
+
+No de~Sitter modular Hamiltonian was derived in this note. No
+static-patch first-law $\Leftrightarrow$ linearized Einstein--Cartan
+map was written. No Hehl--Datta coefficient was recovered from
+relative entropy on a cosmological horizon.
+
+A literature pass confirms that recent work on de~Sitter entanglement
+(timelike extremal surfaces, $c$-theorems in a fixed de~Sitter
+background, static-patch algebra) does not supply the four items of
+Paper~IX. Citing those papers as if they closed Q2 would be a
+category error.
+
+\begin{admission}
+Q2 is unattempted as a derivation and unclosed as a theorem. The
+AdS results stand. Their extrapolation to cosmology remains \pO{}.
+This note adds no new de~Sitter identity.
+\end{admission}
+
+\subsection{What would close Q2}
+
+Exactly the four-point checklist of Paper~IX \cite{McGwierIX}:
+controlled modular Hamiltonians on a family of de~Sitter regions; a
+first-law identity; equivalence to linearized Einstein--Cartan
+including $T^\lambda{}_{\mu\nu}+\cdots=\kappa s^\lambda{}_{\mu\nu}$;
+and the Hehl--Datta term from relative-entropy positivity. Anything
+weaker is a hope.
+
+\section{Attempt III: nonlinear Einstein--Cartan}
+\label{sec:nl}
+
+\subsection{What exists for Einstein gravity}
+
+At first order, FGHMV \cite{FGHMV2014} is the theorem the program
+uses. At second order, Faulkner, Haehl, Hijano, Parrikar, Rabideau
+and Van~Raamsdonk \cite{FHHPRV2017} show that if ball entanglement
+entropies of a restricted class of CFT states are represented by the
+HRRT formula in an asymptotically AdS geometry, that geometry
+satisfies Einstein's equations through second order, with matter
+determined by the CFT one-point functions, under the central-charge
+relation $\widetilde{C}_T=a_\ast$. The derivation uses the Hollands--Wald
+identity \cite{HollandsWald2013} and the quantum Fisher /
+canonical-energy matching of Lashkari--Van~Raamsdonk
+\cite{LV2016}.
+
+That is a real theorem about \emph{Einstein} gravity. It is not a
+theorem about Einstein--Cartan gravity. The HRRT functional is an
+area. The Hollands--Wald charge used in \cite{FHHPRV2017} is the
+Einstein--Hilbert Noether charge. Torsion does not appear.
+
+Jacobson's entanglement-equilibrium argument \cite{Jacobson2016}
+proposes that the full nonlinear Einstein equation is the
+equilibrium condition of entanglement on small balls, for a
+maximally symmetric vacuum. The series already tags the transfer of
+that argument to general backgrounds and to torsion as \pC{}.
+Thermodynamic derivations with torsion exist at the Clausius level
+\cite{Dey2017}. They are not FGHMV-grade equivalences.
+
+\subsection{What was attempted}
+
+No second-order Einstein--Cartan identity was derived. No
+Hollands--Wald charge for the Palatini--Holst or
+Einstein--Cartan Lagrangian was written. No ball-by-ball matching
+of Fisher information to a torsional canonical energy at $O(\lambda^2)$
+was performed.
+
+\begin{admission}
+Q3 remains \pO{}. The honest strongest statement this note can make
+is: nonlinear Einstein gravity from entanglement is a published
+theorem through second order \cite{FHHPRV2017}; nonlinear
+Einstein--Cartan from entanglement is not. Promoting the former to
+the latter by ``the same bookkeeping'' is a conjecture, and the
+series already refused to call it a theorem.
+\end{admission}
+
+\subsection{What would close Q3}
+
+A derivation, at the standard of \cite{FHHPRV2017} or of FGHMV, that
+the finite-ball entanglement first law (or relative entropy through
+second order) is equivalent to the nonlinear Einstein--Cartan
+equations, including the algebraic Cartan equation for torsion, with
+the Hehl--Datta contact generated rather than inserted. Until that
+exists, the nonlinear regime stays \pO{}.
+
+\section{Attempt IV: UV completion}
+\label{sec:uv}
+
+The New Standard Model is asserted to be emergent bookkeeping for a
+deeper description \cite{McGwierIII}. The deeper description, in the
+certified regime, is a holographic pair. No first-principles
+selection of that pair exists. Gauge group, representations,
+Yukawas, generations, and $\Lambda$ are empirical input.
+
+\begin{admission}
+Q4 is open by construction. This note does not propose a CFT, a
+string compactification, an asymptotic-safety fixed point, or any
+other UV completion. Inventing one to fill the section would be a
+fabrication. The label remains \pO{}.
+\end{admission}
+
+A useful, and weaker, statement that \emph{is} available: the
+effective Lagrangian \eqref{eq:nsm} below is an EFT whose cutoff is
+at most $M_{\mathrm{Pl}}$, whose new interaction is Planck-suppressed,
+and whose gravitational sector is certified only at linear order in
+AdS. That is a domain statement, not a completion.
+
+\begin{equation}
+S_{\mathrm{NSM}}
+=
+\frac{1}{4\kappa}
+\int\varepsilon_{abcd}\,e^a\wedge e^b\wedge R^{cd}
+-
+\frac{\Lambda}{6}
+\int\varepsilon_{abcd}\,e^a\wedge e^b\wedge e^c\wedge e^d
++
+\int e\,\mathcal{L}_{\mathrm{SM}}.
+\label{eq:nsm}
+\end{equation}
+
+\section{Cross-check: what this note must not be used for}
+
+\begin{itemize}[leftmargin=1.4em]
+\item Do not cite \S\ref{sec:ib} as a multi-digit value of $\IB$.
+\item Do not cite \S\ref{sec:ds} as a de~Sitter derivation.
+\item Do not cite \S\ref{sec:nl} as nonlinear Einstein--Cartan.
+\item Do not cite \S\ref{sec:uv} as a UV completion.
+\item Do not move any cell of an OpenWave \texttt{MODELS.md} gravity
+row on the strength of this note. The only in-platform number this
+program currently owns is the algebraic Hehl--Datta coefficient
+(M9.1), which is not one of the four opens.
+\end{itemize}
+
+\section{Admissions, collected}
+
+\begin{center}
+\begin{tabular}{@{}p{0.28\textwidth}p{0.22\textwidth}p{0.40\textwidth}@{}}
+\toprule
+Open & This note & Why it failed \\
+\midrule
+Multi-digit $\IB$ &
+attempted; $r\sim -0.63$, spread $0.034$ &
+hard cutoff is not Hadamard; digits move \\
+de~Sitter domain &
+not derived &
+CHM / RT / dictionary ingredients absent \\
+Nonlinear EC &
+not derived &
+published second-order theorem is Einstein, not EC \\
+UV completion &
+not proposed &
+open by construction; no pair selected \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent
+\textbf{No Final Status label is changed.}
+
+\section{What remains worth doing}
+
+The only open that is a computation rather than a missing framework
+is Q1. The next honest attempt is analytic: expand
+$\langle J(x(s))J(y)\rangle$ for the flow \eqref{eq:flow} in the
+Hadamard form \eqref{eq:hadamard} and integrate $K(s)w_{\mathrm{fin}}$
+against a Schwartz source. If that integral can be reduced to a
+standard special function, the coefficient exists as a number. If
+the finite part depends on a renormalization scheme that the
+modular kernel does not fix, the coefficient is not universal and
+that fact should be recorded as a result, not hidden.
+
+Q2--Q4 require ideas that this note does not contain.
+
+\section*{Acknowledgments}
+
+Computational assistance was used to draft this note, to implement
+\texttt{m9\_2\_ib\_hadamard.py}, and to check citations against the
+public record. All epistemic labels, including every \pA{}, are
+the responsibility of the author. Numerical agreement is not proof.
+Consensus is not proof.
+
+\begin{thebibliography}{99}
+
+\bibitem{FGHMV2014}
+T.~Faulkner, M.~Guica, T.~Hartman, R.C.~Myers and M.~Van Raamsdonk,
+``Gravitation from entanglement in holographic CFTs,''
+JHEP 03 (2014) 051, arXiv:1312.7856.
+
+\bibitem{CHM2011}
+H.~Casini, M.~Huerta and R.C.~Myers,
+``Towards a derivation of holographic entanglement entropy,''
+JHEP 05 (2011) 036, arXiv:1102.0440.
+
+\bibitem{CTT2017}
+H.~Casini, E.~Teste and G.~Torroba,
+``Modular Hamiltonians on the null plane and the Markov property of the vacuum state,''
+J.\ Phys.\ A 50 (2017) 364001, arXiv:1703.10656.
+
+\bibitem{LV2016}
+N.~Lashkari and M.~Van Raamsdonk,
+``Canonical energy is quantum Fisher information,''
+JHEP 04 (2016) 153, arXiv:1508.00897.
+
+\bibitem{FHHPRV2017}
+T.~Faulkner, F.M.~Haehl, E.~Hijano, O.~Parrikar, C.~Rabideau and M.~Van Raamsdonk,
+``Nonlinear gravity from entanglement in conformal field theories,''
+JHEP 08 (2017) 057, arXiv:1705.03026.
+
+\bibitem{Jacobson2016}
+T.~Jacobson,
+``Entanglement equilibrium and the Einstein equation,''
+Phys.\ Rev.\ Lett.\ 116 (2016) 201101, arXiv:1505.04753.
+
+\bibitem{HollandsWald2013}
+S.~Hollands and R.M.~Wald,
+``Stability of black holes and black branes,''
+Commun.\ Math.\ Phys.\ 321 (2013) 629, arXiv:1201.0463.
+
+\bibitem{RT2006}
+S.~Ryu and T.~Takayanagi,
+``Holographic derivation of entanglement entropy from AdS/CFT,''
+Phys.\ Rev.\ Lett.\ 96 (2006) 181602, arXiv:hep-th/0603001.
+
+\bibitem{HRT2007}
+V.E.~Hubeny, M.~Rangamani and T.~Takayanagi,
+``A covariant holographic entanglement entropy proposal,''
+JHEP 07 (2007) 062, arXiv:0705.0016.
+
+\bibitem{Maldacena1998}
+J.~Maldacena,
+``The large $N$ limit of superconformal field theories and supergravity,''
+Adv.\ Theor.\ Math.\ Phys.\ 2 (1998) 231, arXiv:hep-th/9711200.
+
+\bibitem{Strominger2001}
+A.~Strominger,
+``The dS/CFT correspondence,''
+JHEP 10 (2001) 034, arXiv:hep-th/0106113.
+
+\bibitem{GH1977}
+G.W.~Gibbons and S.W.~Hawking,
+``Cosmological event horizons, thermodynamics, and particle creation,''
+Phys.\ Rev.\ D 15 (1977) 2738.
+
+\bibitem{Banihashemi2022}
+B.~Banihashemi and T.~Jacobson,
+``The minus sign in the first law of de Sitter horizons,''
+arXiv:2208.11706.
+
+\bibitem{Dey2017}
+R.~Dey, S.~Liberati and D.~Pranzetti,
+``Spacetime thermodynamics in the presence of torsion,''
+Phys.\ Rev.\ D 96 (2017) 124032.
+
+\bibitem{HehlDatta1971}
+F.W.~Hehl and B.K.~Datta,
+``Nonlinear spinor equation and asymmetric connection in general relativity,''
+J.\ Math.\ Phys.\ 12 (1971) 1334.
+
+\bibitem{McGwierIII}
+R.W.~McGwier,
+``The New Standard Model for Unified Physics,''
+\url{https://github.com/n4hy/New_Model_Emergent_Gravity}.
+
+\bibitem{McGwierVI}
+R.W.~McGwier,
+``Evaluation of the Universal Kinematic Integral for Condition NL,''
+ibid.
+
+\bibitem{McGwierVII}
+R.W.~McGwier,
+``Pure-Information Determination of the Hehl--Datta Coefficient,''
+ibid.
+
+\bibitem{McGwierVIII}
+R.W.~McGwier,
+``Status of the High-Precision Coefficient of $I_B$ (Version 4),''
+ibid.
+
+\bibitem{McGwierIX}
+R.W.~McGwier,
+``Domain of Validity of the Emergent Gravity Program,''
+ibid.
+
+\bibitem{McGwierFS}
+R.W.~McGwier,
+``Emergent Gravity Program: Final Status of Claims,''
+ibid.
+
+\end{thebibliography}
+\end{document}
