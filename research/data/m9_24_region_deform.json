@@ -1,0 +1,143 @@
+{
+  "task": "m9.24_region_deform",
+  "N": 16,
+  "alpha": 0.24460676769303505,
+  "beta": -5.200850702185418,
+  "rms_ball": 0.2702834215008048,
+  "rms_cube": 5.667681572512827,
+  "rms_taxi": 9.46324755829222,
+  "balls": [
+    {
+      "name": "ball_R2",
+      "kind": "ball",
+      "size": 2,
+      "n": 33,
+      "A_cut": 78,
+      "S": 13.598077644223027
+    },
+    {
+      "name": "ball_R3",
+      "kind": "ball",
+      "size": 3,
+      "n": 123,
+      "A_cut": 174,
+      "S": 37.80410451721291
+    },
+    {
+      "name": "ball_R4",
+      "kind": "ball",
+      "size": 4,
+      "n": 257,
+      "A_cut": 294,
+      "S": 66.58889934225287
+    },
+    {
+      "name": "ball_R5",
+      "kind": "ball",
+      "size": 5,
+      "n": 515,
+      "A_cut": 486,
+      "S": 113.63969994678166
+    }
+  ],
+  "cubes": [
+    {
+      "name": "cube_L3",
+      "kind": "cube",
+      "size": 3,
+      "n": 27,
+      "A_cut": 54,
+      "S": 10.737715065937817
+    },
+    {
+      "name": "cube_L4",
+      "kind": "cube",
+      "size": 4,
+      "n": 64,
+      "A_cut": 96,
+      "S": 21.56342953484815
+    },
+    {
+      "name": "cube_L5",
+      "kind": "cube",
+      "size": 5,
+      "n": 125,
+      "A_cut": 150,
+      "S": 36.81479640833393
+    },
+    {
+      "name": "cube_L6",
+      "kind": "cube",
+      "size": 6,
+      "n": 216,
+      "A_cut": 216,
+      "S": 56.68491374162009
+    }
+  ],
+  "taxis": [
+    {
+      "name": "taxi_t2",
+      "kind": "taxi",
+      "size": 2,
+      "n": 25,
+      "A_cut": 78,
+      "S": 12.00123742035339
+    },
+    {
+      "name": "taxi_t3",
+      "kind": "taxi",
+      "size": 3,
+      "n": 63,
+      "A_cut": 150,
+      "S": 25.33099332876039
+    },
+    {
+      "name": "taxi_t4",
+      "kind": "taxi",
+      "size": 4,
+      "n": 129,
+      "A_cut": 246,
+      "S": 44.54891336360253
+    },
+    {
+      "name": "taxi_t5",
+      "kind": "taxi",
+      "size": 5,
+      "n": 231,
+      "A_cut": 366,
+      "S": 69.89943580229651
+    }
+  ],
+  "shifted": {
+    "name": "ball_R4_shift",
+    "kind": "ball_shift",
+    "size": 4,
+    "n": 257,
+    "A_cut": 294,
+    "S": 66.54930348523946
+  },
+  "closest_pair": {
+    "rel_A": 0.14814814814814814,
+    "rel_S": 0.02651628733760339,
+    "ball": "ball_R3",
+    "cube": "cube_L5",
+    "A_ball": 174,
+    "A_cube": 150,
+    "S_ball": 37.80410451721291,
+    "S_cube": 36.81479640833393
+  },
+  "C0_alpha_positive": true,
+  "C1_shift_homogeneous": true,
+  "C2_PRIMARY_cubes_worse": true,
+  "C3_taxi_worse": true,
+  "C4_matched_shape_gap": true,
+  "all_gates": true,
+  "verdict": "SHAPE_MATTERS",
+  "not_claimed": [
+    "eta=1/4G",
+    "Einstein",
+    "Planck",
+    "Bloch",
+    "de Sitter"
+  ]
+}

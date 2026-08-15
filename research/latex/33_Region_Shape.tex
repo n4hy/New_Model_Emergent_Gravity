@@ -1,0 +1,61 @@
+% Fixed H, vary the region. Shape matters beyond area.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newcommand{\pP}{\textbf{[P]}}
+\newtheorem*{admission}{Admission}
+
+\title{\textbf{At Fixed Hamiltonian, Region Shape\\
+Changes Entanglement Beyond Area}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Hop-variation first laws stalled (Papers~26--31). Jacobson varies
+the diamond, not the Hamiltonian. This note holds $H$ and the
+vacuum correlator fixed and changes only the region.
+
+Balls $R=2,3,4,5$ fit $S=\alpha A_{\mathrm{cut}}+\beta$ with
+$\alpha=0.245$ (Paper~24). RMS residual $0.27$. Cubes about that
+same line: RMS $5.67$. Taxicab diamonds: $9.46$. A one-site shift
+of the $R=4$ ball changes $S$ by $0.06\%$.
+
+Ball $R=2$ and taxicab $t=2$ have the \emph{same} cut area $78$
+and $S=13.60$ versus $12.00$. Area law cannot see that.
+
+C2 PASS. Auditor $N=14$: $0.29$ versus $3.93$, CONFIRMED.
+The finite piece of $S$ knows shape. The ball is the tight
+family. That is the CHM region's distinction, as a lattice
+fact, not as Einstein.
+\end{abstract}
+
+\section{Numbers}
+
+\begin{center}
+\begin{tabular}{lccc}
+\hline
+region & $A_{\mathrm{cut}}$ & $S$ & kind \\
+\hline
+ball $R=2$ & $78$ & $13.60$ & ball \\
+taxi $t=2$ & $78$ & $12.00$ & not ball \\
+ball $R=4$ & $294$ & $66.59$ & ball \\
+ball $R=4$ shifted & $294$ & $66.55$ & ball \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{admission}
+I stopped varying hops and varied the region. Shape matters.
+I did not write that this is Einstein's equation, and I did
+not identify $\alpha$ with $1/4G$.
+\end{admission}
+
+\end{document}

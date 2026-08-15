@@ -177,6 +177,8 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
   [`findings/m9_22_halffill_horizon_note.md`](findings/m9_22_halffill_horizon_note.md).
 - Bloch vs CHM covering: `scripts/m9_23_bloch.py`,
   [`findings/m9_23_bloch_note.md`](findings/m9_23_bloch_note.md).
+- Region shape at fixed \(H\): `scripts/m9_24_region_deform.py`,
+  [`findings/m9_24_region_deform_note.md`](findings/m9_24_region_deform_note.md).
 
 ## Which MODELS.md rows the model addresses
 
