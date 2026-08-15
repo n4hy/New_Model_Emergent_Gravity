@@ -1,0 +1,48 @@
+% Real de sources Newton. Far-field mass is sum de, not M_hat.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem*{admission}{Admission}
+
+\title{\textbf{Newton Sees $\sum\delta e$, Not $M_{\mathrm{hat}}$}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Paper~48 put a point of mass $M_{\mathrm{hat}}$ into Poisson
+and inherited $1/r^2$. This note puts the actual site-energy
+map $\delta e$ in instead.
+
+The packet is compact: $99.7\%$ of $\sum\delta e$ sits inside
+two lattice sites. There is no distant tail.
+$M_{\mathrm{hat}}$ is $28\%$ lighter than $M_{\mathrm{global}}$
+because offset $R=3$ balls miss part of a compact source.
+
+Far field (3 sites $=0.05L$): $\mathbf{a}$ is attractive
+$GM_{\mathrm{global}}/r^2$ to $2.9\%$, $2.0\%$, $1.9\%$.
+Slope $-2.035$. C\_global PASS. The same force against
+$M_{\mathrm{hat}}$ misses by $41$--$43\%$. C\_hat FAIL.
+
+Auditor, $N=10$: C\_global CONFIRMED. C\_hat CONFIRMED FAIL.
+
+Entanglement energy sources inherited Newton. The mass
+Newton sees is $\sum\delta e$. $\kappa$ reads a ball
+functional, not that mass. Not a derived Poisson. Not
+$8\pi G$. Not $1/4G$. Not de~Sitter.
+\end{abstract}
+
+\begin{admission}
+I put the real energy in. Poisson saw all of it. I did not
+call $M_{\mathrm{hat}}$ Newton's $M$, and I did not hide
+that Paper~48 had replaced the density with a number.
+\end{admission}
+
+\end{document}

@@ -43,5 +43,6 @@
 | `46_Kappa.tex` | Universal Gauss first-law constant κ≈0.97 |
 | `47_Weigh.tex` | κ weighs enclosed mass and locates the source |
 | `48_From_Kappa.tex` | Entanglement mass into inherited Newton; not derived Poisson |
+| `49_Which_Mass.tex` | Real δe sources Newton; far-field mass is ∑δe, not M_hat |
 
 Reconstructed files follow the PDF wording and equations. They are not a byte-for-byte dump of an unpublished compiler run.
