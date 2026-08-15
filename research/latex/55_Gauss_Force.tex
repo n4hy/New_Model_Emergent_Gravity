@@ -1,0 +1,45 @@
+% First-law mass into Gauss. No Poisson solver. Two force laws.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem*{admission}{Admission}
+
+\title{\textbf{Gauss, Not Poisson:\\
+A Star Falls. A Sea Grows.}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Papers~48--54 solved a Dirichlet box to get
+$\mathbf{a}$. This note does not. Spherical Gauss
+and the first-law mass $M=\delta S/\kappa$ give
+
+\[
+a(R)=-M(R)/R^2.
+\]
+
+A compact packet: $M$ plateaus, slope of $|a|$ vs
+$R$ is $-1.997$ on $R=3,4,5$. A periodic band-edge
+sea: $M$ grows with volume, slope $+1.266$.
+
+Auditor, $N=10$: $-1.889$ and $+1.237$, CONFIRMED.
+
+I kept Gauss. I dropped the box. I did not derive
+Einstein, and I did not write a de~Sitter dual.
+\end{abstract}
+
+\begin{admission}
+I stopped solving Poisson. The first-law mass and
+Gauss already knew the two laws. I did not call
+that a derivation of $G_{\mu\nu}=8\pi G T_{\mu\nu}$.
+\end{admission}
+
+\end{document}

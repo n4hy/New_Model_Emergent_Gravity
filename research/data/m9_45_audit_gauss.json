@@ -1,0 +1,16 @@
+{
+  "task": "m9.45_audit_gauss",
+  "star_slope": -1.8887849772084075,
+  "star_R": [
+    2,
+    3,
+    4
+  ],
+  "sea_slope": 1.2370138959139294,
+  "C_star": true,
+  "C_sea": true,
+  "verdicts": {
+    "C_star": "CONFIRMED",
+    "C_sea": "CONFIRMED"
+  }
+}
