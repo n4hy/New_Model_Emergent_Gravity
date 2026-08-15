@@ -1,0 +1,50 @@
+{
+  "task": "m9.4_uv_axial",
+  "what_this_is": "Tree-level integrate-out of a massive axial deformation forced by Paper 14 Thm. obs. Not a selected CFT or string UV.",
+  "r0_target": 0.1875,
+  "M": 1.0,
+  "k2": [
+    0.0,
+    0.25,
+    1.0,
+    4.0,
+    16.0
+  ],
+  "r_of_k2": [
+    0.1875,
+    0.15,
+    0.09375,
+    0.0375,
+    0.011029411764705883
+  ],
+  "r_M_infinite": [
+    0.1875,
+    0.1875,
+    0.1875,
+    0.1875,
+    0.1875
+  ],
+  "yukawa_r": [
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "yukawa_G": [
+    0.379653106868917,
+    0.08391628745628704,
+    0.01524648825161622,
+    0.001771422087103673,
+    7.905268020349023e-05
+  ],
+  "ode_rel_residual": 8.758997810909891e-07,
+  "C1_IR_recovers_3_16": true,
+  "C2_finite_k_not_contact": true,
+  "C3_yukawa_not_delta": true,
+  "C4_M_to_0_kills_contact": true,
+  "C5_mutation_wrong_IR_stays_wrong": true,
+  "all_gates": true,
+  "verdict": "IR_MATCHING_HOLDS_DEFORMATION_NOT_SELECTION",
+  "admission": "Q4a (selected holographic pair / SM content / metric renormalizability) remains open by construction. This file only checks the tree-level axial deformation Q4b."
+}

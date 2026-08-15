@@ -1,0 +1,315 @@
+% Forced split of Q4. Q4a (selected UV) is not invented.
+% Q4b (minimal axial deformation forced by Thm. obs) is constructed
+% and tree-level matched to Hehl-Datta. No Final Status [P] for Q4a.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem,booktabs}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem*{admission}{Admission}
+
+\newcommand{\pP}{\textbf{[P]}}
+\newcommand{\pC}{\textbf{[C]}}
+\newcommand{\pO}{\textbf{[O]}}
+\newcommand{\IB}{I_B}
+
+\title{\textbf{A Minimal UV Deformation Forced by the Axial Obstruction\\
+(Not a Selected Ultraviolet Completion)}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Paper~11 refused to invent a CFT, a string compactification, or an
+asymptotically safe fixed point to fill the ultraviolet line of the
+Emergent Gravity Program. That refusal stands. SuperGrok does not
+repeal it.
+
+Paper~14 nevertheless proved an obstruction: Einstein--Cartan
+Hehl--Datta is a contact, while CFT axial Fisher is nonlocal. Any
+local bulk that matches the latter \emph{and} reduces to the New
+Standard Model in the infrared must therefore \emph{not} be
+Einstein--Cartan at all scales. The unique quadratic deformation
+that does this, with the M9.1 coefficient locked in the infrared,
+is a massive axial field whose on-shell effective kernel is
+\begin{equation*}
+r(k)=\frac{3/16}{1+k^2/M^2}.
+\end{equation*}
+Tree-level matching is derived and machine-checked. The
+position-space kernel is the four-dimensional Yukawa function, not
+a delta. The massless limit kills the contact.
+
+This is a deformation, not a selection. It does not produce the
+Standard Model, it does not renormalize the metric, and it does
+not name a holographic pair. Final Status ``UV completion'' remains
+\pO{} for that selected-pair question. The axial deformation itself
+is \pP{} as tree-level effective-field-theory algebra and \pC{} as
+the physical identification of $S_\mu$ with axial torsion.
+
+No \pO{} is moved to \pP{} for Q4a.
+\end{abstract}
+
+\section*{Standard of proof}
+
+``A UV that works'' is split before any Lagrangian is written.
+
+\begin{enumerate}[leftmargin=1.6em]
+\item \textbf{Q4a (selected completion).} A microscopic theory whose
+low-energy limit \emph{is} the New Standard Model, including the
+installed gauge group, representations, Yukawas, and a
+ultraviolet-complete metric sector. Inventing one to fill a
+section is a fabrication \cite{McGwierXI}. Still \pO{}.
+\item \textbf{Q4b (forced deformation).} The minimal local bulk
+extension that (i)~reproduces
+$\mathcal{L}_{\mathrm{HD}}=-(3\kappa/16)\,J_5\cdot J_5$ as
+$M\to\infty$, and (ii)~has a nonlocal axial quadratic form at
+finite $M$, so that Paper~14 Theorem~obs is not a contradiction.
+This is an inverse problem with a unique \emph{quadratic}
+solution once the infrared lock is imposed. That uniqueness is
+inside the ansatz, not in the space of all quantum gravities.
+\end{enumerate}
+
+Numerical agreement is not proof. The algebra below is the proof
+of Q4b at tree level. A script is a check.
+
+\section{Why Einstein--Cartan cannot be its own UV}
+
+The New Standard Model after torsion elimination is
+\cite{HehlDatta1971,McGwierIII}
+\begin{equation}
+\mathcal{L}_{\mathrm{IR}}
+=
+\frac{1}{2\kappa}\mathring{R}
+-\Lambda
++\mathcal{L}_{\mathrm{SM}}
+-\frac{3\kappa}{16}\,J_5^\mu J_{5\mu},
+\qquad
+\kappa=8\pi G.
+\label{eq:IR}
+\end{equation}
+The last term is ultralocal. In any unitary CFT in $d\ge 2$,
+\begin{equation}
+\langle J_5^\mu(x)J_5^\nu(y)\rangle
+\sim
+\frac{C_J}{\lvert x-y\rvert^{2d-2}}
+\label{eq:JJ}
+\end{equation}
+is not. Paper~14 Theorem~obs is the statement that
+\eqref{eq:IR} cannot equal ball relative entropy through second
+order for generic axial sources. Dictionary improvement at linear
+order \cite{McGwierVI} does not install a bulk kinetic term.
+
+Therefore a holographic UV that keeps a CFT axial current must
+contain a propagating bulk field dual to that current
+\cite{Witten1998}. That field is not the Einstein--Cartan
+connection. Einstein--Cartan is an infrared limit, or it is the
+wrong theory for the axial channel.
+
+\section{The unique quadratic deformation}
+
+Let $S_\mu$ be an axial vector (the axial torsion dual, or an
+independent Proca field: the algebra below does not care). The
+most general local quadratic action with at most two derivatives,
+a mass term, and a linear Dirac source is, in momentum space,
+\begin{equation}
+\mathcal{L}_k
+=
+A\Bigl(1+\frac{k^2}{M^2}\Bigr)\lvert S(k)\rvert^2
++
+B\,S(-k)\cdot J_5(k).
+\label{eq:UV}
+\end{equation}
+$A$ has the dimension of a stiffness; $M$ is the new mass;
+$B$ is the Dirac--axial coupling. Completing the square,
+\begin{equation}
+S(k)
+=
+-\frac{B}{2A(1+k^2/M^2)}\,J_5(k),
+\qquad
+\mathcal{L}_{\mathrm{eff}}(k)
+=
+-\frac{B^2}{4A(1+k^2/M^2)}\,J_5\cdot J_5.
+\label{eq:on}
+\end{equation}
+The infrared lock is the M9.1 theorem
+\cite{HehlDatta1971}:
+\begin{equation}
+\frac{B^2}{4A}=\frac{3\kappa}{16}.
+\label{eq:lock}
+\end{equation}
+Then, and only then,
+\begin{equation}
+r(k)
+:=
+\frac{\mathcal{L}_{\mathrm{eff}}(k)}{-\kappa\,J_5\cdot J_5}
+=
+\frac{3/16}{1+k^2/M^2}.
+\label{eq:r}
+\end{equation}
+Without \eqref{eq:lock} the infrared coefficient is a free
+parameter and M9.1 is lost. With it, the only remaining freedom
+in this ansatz is the mass $M$.
+
+\begin{theorem}[IR recovery]
+\label{thm:ir}
+Under \eqref{eq:UV} and \eqref{eq:lock},
+$\lim_{M\to\infty}r(k)=3/16$ at every fixed $k$, and
+$r(0)=3/16$ at every finite $M$. \pP{} (algebra).
+\end{theorem}
+
+\begin{theorem}[evasion of the contact obstruction]
+\label{thm:nl}
+At finite $M$, $r(k)$ is not constant. The position-space kernel
+is the Euclidean four-dimensional Yukawa function
+\begin{equation}
+G(x)
+=
+\int\frac{d^4k}{(2\pi)^4}
+\frac{e^{ik\cdot x}}{k^2+M^2}
+=
+\frac{M}{4\pi^2 r}\,K_1(Mr),
+\qquad
+r=\lvert x\rvert,
+\label{eq:yuk}
+\end{equation}
+which satisfies $(-\square+M^2)G=\delta^{(4)}$ and is not
+$\delta^{(4)}$ itself. \pP{} (Fourier analysis).
+\end{theorem}
+
+\begin{theorem}[massless degeneration]
+\label{thm:m0}
+For any fixed $k\neq 0$, $\lim_{M\to 0}r(k)=0$. A massless axial
+gauge field does not produce the Hehl--Datta contact. \pP{}.
+\end{theorem}
+
+Theorem~\ref{thm:m0} is the holographic tension made sharp. A
+\emph{conserved} CFT current is dual to a \emph{massless} bulk
+gauge field \cite{Witten1998}. That theory is Einstein--Maxwell
+(axial), not Einstein--Cartan, and it has no contact infrared.
+A heavy field ($M\sim M_{\mathrm{Pl}}$) matches \eqref{eq:IR} in
+the infrared and matches a \emph{non-conserved} or
+high-dimension operator in the ultraviolet, not a conserved
+current at every scale. The obstruction is evaded only by
+changing the theory, exactly as Paper~14 said.
+
+\section{What $M$ is allowed to be}
+
+If $M$ is a few inverse fermis, spacetime torsion waves are
+laboratory fields. That is a different Lagrangian and is already
+excluded as Einstein--Cartan \cite{Hehl1976,Shapiro2002}. The
+deformation is compatible with the program only if
+\begin{equation}
+M \gtrsim M_{\mathrm{Pl}},
+\end{equation}
+so that torsion propagation is a Planckian correction and
+\eqref{eq:IR} is the effective theory below that scale. This is
+a consistency requirement, not a derivation of $M$. Ghost-free
+quadratic Poincar\'e-gauge kinetic terms exist in a restricted
+parameter set \cite{Sezgin1980}; this note does not re-derive
+that classification and does not claim that every quadratic
+torsion kinetic term is healthy.
+
+\section{Machine check}
+
+Pre-registered gates C1--C5 were locked before the scripts ran.
+Solver: \texttt{m9\_4\_uv\_axial.py}. Auditor (no solver import,
+sympy completion plus Bessel identities):
+\texttt{m9\_4\_audit\_uv.py}. Both report PASS on C1--C5.
+The auditor confirms that without the infrared lock
+\eqref{eq:lock} the coefficient is not $3/16$.
+
+This is tree-level effective-field-theory algebra. It is not a
+loop computation and it is not a holographic Ward-identity
+calculation.
+
+\section{What this does not do}
+
+\begin{itemize}[leftmargin=1.4em]
+\item It does not select $SU(3)_c\times SU(2)_L\times U(1)_Y$,
+three generations, Yukawas, or $\Lambda$. Those remain
+empirical input \cite{McGwierIII}.
+\item It does not renormalize the metric sector. Einstein--Hilbert
+is still non-renormalizable. Quadratic curvature / Stelle /
+asymptotic safety are other Lagrangians, not derived here.
+\item It does not name a CFT. The AdS dictionary is cited
+\cite{Witten1998}, not constructed.
+\item It does not repair de~Sitter (Paper~IX).
+\item It does not make spacetime Hehl--Datta a laboratory field.
+\item It does not move a \texttt{MODELS.md} cell.
+\end{itemize}
+
+\begin{admission}
+I did not invent a UV completion of the New Standard Model. I
+constructed the unique quadratic axial deformation that
+preserves M9.1 and evades the contact obstruction, and I checked
+the tree-level algebra two ways. Q4a remains \pO{}. Calling Q4b
+``a UV that works'' is allowed only as infrared matching plus
+nonlocality, never as a selected microscopic theory.
+\end{admission}
+
+\section{Verdict}
+
+\begin{center}
+\begin{tabular}{@{}p{0.46\textwidth}p{0.46\textwidth}@{}}
+\toprule
+Claim & Status \\
+\midrule
+Q4a selected pair / SM / metric UV & still \pO{}; not invented \\
+Quadratic axial deformation \eqref{eq:UV}--\eqref{eq:r} & derived \\
+Infrared lock recovers $3/16$ & \pP{}, audited \\
+Yukawa kernel, not a contact & \pP{}, audited \\
+Massless limit is not Hehl--Datta & \pP{} \\
+Identification $S_\mu=$ axial torsion & \pC{} (physical reading) \\
+Final Status ``UV completion'' as a selected theory & unchanged, \pO{} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The phrase that is true: \emph{the infrared of the unique
+quadratic axial deformation is the New Standard Model axial
+sector, and the ultraviolet of that deformation is not
+Einstein--Cartan.} The phrase that is false: \emph{we now have
+the UV completion.}
+
+\begin{thebibliography}{99}
+\bibitem{HehlDatta1971}
+F.W.~Hehl and B.K.~Datta,
+J.\ Math.\ Phys.\ 12 (1971) 1334.
+\bibitem{Hehl1976}
+F.W.~Hehl, P.~von der Heyde, G.D.~Kerlick and J.M.~Nester,
+Rev.\ Mod.\ Phys.\ 48 (1976) 393.
+\bibitem{Sezgin1980}
+E.~Sezgin and P.~van Nieuwenhuizen,
+Phys.\ Rev.\ D 21 (1980) 3269.
+\bibitem{Witten1998}
+E.~Witten,
+Adv.\ Theor.\ Math.\ Phys.\ 2 (1998) 253, arXiv:hep-th/9802150.
+\bibitem{Shapiro2002}
+I.L.~Shapiro,
+Phys.\ Rept.\ 357 (2002) 113, arXiv:hep-th/0103093.
+\bibitem{McGwierIII}
+R.W.~McGwier,
+``The New Standard Model for Unified Physics,''
+\url{https://github.com/n4hy/New_Model_Emergent_Gravity}.
+\bibitem{McGwierVI}
+R.W.~McGwier,
+``Evaluation of the Universal Kinematic Integral,'' ibid.
+\bibitem{McGwierXI}
+R.W.~McGwier,
+``Open Questions, Attempts, and Admissions,'' ibid.
+\bibitem{McGwierXIV}
+R.W.~McGwier,
+``Second-Order Einstein--Cartan from Entanglement,'' ibid.
+\end{thebibliography}
+
+\end{document}

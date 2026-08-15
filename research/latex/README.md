@@ -9,5 +9,6 @@
 | `12_Analytic_Attempt_IB.tex` | Analytic $d=2$ reduction of $I_B$. Closed form unconfirmed. Relative residue moves with the source in the hole scheme. Multi-digit coefficient still open |
 | `13_Hadamard_Completion_IB.tex` | Complete Mittag-Leffler / Hadamard expansion. $H(\\tau)$ via polygamma. Not proportional to a local kernel. No universal multi-digit coefficient |
 | `14_Nonlinear_EC_Second_Order.tex` | Forced finish of Q3. Palatini symplectic reduction. Axial Fisher versus algebraic torsion is an obstruction. Not a positive second-order EC theorem |
+| `15_UV_Deformation_Axial.tex` | Q4 split. Selected UV (Q4a) not invented. Unique quadratic axial deformation (Q4b) tree-level matched to 3/16. Not a selected completion |
 
 Reconstructed files follow the PDF wording and equations. They are not a byte-for-byte dump of an unpublished compiler run.

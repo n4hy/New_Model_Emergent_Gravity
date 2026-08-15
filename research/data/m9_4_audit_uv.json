@@ -1,0 +1,42 @@
+{
+  "task": "m9.4_audit_uv",
+  "method": "sympy complete-the-square; Bessel identities; no solver import",
+  "square": {
+    "r_locked": "3*M**2/(16*(M**2 + k**2))",
+    "r0_locked": 0.1875,
+    "r_at_k_eq_M": 0.09375,
+    "unlocked_r0_is_not_forced_to_3_16": "B**2/(4*A*kappa)",
+    "C1": true,
+    "C2": true,
+    "lock_is_necessary": true
+  },
+  "yukawa": {
+    "symbolic_ode": "0",
+    "ode_at_sample_r": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max_abs_ode": 0.0,
+    "G_samples": [
+      0.379653106868917,
+      0.01524648825161622,
+      7.905268020349023e-05
+    ],
+    "C3": true,
+    "method": "sympy radial Laplacian of (M/(4\u03c0\u00b2r))K_1(Mr); no FD"
+  },
+  "C4_massless_limit_zero": true,
+  "C1": true,
+  "C2": true,
+  "C3": true,
+  "C5_lock_necessary": true,
+  "verdicts": {
+    "C1": "CONFIRMED",
+    "C2": "CONFIRMED",
+    "C3": "CONFIRMED",
+    "C4": "CONFIRMED",
+    "Q4a_selected_UV": "NOT_CLAIMED"
+  },
+  "admission": "The algebra confirms the deformation. It does not select a CFT, a compactification, or a metric UV completion."
+}
