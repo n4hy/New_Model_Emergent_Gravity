@@ -1,0 +1,298 @@
+% Q4a in the program's own sense: select the holographic pair.
+% Selection-uniqueness is answered in the negative.
+% Existence of some pair remains [O]. No CFT is invented.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem,booktabs}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem*{admission}{Admission}
+
+\newcommand{\pP}{\textbf{[P]}}
+\newcommand{\pC}{\textbf{[C]}}
+\newcommand{\pO}{\textbf{[O]}}
+
+\title{\textbf{Q4a in the Proper Context:\\
+The Holographic Pair is Not Selected}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Paper~11 left ultraviolet completion open by construction and refused
+to invent a CFT. That refusal was correct as a ban on fabrication.
+It is not the end of the question the program actually asked.
+
+The monograph states the question precisely: the New Standard Model
+is emergent bookkeeping; the microscopic description is the boundary
+theory of a holographic pair; no first-principles selection of that
+pair exists \cite{McGwierMonograph}. That is Q4a. It is a
+\emph{selection} problem, not an invitation to name $\mathcal{N}=4$
+super-Yang--Mills or a Calabi--Yau.
+
+This note answers the selection problem. The certified principles
+(Casini--Huerta--Myers, Faulkner--Guica--Hartman--Myers--Van
+Raamsdonk, the Paper~II modular rule) determine the bulk
+\emph{gravitational} sector given a pair. They are blind to
+$G_{\mathrm{SM}}$, the number of generations, and the Yukawas.
+They therefore underdetermine the pair. Independently, the Standard
+Model cannot \emph{be} the boundary CFT: its one-loop coefficients
+are
+$(b_1,b_2,b_3)=(41/10,-19/6,-7)$, all nonzero, and it has $118$
+light on-shell degrees of freedom, not a large-$N$ gap
+\cite{Heemskerk2009}.
+
+Existence of some other pair whose bulk infrared is the NSM remains
+\pO{}. No pair is constructed. Final Status ``UV completion'' is
+not moved to \pP{}.
+\end{abstract}
+
+\section*{Standard of proof}
+
+Q4a, in the vocabulary of this program, is the following pair of
+questions.
+
+\begin{enumerate}[leftmargin=1.6em]
+\item \textbf{Selection.} Do the certified entanglement principles
+single out a holographic pair $(\mathrm{CFT},\mathrm{bulk})$ of
+which \eqref{eq:nsm} is the bookkeeping?
+\item \textbf{Existence.} Does at least one such pair exist?
+\end{enumerate}
+
+A named CFT offered without a derivation from those principles is a
+fabrication \cite{McGwierXI}. A uniqueness theorem, or a proof that
+uniqueness fails, is an answer to (1). Item (2) is not solved by
+solving (1).
+
+\section{What the pair is}
+
+The NSM action is the bulk effective theory
+\begin{equation}
+S_{\mathrm{NSM}}
+=
+\frac{1}{4\kappa}
+\int\varepsilon_{abcd}\,e^a\wedge e^b\wedge R^{cd}
+-
+\frac{\Lambda}{6}
+\int\varepsilon_{abcd}\,e^a\wedge e^b\wedge e^c\wedge e^d
++
+\int e\,\mathcal{L}_{\mathrm{SM}}.
+\label{eq:nsm}
+\end{equation}
+In the certified regime the microscopic description is a
+holographic pair \cite{Maldacena1998,Witten1998}: a unitary CFT on
+the conformal boundary of AdS, with a bulk dual whose infrared is
+\eqref{eq:nsm}. Two readings must not be mixed.
+
+\begin{definition}[Reading A, the monograph]
+The Standard Model fields in \eqref{eq:nsm} are \emph{bulk} fields.
+The boundary CFT is some other theory, with a global flavour
+symmetry whose bulk gauge fields are $G_{\mathrm{SM}}$.
+\end{definition}
+
+\begin{definition}[Reading B, the temptation]
+The Standard Model \emph{is} the boundary CFT, and bulk Einstein--Cartan
+is its entanglement geometry.
+\end{definition}
+
+Reading~B would be a selection. It is false, by the next section.
+Reading~A is the monograph's reading. Under it, Q4a is: which CFT?
+
+\section{The Standard Model is not a holographic CFT}
+
+A necessary condition for a four-dimensional gauge theory to be a
+CFT is the vanishing of all one-loop beta-function coefficients in
+the convention $\beta_i=b_i g_i^3/(16\pi^2)$. From the SM
+representation table, with $Q=T_3+Y/2$ and GUT-normalized $U(1)$,
+\begin{equation}
+b_1=\frac{41}{10},
+\qquad
+b_2=-\frac{19}{6},
+\qquad
+b_3=-7.
+\label{eq:b}
+\end{equation}
+All three are nonzero. The Standard Model is not a CFT. \pP{}
+(\emph{computed} from Dynkin indices; textbook values recovered).
+
+A necessary condition for a \emph{classical} Einstein dual is a
+parametrically large $N$ and a sparse spectrum of light operators
+with a large gap \cite{Heemskerk2009}. Before electroweak symmetry
+breaking the SM has $118$ on-shell light degrees of freedom
+($24$ gauge helicities, $4$ Higgs, $90$ fermionic). That is
+$O(10^2)$, not a limit $N\to\infty$. \pP{} (count).
+
+\begin{theorem}[Reading B is false]
+\label{thm:B}
+The Standard Model is not the boundary theory of a holographic pair
+with a classical Einstein--Cartan bulk. \pP{} (necessary conditions
+fail).
+\end{theorem}
+
+A mutation confirms the CFT check is not tautological: $\mathcal{N}=4$
+super-Yang--Mills has one-loop $b=0$ by the adjoint index identity
+$T(\mathrm{adj})=C_2(G)$. The same script that rejects the SM accepts
+that necessary condition for $\mathcal{N}=4$. Accepting the necessary
+condition is not a selection of $\mathcal{N}=4$ as the pair.
+
+\section{What the certified principles actually see}
+
+The Casini--Huerta--Myers modular Hamiltonian of a ball of radius
+$R$ in a CFT vacuum is \cite{CHM2011}
+\begin{equation}
+H_B
+=
+2\pi\int_{\lvert x\rvert<R}\!d^{d-1}x\,
+\frac{R^2-\lvert x\rvert^2}{2R}\,T_{00}(x).
+\label{eq:chm}
+\end{equation}
+Faulkner--Guica--Hartman--Myers--Van Raamsdonk convert the first law
+$\delta S_B=\delta\langle H_B\rangle$ into linearized Einstein
+equations sourced by $\delta\langle T_{\mu\nu}\rangle$
+\cite{FGHMV2014}. The only CFT data in that argument are the stress
+tensor, the central charge that normalizes it, and the ball.
+
+Paper~II selects the Young symmetry of an explicit spin-current
+source: mixed-symmetry non-minimal couplings are relevant
+deformations that destroy the conformal frame; the surviving sector
+is axial and minimal \cite{McGwierII}. That is a statement about
+\emph{how} a spinor couples to $\omega$, not about
+\emph{which} gauge group the spinor is charged under.
+
+\begin{theorem}[Underdetermination]
+\label{thm:under}
+Let $\mathcal{P}$ be the set of holographic pairs whose bulk
+infrared contains Einstein gravity, a cosmological term, and some
+minimally coupled anomaly-free chiral gauge theory with an axial
+current. The maps
+\begin{align*}
+G_{\mathrm{SM}}
+&\;\longrightarrow\;
+G',
+\qquad
+n_g
+\;\longrightarrow\;
+n_g',
+\qquad
+Y_{u,d,e}
+\;\longrightarrow\;
+Y',
+\end{align*}
+stay inside $\mathcal{P}$ whenever $G'$ is compact and the new
+spectrum is anomaly-free. None of $G_{\mathrm{SM}}$, $n_g$, or the
+Yukawas appears in \eqref{eq:chm} or in the FGHMV source. The
+certified principles therefore do not select a unique element of
+$\mathcal{P}$. \pP{} (invariance).
+\end{theorem}
+
+Theorem~\ref{thm:under} is the parameter-count test of this
+question. The first law is one structural constraint on the bulk
+metric. The matter ledger of the NSM is a finite list of installed
+choices. The space of holographic CFTs is infinite-dimensional
+(spectra, OPE coefficients, flavour groups). $N_{\mathrm{free}}$
+exceeds $N_{\mathrm{constraint}}$. Uniqueness fails.
+
+\section{What \emph{is} selected}
+
+Given a holographic pair, the certified principles do select the
+bulk gravitational sector at linear order about AdS: the metric
+equation is Einstein \cite{FGHMV2014}, and the torsion coupling,
+if spinors are present, is the axial Einstein--Cartan one of
+Paper~II (with the axial obstruction of Paper~14 standing at
+second order). That is ``certify, select, assemble'' applied to
+gravity, which is what Papers~I--III already claimed.
+
+Q4a asked for the same operation on the pair itself. The operation
+does not extend. Gravity is selected \emph{given} a pair. The pair
+is not selected.
+
+\section{Existence remains open}
+
+Bottom-up, \eqref{eq:nsm} in AdS \emph{is} a holographic model. That
+is the same effective field theory, not a microscopic pair.
+
+Top-down, a string or M-theory vacuum whose infrared is Palatini
+Einstein--Cartan plus the Standard Model is not constructed here and
+is not selected by entanglement first-principles. Citing an existing
+compactification as ``the'' pair would be a fabrication of
+uniqueness.
+
+Paper~15's quadratic axial deformation is a change of the bulk
+ultraviolet, not a choice of CFT.
+
+\begin{admission}
+I did not select a holographic pair. I proved that the program's
+own principles cannot select one, and that the Standard Model
+cannot be one. Existence of some pair whose bulk infrared is the
+NSM is still \pO{}. That is the proper-context answer to Q4a.
+\end{admission}
+
+\section{Machine check}
+
+Solver \texttt{m9\_5\_q4a\_pair.py}; auditor
+\texttt{m9\_5\_audit\_q4a.py} (species table, no solver import).
+Gates C1--C5 PASS. The auditor recovers $(b_1,b_2,b_3)$ by summing
+representations generation-by-generation. C3 is structural (the
+CHM integrand), not a numerical search.
+
+\section{Verdict}
+
+\begin{center}
+\begin{tabular}{@{}p{0.48\textwidth}p{0.44\textwidth}@{}}
+\toprule
+Claim & Status \\
+\midrule
+Q4a as ``invent a CFT'' & refused (Paper~11) \\
+Reading B (SM is the boundary CFT) & false, Thm.~\ref{thm:B} \\
+Selection-uniqueness of the pair & false, Thm.~\ref{thm:under} \\
+SM one-loop $(b_1,b_2,b_3)$ & computed, audited \\
+Bulk gravity given a pair & already certified, Papers~I--III \\
+Existence of some pair & still \pO{} \\
+Final Status ``UV completion'' & unchanged, \pO{} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The phrase that is true: \emph{Q4a, asked as a first-principles
+selection of the holographic pair, has a negative answer.}
+The phrase that is false: \emph{we have the ultraviolet completion.}
+
+\begin{thebibliography}{99}
+\bibitem{Maldacena1998}
+J.~Maldacena,
+Adv.\ Theor.\ Math.\ Phys.\ 2 (1998) 231, arXiv:hep-th/9711200.
+\bibitem{Witten1998}
+E.~Witten,
+Adv.\ Theor.\ Math.\ Phys.\ 2 (1998) 253, arXiv:hep-th/9802150.
+\bibitem{CHM2011}
+H.~Casini, M.~Huerta and R.C.~Myers,
+JHEP 05 (2011) 036, arXiv:1102.0440.
+\bibitem{FGHMV2014}
+T.~Faulkner, M.~Guica, T.~Hartman, R.C.~Myers and M.~Van Raamsdonk,
+JHEP 03 (2014) 051, arXiv:1312.7856.
+\bibitem{Heemskerk2009}
+I.~Heemskerk, J.~Penedones, J.~Polchinski and J.~Sully,
+JHEP 10 (2009) 079, arXiv:0907.0151.
+\bibitem{McGwierII}
+R.W.~McGwier,
+``Spin-Current Sources and Ball Modular Hamiltonians,''
+\url{https://github.com/n4hy/New_Model_Emergent_Gravity}.
+\bibitem{McGwierMonograph}
+R.W.~McGwier,
+``Emergent Gravity and a New Lagrangian,'' ibid.
+\bibitem{McGwierXI}
+R.W.~McGwier,
+``Open Questions, Attempts, and Admissions,'' ibid.
+\end{thebibliography}
+
+\end{document}

@@ -100,10 +100,14 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
   the first-law sign is not supplied.
 - Nonlinear Einstein-Cartan as a positive holographic theorem: remains
   `[O]`. Closed only as the axial obstruction above.
-- UV completion (Q4a): open by construction. A CFT / compactification /
-  metric UV was not invented. The unique quadratic axial deformation
-  (Q4b) recovers \(3/16\) in the infrared and is Yukawa at finite \(M\);
-  that is a change of theory, not a selected completion
+- UV completion (Q4a): selection-uniqueness is answered in the
+  negative (the SM is not a holographic CFT; the certified first law
+  does not see \(G_{\mathrm{SM}}\)). Existence of some other pair
+  remains open. No CFT was invented
+  ([`findings/m9_5_q4a_pair_note.md`](findings/m9_5_q4a_pair_note.md)).
+  The unique quadratic axial deformation (Q4b) recovers \(3/16\) in
+  the infrared and is Yukawa at finite \(M\); that is a change of
+  theory, not a selected completion
   ([`findings/m9_4_uv_deformation_note.md`](findings/m9_4_uv_deformation_note.md)).
 - No dark-matter particle; no derivation of masses, mixings, generations,
   strong CP, or \(\Lambda\).
@@ -143,6 +147,9 @@ Zero free parameters is **not** claimed. The SM is not a prediction.
   [`findings/m9_metric_phenomena_note.md`](findings/m9_metric_phenomena_note.md).
 - Axial UV deformation (Q4b only): `scripts/m9_4_uv_axial.py`,
   [`findings/m9_4_uv_deformation_note.md`](findings/m9_4_uv_deformation_note.md).
+- Q4a pair selection (uniqueness negative, existence open):
+  `scripts/m9_5_q4a_pair.py`,
+  [`findings/m9_5_q4a_pair_note.md`](findings/m9_5_q4a_pair_note.md).
 
 ## Which MODELS.md rows the model addresses
 

@@ -1,0 +1,52 @@
+{
+  "task": "m9.5_q4a_pair",
+  "q4a_in_proper_context": "Select, from the program's certified principles, the holographic pair of which NSM is the bookkeeping. Not: invent a CFT or a compactification.",
+  "b_SM": {
+    "b1": "41/10",
+    "b2": "-19/6",
+    "b3": "-7"
+  },
+  "b_SM_float": {
+    "b1": 4.1,
+    "b2": -3.1666666666666665,
+    "b3": -7.0
+  },
+  "dof": {
+    "gauge": 24,
+    "higgs": 4,
+    "fermion": 90,
+    "total": 118
+  },
+  "CHM_independence": {
+    "H_ball": "(2\u03c0/R) \u222b_ball d^{d-1}x ((R^2-r^2)/2) T_{00}",
+    "FGHMV_source": "\u03b4\u27e8T_{\u03bc\u03bd}\u27e9",
+    "appears": [
+      "T_{\u03bc\u03bd}",
+      "C_T",
+      "ball radius R"
+    ],
+    "does_not_appear": [
+      "G_SM",
+      "n_gen",
+      "Yukawa matrices",
+      "\u03b8_QCD",
+      "Higgs potential",
+      "\u039b"
+    ]
+  },
+  "Paper_II_scope": {
+    "selects": "Young symmetry of the spin source (axial vs mixed)",
+    "does_not_select": "which compact G, which anomaly-free spectrum"
+  },
+  "b_N4_SYM": "0",
+  "C1_SM_not_CFT": true,
+  "C2_SM_not_large_N": true,
+  "C3_first_law_blind_to_flavor": true,
+  "C4_modular_rule_is_not_G_SM": true,
+  "C5_mutation_N4_b_vanishes": true,
+  "all_gates": true,
+  "selection_uniqueness": "UNDERDETERMINED",
+  "existence_of_some_pair": "OPEN",
+  "verdict": "Q4A_SELECTION_ANSWERED_NEGATIVE_EXISTENCE_OPEN",
+  "admission": "No holographic pair is constructed. The certified principles do not select one. The SM cannot be the boundary CFT. Existence of some other pair whose bulk IR is NSM remains [O]."
+}

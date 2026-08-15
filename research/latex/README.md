@@ -12,3 +12,4 @@
 | `15_UV_Deformation_Axial.tex` | Q4 split. Selected UV (Q4a) not invented. Unique quadratic axial deformation (Q4b) tree-level matched to 3/16. Not a selected completion |
 
 Reconstructed files follow the PDF wording and equations. They are not a byte-for-byte dump of an unpublished compiler run.
+| `16_Q4a_Holographic_Pair.tex` | Q4a in the monograph's sense. Selection-uniqueness negative. SM is not a holographic CFT. Existence of some pair still open |

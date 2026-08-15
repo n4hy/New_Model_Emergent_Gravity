@@ -1,0 +1,39 @@
+{
+  "task": "m9.5_audit_q4a",
+  "method": "per-generation species table; no solver import",
+  "b_SM": {
+    "b1": "41/10",
+    "b2": "-19/6",
+    "b3": "-7"
+  },
+  "partial_indices": {
+    "t_f_y": "6",
+    "t_f_su2": "6",
+    "t_f_su3": "6"
+  },
+  "b_N4": "0",
+  "CHM_tokens_checked": [
+    "T_{00}",
+    "T_{\u03bc\u03bd}",
+    "C_T",
+    "R"
+  ],
+  "flavor_tokens_absent_from_CHM": [
+    "SU(3)",
+    "SU(2)",
+    "U(1)",
+    "Yukawa",
+    "generation"
+  ],
+  "C1": true,
+  "C5": true,
+  "C3_structural": true,
+  "verdicts": {
+    "C1": "CONFIRMED",
+    "C5": "CONFIRMED",
+    "C3": "CONFIRMED",
+    "pair_constructed": "NOT_CLAIMED",
+    "existence": "OPEN"
+  },
+  "admission": "Recomputed b_i match the textbook SM values. This confirms the SM is not a CFT. It does not produce a holographic pair."
+}
