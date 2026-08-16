@@ -61,5 +61,6 @@
 | `64_Sea_Enclosure.tex` | Sea-transfer δS is extensive; slabs break A/V; not a packet artifact |
 | `65_Two_Term_Fail.tex` | grow=2.5 is not a universal area term; held-out rods miss by 5 |
 | `66_Stress_Dust.tex` | Hop kinetic stress of the transfer is dust; not Λ |
+| `67_Thermal.tex` | Thermal μ=0 scan is not de Sitter; one lattice crosses −1 |
 
 Reconstructed files follow the PDF wording and equations. They are not a byte-for-byte dump of an unpublished compiler run.
