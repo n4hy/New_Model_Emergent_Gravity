@@ -1,0 +1,36 @@
+{
+  "task": "m9.62_audit_pair",
+  "precision": {
+    "eigh_hop": "none",
+    "peschel": "mpmath eigsy dps=80",
+    "n_occ": 675
+  },
+  "n_balls": 27,
+  "S_rel": 1.3106987532228157e-79,
+  "gram_err": 2.740971465239936e-80,
+  "C4_off": 7.860441084998683e-84,
+  "rho": 0.9797931902797461,
+  "rms": 0.06262785641300352,
+  "med_abs_fS_1": 0.7531410779004061,
+  "med_abs_fE_1": 0.6110893981961886,
+  "n_both": 1,
+  "div_near_A": -0.0005182362587044122,
+  "div_near_B": -0.0006846017064677234,
+  "div_mid": -0.0010742388786411546,
+  "C_rho": true,
+  "C_rms": true,
+  "C_both": false,
+  "C_src": false,
+  "verdicts": {
+    "C_rho": "CONFIRMED",
+    "C_rms": "CONFIRMED",
+    "C_both": "REFUTED",
+    "C_src": "REFUTED"
+  },
+  "not_claimed": [
+    "derived Einstein",
+    "8pi G",
+    "de Sitter",
+    "MODELS.md"
+  ]
+}

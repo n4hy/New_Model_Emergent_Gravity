@@ -1,0 +1,50 @@
+% Pair S_global = 2h(aA)+2h(aB). Enclosure tracks. div g is not Poisson.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem*{admission}{Admission}
+
+\title{\textbf{Pair Entropy Is $2h(\alpha_A)+2h(\alpha_B)$.\\
+$\delta S$ Tracks Mass. $\nabla\cdot\mathbf g$ Is Not Poisson.}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{16 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+The orthonormal two-source state has four moving
+occupations $\alpha_A,1-\alpha_A,\alpha_B,1-\alpha_B$.
+Hence
+\[
+S_{\mathrm{global}}=2h(\alpha_A)+2h(\alpha_B).
+\]
+The $4\times 4$ Gram and $C$ confirm this to
+$10^{-80}$. Exact open-hop basis, no hop LAPACK.
+Peschel on each $R=3$ ball is \texttt{mpmath eigsy}
+at $80$ decimals.
+
+$64$ balls: $\rho(f_S,f_E)=0.957$, RMS $0.043$.
+The one ball that contains both source \emph{sites}
+still leaks ($f_S=0.27$ below $1$). Auditor
+$N=11$: tracking confirmed; both-inside refuted.
+
+Lattice $\nabla\cdot\mathbf g$ of the Paper~70 field
+is not a source law. $N=12$ source/mid ratio $3.83$
+passes the pre-register; $N=11$ finds the midpoint
+larger. Signs mix. $\mathbf g$ is a ball probe,
+not Poisson. Not Einstein.
+\end{abstract}
+
+\begin{admission}
+I asked $f=1$ on a both-site ball and
+$\lvert\nabla\cdot g\rvert$ to mark the packets.
+Both failed as Newton laws. I did not move them.
+\end{admission}
+
+\end{document}
