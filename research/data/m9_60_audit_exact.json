@@ -1,0 +1,35 @@
+{
+  "task": "m9.60_audit_exact",
+  "precision": {
+    "basis": "closed-form 1d open hop",
+    "eigh": "none",
+    "analysis": "mpmath dps=80",
+    "n_occ": 675,
+    "additivity_rel": 3.9416469674116634e-07
+  },
+  "M_A": 0.13239006875283882,
+  "M_B": 0.39717020625851646,
+  "M_AB": 0.5295604837454028,
+  "n_keep": 27,
+  "median_ang_newton": 10.920187473912133,
+  "median_ang_cm": 39.73902994273403,
+  "null_x": 4.196152422706632,
+  "cm_x": 6.5,
+  "n_axis": 3,
+  "grad_at_null": 0.03638617567414187,
+  "grad_at_cm": 0.09473803177626117,
+  "C_dir_PRIMARY": true,
+  "C_notcm": true,
+  "C_null": true,
+  "verdicts": {
+    "C_dir": "CONFIRMED",
+    "C_notcm": "CONFIRMED",
+    "C_null": "CONFIRMED"
+  },
+  "not_claimed": [
+    "derived Einstein",
+    "8pi G",
+    "de Sitter",
+    "MODELS.md"
+  ]
+}

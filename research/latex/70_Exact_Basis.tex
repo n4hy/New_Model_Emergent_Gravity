@@ -1,0 +1,49 @@
+% Exact open-hop basis. Paper 69 angles certified. No LAPACK.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem*{admission}{Admission}
+
+\title{\textbf{The Pair Direction Survives the Exact Basis.\\
+Paper 69 Was Physics.}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{16 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+The open-cube hop is separable. Modes are closed form,
+\[
+\varepsilon_n=-2\cos\frac{\pi n}{N+1},\qquad
+\psi_j^{(n)}=\sqrt{\frac{2}{N+1}}\sin\frac{\pi n(j+1)}{N+1}.
+\]
+No eigensolve. Occupied iff $\varepsilon_x+\varepsilon_y+\varepsilon_z<0$.
+Every amplitude and angle is \texttt{mpmath} at $80$ decimals.
+
+The pair field is unchanged:
+\[
+\hat n=\nabla_c M_{AB}/\lvert\nabla_c M_{AB}\rvert,\qquad
+\mathbf g=-(M/A)\,\hat n.
+\]
+Median angle to $M/r^2$ superposition $10.746^\circ$,
+identical to Paper 69 at the reported digits.
+Additivity $6\times 10^{-8}$ is also unchanged: it is
+orthonormalization of overlapping packets, not LAPACK.
+Auditor $N=11$: direction $10.92^\circ$, not-CM and
+null confirmed.
+
+Paper 69 is certified. Not Einstein.
+\end{abstract}
+
+\begin{admission}
+I asked additivity $<10^{-12}$. The exact basis
+refused. I did not move the gate.
+\end{admission}
+
+\end{document}
