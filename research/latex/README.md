@@ -63,5 +63,6 @@
 | `66_Stress_Dust.tex` | Hop kinetic stress of the transfer is dust; not Λ |
 | `67_Thermal.tex` | Thermal μ=0 scan is not de Sitter; one lattice crosses −1 |
 | `68_Flux.tex` | Unique isotropic flux is g=−M/A; hop has no 1/r |
+| `69_Direction.tex` | Pair direction is ∇_c M_AB; use g=−(M/A)n |
 
 Reconstructed files follow the PDF wording and equations. They are not a byte-for-byte dump of an unpublished compiler run.

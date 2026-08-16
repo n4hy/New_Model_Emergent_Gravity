@@ -1,0 +1,53 @@
+% Two-mass direction: n = lattice grad M_AB. Used as g = -(M/A) n.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem*{admission}{Admission}
+
+\title{\textbf{The Pair Selects $\nabla_c M_{AB}$.\\
+Use $\mathbf g=-(M/A)\,\hat n$.}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{16 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Paper~68 gave $\lvert g\rvert=M/A$. The direction is
+the only one enclosure can select: the steepest rise
+of the entangled-pair mass
+\[
+\hat n(c)=\frac{\nabla_c M_{AB}(c)}{\lvert\nabla_c M_{AB}(c)\rvert},\qquad
+\mathbf g(c)=-\frac{M_{AB}(c)}{A(c)}\,\hat n(c).
+\]
+$\nabla_c$ is the two-sided lattice difference.
+Masses, Newton vectors, and angles are
+\texttt{mpmath} at $50$ decimals. The hop
+eigensolve is float64 LAPACK.
+
+Unequal pair, $N=12$, $M_B=2M_A$.
+Median angle to $M/r^2$ superposition $10.75^\circ$;
+to the centre of mass $62.17^\circ$.
+$\lvert\nabla M\rvert$ is smaller at the $1/r^2$ null
+than at the CM. Equal pair: midpoint
+$\lvert\nabla M\rvert$ is $2.5\times 10^{-4}$ of the
+median. Auditor $N=10$: direction confirmed
+($2.55^\circ$); the two-site null test is refuted
+as under-resolved.
+
+This is how two packets are used: $M_{AB}$ of the
+orthonormal two-source state, then $\mathbf g=-(M/A)\hat n$.
+Not Einstein.
+\end{abstract}
+
+\begin{admission}
+I did not put $\hat r$ in by hand. I did not move
+C\_null when the auditor's axis had two points.
+\end{admission}
+
+\end{document}

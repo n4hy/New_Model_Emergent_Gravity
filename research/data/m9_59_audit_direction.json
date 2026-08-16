@@ -1,0 +1,32 @@
+{
+  "task": "m9.59_audit_direction",
+  "precision": {
+    "eigh": "float64 LAPACK",
+    "analysis": "mpmath dps=50",
+    "additivity_rel": 8.913288143319052e-07
+  },
+  "M_A": 0.1323584275530898,
+  "M_B": 0.39707528265927006,
+  "M_AB": 0.5294332383132593,
+  "n_keep": 8,
+  "median_ang_newton": 2.546330259236076,
+  "median_ang_cm": 3.3825926029150537,
+  "null_x": 3.8301270189221923,
+  "cm_x": 5.750000000000002,
+  "grad_at_null": 0.11385100505577189,
+  "grad_at_cm": 0.06878228873370618,
+  "C_dir_PRIMARY": true,
+  "C_notcm": true,
+  "C_null": false,
+  "verdicts": {
+    "C_dir": "CONFIRMED",
+    "C_notcm": "CONFIRMED",
+    "C_null": "REFUTED"
+  },
+  "not_claimed": [
+    "derived Einstein",
+    "8pi G",
+    "de Sitter",
+    "MODELS.md"
+  ]
+}
