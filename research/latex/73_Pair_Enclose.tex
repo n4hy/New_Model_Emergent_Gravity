@@ -1,0 +1,48 @@
+% Pair enclosure at R=5. Midpoint f=1. Axial offset leaks.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem*{admission}{Admission}
+
+\title{\textbf{When the Ball Holds the Pair,\\
+$\delta S$ Is the Pair Mixing Entropy.}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{16 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Paper 72 tracked pair $\delta S$ on $R=3$ balls that
+only touch the source sites. This note uses $R=5$.
+Exact open-hop basis. Peschel is \texttt{mpmath eigsy}
+at $80$ decimals. No hop LAPACK.
+\[
+S_{\mathrm{global}}=2h(\alpha_A)+2h(\alpha_B).
+\]
+
+Midpoint enclosing ball: $f_S=0.9907$, $f_E=0.9881$.
+A one-site axial offset still contains both sites
+but leaks the heavier packet: $f_S=0.886=f_E$ to
+half a percent, not $1$. A ball on $A$ with $B$
+outside: $f_S=0.382$, $f_E=0.386$.
+Auditor $N=11$: midpoint $0.994$; a perpendicular
+offset stays at $0.990$; miss $0.306$. Primary
+enclosure confirmed. Axial $f=1$ fails as leak.
+
+Pair $\delta S$ is pair mixing entropy times the
+enclosed mass fraction. Not Einstein.
+\end{abstract}
+
+\begin{admission}
+I pre-registered $f=1$ on any offset that contains
+both sites. The axial offset refused. I did not
+move C\_off.
+\end{admission}
+
+\end{document}

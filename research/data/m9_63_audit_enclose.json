@@ -1,0 +1,69 @@
+{
+  "task": "m9.63_audit_enclose",
+  "precision": {
+    "eigh_hop": "none",
+    "peschel": "mpmath eigsy dps=80",
+    "n_occ": 675
+  },
+  "S_rel": 1.3106987532228157e-79,
+  "rows": [
+    {
+      "label": "ENC",
+      "c": [
+        5,
+        5,
+        5
+      ],
+      "R": 5,
+      "n_sites": 515,
+      "A_in": true,
+      "B_in": true,
+      "f_S": 0.9935222215874487,
+      "f_E": 0.994357768199459
+    },
+    {
+      "label": "ENC_OFF",
+      "c": [
+        5,
+        5,
+        4
+      ],
+      "R": 5,
+      "n_sites": 514,
+      "A_in": true,
+      "B_in": true,
+      "f_S": 0.9904768880393343,
+      "f_E": 0.99094904614124
+    },
+    {
+      "label": "MISS",
+      "c": [
+        2,
+        5,
+        5
+      ],
+      "R": 5,
+      "n_sites": 436,
+      "A_in": true,
+      "B_in": false,
+      "f_S": 0.3058453735658431,
+      "f_E": 0.30838682866018025
+    }
+  ],
+  "C_fs_PRIMARY": true,
+  "C_fe": true,
+  "C_off": true,
+  "C_miss": true,
+  "verdicts": {
+    "C_fs": "CONFIRMED",
+    "C_fe": "CONFIRMED",
+    "C_off": "CONFIRMED",
+    "C_miss": "CONFIRMED"
+  },
+  "not_claimed": [
+    "derived Einstein",
+    "8pi G",
+    "de Sitter",
+    "MODELS.md"
+  ]
+}

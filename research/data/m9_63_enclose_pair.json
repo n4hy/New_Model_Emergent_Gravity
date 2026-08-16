@@ -1,0 +1,77 @@
+{
+  "task": "m9.63_enclose_pair",
+  "precision": {
+    "basis": "closed-form 1d open hop",
+    "eigh_hop": "none",
+    "peschel": "mpmath eigsy dps=80",
+    "n_occ": 864
+  },
+  "S_4": 0.5319665220278099,
+  "S_theory": 0.5319665220278099,
+  "S_rel": 1.5853926902083367e-80,
+  "gram_err": 8.433758354584419e-81,
+  "M_AB": 0.560804206934892,
+  "rows": [
+    {
+      "label": "ENC",
+      "c": [
+        6,
+        6,
+        6
+      ],
+      "R": 5,
+      "n_sites": 515,
+      "A_in": true,
+      "B_in": true,
+      "M": 0.5541204210149522,
+      "dS": 0.5270012134536851,
+      "f_S": 0.9906661258396535,
+      "f_E": 0.9880817835578117
+    },
+    {
+      "label": "ENC_OFF",
+      "c": [
+        5,
+        6,
+        6
+      ],
+      "R": 5,
+      "n_sites": 515,
+      "A_in": true,
+      "B_in": true,
+      "M": 0.4942899111509403,
+      "dS": 0.47145058823413466,
+      "f_S": 0.8862410860687365,
+      "f_E": 0.8813947988238364
+    },
+    {
+      "label": "MISS",
+      "c": [
+        3,
+        6,
+        6
+      ],
+      "R": 5,
+      "n_sites": 485,
+      "A_in": true,
+      "B_in": false,
+      "M": 0.21622004287207125,
+      "dS": 0.20308298201471262,
+      "f_S": 0.38175895212461497,
+      "f_E": 0.3855535322280024
+    }
+  ],
+  "C_sg": true,
+  "C_fe": true,
+  "C_fs_PRIMARY": true,
+  "C_off": false,
+  "C_miss": true,
+  "all_gates": false,
+  "verdict": "PAIR_ENCLOSE_FAIL",
+  "not_claimed": [
+    "derived Einstein",
+    "8pi G",
+    "de Sitter",
+    "MODELS.md"
+  ]
+}

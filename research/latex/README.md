@@ -67,5 +67,6 @@
 | `70_Exact_Basis.tex` | Exact open-hop basis certifies Paper 69; no LAPACK |
 | `71_Superpose.tex` | Pair masses add; derived g does not, except at infinity |
 | `72_Pair_Entropy.tex` | Pair S=2h(αA)+2h(αB); enclosure tracks; div g not Poisson |
+| `73_Pair_Enclose.tex` | Midpoint R=5 pair ball: f=1; axial site-inside still leaks |
 
 Reconstructed files follow the PDF wording and equations. They are not a byte-for-byte dump of an unpublished compiler run.
