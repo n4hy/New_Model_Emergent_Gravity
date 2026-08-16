@@ -1,0 +1,51 @@
+% Pair mass maps add. Derived g does not, except at infinity.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem*{admission}{Admission}
+
+\title{\textbf{Add the Masses, Then Take One Gradient.\\
+Do Not Add the Fields.}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{16 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+The pair field of Papers 69--70 is
+$\mathbf g=-(M/A)\hat n$ with
+$\hat n=\nabla_c M/\lvert\nabla_c M\rvert$.
+That operation is not linear:
+\[
+\mathbf g_{AB}\propto M_{AB}\,
+\frac{\nabla M_A+\nabla M_B}{\lvert\nabla M_A+\nabla M_B\rvert}
+\neq
+\mathbf g_A+\mathbf g_B
+\]
+unless $\nabla M_A\parallel\nabla M_B$.
+
+Exact open-hop basis, \texttt{mpmath} $dps=80$,
+no eigensolve. Mass maps add to
+$2\times 10^{-7}$. Median angle
+$\angle(\mathbf g_{AB},\mathbf g_A+\mathbf g_B)=5.43^\circ$.
+Relative vector residual $0.255$: C\_rel fails.
+Far from both packets the angle is $0.008^\circ$.
+Auditor $N=11$: map and angle confirmed; residual
+$0.45$ refuted.
+
+To use two packets: $M=M_A+M_B$, then one
+$\hat n=\nabla_c M$. Not Einstein.
+\end{abstract}
+
+\begin{admission}
+I hoped the derived $\mathbf g$ would add.
+The residual gate failed. I did not move it.
+\end{admission}
+
+\end{document}
