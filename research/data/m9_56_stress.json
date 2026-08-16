@@ -1,0 +1,71 @@
+{
+  "task": "m9.56_stress",
+  "definition": "r = sum dn w / sum dn eps; w=(2/3) k.sin k; k in 1st BZ",
+  "forbidden": "p = -E/V as a Lambda claim",
+  "sea_band": {
+    "E_vac": -1722.599777942226,
+    "P_vac": 1517.6119150717577,
+    "n_occ": 903,
+    "r_vac": -0.8810008769910899,
+    "E_L": -6.0,
+    "E_R": 6.0,
+    "w_L": 0.0,
+    "w_R": 7.694682774887159e-16
+  },
+  "rows": [
+    {
+      "alpha": 0.01,
+      "star_dE": 0.09348862107240297,
+      "star_dP": 0.015264834097897233,
+      "star_r": 0.16328012888408386,
+      "star_site_rel_err": 4.3701796900570966e-15,
+      "sea_dE": 0.12,
+      "sea_dP": 7.69468277488716e-18,
+      "sea_r": 6.4122356457393e-17
+    },
+    {
+      "alpha": 0.02,
+      "star_dE": 0.18697724214480593,
+      "star_dP": 0.030529668195794467,
+      "star_r": 0.16328012888408386,
+      "star_site_rel_err": 4.3701796900570966e-15,
+      "sea_dE": 0.24,
+      "sea_dP": 1.538936554977432e-17,
+      "sea_r": 6.4122356457393e-17
+    },
+    {
+      "alpha": 0.04,
+      "star_dE": 0.37395448428961187,
+      "star_dP": 0.061059336391588934,
+      "star_r": 0.16328012888408386,
+      "star_site_rel_err": 4.3701796900570966e-15,
+      "sea_dE": 0.48,
+      "sea_dP": 3.077873109954864e-17,
+      "sea_r": 6.4122356457393e-17
+    }
+  ],
+  "star_r": [
+    0.16328012888408386,
+    0.16328012888408386,
+    0.16328012888408386
+  ],
+  "sea_r": [
+    6.4122356457393e-17,
+    6.4122356457393e-17,
+    6.4122356457393e-17
+  ],
+  "star_spread": 0.0,
+  "C_e": true,
+  "C_lambda_PRIMARY": false,
+  "C_dust": true,
+  "C_rad": false,
+  "C_hold": true,
+  "all_gates": true,
+  "verdict": "STRESS_DUST",
+  "not_claimed": [
+    "8pi G",
+    "derived Einstein",
+    "de Sitter",
+    "MODELS.md"
+  ]
+}
