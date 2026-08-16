@@ -1,0 +1,49 @@
+% grow=2.5 is not a universal area term. LOO kills it.
+\documentclass[11pt]{article}
+\usepackage[margin=1.05in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newtheorem*{admission}{Admission}
+
+\title{\textbf{The Leftover $2.5$ Is Not an Area Law.\\
+Held-Out Rods Miss by Five.}}
+\author{Robert W.\ McGwier\\
+\small CTO, Cohere Technology Group\\
+\small GitHub: \texttt{n4hy}}
+\date{15 August 2026 --- Version 1}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Paper~64 left a residual: slab grow is $2.5$, not $3$.
+This note asks whether
+\[
+\delta S=aV+bA
+\]
+is a universal area term, or shape junk.
+
+$N=12$. Balls, cubes, slabs, rods.
+$\alpha=0.01,0.02,0.04$.
+In-sample two-term rel RMS $0.081,0.073,0.066$.
+Volume-only is the same to two digits.
+Leave-one-family-out: held-out rods miss by
+$5.2$. The area coefficient flips sign when
+slabs are withheld. Auditor $N=10$: gain and
+LOO refuted.
+
+There is no Clausius/horizon handle in this
+residual. Sea-transfer $\delta S$ is volume-like
+with $O(1)$ shape junk. Gravity remains
+$\sum\delta e$ plus inherited Gauss.
+\end{abstract}
+
+\begin{admission}
+I hoped grow $\neq 3$ was an area term.
+Leave-one-family-out killed it. I did not
+move C\_loo.
+\end{admission}
+
+\end{document}

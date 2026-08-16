@@ -59,5 +59,6 @@
 | `62_Predictor.tex` | Finite δS tracks P_flat at every α; CHM does not flip it |
 | `63_Enclosure.tex` | Finite δS is enclosure of 2h(α); f=1 only on the enclosing ball |
 | `64_Sea_Enclosure.tex` | Sea-transfer δS is extensive; slabs break A/V; not a packet artifact |
+| `65_Two_Term_Fail.tex` | grow=2.5 is not a universal area term; held-out rods miss by 5 |
 
 Reconstructed files follow the PDF wording and equations. They are not a byte-for-byte dump of an unpublished compiler run.
